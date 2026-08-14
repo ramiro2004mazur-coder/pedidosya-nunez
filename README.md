@@ -84,8 +84,9 @@ hora del sistema — la Mac ya esta en ART asi que no hace falta convertir).
 El script hace `git pull`, scrapea, ingesta, regenera `docs/data.json` y
 pushea a `main` (lo que dispara el redeploy de Pages).
 
-**Requisito:** la Mac tiene que estar prendida (no dormida/apagada) a esas
-horas, o esa corrida se pierde — no hay reintento automatico.
+**Requisito:** la Mac tiene que estar prendida, despierta y con tu sesion
+iniciada (no en la pantalla de login) a esas horas, o esa corrida se
+pierde — no hay reintento automatico.
 
 Logs:
 - `scripts/local_run.log` — log propio del script (que hizo, que commiteo).
