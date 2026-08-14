@@ -910,5 +910,21 @@
     "calibre": "473",
     "grupo": "Sin clasificar",
     "segmento": "Sin clasificar"
+  },
+  {
+    "id": "beepure-cerveza-artesanal-beepure-blonde-ale-500-ml",
+    "marca": "Beepure",
+    "sku": "Cerveza Artesanal Beepure Blonde Ale 500 ml",
+    "calibre": "600",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "asahi-cerveza-asahi-super-dry-330-ml",
+    "marca": "Asahi",
+    "sku": "Cerveza Asahi Super Dry 330 ml",
+    "calibre": "330/355",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
   }
 ]
