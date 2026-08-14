@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .venv/
 .DS_Store
+scripts/local_run.log
+scripts/launchd.out.log
+scripts/launchd.err.log

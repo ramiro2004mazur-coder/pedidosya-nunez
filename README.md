@@ -2,8 +2,15 @@
 
 Scraper + dashboard automatizado para trackear precios de cerveza en la
 tienda de Nunez de PedidosYa Market. Corre 2 veces por dia (10:15 y 19:00
-ART) via GitHub Actions, consolida el historico y publica el dashboard en
-GitHub Pages.
+ART), consolida el historico y publica el dashboard en GitHub Pages.
+
+> **Estado actual (temporal):** PedidosYa devuelve 403 a las IPs de
+> datacenter de GitHub Actions, asi que el cron en la nube esta
+> **desactivado** (`.github/workflows/scrape_and_deploy.yml` solo queda
+> disponible para disparo manual). El scrapeo 2x/dia corre **localmente en
+> esta Mac** via `launchd`, ver seccion [Corrida local](#corrida-local-temporal)
+> abajo. Cuando se resuelva el bloqueo de IP (proxy o Oracle Cloud Free
+> Tier) se vuelve a activar el cron de GitHub Actions.
 
 ## Estructura
 
@@ -19,8 +26,11 @@ docs/data.json             generado, no se edita a mano
 scripts/migrate_legacy.py  migracion unica del data.json/CSV viejos (ya corrida)
 scripts/ingest_run.py      mergea 1 corrida nueva en data/history.json
 scripts/build_dashboard_data.py   data/history.json -> docs/data.json (stats/fights)
-.github/workflows/scrape_and_deploy.yml   cron 2x/dia + commit + deploy
+scripts/run_local_scrape.sh       corrida completa local (scrape+ingest+build+push), la dispara launchd
+.github/workflows/scrape_and_deploy.yml   workflow manual (cron desactivado, ver arriba)
 ```
+
+LaunchAgent (fuera del repo, vive en la Mac): `~/Library/LaunchAgents/com.pedidosya-nunez.scrape.plist`
 
 ## Setup unico (a hacer vos, no lo hace el workflow)
 
@@ -62,7 +72,39 @@ python3 scripts/build_dashboard_data.py
 ```
 
 También se puede disparar el workflow a mano desde la pestaña *Actions* →
-*Run workflow* (con slot forzado opcional).
+*Run workflow* (con slot forzado opcional) — pero hoy va a fallar con 403
+por el bloqueo de IP mencionado arriba, salvo que se le agregue un proxy.
+
+## Corrida local (temporal)
+
+Mientras el cron de GitHub Actions esta desactivado, `scripts/run_local_scrape.sh`
+corre 2x/dia desde esta Mac via un LaunchAgent
+(`~/Library/LaunchAgents/com.pedidosya-nunez.scrape.plist`, 10:15 y 19:00,
+hora del sistema — la Mac ya esta en ART asi que no hace falta convertir).
+El script hace `git pull`, scrapea, ingesta, regenera `docs/data.json` y
+pushea a `main` (lo que dispara el redeploy de Pages).
+
+**Requisito:** la Mac tiene que estar prendida (no dormida/apagada) a esas
+horas, o esa corrida se pierde — no hay reintento automatico.
+
+Logs:
+- `scripts/local_run.log` — log propio del script (que hizo, que commiteo).
+- `scripts/launchd.out.log` / `scripts/launchd.err.log` — stdout/stderr crudo de launchd.
+
+Administrar el LaunchAgent:
+```bash
+# ver si esta cargado
+launchctl list | grep pedidosya-nunez
+
+# forzar una corrida ya mismo (sin esperar al horario)
+launchctl kickstart -k gui/$(id -u)/com.pedidosya-nunez.scrape
+
+# desactivar temporalmente
+launchctl bootout gui/$(id -u)/com.pedidosya-nunez.scrape
+
+# volver a activar
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.pedidosya-nunez.scrape.plist
+```
 
 ## Formato de `data/history.json`
 

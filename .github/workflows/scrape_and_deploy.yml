@@ -1,10 +1,14 @@
 name: Scrape PedidosYa Nunez y publicar dashboard
 
 on:
-  schedule:
-    # Argentina (ART) es UTC-3 todo el ano, sin horario de verano.
-    - cron: '15 13 * * *'   # 10:15 ART -> corte AM
-    - cron: '0 22 * * *'    # 19:00 ART -> corte PM
+  # El cron automatico esta desactivado a proposito: PedidosYa devuelve 403
+  # a las IPs de datacenter de GitHub Actions. Mientras tanto el scrapeo
+  # 2x/dia corre localmente (ver scripts/run_local_scrape.sh + LaunchAgent
+  # en la Mac). Cuando se resuelva (proxy o Oracle Cloud Free Tier) se
+  # reactiva descomentando el bloque `schedule:` de abajo.
+  # schedule:
+  #   - cron: '15 13 * * *'   # 10:15 ART -> corte AM
+  #   - cron: '0 22 * * *'    # 19:00 ART -> corte PM
   workflow_dispatch:
     inputs:
       slot:
