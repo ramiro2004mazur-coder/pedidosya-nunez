@@ -1,6 +1,6 @@
 ﻿zona;marca;descripcion;calibre;fleje;precio;descuento
 Nunez;Corona;Cerveza Rubia Sin Alcohol 0.0% Corona 330 ml;330 ml;3855;2698.5;30
-Nunez;Rabieta;Cerveza Rabieta Helles Munich 473 ml;473 ml;4175;2087.5;50
+Nunez;Rabieta;Cerveza Rabieta American Ipa 473 ml;473 ml;4175;2922.5;30
 Nunez;Pampa;Cerveza Pampa Brewing Nitro Cream Stout 473 ml;473 ml;3210;2086.5;35
 Nunez;Stella Artois;Cerveza Stella Artois 473 ml;473 ml;4269;2561.4;40
 Nunez;Corona;Cerveza Corona Rubia 330 ml;330 ml;4550;2730;40
@@ -82,7 +82,7 @@ Nunez;Bierhaus;Cerveza Bierhaus Apa Boss Town 473 ml;473 ml;4210;4210;0
 Nunez;Bierhaus;Cerveza Bierhaus Chala Lager 473 ml;473 ml;4210;4210;0
 Nunez;Amstel;Cerveza Amstel Lager 710 ml;710 ml;4200;2730;35
 Nunez;Amstel;Cerveza Amstel Lager 473 ml;473 ml;2889;1877.85;35
-Nunez;Rabieta;Cerveza Rabieta American Ipa 473 ml;473 ml;4175;2922.5;30
+Nunez;Rabieta;Cerveza Rabieta Helles Munich 473 ml;473 ml;4175;2087.5;50
 Nunez;Rabieta;Cerveza Rabieta Golden 473 ml;473 ml;4175;2505;40
 Nunez;Rabieta;Cerveza Rabieta Red Honey 473 ml;473 ml;4175;2713.75;35
 Nunez;Rabieta;Cerveza Rabieta Irish Red Ale 473 ml;473 ml;4175;2922.5;30
