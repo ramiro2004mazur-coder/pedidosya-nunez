@@ -768,14 +768,6 @@
     "segmento": "Core+"
   },
   {
-    "id": "marca-descripcion",
-    "marca": "marca",
-    "sku": "descripcion",
-    "calibre": "S/C",
-    "grupo": "Competencia",
-    "segmento": "Revisar"
-  },
-  {
     "id": "temple-cerveza-temple-indie-golden-473-ml",
     "marca": "Temple",
     "sku": "Cerveza Temple Indie Golden 473 ml",
