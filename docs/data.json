@@ -47,8 +47,14 @@
           "fleje": 1769.0,
           "ptc": 1503.65,
           "dinamica": 0.15
+        },
+        "2026-08-19": {
+          "fleje": 1769.0,
+          "ptc": 1503.65,
+          "dinamica": 0.15
         }
-      }
+      },
+      "volumen_l": 0.354
     },
     {
       "id": "brahma-cerveza-brahma-chopp-473-ml",
@@ -102,8 +108,14 @@
           "fleje": 2919.0,
           "ptc": 2335.2,
           "dinamica": 0.2
+        },
+        "2026-08-19": {
+          "fleje": 2919.0,
+          "ptc": 2919.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "brahma-cerveza-brahma-chopp-rubia-710-ml",
@@ -152,8 +164,14 @@
           "fleje": 4200.0,
           "ptc": 3360.0,
           "dinamica": 0.2
+        },
+        "2026-08-19": {
+          "fleje": 4200.0,
+          "ptc": 3360.0,
+          "dinamica": 0.2
         }
-      }
+      },
+      "volumen_l": 0.71
     },
     {
       "id": "budweiser-cerveza-budweiser-lata-473-ml",
@@ -202,8 +220,14 @@
           "fleje": 3060.0,
           "ptc": 2295.0,
           "dinamica": 0.25
+        },
+        "2026-08-19": {
+          "fleje": 3060.0,
+          "ptc": 2295.0,
+          "dinamica": 0.25
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "quilmes-cerveza-quilmes-clasica-473ml",
@@ -252,8 +276,14 @@
           "fleje": 2589.0,
           "ptc": 2071.2,
           "dinamica": 0.2
+        },
+        "2026-08-19": {
+          "fleje": 2589.0,
+          "ptc": 2071.2,
+          "dinamica": 0.2
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "quilmes-cerveza-quilmes-ipa-473-ml",
@@ -302,8 +332,14 @@
           "fleje": 2745.0,
           "ptc": 2196.0,
           "dinamica": 0.2
+        },
+        "2026-08-19": {
+          "fleje": 2745.0,
+          "ptc": 2196.0,
+          "dinamica": 0.2
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "quilmes-cerveza-quilmes-stout-473-ml",
@@ -357,8 +393,14 @@
           "fleje": 2745.0,
           "ptc": 2196.0,
           "dinamica": 0.2
+        },
+        "2026-08-19": {
+          "fleje": 2745.0,
+          "ptc": 1921.5,
+          "dinamica": 0.3
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "quilmes-cerveza-sin-alcohol-0-0-quilmes-473-ml",
@@ -407,8 +449,14 @@
           "fleje": 2305.0,
           "ptc": 2305.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 2305.0,
+          "ptc": 2305.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "quilmes-cerveza-quilmes-clasica-710ml",
@@ -462,8 +510,14 @@
           "fleje": 3965.0,
           "ptc": 3172.0,
           "dinamica": 0.2
+        },
+        "2026-08-19": {
+          "fleje": 3965.0,
+          "ptc": 3172.0,
+          "dinamica": 0.2
         }
-      }
+      },
+      "volumen_l": 0.71
     },
     {
       "id": "amstel-cerveza-amstel-lager-473-ml",
@@ -503,7 +557,8 @@
           "ptc": 2889.0,
           "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "amstel-cerveza-amstel-lager-710-ml",
@@ -557,8 +612,14 @@
           "fleje": 4200.0,
           "ptc": 4200.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 4200.0,
+          "ptc": 4200.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.71
     },
     {
       "id": "salta-cerveza-salta-cautiva-fresh-lager-473-ml",
@@ -607,8 +668,14 @@
           "fleje": 3325.0,
           "ptc": 2493.75,
           "dinamica": 0.25
+        },
+        "2026-08-19": {
+          "fleje": 3325.0,
+          "ptc": 3325.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "schneider-cerveza-schneider-remix-limon-473-ml",
@@ -657,8 +724,14 @@
           "fleje": 2889.0,
           "ptc": 2889.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 2889.0,
+          "ptc": 2889.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "schneider-cerveza-schneider-rubia-710-ml",
@@ -712,8 +785,14 @@
           "fleje": 3815.0,
           "ptc": 3815.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 3815.0,
+          "ptc": 2861.25,
+          "dinamica": 0.25
         }
-      }
+      },
+      "volumen_l": 0.71
     },
     {
       "id": "andes-origen-cerveza-andes-origen-negra-473ml",
@@ -762,8 +841,14 @@
           "fleje": 3499.0,
           "ptc": 2624.25,
           "dinamica": 0.25
+        },
+        "2026-08-19": {
+          "fleje": 3499.0,
+          "ptc": 2099.4,
+          "dinamica": 0.4
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "andes-origen-cerveza-andes-origen-roja-473-ml",
@@ -812,8 +897,14 @@
           "fleje": 3569.0,
           "ptc": 2676.75,
           "dinamica": 0.25
+        },
+        "2026-08-19": {
+          "fleje": 3569.0,
+          "ptc": 2141.4,
+          "dinamica": 0.4
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "andes-origen-cerveza-andes-origen-rubia-lata-473-ml",
@@ -862,8 +953,14 @@
           "fleje": 3410.0,
           "ptc": 2557.5,
           "dinamica": 0.25
+        },
+        "2026-08-19": {
+          "fleje": 3410.0,
+          "ptc": 2046.0,
+          "dinamica": 0.4
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "andes-origen-cerveza-andes-origen-rubia-oro-473-ml",
@@ -912,8 +1009,14 @@
           "fleje": 3389.0,
           "ptc": 2541.75,
           "dinamica": 0.25
+        },
+        "2026-08-19": {
+          "fleje": 3389.0,
+          "ptc": 2033.4,
+          "dinamica": 0.4
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "andes-origen-cerveza-andes-origen-rubia-710-ml",
@@ -962,8 +1065,14 @@
           "fleje": 4955.0,
           "ptc": 3964.0,
           "dinamica": 0.2
+        },
+        "2026-08-19": {
+          "fleje": 4955.0,
+          "ptc": 3964.0,
+          "dinamica": 0.2
         }
-      }
+      },
+      "volumen_l": 0.71
     },
     {
       "id": "michelob-ultra-cerveza-michelob-ultra-sin-gluten-473-ml",
@@ -1017,8 +1126,14 @@
           "fleje": 2889.0,
           "ptc": 1733.4,
           "dinamica": 0.4
+        },
+        "2026-08-19": {
+          "fleje": 2889.0,
+          "ptc": 2311.2,
+          "dinamica": 0.2
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "imperial-cerveza-imperial-golden-300-ml",
@@ -1067,8 +1182,14 @@
           "fleje": 3729.0,
           "ptc": 3729.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 3729.0,
+          "ptc": 3729.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.3
     },
     {
       "id": "imperial-cerveza-imperial-apa-473-ml",
@@ -1117,8 +1238,14 @@
           "fleje": 3529.0,
           "ptc": 3529.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 3529.0,
+          "ptc": 3529.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "imperial-cerveza-imperial-cream-stout-473-ml",
@@ -1167,8 +1294,14 @@
           "fleje": 3455.0,
           "ptc": 3455.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 3455.0,
+          "ptc": 3455.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "imperial-cerveza-imperial-golden-cero-alcohol-473-cm3",
@@ -1217,8 +1350,14 @@
           "fleje": 2229.0,
           "ptc": 2229.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 2229.0,
+          "ptc": 2229.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "imperial-cerveza-imperial-golden-lata-473-ml",
@@ -1267,8 +1406,14 @@
           "fleje": 3325.0,
           "ptc": 3325.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 3325.0,
+          "ptc": 3325.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "imperial-cerveza-imperial-ipa-473-ml",
@@ -1317,8 +1462,14 @@
           "fleje": 3495.0,
           "ptc": 3495.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 3495.0,
+          "ptc": 3495.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "imperial-cerveza-imperial-lager-473-ml",
@@ -1367,8 +1518,14 @@
           "fleje": 3325.0,
           "ptc": 3325.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 3325.0,
+          "ptc": 3325.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "imperial-cerveza-imperial-golden-710-ml",
@@ -1422,8 +1579,14 @@
           "fleje": 4785.0,
           "ptc": 4067.25,
           "dinamica": 0.15
+        },
+        "2026-08-19": {
+          "fleje": 4785.0,
+          "ptc": 4067.25,
+          "dinamica": 0.15
         }
-      }
+      },
+      "volumen_l": 0.71
     },
     {
       "id": "imperial-cerveza-imperial-lager-710-ml",
@@ -1472,8 +1635,14 @@
           "fleje": 4785.0,
           "ptc": 4067.25,
           "dinamica": 0.15
+        },
+        "2026-08-19": {
+          "fleje": 4785.0,
+          "ptc": 4067.25,
+          "dinamica": 0.15
         }
-      }
+      },
+      "volumen_l": 0.71
     },
     {
       "id": "miller-cerveza-miller-473-ml",
@@ -1527,8 +1696,14 @@
           "fleje": 3729.0,
           "ptc": 2237.4,
           "dinamica": 0.4
+        },
+        "2026-08-19": {
+          "fleje": 3729.0,
+          "ptc": 3729.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "miller-cerveza-miller-600-ml",
@@ -1577,8 +1752,14 @@
           "fleje": 6119.0,
           "ptc": 6119.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 6119.0,
+          "ptc": 6119.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.6
     },
     {
       "id": "miller-cerveza-miller-genuine-draft-710-ml",
@@ -1627,8 +1808,14 @@
           "fleje": 5539.0,
           "ptc": 5539.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 5539.0,
+          "ptc": 5539.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.71
     },
     {
       "id": "stella-artois-cerveza-stella-artois-botella-330-ml",
@@ -1677,8 +1864,14 @@
           "fleje": 4079.0,
           "ptc": 3059.25,
           "dinamica": 0.25
+        },
+        "2026-08-19": {
+          "fleje": 4079.0,
+          "ptc": 2447.4,
+          "dinamica": 0.4
         }
-      }
+      },
+      "volumen_l": 0.33
     },
     {
       "id": "stella-artois-cerveza-stella-artois-pure-gold-330-cm3",
@@ -1722,8 +1915,14 @@
           "fleje": 4485.0,
           "ptc": 3363.75,
           "dinamica": 0.25
+        },
+        "2026-08-19": {
+          "fleje": 4485.0,
+          "ptc": 3363.75,
+          "dinamica": 0.25
         }
-      }
+      },
+      "volumen_l": 0.33
     },
     {
       "id": "stella-artois-cerveza-stella-artois-sin-alcohol-330-ml",
@@ -1772,8 +1971,14 @@
           "fleje": 3335.0,
           "ptc": 3335.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 3335.0,
+          "ptc": 3335.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.33
     },
     {
       "id": "stella-artois-cerveza-stella-artois-473-ml",
@@ -1827,8 +2032,14 @@
           "fleje": 4269.0,
           "ptc": 3201.75,
           "dinamica": 0.25
+        },
+        "2026-08-19": {
+          "fleje": 4269.0,
+          "ptc": 2561.4,
+          "dinamica": 0.4
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "stella-artois-cerveza-stella-artois-noire-pura-malta-473-ml",
@@ -1877,8 +2088,14 @@
           "fleje": 4309.0,
           "ptc": 3231.75,
           "dinamica": 0.25
+        },
+        "2026-08-19": {
+          "fleje": 4309.0,
+          "ptc": 3231.75,
+          "dinamica": 0.25
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "stella-artois-cerveza-stella-artois-pure-gold-lata-473-ml",
@@ -1927,8 +2144,14 @@
           "fleje": 4389.0,
           "ptc": 3291.75,
           "dinamica": 0.25
+        },
+        "2026-08-19": {
+          "fleje": 4389.0,
+          "ptc": 2852.85,
+          "dinamica": 0.35
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "stella-artois-cerveza-stella-artois-sin-alcohol-473-ml",
@@ -1972,8 +2195,14 @@
           "fleje": 3639.0,
           "ptc": 2547.3,
           "dinamica": 0.3
+        },
+        "2026-08-19": {
+          "fleje": 3639.0,
+          "ptc": 3639.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "stella-artois-cervez-stella-artois-710-ml",
@@ -2022,8 +2251,14 @@
           "fleje": 6205.0,
           "ptc": 4653.75,
           "dinamica": 0.25
+        },
+        "2026-08-19": {
+          "fleje": 6205.0,
+          "ptc": 4653.75,
+          "dinamica": 0.25
         }
-      }
+      },
+      "volumen_l": 0.71
     },
     {
       "id": "stella-artois-cerveza-stella-artois-lager-710-ml",
@@ -2077,8 +2312,14 @@
           "fleje": 6260.0,
           "ptc": 5008.0,
           "dinamica": 0.2
+        },
+        "2026-08-19": {
+          "fleje": 6260.0,
+          "ptc": 5008.0,
+          "dinamica": 0.2
         }
-      }
+      },
+      "volumen_l": 0.71
     },
     {
       "id": "grolsch-cerveza-grolsch-ipa-473-ml",
@@ -2127,8 +2368,14 @@
           "fleje": 4430.0,
           "ptc": 4430.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 4430.0,
+          "ptc": 4430.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "grolsch-cerveza-grolsch-lager-lata-473-ml",
@@ -2177,8 +2424,14 @@
           "fleje": 4200.0,
           "ptc": 4200.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 4200.0,
+          "ptc": 4200.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "heineken-cerveza-heineken-porron-330-ml",
@@ -2227,8 +2480,14 @@
           "fleje": 4449.0,
           "ptc": 4449.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 4449.0,
+          "ptc": 4449.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.33
     },
     {
       "id": "heineken-cerveza-sin-alcohol-heineken-330-ml",
@@ -2277,8 +2536,14 @@
           "fleje": 3119.0,
           "ptc": 3119.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 3119.0,
+          "ptc": 3119.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.33
     },
     {
       "id": "heineken-cerveza-heineken-cero-alcohol-lata-473-ml",
@@ -2327,8 +2592,14 @@
           "fleje": 3289.0,
           "ptc": 2631.2,
           "dinamica": 0.2
+        },
+        "2026-08-19": {
+          "fleje": 3289.0,
+          "ptc": 2631.2,
+          "dinamica": 0.2
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "heineken-cerveza-rubia-heineken-473-ml",
@@ -2377,8 +2648,14 @@
           "fleje": 4275.0,
           "ptc": 4275.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 4275.0,
+          "ptc": 4275.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "heineken-cerveza-heineken-lata-710-ml",
@@ -2432,8 +2709,14 @@
           "fleje": 6355.0,
           "ptc": 5401.75,
           "dinamica": 0.15
+        },
+        "2026-08-19": {
+          "fleje": 6355.0,
+          "ptc": 5401.75,
+          "dinamica": 0.15
         }
-      }
+      },
+      "volumen_l": 0.71
     },
     {
       "id": "pampa-cerveza-pampa-brewing-amber-ale-473-ml",
@@ -2473,7 +2756,8 @@
           "ptc": 2086.5,
           "dinamica": 0.35
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "pampa-cerveza-pampa-brewing-co-ipa-473-ml",
@@ -2508,7 +2792,8 @@
           "ptc": 2247.0,
           "dinamica": 0.3
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "pampa-cerveza-pampa-brewing-honey-ale-lata-473-ml",
@@ -2557,8 +2842,14 @@
           "fleje": 3210.0,
           "ptc": 2247.0,
           "dinamica": 0.3
+        },
+        "2026-08-19": {
+          "fleje": 3210.0,
+          "ptc": 1926.0,
+          "dinamica": 0.4
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "pampa-cerveza-pampa-brewing-lager-473-ml",
@@ -2612,8 +2903,14 @@
           "fleje": 3210.0,
           "ptc": 1605.0,
           "dinamica": 0.5
+        },
+        "2026-08-19": {
+          "fleje": 3210.0,
+          "ptc": 1605.0,
+          "dinamica": 0.5
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "pampa-cerveza-pampa-brewing-nitro-cream-stout-473-ml",
@@ -2642,8 +2939,14 @@
           "fleje": 3210.0,
           "ptc": 2086.5,
           "dinamica": 0.35
+        },
+        "2026-08-19": {
+          "fleje": 3210.0,
+          "ptc": 2407.5,
+          "dinamica": 0.25
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "pampa-cerveza-pampa-dorada-pampeana-473-ml",
@@ -2692,8 +2995,14 @@
           "fleje": 3210.0,
           "ptc": 1926.0,
           "dinamica": 0.4
+        },
+        "2026-08-19": {
+          "fleje": 3210.0,
+          "ptc": 3210.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "peroni-cerveza-peroni-botella-330-ml",
@@ -2742,8 +3051,14 @@
           "fleje": 5245.0,
           "ptc": 5245.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 5245.0,
+          "ptc": 5245.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.33
     },
     {
       "id": "bierhaus-cerveza-bierhaus-apa-boss-town-473-ml",
@@ -2792,8 +3107,14 @@
           "fleje": 4210.0,
           "ptc": 4210.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 4210.0,
+          "ptc": 4210.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "bierhaus-cerveza-bierhaus-chala-lager-473-ml",
@@ -2842,8 +3163,14 @@
           "fleje": 4210.0,
           "ptc": 4210.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 4210.0,
+          "ptc": 3578.5,
+          "dinamica": 0.15
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "bierhaus-cerveza-bierhaus-golden-state-lager-473-ml",
@@ -2892,8 +3219,14 @@
           "fleje": 3295.0,
           "ptc": 2800.75,
           "dinamica": 0.15
+        },
+        "2026-08-19": {
+          "fleje": 3295.0,
+          "ptc": 3295.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "bierhaus-cerveza-bierhaus-honey-lazybee-473-ml",
@@ -2942,8 +3275,14 @@
           "fleje": 3360.0,
           "ptc": 2856.0,
           "dinamica": 0.15
+        },
+        "2026-08-19": {
+          "fleje": 3360.0,
+          "ptc": 3360.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "bierhaus-cerveza-bierhaus-red-ipa-timeless-lata-473-ml",
@@ -2992,8 +3331,14 @@
           "fleje": 4299.0,
           "ptc": 4299.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 4299.0,
+          "ptc": 4299.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "bierhaus-cerveza-bierhaus-scotch-momentum-473-ml",
@@ -3042,8 +3387,14 @@
           "fleje": 3360.0,
           "ptc": 3360.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 3360.0,
+          "ptc": 3360.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "estrella-de-galicia-cerveza-estrella-de-galicia-0-0-lata-330-ml",
@@ -3092,8 +3443,14 @@
           "fleje": 3925.0,
           "ptc": 3925.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 3180.0,
+          "ptc": 3180.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.33
     },
     {
       "id": "guiness-cerveza-guinness-extra-stout-473-ml",
@@ -3142,8 +3499,14 @@
           "fleje": 4559.0,
           "ptc": 3419.25,
           "dinamica": 0.25
+        },
+        "2026-08-19": {
+          "fleje": 4559.0,
+          "ptc": 3647.2,
+          "dinamica": 0.2
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "guiness-cerveza-guinness-hop-house-13-lager-473-ml",
@@ -3192,8 +3555,14 @@
           "fleje": 4559.0,
           "ptc": 3191.3,
           "dinamica": 0.3
+        },
+        "2026-08-19": {
+          "fleje": 4559.0,
+          "ptc": 2735.4,
+          "dinamica": 0.4
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "michelob-cerveza-michelob-ultra-porron-275-ml",
@@ -3237,8 +3606,14 @@
           "fleje": 3189.0,
           "ptc": 2391.75,
           "dinamica": 0.25
+        },
+        "2026-08-19": {
+          "fleje": 3189.0,
+          "ptc": 2391.75,
+          "dinamica": 0.25
         }
-      }
+      },
+      "volumen_l": 0.275
     },
     {
       "id": "starberg-cerveza-starberg-lager-500-ml",
@@ -3287,8 +3662,14 @@
           "fleje": 2559.0,
           "ptc": 2559.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 2559.0,
+          "ptc": 2559.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.5
     },
     {
       "id": "corona-cerveza-corona-rubia-330-ml",
@@ -3342,8 +3723,14 @@
           "fleje": 4550.0,
           "ptc": 3640.0,
           "dinamica": 0.2
+        },
+        "2026-08-19": {
+          "fleje": 4550.0,
+          "ptc": 3640.0,
+          "dinamica": 0.2
         }
-      }
+      },
+      "volumen_l": 0.33
     },
     {
       "id": "corona-cerveza-rubia-sin-alcohol-0-0-corona-330-ml",
@@ -3392,8 +3779,14 @@
           "fleje": 3855.0,
           "ptc": 3855.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 3855.0,
+          "ptc": 3855.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.33
     },
     {
       "id": "corona-cerveza-rubia-corona-473-ml",
@@ -3447,8 +3840,14 @@
           "fleje": 4929.0,
           "ptc": 3203.85,
           "dinamica": 0.35
+        },
+        "2026-08-19": {
+          "fleje": 4929.0,
+          "ptc": 3203.85,
+          "dinamica": 0.35
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "corona-cerveza-sin-alcohol-corona-en-lata-473-ml",
@@ -3492,8 +3891,14 @@
           "fleje": 3189.0,
           "ptc": 2232.3,
           "dinamica": 0.3
+        },
+        "2026-08-19": {
+          "fleje": 3189.0,
+          "ptc": 3189.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "corona-cerveza-corona-rubia-710-ml",
@@ -3547,8 +3952,14 @@
           "fleje": 7490.0,
           "ptc": 5617.5,
           "dinamica": 0.25
+        },
+        "2026-08-19": {
+          "fleje": 7490.0,
+          "ptc": 5617.5,
+          "dinamica": 0.25
         }
-      }
+      },
+      "volumen_l": 0.71
     },
     {
       "id": "patagonia-cerveza-patagonia-24-7-session-ipa-473-ml",
@@ -3597,8 +4008,14 @@
           "fleje": 5309.0,
           "ptc": 3716.3,
           "dinamica": 0.3
+        },
+        "2026-08-19": {
+          "fleje": 5309.0,
+          "ptc": 3716.3,
+          "dinamica": 0.3
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "patagonia-cerveza-patagonia-amber-lager-lata-473-ml",
@@ -3647,8 +4064,14 @@
           "fleje": 5309.0,
           "ptc": 3716.3,
           "dinamica": 0.3
+        },
+        "2026-08-19": {
+          "fleje": 5309.0,
+          "ptc": 3716.3,
+          "dinamica": 0.3
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "patagonia-cerveza-patagonia-24-7-session-ipa-730-ml",
@@ -3697,8 +4120,14 @@
           "fleje": 7549.0,
           "ptc": 5284.3,
           "dinamica": 0.3
+        },
+        "2026-08-19": {
+          "fleje": 7549.0,
+          "ptc": 5284.3,
+          "dinamica": 0.3
         }
-      }
+      },
+      "volumen_l": 0.73
     },
     {
       "id": "patagonia-cerveza-patagonia-roja-amber-lager-730-ml",
@@ -3747,8 +4176,14 @@
           "fleje": 7549.0,
           "ptc": 5284.3,
           "dinamica": 0.3
+        },
+        "2026-08-19": {
+          "fleje": 7549.0,
+          "ptc": 4151.95,
+          "dinamica": 0.45
         }
-      }
+      },
+      "volumen_l": 0.73
     },
     {
       "id": "antares-cerveza-antares-kolsch-473-ml",
@@ -3797,8 +4232,14 @@
           "fleje": 4825.0,
           "ptc": 4825.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 4825.0,
+          "ptc": 3377.5,
+          "dinamica": 0.3
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "antares-cerveza-antares-scotch-473-ml",
@@ -3847,8 +4288,14 @@
           "fleje": 4825.0,
           "ptc": 4825.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 4825.0,
+          "ptc": 3377.5,
+          "dinamica": 0.3
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "antares-cerveza-lager-antares-473-ml",
@@ -3897,8 +4344,14 @@
           "fleje": 4069.0,
           "ptc": 2563.47,
           "dinamica": 0.37
+        },
+        "2026-08-19": {
+          "fleje": 4069.0,
+          "ptc": 2848.3,
+          "dinamica": 0.3
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "blue-moon-cerveza-blanca-blue-moon-473-ml",
@@ -3947,8 +4400,14 @@
           "fleje": 5015.0,
           "ptc": 5015.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 5015.0,
+          "ptc": 5015.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "estrella-galicia-cerveza-estrella-galicia-sin-gluten-330-ml",
@@ -3997,8 +4456,14 @@
           "fleje": 3925.0,
           "ptc": 3925.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 3925.0,
+          "ptc": 3925.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.33
     },
     {
       "id": "estrella-galicia-cerveza-estrella-galicia-473-ml",
@@ -4047,8 +4512,14 @@
           "fleje": 3925.0,
           "ptc": 3925.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 3925.0,
+          "ptc": 3925.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "rabieta-cerveza-rabieta-american-ipa-473-ml",
@@ -4077,8 +4548,14 @@
           "fleje": 4175.0,
           "ptc": 2922.5,
           "dinamica": 0.3
+        },
+        "2026-08-19": {
+          "fleje": 4175.0,
+          "ptc": 2922.5,
+          "dinamica": 0.3
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "rabieta-cerveza-rabieta-golden-473-ml",
@@ -4127,8 +4604,14 @@
           "fleje": 4175.0,
           "ptc": 2505.0,
           "dinamica": 0.4
+        },
+        "2026-08-19": {
+          "fleje": 4175.0,
+          "ptc": 4175.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "rabieta-cerveza-rabieta-helles-munich-473-ml",
@@ -4177,8 +4660,14 @@
           "fleje": 4175.0,
           "ptc": 2087.5,
           "dinamica": 0.5
+        },
+        "2026-08-19": {
+          "fleje": 4175.0,
+          "ptc": 2087.5,
+          "dinamica": 0.5
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "rabieta-cerveza-rabieta-irish-red-ale-473-ml",
@@ -4227,8 +4716,14 @@
           "fleje": 4175.0,
           "ptc": 2922.5,
           "dinamica": 0.3
+        },
+        "2026-08-19": {
+          "fleje": 4175.0,
+          "ptc": 3131.25,
+          "dinamica": 0.25
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "temple-cerveza-temple-scottish-473-ml",
@@ -4277,8 +4772,14 @@
           "fleje": 4500.0,
           "ptc": 3150.0,
           "dinamica": 0.3
+        },
+        "2026-08-19": {
+          "fleje": 4500.0,
+          "ptc": 3150.0,
+          "dinamica": 0.3
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "1890-cerveza-1890-quilmes-473-ml",
@@ -4327,8 +4828,14 @@
           "fleje": 2225.0,
           "ptc": 1891.25,
           "dinamica": 0.15
+        },
+        "2026-08-19": {
+          "fleje": 2225.0,
+          "ptc": 1557.5,
+          "dinamica": 0.3
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "ortuzar-cerveza-ortuzar-golden-ale-473-ml",
@@ -4372,8 +4879,14 @@
           "fleje": 3225.0,
           "ptc": 1935.0,
           "dinamica": 0.4
+        },
+        "2026-08-19": {
+          "fleje": 3225.0,
+          "ptc": 2580.0,
+          "dinamica": 0.2
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "ortuzar-cerveza-ortuzar-honey-473-ml",
@@ -4422,8 +4935,14 @@
           "fleje": 3225.0,
           "ptc": 1935.0,
           "dinamica": 0.4
+        },
+        "2026-08-19": {
+          "fleje": 3225.0,
+          "ptc": 2580.0,
+          "dinamica": 0.2
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "ortuzar-cerveza-ortuzar-poker-bourbon-473-ml",
@@ -4467,8 +4986,14 @@
           "fleje": 3325.0,
           "ptc": 1995.0,
           "dinamica": 0.4
+        },
+        "2026-08-19": {
+          "fleje": 3715.0,
+          "ptc": 2972.0,
+          "dinamica": 0.2
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "ortuzar-cerveza-ortuzar-premium-lager-473-ml",
@@ -4522,8 +5047,14 @@
           "fleje": 2245.0,
           "ptc": 1347.0,
           "dinamica": 0.4
+        },
+        "2026-08-19": {
+          "fleje": 2245.0,
+          "ptc": 1796.0,
+          "dinamica": 0.2
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "ortuzar-cerveza-ortuzar-session-ipa-473-ml",
@@ -4567,8 +5098,14 @@
           "fleje": 3715.0,
           "ptc": 2229.0,
           "dinamica": 0.4
+        },
+        "2026-08-19": {
+          "fleje": 3715.0,
+          "ptc": 2972.0,
+          "dinamica": 0.2
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "ortuzar-cerveza-ortuzar-premium-lager-710-ml",
@@ -4617,8 +5154,14 @@
           "fleje": 3535.0,
           "ptc": 2121.0,
           "dinamica": 0.4
+        },
+        "2026-08-19": {
+          "fleje": 3535.0,
+          "ptc": 2828.0,
+          "dinamica": 0.2
         }
-      }
+      },
+      "volumen_l": 0.71
     },
     {
       "id": "warsteiner-cerveza-warsteiner-473-ml",
@@ -4667,8 +5210,14 @@
           "fleje": 3729.0,
           "ptc": 3729.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 3729.0,
+          "ptc": 3729.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "budweiser-cerveza-budweiser-lata-710-ml",
@@ -4688,7 +5237,8 @@
           "ptc": 3051.75,
           "dinamica": 0.25
         }
-      }
+      },
+      "volumen_l": 0.71
     },
     {
       "id": "andes-origen-cerveza-andes-origen-ipa-473-ml",
@@ -4737,8 +5287,14 @@
           "fleje": 3499.0,
           "ptc": 2624.25,
           "dinamica": 0.25
+        },
+        "2026-08-19": {
+          "fleje": 3499.0,
+          "ptc": 2099.4,
+          "dinamica": 0.4
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "temple-cerveza-temple-indie-golden-473-ml",
@@ -4758,7 +5314,8 @@
           "ptc": 3150.0,
           "dinamica": 0.3
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "brahma-cerveza-brahma-chopp-710-ml",
@@ -4773,7 +5330,8 @@
           "ptc": 3150.0,
           "dinamica": 0.25
         }
-      }
+      },
+      "volumen_l": 0.71
     },
     {
       "id": "andes-cerveza-andes-origen-rubia-710-ml",
@@ -4788,7 +5346,8 @@
           "ptc": 3243.5,
           "dinamica": 0.35
         }
-      }
+      },
+      "volumen_l": 0.71
     },
     {
       "id": "patagonia-cerveza-patagonia-ipa-730-ml",
@@ -4803,7 +5362,8 @@
           "ptc": 3795.0,
           "dinamica": 0.5
         }
-      }
+      },
+      "volumen_l": 0.73
     },
     {
       "id": "1890-cerveza-1890-rubia-473-ml",
@@ -4818,7 +5378,8 @@
           "ptc": 2032.0,
           "dinamica": 0.1498
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "patagonia-cerveza-patagonia-vera-ipa-473-ml",
@@ -4867,8 +5428,14 @@
           "fleje": 5205.0,
           "ptc": 3643.5,
           "dinamica": 0.3
+        },
+        "2026-08-19": {
+          "fleje": 5205.0,
+          "ptc": 3643.5,
+          "dinamica": 0.3
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "patagonia-cerveza-patagonia-vera-ipa-730-ml",
@@ -4917,8 +5484,14 @@
           "fleje": 7549.0,
           "ptc": 5284.3,
           "dinamica": 0.3
+        },
+        "2026-08-19": {
+          "fleje": 7549.0,
+          "ptc": 4151.95,
+          "dinamica": 0.45
         }
-      }
+      },
+      "volumen_l": 0.73
     },
     {
       "id": "schneider-cerveza-schneider-rubia-473-ml",
@@ -4967,8 +5540,14 @@
           "fleje": 2615.0,
           "ptc": 2615.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 2615.0,
+          "ptc": 2615.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "ortuzar-cerveza-ortuzar-porter-473-ml",
@@ -5017,8 +5596,14 @@
           "fleje": 3325.0,
           "ptc": 1995.0,
           "dinamica": 0.4
+        },
+        "2026-08-19": {
+          "fleje": 3325.0,
+          "ptc": 2660.0,
+          "dinamica": 0.2
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "ortuzar-cerveza-ortuzar-german-pils-473-ml",
@@ -5067,8 +5652,14 @@
           "fleje": 3325.0,
           "ptc": 1995.0,
           "dinamica": 0.4
+        },
+        "2026-08-19": {
+          "fleje": 3325.0,
+          "ptc": 2660.0,
+          "dinamica": 0.2
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "quilmes-cerveza-quilmes-bajo-cero-473-ml",
@@ -5117,8 +5708,14 @@
           "fleje": 1735.0,
           "ptc": 1735.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 1735.0,
+          "ptc": 1735.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "bierhaus-cerveza-bierhaus-ipa-superstar-lata-473-ml",
@@ -5167,8 +5764,14 @@
           "fleje": 4299.0,
           "ptc": 4299.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 4299.0,
+          "ptc": 3654.15,
+          "dinamica": 0.15
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "bierhaus-cerveza-bierhaus-chala-ipa-473-ml",
@@ -5217,8 +5820,14 @@
           "fleje": 5109.0,
           "ptc": 5109.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 5109.0,
+          "ptc": 4342.65,
+          "dinamica": 0.15
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "bierhaus-cerveza-argentipa-bierhaus-473-ml",
@@ -5267,8 +5876,14 @@
           "fleje": 4210.0,
           "ptc": 4210.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 4210.0,
+          "ptc": 3578.5,
+          "dinamica": 0.15
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "rabieta-cerveza-rabieta-red-honey-473-ml",
@@ -5317,8 +5932,14 @@
           "fleje": 4175.0,
           "ptc": 2713.75,
           "dinamica": 0.35
+        },
+        "2026-08-19": {
+          "fleje": 4175.0,
+          "ptc": 2922.5,
+          "dinamica": 0.3
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "ortuzar-cerveza-ortuzar-scottish-473-ml",
@@ -5362,8 +5983,14 @@
           "fleje": 3225.0,
           "ptc": 1935.0,
           "dinamica": 0.4
+        },
+        "2026-08-19": {
+          "fleje": 3225.0,
+          "ptc": 2580.0,
+          "dinamica": 0.2
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "ortuzar-cerveza-ortuzar-dubbel-473-ml",
@@ -5407,8 +6034,14 @@
           "fleje": 3325.0,
           "ptc": 1995.0,
           "dinamica": 0.4
+        },
+        "2026-08-19": {
+          "fleje": 3325.0,
+          "ptc": 2660.0,
+          "dinamica": 0.2
         }
-      }
+      },
+      "volumen_l": 0.473
     },
     {
       "id": "beepure-cerveza-artesanal-beepure-blonde-ale-500-ml",
@@ -5442,8 +6075,14 @@
           "fleje": 4295.0,
           "ptc": 4295.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 4295.0,
+          "ptc": 4295.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.5
     },
     {
       "id": "asahi-cerveza-asahi-super-dry-330-ml",
@@ -5477,8 +6116,14 @@
           "fleje": 5609.0,
           "ptc": 5609.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 5609.0,
+          "ptc": 5609.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.33
     },
     {
       "id": "beepure-cerveza-artesanal-beepure-scottish-500-ml",
@@ -5502,8 +6147,14 @@
           "fleje": 4685.0,
           "ptc": 4685.0,
           "dinamica": 0.0
+        },
+        "2026-08-19": {
+          "fleje": 4685.0,
+          "ptc": 4685.0,
+          "dinamica": 0.0
         }
-      }
+      },
+      "volumen_l": 0.5
     }
   ],
   "dates": [
@@ -5515,124 +6166,125 @@
     "2026-08-15",
     "2026-08-16",
     "2026-08-17",
-    "2026-08-18"
+    "2026-08-18",
+    "2026-08-19"
   ],
   "stats": [
     {
       "marca": "Brahma",
       "grupo": "CMQ",
       "segmento": "Core",
-      "dias": 9,
-      "dias_dinamica": 9,
+      "dias": 10,
+      "dias_dinamica": 10,
       "max_dinamica": 0.25,
-      "avg_dinamica": 0.172,
-      "avg_ptc": 2435.216
+      "avg_dinamica": 0.1660714285714286,
+      "avg_ptc": 2452.2517857142857
     },
     {
       "marca": "Budweiser",
       "grupo": "CMQ",
       "segmento": "Core",
-      "dias": 8,
-      "dias_dinamica": 8,
+      "dias": 9,
+      "dias_dinamica": 9,
       "max_dinamica": 0.25,
       "avg_dinamica": 0.25,
-      "avg_ptc": 2446.35
+      "avg_ptc": 2432.590909090909
     },
     {
       "marca": "Quilmes",
       "grupo": "CMQ",
       "segmento": "Core",
-      "dias": 9,
-      "dias_dinamica": 9,
+      "dias": 10,
+      "dias_dinamica": 10,
       "max_dinamica": 0.3,
-      "avg_dinamica": 0.1880952380952381,
-      "avg_ptc": 2334.7738095238096
+      "avg_dinamica": 0.1872340425531915,
+      "avg_ptc": 2334.6
     },
     {
       "marca": "Amstel",
       "grupo": "Competencia",
       "segmento": "Core",
-      "dias": 9,
+      "dias": 10,
       "dias_dinamica": 5,
       "max_dinamica": 0.35,
-      "avg_dinamica": 0.18666666666666665,
-      "avg_ptc": 2996.036666666667
+      "avg_dinamica": 0.175,
+      "avg_ptc": 3071.284375
     },
     {
       "marca": "Salta",
       "grupo": "Competencia",
       "segmento": "Core",
-      "dias": 8,
+      "dias": 9,
       "dias_dinamica": 5,
       "max_dinamica": 0.25,
-      "avg_dinamica": 0.15625,
-      "avg_ptc": 2805.46875
+      "avg_dinamica": 0.1388888888888889,
+      "avg_ptc": 2863.1944444444443
     },
     {
       "marca": "Schneider",
       "grupo": "Competencia",
       "segmento": "Core",
-      "dias": 9,
-      "dias_dinamica": 5,
+      "dias": 10,
+      "dias_dinamica": 6,
       "max_dinamica": 0.35,
-      "avg_dinamica": 0.20588235294117646,
-      "avg_ptc": 2689.1176470588234
+      "avg_dinamica": 0.19736842105263158,
+      "avg_ptc": 2708.6973684210525
     },
     {
       "marca": "Andes Origen",
       "grupo": "CMQ",
       "segmento": "Core+",
-      "dias": 9,
-      "dias_dinamica": 9,
+      "dias": 10,
+      "dias_dinamica": 10,
       "max_dinamica": 0.5,
-      "avg_dinamica": 0.284375,
-      "avg_ptc": 2659.0802083333333
+      "avg_dinamica": 0.2935185185185185,
+      "avg_ptc": 2629.989814814815
     },
     {
       "marca": "Michelob Ultra",
       "grupo": "CMQ",
       "segmento": "Core+",
-      "dias": 9,
-      "dias_dinamica": 9,
+      "dias": 10,
+      "dias_dinamica": 10,
       "max_dinamica": 0.4,
-      "avg_dinamica": 0.3333333333333333,
-      "avg_ptc": 1926.0
+      "avg_dinamica": 0.32,
+      "avg_ptc": 1964.52
     },
     {
       "marca": "Imperial",
       "grupo": "Competencia",
       "segmento": "Core+",
-      "dias": 9,
-      "dias_dinamica": 9,
+      "dias": 10,
+      "dias_dinamica": 10,
       "max_dinamica": 0.35,
-      "avg_dinamica": 0.03904109589041096,
-      "avg_ptc": 3461.178082191781
+      "avg_dinamica": 0.03841463414634146,
+      "avg_ptc": 3462.0426829268295
     },
     {
       "marca": "Miller",
       "grupo": "Competencia",
       "segmento": "Core+",
-      "dias": 9,
+      "dias": 10,
       "dias_dinamica": 7,
       "max_dinamica": 0.45,
-      "avg_dinamica": 0.212,
-      "avg_ptc": 4067.3520000000003
+      "avg_dinamica": 0.18928571428571428,
+      "avg_ptc": 4181.1
     },
     {
       "marca": "Stella Artois",
       "grupo": "CMQ",
       "segmento": "Premium",
-      "dias": 9,
-      "dias_dinamica": 9,
+      "dias": 10,
+      "dias_dinamica": 10,
       "max_dinamica": 0.4,
-      "avg_dinamica": 0.25,
-      "avg_ptc": 3429.6555555555556
+      "avg_dinamica": 0.24814814814814817,
+      "avg_ptc": 3432.4456790123454
     },
     {
       "marca": "Grolsch",
       "grupo": "Competencia",
       "segmento": "Premium",
-      "dias": 8,
+      "dias": 9,
       "dias_dinamica": 0,
       "max_dinamica": 0.0,
       "avg_dinamica": 0.0,
@@ -5642,27 +6294,27 @@
       "marca": "Heineken",
       "grupo": "Competencia",
       "segmento": "Premium",
-      "dias": 9,
-      "dias_dinamica": 9,
+      "dias": 10,
+      "dias_dinamica": 10,
       "max_dinamica": 0.2,
-      "avg_dinamica": 0.07195121951219513,
-      "avg_ptc": 4009.9841463414637
+      "avg_dinamica": 0.07173913043478261,
+      "avg_ptc": 4006.202173913043
     },
     {
       "marca": "Pampa",
       "grupo": "Competencia",
       "segmento": "Premium",
-      "dias": 9,
-      "dias_dinamica": 9,
+      "dias": 10,
+      "dias_dinamica": 10,
       "max_dinamica": 0.5,
-      "avg_dinamica": 0.3625,
-      "avg_ptc": 2046.375
+      "avg_dinamica": 0.3556818181818182,
+      "avg_ptc": 2068.2613636363635
     },
     {
       "marca": "Peroni",
       "grupo": "Competencia",
       "segmento": "Premium",
-      "dias": 8,
+      "dias": 9,
       "dias_dinamica": 0,
       "max_dinamica": 0.0,
       "avg_dinamica": 0.0,
@@ -5672,38 +6324,38 @@
       "marca": "Bierhaus",
       "grupo": "Competencia",
       "segmento": "Revisar",
-      "dias": 8,
-      "dias_dinamica": 8,
+      "dias": 9,
+      "dias_dinamica": 9,
       "max_dinamica": 0.15,
-      "avg_dinamica": 0.043750000000000004,
-      "avg_ptc": 3637.90625
+      "avg_dinamica": 0.041666666666666664,
+      "avg_ptc": 3643.0
     },
     {
       "marca": "Estrella De Galicia",
       "grupo": "Competencia",
       "segmento": "Revisar",
-      "dias": 8,
+      "dias": 9,
       "dias_dinamica": 0,
       "max_dinamica": 0.0,
       "avg_dinamica": 0.0,
-      "avg_ptc": 3366.25
+      "avg_ptc": 3345.5555555555557
     },
     {
       "marca": "Guiness",
       "grupo": "Competencia",
       "segmento": "Revisar",
-      "dias": 8,
-      "dias_dinamica": 8,
+      "dias": 9,
+      "dias_dinamica": 9,
       "max_dinamica": 0.4,
-      "avg_dinamica": 0.28125,
-      "avg_ptc": 3276.78125
+      "avg_dinamica": 0.2833333333333333,
+      "avg_ptc": 3267.2833333333333
     },
     {
       "marca": "Michelob",
       "grupo": "Competencia",
       "segmento": "Revisar",
-      "dias": 7,
-      "dias_dinamica": 7,
+      "dias": 8,
+      "dias_dinamica": 8,
       "max_dinamica": 0.25,
       "avg_dinamica": 0.25,
       "avg_ptc": 2391.75
@@ -5712,7 +6364,7 @@
       "marca": "Starberg",
       "grupo": "Competencia",
       "segmento": "Revisar",
-      "dias": 8,
+      "dias": 9,
       "dias_dinamica": 0,
       "max_dinamica": 0.0,
       "avg_dinamica": 0.0,
@@ -5722,37 +6374,37 @@
       "marca": "Corona",
       "grupo": "CMQ",
       "segmento": "Super Premium",
-      "dias": 9,
-      "dias_dinamica": 9,
+      "dias": 10,
+      "dias_dinamica": 10,
       "max_dinamica": 0.4,
-      "avg_dinamica": 0.23809523809523808,
-      "avg_ptc": 3701.2702380952383
+      "avg_dinamica": 0.22978723404255322,
+      "avg_ptc": 3722.5255319148937
     },
     {
       "marca": "Patagonia",
       "grupo": "CMQ",
       "segmento": "Super Premium",
-      "dias": 8,
-      "dias_dinamica": 8,
+      "dias": 9,
+      "dias_dinamica": 9,
       "max_dinamica": 0.45,
-      "avg_dinamica": 0.31406249999999997,
-      "avg_ptc": 4394.142187500001
+      "avg_dinamica": 0.31666666666666665,
+      "avg_ptc": 4374.483333333334
     },
     {
       "marca": "Antares",
       "grupo": "Competencia",
       "segmento": "Super Premium",
-      "dias": 8,
-      "dias_dinamica": 6,
+      "dias": 9,
+      "dias_dinamica": 7,
       "max_dinamica": 0.37,
-      "avg_dinamica": 0.11291666666666667,
-      "avg_ptc": 4094.6420833333336
+      "avg_dinamica": 0.13370370370370369,
+      "avg_ptc": 3995.35962962963
     },
     {
       "marca": "Blue Moon",
       "grupo": "Competencia",
       "segmento": "Super Premium",
-      "dias": 8,
+      "dias": 9,
       "dias_dinamica": 0,
       "max_dinamica": 0.0,
       "avg_dinamica": 0.0,
@@ -5762,7 +6414,7 @@
       "marca": "Estrella Galicia",
       "grupo": "Competencia",
       "segmento": "Super Premium",
-      "dias": 8,
+      "dias": 9,
       "dias_dinamica": 0,
       "max_dinamica": 0.0,
       "avg_dinamica": 0.0,
@@ -5772,18 +6424,18 @@
       "marca": "Rabieta",
       "grupo": "Competencia",
       "segmento": "Super Premium",
-      "dias": 8,
-      "dias_dinamica": 8,
+      "dias": 9,
+      "dias_dinamica": 9,
       "max_dinamica": 0.5,
-      "avg_dinamica": 0.3535714285714286,
-      "avg_ptc": 2698.839285714286
+      "avg_dinamica": 0.3421875,
+      "avg_ptc": 2746.3671875
     },
     {
       "marca": "Temple",
       "grupo": "Competencia",
       "segmento": "Super Premium",
-      "dias": 8,
-      "dias_dinamica": 8,
+      "dias": 9,
+      "dias_dinamica": 9,
       "max_dinamica": 0.3,
       "avg_dinamica": 0.3,
       "avg_ptc": 3150.0
@@ -5792,31 +6444,31 @@
       "marca": "1890",
       "grupo": "CMQ",
       "segmento": "Value",
-      "dias": 8,
-      "dias_dinamica": 8,
+      "dias": 9,
+      "dias_dinamica": 9,
       "max_dinamica": 0.3,
-      "avg_dinamica": 0.2625,
-      "avg_ptc": 1640.9375
+      "avg_dinamica": 0.26666666666666666,
+      "avg_ptc": 1631.6666666666667
     },
     {
       "marca": "Ortuzar",
       "grupo": "Competencia",
       "segmento": "Value",
-      "dias": 9,
-      "dias_dinamica": 9,
+      "dias": 10,
+      "dias_dinamica": 10,
       "max_dinamica": 0.4,
-      "avg_dinamica": 0.34782608695652173,
-      "avg_ptc": 2101.2608695652175
+      "avg_dinamica": 0.33076923076923076,
+      "avg_ptc": 2161.269230769231
     },
     {
       "marca": "Warsteiner",
       "grupo": "Competencia",
       "segmento": "Value",
-      "dias": 8,
+      "dias": 9,
       "dias_dinamica": 5,
       "max_dinamica": 0.35,
-      "avg_dinamica": 0.21875,
-      "avg_ptc": 2913.28125
+      "avg_dinamica": 0.19444444444444445,
+      "avg_ptc": 3003.9166666666665
     },
     {
       "marca": "Brahma",
@@ -5842,11 +6494,11 @@
       "marca": "Patagonia",
       "grupo": "Sin clasificar",
       "segmento": "Sin clasificar",
-      "dias": 9,
-      "dias_dinamica": 9,
+      "dias": 10,
+      "dias_dinamica": 10,
       "max_dinamica": 0.5,
-      "avg_dinamica": 0.3382352941176471,
-      "avg_ptc": 4224.726470588235
+      "avg_dinamica": 0.34210526315789475,
+      "avg_ptc": 4190.305263157895
     },
     {
       "marca": "1890",
@@ -5862,27 +6514,27 @@
       "marca": "Schneider",
       "grupo": "Sin clasificar",
       "segmento": "Sin clasificar",
-      "dias": 8,
+      "dias": 9,
       "dias_dinamica": 5,
       "max_dinamica": 0.35,
-      "avg_dinamica": 0.21875,
-      "avg_ptc": 2042.96875
+      "avg_dinamica": 0.19444444444444445,
+      "avg_ptc": 2106.527777777778
     },
     {
       "marca": "Ortuzar",
       "grupo": "Sin clasificar",
       "segmento": "Sin clasificar",
-      "dias": 8,
-      "dias_dinamica": 8,
+      "dias": 9,
+      "dias_dinamica": 9,
       "max_dinamica": 0.4,
-      "avg_dinamica": 0.3466666666666667,
-      "avg_ptc": 2157.0
+      "avg_dinamica": 0.3294117647058824,
+      "avg_ptc": 2213.823529411765
     },
     {
       "marca": "Quilmes",
       "grupo": "Sin clasificar",
       "segmento": "Sin clasificar",
-      "dias": 8,
+      "dias": 9,
       "dias_dinamica": 0,
       "max_dinamica": 0.0,
       "avg_dinamica": 0.0,
@@ -5892,37 +6544,37 @@
       "marca": "Bierhaus",
       "grupo": "Sin clasificar",
       "segmento": "Sin clasificar",
-      "dias": 8,
-      "dias_dinamica": 2,
+      "dias": 9,
+      "dias_dinamica": 3,
       "max_dinamica": 0.15,
-      "avg_dinamica": 0.0375,
-      "avg_ptc": 4369.108333333334
+      "avg_dinamica": 0.049999999999999996,
+      "avg_ptc": 4312.366666666667
     },
     {
       "marca": "Rabieta",
       "grupo": "Sin clasificar",
       "segmento": "Sin clasificar",
-      "dias": 8,
-      "dias_dinamica": 8,
+      "dias": 9,
+      "dias_dinamica": 9,
       "max_dinamica": 0.35,
-      "avg_dinamica": 0.33749999999999997,
-      "avg_ptc": 2765.9375
+      "avg_dinamica": 0.3333333333333333,
+      "avg_ptc": 2783.3333333333335
     },
     {
       "marca": "Beepure",
       "grupo": "Sin clasificar",
       "segmento": "Sin clasificar",
-      "dias": 5,
+      "dias": 6,
       "dias_dinamica": 0,
       "max_dinamica": 0.0,
       "avg_dinamica": 0.0,
-      "avg_ptc": 4441.25
+      "avg_ptc": 4451.0
     },
     {
       "marca": "Asahi",
       "grupo": "Sin clasificar",
       "segmento": "Sin clasificar",
-      "dias": 5,
+      "dias": 6,
       "dias_dinamica": 0,
       "max_dinamica": 0.0,
       "avg_dinamica": 0.0,
@@ -6019,10 +6671,10 @@
     }
   ],
   "meta": {
-    "generado": "2026-08-18 21:06:05",
+    "generado": "2026-08-19 19:40:46",
     "sku_rows": 116,
-    "registros_validos": 869,
-    "dias": 9,
+    "registros_validos": 976,
+    "dias": 10,
     "plataforma": "PedidosYa",
     "tienda": "Nunez"
   }
