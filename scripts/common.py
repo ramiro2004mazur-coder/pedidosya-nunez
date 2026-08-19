@@ -14,6 +14,7 @@ DOCS_DIR = ROOT / "docs"
 HISTORY_PATH = DATA_DIR / "history.json"
 CATALOG_PATH = DATA_DIR / "catalog.json"
 FIGHTS_PATH = DATA_DIR / "fights_config.json"
+VOLUME_REFERENCE_PATH = DATA_DIR / "volume_reference.json"
 DASHBOARD_DATA_PATH = DOCS_DIR / "data.json"
 
 CSV_FIELDS = ["zona", "marca", "descripcion", "calibre", "fleje", "precio", "descuento"]

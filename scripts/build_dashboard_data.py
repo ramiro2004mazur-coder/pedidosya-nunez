@@ -15,9 +15,24 @@ from common import (  # noqa: E402
     DASHBOARD_DATA_PATH,
     FIGHTS_PATH,
     HISTORY_PATH,
+    VOLUME_REFERENCE_PATH,
     load_json,
     save_json,
 )
+
+
+def attach_volumes(pivot, volume_rows):
+    """Suma volumen_l (litros) a cada fila del pivot por id. Si un SKU no
+    tiene entrada en la tabla de referencia, vuelumen_l queda en None (el
+    dashboard lo muestra como N/D, nunca rompe)."""
+    by_id = {v["id"]: v["volumen_l"] for v in volume_rows}
+    sin_volumen = 0
+    for p in pivot:
+        vol = by_id.get(p["id"])
+        p["volumen_l"] = vol
+        if vol is None:
+            sin_volumen += 1
+    return sin_volumen
 
 
 def build_stats(pivot):
@@ -54,6 +69,9 @@ def main():
     pivot = history["pivot"]
     dates = sorted(history.get("dates") or {d for p in pivot for d in p["dates"]})
 
+    volume_rows = load_json(VOLUME_REFERENCE_PATH, [])
+    sin_volumen = attach_volumes(pivot, volume_rows)
+
     registros_validos = sum(len(p["dates"]) for p in pivot)
 
     dashboard = {
@@ -73,6 +91,8 @@ def main():
 
     save_json(DASHBOARD_DATA_PATH, dashboard)
     print(f"[OK] {DASHBOARD_DATA_PATH} generado: {len(pivot)} SKUs, {len(dates)} slots")
+    if sin_volumen:
+        print(f"[WARN] {sin_volumen} SKUs sin volumen en {VOLUME_REFERENCE_PATH.name} (se muestran como N/D)")
 
 
 if __name__ == "__main__":
