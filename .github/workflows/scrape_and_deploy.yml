@@ -3,20 +3,12 @@ name: Scrape PedidosYa Nunez y publicar dashboard
 on:
   # El cron automatico esta desactivado a proposito: PedidosYa devuelve 403
   # a las IPs de datacenter de GitHub Actions. Mientras tanto el scrapeo
-  # 2x/dia corre localmente (ver scripts/run_local_scrape.sh + LaunchAgent
-  # en la Mac). Cuando se resuelva (proxy o Oracle Cloud Free Tier) se
-  # reactiva descomentando el bloque `schedule:` de abajo.
+  # 1x/dia (10:15 ART) corre localmente (ver scripts/run_local_scrape.sh +
+  # LaunchAgent en la Mac). Cuando se resuelva (proxy o Oracle Cloud Free
+  # Tier) se reactiva descomentando el bloque `schedule:` de abajo.
   # schedule:
-  #   - cron: '15 13 * * *'   # 10:15 ART -> corte AM
-  #   - cron: '0 22 * * *'    # 19:00 ART -> corte PM
-  workflow_dispatch:
-    inputs:
-      slot:
-        description: 'Forzar slot (AM/PM). Vacio = autodetectar por hora.'
-        required: false
-        type: choice
-        options: ['', 'AM', 'PM']
-        default: ''
+  #   - cron: '15 13 * * *'   # 10:15 ART
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -40,35 +32,17 @@ jobs:
       - name: Instalar dependencias
         run: pip install -r scraper/requirements.txt
 
-      - name: Resolver slot segun el cron que disparo la corrida
-        id: resolve
-        run: |
-          if [ -n "${{ github.event.inputs.slot }}" ]; then
-            echo "slot=${{ github.event.inputs.slot }}" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event.schedule }}" = "15 13 * * *" ]; then
-            echo "slot=AM" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event.schedule }}" = "0 22 * * *" ]; then
-            echo "slot=PM" >> "$GITHUB_OUTPUT"
-          else
-            echo "slot=" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Scrapear (no rompe la corrida si falla 1 SKU puntual)
         id: scrape
         run: |
           cd scraper
-          ARGS=""
-          if [ -n "${{ steps.resolve.outputs.slot }}" ]; then
-            ARGS="--slot ${{ steps.resolve.outputs.slot }}"
-          fi
-          python3 scraper.py $ARGS --out-dir ../data/raw
+          python3 scraper.py --out-dir ../data/raw
 
       - name: Ingestar corrida al historico
         run: |
           python3 scripts/ingest_run.py \
             --csv "${{ steps.scrape.outputs.csv_path }}" \
-            --date "${{ steps.scrape.outputs.fecha }}" \
-            --slot "${{ steps.scrape.outputs.slot }}"
+            --date "${{ steps.scrape.outputs.fecha }}"
 
       - name: Regenerar data.json del dashboard
         run: python3 scripts/build_dashboard_data.py
@@ -81,7 +55,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Sin cambios de datos, no se commitea."
           else
-            git commit -m "data: corte ${{ steps.scrape.outputs.fecha }} ${{ steps.scrape.outputs.slot }}"
+            git commit -m "data: corte ${{ steps.scrape.outputs.fecha }}"
             git push
           fi
 
@@ -89,7 +63,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: logs-${{ steps.scrape.outputs.fecha }}-${{ steps.scrape.outputs.slot }}
+          name: logs-${{ steps.scrape.outputs.fecha }}
           path: data/logs/
           if-no-files-found: ignore
           retention-days: 30
