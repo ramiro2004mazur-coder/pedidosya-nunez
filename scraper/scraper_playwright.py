@@ -137,7 +137,10 @@ def main():
     stealth = Stealth()
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
+        # headless=True (Chromium embebido) siempre da 403 con el anti-bot de
+        # PedidosYa; canal Chrome real + ventana visible es lo unico que
+        # paso el chequeo en las pruebas manuales.
+        browser = p.chromium.launch(channel="chrome", headless=False)
         context = browser.new_context(
             locale="es-AR",
             timezone_id="America/Argentina/Buenos_Aires",

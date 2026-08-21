@@ -7,6 +7,12 @@ Nunca revienta por una fila individual mala: la loguea en
 data/logs/ingest_warnings.log y sigue con las demas (requisito de manejo
 de errores del pipeline).
 
+Validacion de outliers: si el PTC de un SKU se desvia mas de
+DESVIO_SOSPECHOSO (50%) respecto al ultimo dato previo de ese mismo SKU,
+se guarda igual (no se descarta - podria ser una promo real) pero con
+"sospechoso": true en esa fecha, y se loguea en ingest_warnings.log para
+revision manual.
+
 Uso:
     python3 scripts/ingest_run.py --csv data/raw/2026-08-20.csv --date 2026-08-20
 """
@@ -28,6 +34,15 @@ from common import (  # noqa: E402
     save_json,
     slugify,
 )
+
+
+DESVIO_SOSPECHOSO = 0.5  # 50%
+
+
+def es_sospechoso(prev_ptc, nuevo_ptc):
+    if not prev_ptc:
+        return False
+    return abs(nuevo_ptc - prev_ptc) / prev_ptc > DESVIO_SOSPECHOSO
 
 
 def main():
@@ -99,11 +114,20 @@ def main():
                 precio = float(precio_raw)
                 fleje = float(row.get("fleje") or precio)
                 dinamica = round(max(1 - precio / fleje, 0.0), 4) if fleje else 0.0
-                entry["dates"][date_key] = {
-                    "fleje": fleje,
-                    "ptc": precio,
-                    "dinamica": dinamica,
-                }
+
+                fechas_previas = sorted(d for d in entry["dates"] if d < date_key)
+                prev_ptc = entry["dates"][fechas_previas[-1]]["ptc"] if fechas_previas else None
+                sospechoso = es_sospechoso(prev_ptc, precio)
+
+                nuevo_valor = {"fleje": fleje, "ptc": precio, "dinamica": dinamica}
+                if sospechoso:
+                    nuevo_valor["sospechoso"] = True
+                    log_warning(
+                        f"{csv_path.name}: PRECIO SOSPECHOSO -> '{marca} | {descripcion}' "
+                        f"{prev_ptc} -> {precio} ({date_key}), se guarda igual marcado como sospechoso",
+                        log_file="ingest_warnings.log",
+                    )
+                entry["dates"][date_key] = nuevo_valor
                 ok += 1
             except Exception as e:  # noqa: BLE001 - una fila mala no debe tumbar la corrida
                 errores += 1
