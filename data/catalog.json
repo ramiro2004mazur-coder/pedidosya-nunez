@@ -926,5 +926,45 @@
     "calibre": "600",
     "grupo": "Sin clasificar",
     "segmento": "Sin clasificar"
+  },
+  {
+    "id": "miller-cerveza-blanca-miller-edicion-limitada-porron-330-ml",
+    "marca": "Miller",
+    "sku": "Cerveza Blanca Miller Edición Limitada Porrón 330 ml",
+    "calibre": "330/355",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "kunstmann-cerveza-artesanal-kunstmann-ipa-470-ml",
+    "marca": "Kunstmann",
+    "sku": "Cerveza Artesanal Kunstmann IPA 470 ml",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "blue-moon-cerveza-bluemoon-belgian-white-355-ml",
+    "marca": "Blue Moon",
+    "sku": "Cerveza Bluemoon Belgian White 355 ml",
+    "calibre": "330/355",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "temple-cerveza-temple-wolf-ipa-473-ml",
+    "marca": "Temple",
+    "sku": "Cerveza Temple Wolf Ipa 473 ml",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "kunstmann-cerveza-kunstmann-torobayo-470-cm3",
+    "marca": "Kunstmann",
+    "sku": "Cerveza Kunstmann Torobayo 470 cm3",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
   }
 ]

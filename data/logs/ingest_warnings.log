@@ -1,3 +1,9 @@
 2026-08-14_AM.csv: SKU nuevo sin catalogo -> 'Beepure | Cerveza Artesanal Beepure Blonde Ale 500 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-08-14_AM.csv: SKU nuevo sin catalogo -> 'Asahi | Cerveza Asahi Super Dry 330 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-08-16_AM.csv: SKU nuevo sin catalogo -> 'Beepure | Cerveza Artesanal Beepure Scottish 500 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-08-21.csv: PRECIO SOSPECHOSO -> 'Amstel | Cerveza Amstel Lager 473 ml' 1877.85 -> 2889.0 (2026-08-21), se guarda igual marcado como sospechoso
+2026-08-21.csv: SKU nuevo sin catalogo -> 'Miller | Cerveza Blanca Miller Edición Limitada Porrón 330 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-08-21.csv: SKU nuevo sin catalogo -> 'Kunstmann | Cerveza Artesanal Kunstmann IPA 470 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-08-21.csv: SKU nuevo sin catalogo -> 'Blue Moon | Cerveza Bluemoon Belgian White 355 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-08-21.csv: SKU nuevo sin catalogo -> 'Temple | Cerveza Temple Wolf Ipa 473 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-08-21.csv: SKU nuevo sin catalogo -> 'Kunstmann | Cerveza Kunstmann Torobayo 470 cm3' (agregado como 'Sin clasificar', revisar data/catalog.json)
