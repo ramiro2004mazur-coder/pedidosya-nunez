@@ -8,3 +8,5 @@
 2026-08-21.csv: SKU nuevo sin catalogo -> 'Temple | Cerveza Temple Wolf Ipa 473 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-08-21.csv: SKU nuevo sin catalogo -> 'Kunstmann | Cerveza Kunstmann Torobayo 470 cm3' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-08-23.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen Rubia 710 ml' 2477.5 -> 3964.0 (2026-08-23), se guarda igual marcado como sospechoso
+2026-08-24.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 473 ml' 2050.95 -> 3729.0 (2026-08-24), se guarda igual marcado como sospechoso
+2026-08-24.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 600 ml' 3365.45 -> 6119.0 (2026-08-24), se guarda igual marcado como sospechoso
