@@ -966,5 +966,37 @@
     "calibre": "473",
     "grupo": "Sin clasificar",
     "segmento": "Sin clasificar"
+  },
+  {
+    "id": "la-trappe-cerveza-artesanal-la-trappe-dubbel-330-ml",
+    "marca": "La Trappe",
+    "sku": "Cerveza Artesanal La Trappe Dubbel 330 ml",
+    "calibre": "330/355",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "la-trappe-cerveza-artesanal-la-trappe-blond-330-ml",
+    "marca": "La Trappe",
+    "sku": "Cerveza Artesanal La Trappe Blond 330 ml",
+    "calibre": "330/355",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "stones-cerveza-stones-maracuya-473-ml",
+    "marca": "Stones",
+    "sku": "Cerveza Stones Maracuyá 473 ml",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "stones-cerveza-stones-lemon-473-ml",
+    "marca": "Stones",
+    "sku": "Cerveza Stones Lemon 473 ml",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
   }
 ]

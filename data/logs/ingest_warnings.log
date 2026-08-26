@@ -10,3 +10,7 @@
 2026-08-23.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen Rubia 710 ml' 2477.5 -> 3964.0 (2026-08-23), se guarda igual marcado como sospechoso
 2026-08-24.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 473 ml' 2050.95 -> 3729.0 (2026-08-24), se guarda igual marcado como sospechoso
 2026-08-24.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 600 ml' 3365.45 -> 6119.0 (2026-08-24), se guarda igual marcado como sospechoso
+2026-08-26.csv: SKU nuevo sin catalogo -> 'La Trappe | Cerveza Artesanal La Trappe Dubbel 330 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-08-26.csv: SKU nuevo sin catalogo -> 'La Trappe | Cerveza Artesanal La Trappe Blond 330 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-08-26.csv: SKU nuevo sin catalogo -> 'Stones | Cerveza Stones Maracuyá 473 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-08-26.csv: SKU nuevo sin catalogo -> 'Stones | Cerveza Stones Lemon 473 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
