@@ -998,5 +998,37 @@
     "calibre": "473",
     "grupo": "Sin clasificar",
     "segmento": "Sin clasificar"
+  },
+  {
+    "id": "bavaria-cerveza-bavaria-holland-500ml",
+    "marca": "Bavaria",
+    "sku": "Cerveza Bavaria Holland 500ml",
+    "calibre": "600",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "8-6-cerveza-8-6-original-500ml",
+    "marca": "8.6",
+    "sku": "Cerveza 8.6 Original 500ml",
+    "calibre": "600",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "bavaria-cerveza-bavaria-ipa-8-6-lata-500ml",
+    "marca": "Bavaria",
+    "sku": "Cerveza Bavaria IPA 8.6 Lata 500ml",
+    "calibre": "600",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "fuerte-cerveza-fuerte-8-6-oscura-red-500ml",
+    "marca": "Fuerte",
+    "sku": "Cerveza Fuerte 8.6 Oscura Red 500ml",
+    "calibre": "600",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
   }
 ]
