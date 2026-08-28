@@ -76,12 +76,23 @@ scripts/migrate_am_pm.py       migracion unica de 2 lecturas/dia a 1 (ya corrida
       "segmento": "Core",
       "dates": {
         "2026-08-19": {"fleje": 1769.0, "ptc": 1503.65, "dinamica": 0.15},
-        "2026-08-20": {"fleje": 1769.0, "ptc": 1503.65, "dinamica": 0.15, "sospechoso": true}
+        "2026-08-20": {"fleje": 1769.0, "ptc": 1503.65, "dinamica": 0.15, "sospechoso": true},
+        "2026-08-28": {"fleje": 1769.0, "ptc": 1179.33, "dinamica": 0.3333, "promo_nominal": "3 x 2"}
       }
     }
   ]
 }
 ```
+
+`promo_nominal` (opcional, solo aparece si ese dia habia una promo tipo
+"llevá N pagá M" o "2da unidad al X%") guarda el texto de la promo tal
+cual aparece en el sitio ("2 x 1", "3 x 2", "1 ud. al 50% dto"). Se
+agregó el 2026-08-28 junto con la deteccion de estos formatos en
+`to_row()` — antes, esas promos no se detectaban porque PedidosYa no
+tacha el precio para ellas (a diferencia de un %OFF directo), asi que
+el scraper las leia como precio de fleje sin descuento. Ver el
+docstring de `to_row()` en `scraper/common.py` para el detalle de cada
+formato y sus formulas.
 
 **1 fecha = 1 lectura.** No es AM/PM (eso se usó hasta el 18/08/2026, se
 migró a una sola lectura diaria porque se confirmó que la dinámica no

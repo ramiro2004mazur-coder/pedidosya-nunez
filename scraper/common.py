@@ -25,7 +25,7 @@ BASE = "https://www.pedidosya.com.ar/groceries/web/v1"
 HOME = "https://www.pedidosya.com.ar/"
 
 DEFAULT_OUT_DIR = Path(__file__).resolve().parent.parent / "data" / "raw"
-CSV_FIELDS = ["zona", "marca", "descripcion", "calibre", "fleje", "precio", "descuento"]
+CSV_FIELDS = ["zona", "marca", "descripcion", "calibre", "fleje", "precio", "descuento", "promo_nominal"]
 
 
 def build_arg_parser():
@@ -42,10 +42,57 @@ def to_row(p):
     precio = pr.get("price")
     fleje = pr.get("beforePrice") or precio
     desc = 0
+    promo_nominal = ""
+
+    # PedidosYa no tacha el precio para promos "llevá N pagá M" ni para
+    # "2da unidad al X%" (a diferencia de un %OFF directo, que sí viene
+    # con beforePrice > price) - hay que leerlas de "campaigns", donde
+    # SI aparecen con su forma real (confirmado inspeccionando la API,
+    # no son NxM en la categoria cerveza el dia que se reviso esto, pero
+    # si en golosinas/limpieza - mismo endpoint, mismo shape):
+    #   "2 x 1"           -> type=multi-buy,      configuration={type:free_item,      pay:1, take:2}
+    #   "4 x 3"           -> type=multi-buy,      configuration={type:free_item,      pay:3, take:4}
+    #   "1 ud. al 50% dto"-> type=sameItemBundle, configuration={type:percentage,     pay:1, take:2, value:50}
+    #   "20%" (plano)     -> type=percentageDiscount, configuration={type:PERCENTAGE, value:20}
+    # Un tope de unidades (maxRedemption) o un tipo de campaign no visto
+    # antes cambian la cuenta y no se procesan a ciegas: se loguea y se
+    # sigue de largo (mejor faltante que mal, mismo criterio que el resto
+    # del pipeline).
     for c in (p.get("campaigns") or []):
         cfg = c.get("configuration") or {}
-        if cfg.get("type") == "PERCENTAGE" and cfg.get("value"):
-            desc = int(round(cfg["value"])); break
+        ctype = c.get("type")
+        cfg_type = cfg.get("type")
+        tag = c.get("tag") or ""
+
+        if ctype == "percentageDiscount" and cfg_type == "PERCENTAGE" and cfg.get("value"):
+            desc = int(round(cfg["value"]))
+            promo_nominal = tag or f"{desc}%"
+            break
+
+        if cfg.get("maxRedemption") is not None:
+            print(f"[WARN] promo con tope de unidades (maxRedemption), no se calcula "
+                  f"descuento efectivo -> '{nombre}': {c!r}")
+            continue
+
+        if ctype == "multi-buy" and cfg_type == "free_item" and cfg.get("take") and fleje:
+            take, pay = cfg["take"], cfg.get("pay") or 0
+            frac = 1 - pay / take
+            desc = int(round(frac * 100))
+            precio = round(fleje * (1 - frac), 2)
+            promo_nominal = tag or f"{take}x{pay}"
+            break
+
+        if (ctype == "sameItemBundle" and cfg_type == "percentage"
+                and cfg.get("take") and cfg.get("value") and fleje):
+            take, pay, value = cfg["take"], cfg.get("pay") or 1, cfg["value"]
+            frac = (pay / take) * (value / 100)
+            desc = int(round(frac * 100))
+            precio = round(fleje * (1 - frac), 2)
+            promo_nominal = tag or f"{pay} ud. al {value}% dto"
+            break
+
+        print(f"[WARN] tipo de promo no reconocido, se ignora -> '{nombre}': {c!r}")
+
     if desc == 0 and fleje and precio and fleje > precio:
         desc = int(round((1 - precio / fleje) * 100))
     size = p.get("size") or {}
@@ -60,7 +107,8 @@ def to_row(p):
     if not precio:
         raise ValueError(f"producto sin precio: {nombre!r} (id={p.get('id')})")
     return {"zona": ZONA, "marca": marca, "descripcion": nombre,
-            "calibre": calibre, "fleje": fleje, "precio": precio, "descuento": desc}
+            "calibre": calibre, "fleje": fleje, "precio": precio, "descuento": desc,
+            "promo_nominal": promo_nominal}
 
 
 def productos_a_filas(productos):

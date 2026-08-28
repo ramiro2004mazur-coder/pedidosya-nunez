@@ -114,12 +114,15 @@ def main():
                 precio = float(precio_raw)
                 fleje = float(row.get("fleje") or precio)
                 dinamica = round(max(1 - precio / fleje, 0.0), 4) if fleje else 0.0
+                promo_nominal = (row.get("promo_nominal") or "").strip()
 
                 fechas_previas = sorted(d for d in entry["dates"] if d < date_key)
                 prev_ptc = entry["dates"][fechas_previas[-1]]["ptc"] if fechas_previas else None
                 sospechoso = es_sospechoso(prev_ptc, precio)
 
                 nuevo_valor = {"fleje": fleje, "ptc": precio, "dinamica": dinamica}
+                if promo_nominal:
+                    nuevo_valor["promo_nominal"] = promo_nominal
                 if sospechoso:
                     nuevo_valor["sospechoso"] = True
                     log_warning(
