@@ -110,6 +110,15 @@ vía un LaunchAgent de macOS:
   el redeploy automático de GitHub Pages (sirve desde `docs/` en `main`).
 - **Requiere que la Mac esté prendida, despierta y con sesión iniciada** a
   esa hora. Si no, esa corrida se pierde (no hay reintento automático).
+- **Desde 2026-08-31, `run_local_scrape.sh` hace fallback automático al
+  motor playwright** (`scraper_playwright.py`, Chrome real) si el motor
+  `requests` (`scraper.py`) falla — antes solo intentaba `requests` y
+  abandonaba directo con `[ERROR]`, lo que forzó varias cargas manuales
+  seguidas (27, 29, 30, 31 de agosto) que se podrían haber evitado varios
+  de esos días. Si el bloqueo anti-bot afecta también a Chrome real (pasó
+  el 31/08, con un challenge de PerimeterX explícito incluso ahí), los dos
+  motores fallan y sigue haciendo falta carga manual — no hay forma de
+  evitar eso sin proxy pago (descartado, ver "Bloqueo anti-bot" arriba).
 
 El archivo `.github/workflows/scrape_and_deploy.yml` **existe pero su cron
 está comentado/desactivado** — solo queda disponible para disparo manual

@@ -20,10 +20,16 @@ cd "$REPO" || exit 1
   cd scraper || exit 1
   "$PY" scraper.py --out-dir ../data/raw
   SCRAPE_STATUS=$?
+
+  if [ $SCRAPE_STATUS -ne 0 ]; then
+    echo "[WARN] scraper.py (motor requests) fallo (status $SCRAPE_STATUS), probando motor alternativo (Chrome real via playwright)."
+    "$PY" scraper_playwright.py --out-dir ../data/raw
+    SCRAPE_STATUS=$?
+  fi
   cd "$REPO" || exit 1
 
   if [ $SCRAPE_STATUS -ne 0 ]; then
-    echo "[ERROR] scraper.py fallo (status $SCRAPE_STATUS), no ingesto ni commiteo."
+    echo "[ERROR] los dos motores fallaron (status $SCRAPE_STATUS), no ingesto ni commiteo."
     exit 1
   fi
 
