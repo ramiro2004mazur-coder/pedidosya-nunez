@@ -18,3 +18,6 @@
 2026-08-27.csv: SKU nuevo sin catalogo -> '8.6 | Cerveza 8.6 Original 500ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-08-27.csv: SKU nuevo sin catalogo -> 'Bavaria | Cerveza Bavaria IPA 8.6 Lata 500ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-08-27.csv: SKU nuevo sin catalogo -> 'Fuerte | Cerveza Fuerte 8.6 Oscura Red 500ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-08-30.csv: PRECIO SOSPECHOSO -> 'Heineken | Cerveza Rubia Heineken 473 ml' 2778.75 -> 4275.0 (2026-08-30), se guarda igual marcado como sospechoso
+2026-08-30.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen Rubia 710 ml' 2477.5 -> 3964.0 (2026-08-30), se guarda igual marcado como sospechoso
+2026-08-30.csv: PRECIO SOSPECHOSO -> 'Blue Moon | Cerveza Blanca Blue Moon 473 ml' 2758.25 -> 5015.0 (2026-08-30), se guarda igual marcado como sospechoso
