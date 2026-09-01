@@ -21,3 +21,14 @@
 2026-08-30.csv: PRECIO SOSPECHOSO -> 'Heineken | Cerveza Rubia Heineken 473 ml' 2778.75 -> 4275.0 (2026-08-30), se guarda igual marcado como sospechoso
 2026-08-30.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen Rubia 710 ml' 2477.5 -> 3964.0 (2026-08-30), se guarda igual marcado como sospechoso
 2026-08-30.csv: PRECIO SOSPECHOSO -> 'Blue Moon | Cerveza Blanca Blue Moon 473 ml' 2758.25 -> 5015.0 (2026-08-30), se guarda igual marcado como sospechoso
+2026-09-01.csv: SKU nuevo sin catalogo -> 'cerveza imperial | Cerveza Imperial Golden Cero Alcohol 473 cm3' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-09-01.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 473 ml' 2050.95 -> 3729.0 (2026-09-01), se guarda igual marcado como sospechoso
+2026-09-01.csv: SKU nuevo sin catalogo -> 'cerveza imperial | Cerveza Imperial Ipa 473 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-09-01.csv: SKU nuevo sin catalogo -> 'cerveza imperial | Cerveza Imperial Cream Stout 473 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-09-01.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 600 ml' 3365.45 -> 6119.0 (2026-09-01), se guarda igual marcado como sospechoso
+2026-09-01.csv: SKU nuevo sin catalogo -> 'cerveza imperial | Cerveza Imperial Lager 473 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-09-01.csv: SKU nuevo sin catalogo -> 'cerveza imperial | Cerveza Imperial Golden Lata 473 mL' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-09-01.csv: SKU nuevo sin catalogo -> 'cerveza imperial | Cerveza Imperial Apa 473 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-09-01.csv: PRECIO SOSPECHOSO -> 'Estrella Galicia | Cerveza Estrella Galicia Sin Gluten 330 ml' 2206.75 -> 3395.0 (2026-09-01), se guarda igual marcado como sospechoso
+2026-09-01.csv: PRECIO SOSPECHOSO -> 'Blue Moon | Cerveza Bluemoon Belgian White 355 ml' 3066.25 -> 5575.0 (2026-09-01), se guarda igual marcado como sospechoso
+2026-09-01.csv: PRECIO SOSPECHOSO -> 'Estrella De Galicia | Cerveza Estrella De Galicia 0.0 Lata 330 ml' 2206.75 -> 3395.0 (2026-09-01), se guarda igual marcado como sospechoso

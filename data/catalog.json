@@ -1030,5 +1030,53 @@
     "calibre": "600",
     "grupo": "Sin clasificar",
     "segmento": "Sin clasificar"
+  },
+  {
+    "id": "cerveza-imperial-cerveza-imperial-golden-cero-alcohol-473-cm3",
+    "marca": "cerveza imperial",
+    "sku": "Cerveza Imperial Golden Cero Alcohol 473 cm3",
+    "calibre": "S/C",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "cerveza-imperial-cerveza-imperial-ipa-473-ml",
+    "marca": "cerveza imperial",
+    "sku": "Cerveza Imperial Ipa 473 ml",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "cerveza-imperial-cerveza-imperial-cream-stout-473-ml",
+    "marca": "cerveza imperial",
+    "sku": "Cerveza Imperial Cream Stout 473 ml",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "cerveza-imperial-cerveza-imperial-lager-473-ml",
+    "marca": "cerveza imperial",
+    "sku": "Cerveza Imperial Lager 473 ml",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "cerveza-imperial-cerveza-imperial-golden-lata-473-ml",
+    "marca": "cerveza imperial",
+    "sku": "Cerveza Imperial Golden Lata 473 mL",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "cerveza-imperial-cerveza-imperial-apa-473-ml",
+    "marca": "cerveza imperial",
+    "sku": "Cerveza Imperial Apa 473 ml",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
   }
 ]
