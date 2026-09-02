@@ -1078,5 +1078,21 @@
     "calibre": "473",
     "grupo": "Sin clasificar",
     "segmento": "Sin clasificar"
+  },
+  {
+    "id": "cerveza-imperial-cerveza-imperial-lager-710-ml",
+    "marca": "cerveza imperial",
+    "sku": "Cerveza Imperial Lager 710 ml",
+    "calibre": "710/730",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "cerveza-imperial-cerveza-imperial-golden-300-ml",
+    "marca": "cerveza imperial",
+    "sku": "Cerveza Imperial Golden 300 ml",
+    "calibre": "330/355",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
   }
 ]
