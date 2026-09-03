@@ -34,3 +34,5 @@
 2026-09-01.csv: PRECIO SOSPECHOSO -> 'Estrella De Galicia | Cerveza Estrella De Galicia 0.0 Lata 330 ml' 2206.75 -> 3395.0 (2026-09-01), se guarda igual marcado como sospechoso
 2026-09-02.csv: SKU nuevo sin catalogo -> 'cerveza imperial | Cerveza Imperial Lager 710 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-09-02.csv: SKU nuevo sin catalogo -> 'cerveza imperial | Cerveza Imperial Golden 300 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-09-03.csv: SKU nuevo sin catalogo -> 'cerveza imperial | Cerveza Imperial Golden 710 mL' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-09-03.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller Genuine Draft 710 ml' 2769.5 -> 5539.0 (2026-09-03), se guarda igual marcado como sospechoso
