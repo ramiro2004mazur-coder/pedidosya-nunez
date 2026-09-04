@@ -36,3 +36,5 @@
 2026-09-02.csv: SKU nuevo sin catalogo -> 'cerveza imperial | Cerveza Imperial Golden 300 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-09-03.csv: SKU nuevo sin catalogo -> 'cerveza imperial | Cerveza Imperial Golden 710 mL' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-09-03.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller Genuine Draft 710 ml' 2769.5 -> 5539.0 (2026-09-03), se guarda igual marcado como sospechoso
+2026-09-04.csv: PRECIO SOSPECHOSO -> 'Heineken | Cerveza Heineken Porron 330 ml' 2891.85 -> 4449.0 (2026-09-04), se guarda igual marcado como sospechoso
+2026-09-04.csv: PRECIO SOSPECHOSO -> 'Beepure | Cerveza Artesanal Beepure Scottish 500 ml' 2998.4 -> 4685.0 (2026-09-04), se guarda igual marcado como sospechoso
