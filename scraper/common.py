@@ -58,6 +58,14 @@ def to_row(p):
     # antes cambian la cuenta y no se procesan a ciegas: se loguea y se
     # sigue de largo (mejor faltante que mal, mismo criterio que el resto
     # del pipeline).
+    #
+    # Un producto puede traer varias campaigns a la vez (ej: un 20% OFF
+    # plano Y un 3x2 simultaneos) - confirmado el 2026-09-07 con Quilmes
+    # Clásica, que el scraper leia como "20%" cuando en realidad el sitio
+    # aplicaba un 3x2 (33% efectivo). Por eso NO se corta en la primera
+    # campaign reconocida: se evaluan todas y se toma la de mayor
+    # descuento efectivo, que es la que el sitio termina aplicando.
+    candidatos = []  # (desc, precio, promo_nominal)
     for c in (p.get("campaigns") or []):
         cfg = c.get("configuration") or {}
         ctype = c.get("type")
@@ -65,9 +73,9 @@ def to_row(p):
         tag = c.get("tag") or ""
 
         if ctype == "percentageDiscount" and cfg_type == "PERCENTAGE" and cfg.get("value"):
-            desc = int(round(cfg["value"]))
-            promo_nominal = tag or f"{desc}%"
-            break
+            d = int(round(cfg["value"]))
+            candidatos.append((d, precio, tag or f"{d}%"))
+            continue
 
         if cfg.get("maxRedemption") is not None:
             print(f"[WARN] promo con tope de unidades (maxRedemption), no se calcula "
@@ -77,21 +85,22 @@ def to_row(p):
         if ctype == "multi-buy" and cfg_type == "free_item" and cfg.get("take") and fleje:
             take, pay = cfg["take"], cfg.get("pay") or 0
             frac = 1 - pay / take
-            desc = int(round(frac * 100))
-            precio = round(fleje * (1 - frac), 2)
-            promo_nominal = tag or f"{take}x{pay}"
-            break
+            d = int(round(frac * 100))
+            candidatos.append((d, round(fleje * (1 - frac), 2), tag or f"{take}x{pay}"))
+            continue
 
         if (ctype == "sameItemBundle" and cfg_type == "percentage"
                 and cfg.get("take") and cfg.get("value") and fleje):
             take, pay, value = cfg["take"], cfg.get("pay") or 1, cfg["value"]
             frac = (pay / take) * (value / 100)
-            desc = int(round(frac * 100))
-            precio = round(fleje * (1 - frac), 2)
-            promo_nominal = tag or f"{pay} ud. al {value}% dto"
-            break
+            d = int(round(frac * 100))
+            candidatos.append((d, round(fleje * (1 - frac), 2), tag or f"{pay} ud. al {value}% dto"))
+            continue
 
         print(f"[WARN] tipo de promo no reconocido, se ignora -> '{nombre}': {c!r}")
+
+    if candidatos:
+        desc, precio, promo_nominal = max(candidatos, key=lambda x: x[0])
 
     if desc == 0 and fleje and precio and fleje > precio:
         desc = int(round((1 - precio / fleje) * 100))
