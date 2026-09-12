@@ -42,3 +42,5 @@
 2026-09-07.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 600 ml' 3365.45 -> 6119.0 (2026-09-07), se guarda igual marcado como sospechoso
 2026-09-09.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller Genuine Draft 710 ml' 3434.18 -> 5539.0 (2026-09-09), se guarda igual marcado como sospechoso
 2026-09-09.csv: SKU nuevo sin catalogo -> '8.6 | Cerveza 8.6 Original 500 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-09-12.csv: PRECIO SOSPECHOSO -> 'Stones | Cerveza Stones Lemon 473 ml' 2880.0 -> 1.0 (2026-09-12), se guarda igual marcado como sospechoso
+2026-09-12.csv: PRECIO SOSPECHOSO -> 'Stones | Cerveza Stones Maracuyá 473 ml' 2880.0 -> 1.0 (2026-09-12), se guarda igual marcado como sospechoso
