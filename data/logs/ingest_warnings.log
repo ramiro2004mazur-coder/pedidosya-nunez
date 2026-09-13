@@ -44,3 +44,6 @@
 2026-09-09.csv: SKU nuevo sin catalogo -> '8.6 | Cerveza 8.6 Original 500 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-09-12.csv: PRECIO SOSPECHOSO -> 'Stones | Cerveza Stones Lemon 473 ml' 2880.0 -> 1.0 (2026-09-12), se guarda igual marcado como sospechoso
 2026-09-12.csv: PRECIO SOSPECHOSO -> 'Stones | Cerveza Stones Maracuyá 473 ml' 2880.0 -> 1.0 (2026-09-12), se guarda igual marcado como sospechoso
+2026-09-13.csv: PRECIO SOSPECHOSO -> 'cerveza imperial | Cerveza Imperial Ipa 473 ml' 2097.0 -> 3495.0 (2026-09-13), se guarda igual marcado como sospechoso
+2026-09-13.csv: PRECIO SOSPECHOSO -> 'Beepure | Cerveza Artesanal Beepure Scottish 500 ml' 2998.4 -> 4685.0 (2026-09-13), se guarda igual marcado como sospechoso
+2026-09-13.csv: PRECIO SOSPECHOSO -> 'cerveza imperial | Cerveza Imperial Golden 300 ml' 2237.4 -> 3729.0 (2026-09-13), se guarda igual marcado como sospechoso
