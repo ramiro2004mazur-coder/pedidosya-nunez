@@ -245,8 +245,8 @@ const fmtPct1=v=>(v==null||isNaN(v))?'-':(Number(v)*100).toFixed(1).replace('.',
 const avg=a=>a.length?a.reduce((s,x)=>s+x,0)/a.length:null;
 const dayMs=d=>Date.parse(d+'T00:00:00Z');
 const IN_PAGE=25;
-const IN={from:null,to:null,dFrom:null,dTo:null,calOpen:false,calMonth:null,fabs:new Set(),skus:new Set(),skuOpen:false,group:'fab',mode:'all',hidden:new Set(),tq:'',sortKey:'fecha',sortDir:'desc',page:1};
-let IN_AV=null,IN_OBS=[],IN_V={},IN_MISS=new Set(),IN_SERIES=[],IN_PTS=[],IN_RAF=0;
+const IN={cmp:'off',cFrom:null,cTo:null,from:null,to:null,dFrom:null,dTo:null,calOpen:false,calMonth:null,fabs:new Set(),skus:new Set(),skuOpen:false,group:'fab',mode:'all',hidden:new Set(),tq:'',sortKey:'fecha',sortDir:'desc',page:1};
+let IN_AV=null,IN_OBS=[],IN_V={},IN_MISS=new Set(),IN_SERIES=[],IN_PTS={},IN_CMPS=[],IN_RAF=0;
 
 function inAvail(){
   if(IN_AV)return IN_AV;
@@ -261,8 +261,8 @@ function inRange(){const av=inAvail();return{lo:IN.from||av.list[0],hi:IN.to||av
 
 /* Observaciones reales (fecha x SKU) que cumplen todos los filtros. Nada se completa ni se inventa. */
 function inBase(){return rows().filter(r=>IN.fabs.size===0||IN.fabs.has(fabOf(r)));}
-function inObs(){
-  const av=inAvail(),{lo,hi}=inRange(),seen=new Set(),out=[];
+function inObs(lo0,hi0,sec){
+  const av=inAvail(),rg=inRange(),lo=lo0||rg.lo,hi=hi0||rg.hi,seen=new Set(),out=[];
   const v={sinDin:0,fuera:0,dup:0,sosp:0,sinTach:0,badDates:av.bad};
   inBase().forEach(r=>{
     if(IN.skus.size&&!IN.skus.has(r.id))return;
@@ -280,19 +280,17 @@ function inObs(){
       out.push({d,id:r.id,sku:r.sku,marca:r.marca,seg:r.segmento,fab:fabOf(r),ptc,tach,din,sosp:!!x.sospechoso});
     });
   });
-  IN_V=v;return out;
+  if(!sec)IN_V=v;return out;
 }
-function inMetricsHtml(o){
+function inMV(o){
   const withD=o.filter(x=>x.din!=null),pos=withD.filter(x=>x.din>0);
   const days=new Set(o.map(x=>x.d)),dd=new Set(pos.map(x=>x.d));
   const ptcs=o.filter(x=>x.ptc!=null).map(x=>x.ptc),tach=o.filter(x=>x.tach!=null).map(x=>x.tach);
-  return card('Dias con datos',days.size)+card('Dias con dinamica',dd.size)+card('% dias con dinamica',days.size?fmtPct1(dd.size/days.size):'-')
-    +card('Din. prom. (solo obs. con dinamica)',pos.length?fmtPct1(avg(pos.map(x=>x.din))):'-')
-    +card('Din. prom. (todas las obs., 0 sin dto.)',withD.length?fmtPct1(avg(withD.map(x=>x.din))):'-')
-    +card('Dinamica maxima',withD.length?fmtPct1(Math.max(...withD.map(x=>x.din))):'-')
-    +card('PTC / precio final prom.',ptcs.length?fmtMoney(avg(ptcs)):'-')+card('PTC maximo',ptcs.length?fmtMoney(Math.max(...ptcs)):'-')
-    +card('Precio tachado prom.',tach.length?fmtMoney(avg(tach)):'-')+card('Observaciones',o.length);
+  return{dias:days.size,diasDin:dd.size,pctDias:days.size?dd.size/days.size:null,dinPos:pos.length?avg(pos.map(x=>x.din)):null,dinAll:withD.length?avg(withD.map(x=>x.din)):null,dinMax:withD.length?Math.max(...withD.map(x=>x.din)):null,ptcAvg:ptcs.length?avg(ptcs):null,ptcMax:ptcs.length?Math.max(...ptcs):null,tachAvg:tach.length?avg(tach):null,n:o.length};
 }
+const IN_MDEF=[['Dias con datos','dias','n'],['Dias con dinamica','diasDin','n'],['% dias con dinamica','pctDias','p'],['Din. prom. (solo obs. con dinamica)','dinPos','p'],['Din. prom. (todas las obs., 0 sin dto.)','dinAll','p'],['Dinamica maxima','dinMax','p'],['PTC / precio final prom.','ptcAvg','$'],['PTC maximo','ptcMax','$'],['Precio tachado prom.','tachAvg','$'],['Observaciones','n','n']];
+const inFmtM=(v,t)=>v==null?'-':t==='p'?fmtPct1(v):t==='$'?fmtMoney(v):v;
+function inMetricsHtml(o){const m=inMV(o);return IN_MDEF.map(d=>card(d[0],inFmtM(m[d[1]],d[2]))).join('');}
 
 /* ---- Estructura (se arma una vez por render; los controles se redibujan por partes sin perder foco) ---- */
 function insights(){
@@ -302,6 +300,7 @@ function insights(){
    +'<div class="inrow">'
    +'<div class="inblock" id="inCalWrap" style="position:relative"><div class="inlab">Periodo</div><div id="inPeriod"></div><div id="inCal"></div></div>'
    +'<div class="inblock"><div class="inlab">Fabricante</div><div id="inFabs" class="chips" style="margin:0"></div></div>'
+   +'<div class="inblock" id="inCalWrapC" style="position:relative"><div class="inlab">Comparar con</div><select id="inCmp" class="selminimal" onchange="inSetCmp(this.value)"><option value="off">Sin comparacion</option><option value="month">Mes anterior (mismas fechas)</option><option value="week">Semana anterior (&minus;7 dias)</option><option value="prev">Periodo anterior de igual duracion</option><option value="custom">Personalizado...</option></select><div id="inPeriodC"></div><div id="inCalC"></div></div>'
    +'<div class="inblock"><div class="inlab">Grafico sin SKU: agrupar por</div><select id="inGroup" class="selminimal" onchange="inSetGroup(this.value)"><option value="fab">Fabricante</option><option value="marca">Marca</option><option value="seg">Segmento</option></select></div>'
    +'<div class="inblock"><div class="inlab">Dinamica promedio del grafico</div><select id="inMode" class="selminimal" onchange="inSetMode(this.value)"><option value="all">Todas las obs. (0 sin dto.)</option><option value="pos">Solo obs. con dinamica</option></select></div>'
    +'<div class="inblock" style="margin-left:auto"><div class="inlab">&nbsp;</div><button type="button" class="iconbtn" onclick="inClearAll()">Limpiar filtros</button></div>'
@@ -310,7 +309,7 @@ function insights(){
    +'<input id="inSk" class="skinput" autocomplete="off" placeholder="Buscar SKU por nombre y seleccionar uno o varios..." onfocus="inSkuOpen()" oninput="inSkuOpen()"/><div id="inSkList"></div></div>'
    +'<div class="innotes" id="inNotes"></div></div>'
    +'<div id="inEmpty" class="panel note" style="display:none"></div>'
-   +'<div id="inData"><div class="metrics" id="inMetrics"></div>'
+   +'<div id="inData"><div class="metrics" id="inMetrics"></div><div id="inCmpPanel"></div>'
    +'<div class="panel"><div class="chartHead"><div><h3>Evolucion temporal de la dinamica</h3><div class="sub" id="inChartSub"></div></div></div><div class="chartBox" id="inChart"></div><div class="chartLegend inleg" id="inLegend"></div></div>'
    +'<div class="panel"><div class="inhead"><h3 style="margin:0">Detalle de observaciones</h3><div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><input id="inTq" class="skinput" style="width:240px" placeholder="Buscar en la tabla..." oninput="inTq(this.value)" value="'+esc(IN.tq)+'"/><button type="button" class="iconbtn" onclick="inExport()">&#8595; Exportar CSV</button></div></div>'
    +'<div class="tablebox intable" id="inTable"></div><div class="inhead" style="margin:10px 0 0" id="inPager"></div></div></div>'
@@ -319,14 +318,14 @@ function insights(){
 function inUpdate(){
   const y=window.scrollY;
   if(!el('inFabs'))return;
-  el('inGroup').value=IN.group;el('inMode').value=IN.mode;
+  el('inGroup').value=IN.group;el('inCmp').value=IN.cmp;el('inMode').value=IN.mode;
   IN_OBS=inObs();
   const sel=new Set(IN_OBS.map(o=>o.id));IN_MISS=new Set([...IN.skus].filter(id=>!sel.has(id)));
-  inDrawPeriod();inDrawFabs();inDrawSku();inDrawNotes();
+  inDrawPeriod();inDrawPeriodC();inDrawFabs();inDrawSku();inDrawNotes();
   const empty=!IN_OBS.length;
   el('inEmpty').style.display=empty?'':'none';el('inData').style.display=empty?'none':'';
   if(empty){el('inEmpty').textContent='No hay datos disponibles para los filtros y el periodo seleccionados';current=[];}
-  else{el('inMetrics').innerHTML=inMetricsHtml(IN_OBS);inBuildSeries();inDrawChart();inDrawTable();}
+  else{el('inMetrics').innerHTML=inMetricsHtml(IN_OBS);inBuildSeries();inDrawChart();inDrawCmp();inDrawTable();}
   window.scrollTo(0,y);
 }
 function inDrawPeriod(){
@@ -334,27 +333,56 @@ function inDrawPeriod(){
   if(!av.list.length){box.innerHTML='<span class="note">Sin fechas disponibles</span>';el('inCal').innerHTML='';return;}
   const{lo,hi}=inRange(),days=av.list.filter(d=>d>=lo&&d<=hi).length,cal=Math.round((dayMs(hi)-dayMs(lo))/864e5)+1;
   const label=IN.from?(lo===hi?fmtDMY(lo):fmtDMY(lo)+' &ndash; '+fmtDMY(hi)):'Todo el historico';
-  box.innerHTML='<button type="button" class="iconbtn inperiodbtn" onclick="inToggleCal()">&#128197; '+label+' &#9662;</button><div class="note" style="margin-top:4px">'+(IN.from?'':fmtDMY(lo)+' &ndash; '+fmtDMY(hi)+' &middot; ')+days+' dias con datos'+(cal>days?' de '+cal+' dias calendario (los dias sin datos no se completan)':'')+'</div>';
+  box.innerHTML='<button type="button" class="iconbtn inperiodbtn" onclick="inToggleCal()">&#128197; '+label+' &#9662;</button><div class="note" style="margin-top:4px">'+(IN.from?'':fmtDMY(lo)+' &ndash; '+fmtDMY(hi)+' &middot; ')+days+' dias con datos'+(cal>days?' de '+cal+' dias calendario (los dias sin datos no se completan)':'')+'</div><div style="display:flex;gap:6px;margin-top:6px;flex-wrap:wrap"><button type="button" class="pgbtn" title="Del dia 1 del mes hasta el fin del periodo elegido" onclick="inPreset(\'mtd\')">Mes acumulado</button><button type="button" class="pgbtn" title="7 dias hasta el fin del periodo elegido" onclick="inPreset(\'w7\')">7 dias</button></div>';
   inDrawCal();
 }
-function inToggleCal(){IN.calOpen=!IN.calOpen;if(IN.calOpen){const av=inAvail();IN.dFrom=IN.from;IN.dTo=IN.to;IN.calMonth=(IN.to||IN.from||av.list[av.list.length-1]).slice(0,7);}inDrawCal();}
+function addDays(d,n){return new Date(dayMs(d)+n*864e5).toISOString().slice(0,10);}
+function shiftMonth(d,k){const[y,m,dd]=d.split('-').map(Number),t=new Date(Date.UTC(y,m-1+k,1)),ny=t.getUTCFullYear(),nm=t.getUTCMonth()+1,nd=Math.min(dd,new Date(Date.UTC(ny,nm,0)).getUTCDate());return ny+'-'+String(nm).padStart(2,'0')+'-'+String(nd).padStart(2,'0');}
+function cmpRange(){
+  if(IN.cmp==='off')return null;const{lo,hi}=inRange();
+  if(IN.cmp==='custom')return IN.cFrom?{lo:IN.cFrom,hi:IN.cTo||IN.cFrom}:null;
+  if(IN.cmp==='month')return{lo:shiftMonth(lo,-1),hi:shiftMonth(hi,-1)};
+  if(IN.cmp==='week')return{lo:addDays(lo,-7),hi:addDays(hi,-7)};
+  const len=Math.round((dayMs(hi)-dayMs(lo))/864e5)+1;return{lo:addDays(lo,-len),hi:addDays(hi,-len)};
+}
+const rgLabel=(a,b)=>a===b?fmtDMY(a):fmtDMY(a)+' &ndash; '+fmtDMY(b);
+function inDrawPeriodC(){
+  const box=el('inPeriodC'),R=cmpRange(),av=inAvail();
+  if(IN.cmp==='off'){box.innerHTML='';el('inCalC').innerHTML='';return;}
+  const btn=IN.cmp==='custom'?'<button type="button" class="iconbtn inperiodbtn" style="margin-top:6px" onclick="inToggleCal(\'C\')">&#128197; '+(R?rgLabel(R.lo,R.hi):'Elegir periodo')+' &#9662;</button>':'';
+  box.innerHTML=btn+(R&&IN.cmp!=='custom'?'<div class="note" style="margin-top:4px">'+rgLabel(R.lo,R.hi)+'</div>':'')+(R?'<div class="note">'+av.list.filter(d=>d>=R.lo&&d<=R.hi).length+' dias con datos</div>':'');
+  inDrawCal();
+}
+function inSetCmp(v){IN.cmp=v;IN.page=1;if(v==='custom'&&!IN.cFrom)IN.calOpen='C',IN.dFrom=IN.dTo=null,IN.calMonth=inAvail().list.slice(-1)[0].slice(0,7);else if(IN.calOpen==='C')IN.calOpen=false;inUpdate();}
+function inPreset(k){
+  const hi=inRange().hi;IN.to=hi;IN.from=k==='mtd'?hi.slice(0,8)+'01':addDays(hi,-6);
+  if(IN.cmp==='off')IN.cmp='month';IN.calOpen=false;IN.page=1;inUpdate();
+}
+function inToggleCal(t){
+  IN.calOpen=IN.calOpen===t?false:t;
+  if(IN.calOpen){const av=inAvail(),c=t==='C';IN.dFrom=c?IN.cFrom:IN.from;IN.dTo=c?IN.cTo:IN.to;IN.calMonth=(IN.dTo||IN.dFrom||av.list[av.list.length-1]).slice(0,7);}
+  inDrawCal();
+}
 function inDrawCal(){
-  const box=el('inCal');if(!IN.calOpen){box.innerHTML='';return;}
-  const av=inAvail(),first=av.list[0].slice(0,7),last=av.list[av.list.length-1].slice(0,7);
-  const[y,m]=IN.calMonth.split('-').map(Number),start=(new Date(Date.UTC(y,m-1,1)).getUTCDay()+6)%7,n=new Date(Date.UTC(y,m,0)).getUTCDate();
-  const a=IN.dFrom,b=IN.dTo||IN.dFrom;
-  const meses=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
-  let g=['Lu','Ma','Mi','Ju','Vi','Sa','Do'].map(w=>'<div class="wd">'+w+'</div>').join('')+'<div></div>'.repeat(start);
-  for(let i=1;i<=n;i++){
-    const d=IN.calMonth+'-'+String(i).padStart(2,'0'),ok=av.set.has(d);
-    const cls='cday'+(ok?' av':'')+(a&&d>=a&&d<=b?' inr':'')+(a&&(d===a||d===b)?' ine':'');
-    g+='<button type="button" class="'+cls+'"'+(ok?' onclick="inPickDay(\''+d+'\')"':' disabled title="Sin datos"')+'>'+i+'</button>';
-  }
-  const days=a?av.list.filter(d=>d>=a&&d<=b).length:0;
-  box.innerHTML='<div class="calpop"><div class="calhead"><button type="button" onclick="inCalNav(-1)"'+(IN.calMonth<=first?' disabled':'')+'>&lsaquo;</button><span>'+meses[m-1]+' '+y+'</span><button type="button" onclick="inCalNav(1)"'+(IN.calMonth>=last?' disabled':'')+'>&rsaquo;</button></div>'
-   +'<div class="calgrid">'+g+'</div>'
-   +'<div class="note" style="margin-top:8px">'+(a?(a===b?fmtDMY(a):fmtDMY(a)+' &ndash; '+fmtDMY(b))+' &middot; '+days+' dias con datos':'Hace clic en un dia y luego en otro para elegir un rango (o dos veces el mismo dia para uno solo). Solo se habilitan dias con datos.')+'</div>'
-   +'<div class="calfoot"><button type="button" class="btnp" onclick="inApplyCal()">Aplicar</button><button type="button" class="btns" onclick="inAllHistory()">Ver todo el historico</button></div></div>';
+  ['A','C'].forEach(t=>{
+    const box=el(t==='A'?'inCal':'inCalC');if(!box)return;
+    if(IN.calOpen!==t){box.innerHTML='';return;}
+    const av=inAvail(),first=av.list[0].slice(0,7),last=av.list[av.list.length-1].slice(0,7);
+    const[y,m]=IN.calMonth.split('-').map(Number),start=(new Date(Date.UTC(y,m-1,1)).getUTCDay()+6)%7,n=new Date(Date.UTC(y,m,0)).getUTCDate();
+    const a=IN.dFrom,b=IN.dTo||IN.dFrom;
+    const meses=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+    let g=['Lu','Ma','Mi','Ju','Vi','Sa','Do'].map(w=>'<div class="wd">'+w+'</div>').join('')+'<div></div>'.repeat(start);
+    for(let i=1;i<=n;i++){
+      const d=IN.calMonth+'-'+String(i).padStart(2,'0'),ok=av.set.has(d);
+      const cls='cday'+(ok?' av':'')+(a&&d>=a&&d<=b?' inr':'')+(a&&(d===a||d===b)?' ine':'');
+      g+='<button type="button" class="'+cls+'"'+(ok?' onclick="inPickDay(\''+d+'\')"':' disabled title="Sin datos"')+'>'+i+'</button>';
+    }
+    const days=a?av.list.filter(d=>d>=a&&d<=b).length:0;
+    box.innerHTML='<div class="calpop"><div class="calhead"><button type="button" onclick="inCalNav(-1)"'+(IN.calMonth<=first?' disabled':'')+'>&lsaquo;</button><span>'+meses[m-1]+' '+y+'</span><button type="button" onclick="inCalNav(1)"'+(IN.calMonth>=last?' disabled':'')+'>&rsaquo;</button></div>'
+     +'<div class="calgrid">'+g+'</div>'
+     +'<div class="note" style="margin-top:8px">'+(a?rgLabel(a,b)+' &middot; '+days+' dias con datos':'Hace clic en un dia y luego en otro para elegir un rango (o dos veces el mismo dia para uno solo). Solo se habilitan dias con datos.')+'</div>'
+     +'<div class="calfoot"><button type="button" class="btnp" onclick="inApplyCal()">Aplicar</button>'+(t==='A'?'<button type="button" class="btns" onclick="inAllHistory()">Ver todo el historico</button>':'<button type="button" class="btns" onclick="inToggleCal(\'C\')">Cerrar</button>')+'</div></div>';
+  });
 }
 function inCalNav(k){let[y,m]=IN.calMonth.split('-').map(Number);m+=k;if(m<1){m=12;y--;}if(m>12){m=1;y++;}IN.calMonth=y+'-'+String(m).padStart(2,'0');inDrawCal();}
 function inPickDay(d){
@@ -362,7 +390,11 @@ function inPickDay(d){
   else if(d<IN.dFrom){IN.dTo=IN.dFrom;IN.dFrom=d;}else IN.dTo=d;
   inDrawCal();
 }
-function inApplyCal(){if(IN.dFrom){IN.from=IN.dFrom;IN.to=IN.dTo||IN.dFrom;}else{IN.from=null;IN.to=null;}IN.calOpen=false;IN.page=1;inUpdate();}
+function inApplyCal(){
+  if(IN.calOpen==='C'){if(IN.dFrom){IN.cFrom=IN.dFrom;IN.cTo=IN.dTo||IN.dFrom;IN.cmp='custom';}}
+  else if(IN.dFrom){IN.from=IN.dFrom;IN.to=IN.dTo||IN.dFrom;}else{IN.from=null;IN.to=null;}
+  IN.calOpen=false;IN.page=1;inUpdate();
+}
 function inAllHistory(){IN.from=IN.to=null;IN.dFrom=IN.dTo=null;IN.calOpen=false;IN.page=1;inUpdate();}
 function inDrawFabs(){
   el('inFabs').innerHTML='<span class="chip'+(IN.fabs.size?'':' active')+'" onclick="inFabAll()">Todos</span>'+FAB_ORDER.map(f=>'<span class="chip'+(IN.fabs.has(f)?' active':'')+'" onclick="inFab(\''+f+'\')">'+f+'</span>').join('');
@@ -386,7 +418,7 @@ function inDrawSkuList(){
 function inToggleSku(id){IN.skus.has(id)?IN.skus.delete(id):IN.skus.add(id);IN.page=1;inUpdate();}
 function inSkuAll(){IN.skus.clear();IN.page=1;inUpdate();}
 function inClearAll(){
-  IN.from=IN.to=IN.dFrom=IN.dTo=null;IN.fabs.clear();IN.skus.clear();IN.hidden.clear();IN.tq='';IN.page=1;IN.group='fab';IN.mode='all';
+  IN.from=IN.to=IN.dFrom=IN.dTo=IN.cFrom=IN.cTo=null;IN.cmp='off';IN.fabs.clear();IN.skus.clear();IN.hidden.clear();IN.tq='';IN.page=1;IN.group='fab';IN.mode='all';
   ['q','brand','size','seg'].forEach(i=>el(i).value='');['onlyBoth','onlyOffer','groupBrand'].forEach(i=>el(i).checked=false);
   document.querySelectorAll('#brandChips .chip').forEach(c=>c.classList.remove('active'));
   render();
@@ -405,58 +437,90 @@ function inDrawNotes(){
 
 /* ---- Grafico de evolucion (SVG propio, responsive, alto fijo) ---- */
 const inColor=i=>i<PALETTE.length?PALETTE[i]:'hsl('+Math.round((i*137.5)%360)+',62%,58%)';
-function inBuildSeries(){
-  const useSku=IN.skus.size>0,m=new Map();
-  IN_OBS.forEach(o=>{
+function inAccum(obs,keyFn,labFn,tFn){
+  const m=new Map();
+  obs.forEach(o=>{
     if(o.din==null||(IN.mode==='pos'&&!(o.din>0)))return;
-    const k=useSku?o.id:IN.group==='marca'?o.marca:IN.group==='seg'?o.seg:o.fab;
-    let s=m.get(k);if(!s){s={key:k,label:useSku?o.sku:k,by:new Map()};m.set(k,s);}
+    const k=keyFn(o);let s=m.get(k);if(!s){s={key:k,label:labFn(o),by:new Map()};m.set(k,s);}
     let a=s.by.get(o.d);if(!a){a={d:o.d,sd:0,sp:0,np:0,n:0};s.by.set(o.d,a);}
     a.sd+=o.din;a.n++;if(o.ptc!=null){a.sp+=o.ptc;a.np++;}
   });
-  IN_SERIES=[...m.values()].sort((a,b)=>a.label.localeCompare(b.label)).map((s,i)=>({key:s.key,label:s.label,color:inColor(i),pts:[...s.by.values()].sort((a,b)=>a.d<b.d?-1:1).map(a=>({d:a.d,din:a.sd/a.n,ptc:a.np?a.sp/a.np:null,n:a.n}))}));
+  return[...m.values()].map(s=>({key:s.key,label:s.label,pts:[...s.by.values()].sort((a,b)=>a.d<b.d?-1:1).map(a=>{const t=tFn(a.d);return{d:a.d,t:t.t,lbl:t.lbl,din:a.sd/a.n,ptc:a.np?a.sp/a.np:null,n:a.n};})}));
+}
+function inBuildSeries(){
+  const useSku=IN.skus.size>0,tf=d=>({t:dayMs(d),lbl:fmtDate(d)});
+  IN_SERIES=inAccum(IN_OBS,o=>useSku?o.id:IN.group==='marca'?o.marca:IN.group==='seg'?o.seg:o.fab,o=>useSku?o.sku:(IN.group==='marca'?o.marca:IN.group==='seg'?o.seg:o.fab),tf)
+    .sort((a,b)=>a.label.localeCompare(b.label)).map((s,i)=>({...s,color:inColor(i)}));
 }
 function inToggleSeries(i){const k=IN_SERIES[i].key;IN.hidden.has(k)?IN.hidden.delete(k):IN.hidden.add(k);inDrawChart();}
 function inDrawChart(){
-  const box=el('inChart'),leg=el('inLegend');if(!box)return;
+  const box=el('inChart');if(!box)return;
   const S=IN_SERIES,by=IN.skus.size?'SKU':IN.group==='marca'?'marca':IN.group==='seg'?'segmento':'fabricante';
   el('inChartSub').textContent='Una linea por '+by+' · '+(IN.mode==='pos'?'solo observaciones con dinamica':'todas las observaciones, 0 = sin descuento')+' · los dias sin datos no se unen';
-  leg.innerHTML=S.map((s,i)=>'<button type="button" class="legbtn'+(IN.hidden.has(s.key)?' off':'')+'" onclick="inToggleSeries('+i+')" title="Clic para mostrar u ocultar"><span class="legdot" style="background:'+s.color+'"></span>'+esc(s.label)+'</button>').join('');
-  const vis=S.filter(s=>!IN.hidden.has(s.key));IN_PTS=[];
-  if(!vis.length){box.innerHTML='<div class="note" style="padding:60px 0;text-align:center">'+(S.length?'Todas las series estan ocultas. Activalas desde la leyenda.':'No hay observaciones con dinamica valida para graficar.')+'</div>';return;}
+  el('inLegend').innerHTML=S.map((s,i)=>'<button type="button" class="legbtn'+(IN.hidden.has(s.key)?' off':'')+'" onclick="inToggleSeries('+i+')" title="Clic para mostrar u ocultar"><span class="legdot" style="background:'+s.color+'"></span>'+esc(s.label)+'</button>').join('');
+  inLines('inChart',S.filter(s=>!IN.hidden.has(s.key)),S.length);
+}
+function inLines(id,vis,total){
+  const box=el(id);if(!box)return;IN_PTS[id]=[];
+  if(!vis.length){box.innerHTML='<div class="note" style="padding:60px 0;text-align:center">'+(total?'Todas las series estan ocultas. Activalas desde la leyenda.':'No hay observaciones con dinamica valida para graficar.')+'</div>';return;}
   const W=box.clientWidth||800,H=box.clientHeight||330,pL=46,pR=16,pT=20,pB=30,iw=W-pL-pR,ih=H-pT-pB;
-  const all=vis.flatMap(s=>s.pts),ts=all.map(p=>dayMs(p.d)),t0=Math.min(...ts),t1=Math.max(...ts),vmax=Math.max(...all.map(p=>p.din));
+  const all=vis.flatMap(s=>s.pts),ts=all.map(p=>p.t),t0=Math.min(...ts),t1=Math.max(...ts),vmax=Math.max(...all.map(p=>p.din));
   const step=vmax>.5?.1:vmax>.2?.05:.02,ymax=Math.max(step,Math.ceil(vmax/step-1e-9)*step);
-  const X=d=>t0===t1?pL+iw/2:pL+(dayMs(d)-t0)/(t1-t0)*iw,Y=v=>pT+ih*(1-v/ymax);
-  let svg='<svg width="'+W+'" height="'+H+'" viewBox="0 0 '+W+' '+H+'" onmousemove="inHover(event)" onmouseleave="inHoverEnd()">';
+  const X=t=>t0===t1?pL+iw/2:pL+(t-t0)/(t1-t0)*iw,Y=v=>pT+ih*(1-v/ymax);
+  let svg='<svg width="'+W+'" height="'+H+'" viewBox="0 0 '+W+' '+H+'" onmousemove="inHover(event,\''+id+'\')" onmouseleave="inHoverEnd(\''+id+'\')">';
   svg+='<text x="'+pL+'" y="11" font-size="10" font-weight="800" fill="var(--muted)">Dinamica promedio (%)</text>';
   for(let i=0;i<=4;i++){const v=ymax*i/4,gy=Y(v);svg+='<line x1="'+pL+'" y1="'+gy.toFixed(1)+'" x2="'+(W-pR)+'" y2="'+gy.toFixed(1)+'" stroke="var(--line)"/><text x="'+(pL-6)+'" y="'+(gy+3.5).toFixed(1)+'" font-size="10" fill="var(--muted)" text-anchor="end">'+(v*100).toFixed(step<.05?1:0)+'%</text>';}
-  const dl=[...new Set(all.map(p=>p.d))].sort(),every=Math.max(1,Math.ceil(dl.length/Math.max(2,Math.floor(iw/62))));
-  dl.forEach((d,i)=>{if(i%every===0)svg+='<text x="'+X(d).toFixed(1)+'" y="'+(H-pB+16)+'" font-size="10" fill="var(--muted)" text-anchor="middle">'+fmtDate(d)+'</text>';});
+  const lab=new Map();all.forEach(p=>lab.set(p.t,p.lbl));const tl=[...lab.keys()].sort((a,b)=>a-b),every=Math.max(1,Math.ceil(tl.length/Math.max(2,Math.floor(iw/62))));
+  tl.forEach((t,i)=>{if(i%every===0)svg+='<text x="'+X(t).toFixed(1)+'" y="'+(H-pB+16)+'" font-size="10" fill="var(--muted)" text-anchor="middle">'+lab.get(t)+'</text>';});
   vis.forEach(s=>{
-    let seg=[];const flush=()=>{if(seg.length>1)svg+='<path d="'+seg.map((p,k)=>(k?'L':'M')+X(p.d).toFixed(1)+','+Y(p.din).toFixed(1)).join(' ')+'" fill="none" stroke="'+s.color+'" stroke-width="2"/>';seg=[];};
-    s.pts.forEach(p=>{if(seg.length&&(dayMs(p.d)-dayMs(seg[seg.length-1].d))/864e5>1)flush();seg.push(p);IN_PTS.push({x:X(p.d),y:Y(p.din),s,p});});flush();
-    s.pts.forEach(p=>svg+='<circle cx="'+X(p.d).toFixed(1)+'" cy="'+Y(p.din).toFixed(1)+'" r="3" fill="'+s.color+'"/>');
+    let seg=[];const flush=()=>{if(seg.length>1)svg+='<path d="'+seg.map((p,k)=>(k?'L':'M')+X(p.t).toFixed(1)+','+Y(p.din).toFixed(1)).join(' ')+'" fill="none" stroke="'+s.color+'" stroke-width="2"/>';seg=[];};
+    s.pts.forEach(p=>{if(seg.length&&(p.t-seg[seg.length-1].t)/864e5>1)flush();seg.push(p);IN_PTS[id].push({x:X(p.t),y:Y(p.din),s,p});});flush();
+    s.pts.forEach(p=>svg+='<circle cx="'+X(p.t).toFixed(1)+'" cy="'+Y(p.din).toFixed(1)+'" r="3" fill="'+s.color+'"/>');
   });
-  svg+='<circle id="inHi" r="6" fill="none" stroke="var(--ink)" stroke-width="1.5" style="display:none"/></svg><div class="intip" id="inTip"></div>';
+  svg+='<circle id="'+id+'Hi" r="6" fill="none" stroke="var(--ink)" stroke-width="1.5" style="display:none"/></svg><div class="intip" id="'+id+'Tip"></div>';
   box.innerHTML=svg;
 }
-function inHover(e){
-  const box=el('inChart'),r=e.currentTarget.getBoundingClientRect(),mx=e.clientX-r.left,my=e.clientY-r.top;
-  let best=null,bd=1600;IN_PTS.forEach(q=>{const dd=(q.x-mx)**2+(q.y-my)**2;if(dd<bd){bd=dd;best=q;}});
-  const tip=el('inTip'),hi=el('inHi');if(!best){inHoverEnd();return;}
+function inHover(e,id){
+  const box=el(id),r=e.currentTarget.getBoundingClientRect(),mx=e.clientX-r.left,my=e.clientY-r.top;
+  let best=null,bd=1600;(IN_PTS[id]||[]).forEach(q=>{const dd=(q.x-mx)**2+(q.y-my)**2;if(dd<bd){bd=dd;best=q;}});
+  const tip=el(id+'Tip'),hi=el(id+'Hi');if(!best){inHoverEnd(id);return;}
   hi.setAttribute('cx',best.x);hi.setAttribute('cy',best.y);hi.style.display='';
   tip.innerHTML='<b>'+fmtDMY(best.p.d)+'</b><br><span class="legdot" style="background:'+best.s.color+'"></span> '+esc(best.s.label)+'<br>Dinamica prom.: <b>'+fmtPct1(best.p.din)+'</b><br>Precio final prom.: <b>'+fmtMoney(best.p.ptc)+'</b><br>Observaciones: <b>'+best.p.n+'</b>';
   tip.style.display='block';const tw=tip.offsetWidth,th=tip.offsetHeight;
   tip.style.left=Math.max(4,Math.min(box.clientWidth-tw-4,best.x+12))+'px';tip.style.top=Math.max(4,Math.min(box.clientHeight-th-4,best.y-th-10))+'px';
 }
-function inHoverEnd(){const t=el('inTip'),h=el('inHi');if(t)t.style.display='none';if(h)h.style.display='none';}
-window.addEventListener('resize',()=>{if(tab==='insights'&&IN_OBS.length){cancelAnimationFrame(IN_RAF);IN_RAF=requestAnimationFrame(inDrawChart);}});
+function inHoverEnd(id){const t=el(id+'Tip'),h=el(id+'Hi');if(t)t.style.display='none';if(h)h.style.display='none';}
+window.addEventListener('resize',()=>{if(tab==='insights'&&IN_OBS.length){cancelAnimationFrame(IN_RAF);IN_RAF=requestAnimationFrame(()=>{inDrawChart();inDrawCmpChart();});}});
 document.addEventListener('click',e=>{
   if(tab!=='insights')return;const p=e.composedPath().map(n=>n.id);
-  if(IN.calOpen&&!p.includes('inCalWrap')){IN.calOpen=false;el('inCal').innerHTML='';}
+  if(IN.calOpen==='A'&&!p.includes('inCalWrap')){IN.calOpen=false;el('inCal').innerHTML='';}
+  if(IN.calOpen==='C'&&!p.includes('inCalWrapC')){IN.calOpen=false;el('inCalC').innerHTML='';}
   if(IN.skuOpen&&!p.includes('inSkuWrap')){IN.skuOpen=false;el('inSkList').innerHTML='';}
 });
+
+/* ---- Comparacion de periodos: metricas lado a lado + evolucion alineada por dia del periodo ---- */
+function inDrawCmp(){
+  const box=el('inCmpPanel'),R=cmpRange(),{lo,hi}=inRange();IN_CMPS=[];
+  if(IN.cmp==='off'){box.innerHTML='';return;}
+  if(!R){box.innerHTML='<div class="panel note">Elegi el periodo de comparacion en "Comparar con".</div>';return;}
+  const B=inObs(R.lo,R.hi,true),A=IN_OBS;
+  if(!B.length){box.innerHTML='<div class="panel note">No hay datos disponibles en el periodo de comparacion ('+rgLabel(R.lo,R.hi)+') para los filtros seleccionados.</div>';return;}
+  const a=inMV(A),b=inMV(B);
+  const delta=(x,y,t)=>{if(x==null||y==null)return'&mdash;';const d=x-y;const arrow=d>0?'&#9650; ':d<0?'&#9660; ':'';
+    if(t==='p')return arrow+(d>0?'+':'')+(d*100).toFixed(1).replace('.',',')+' pp';
+    if(t==='$')return arrow+(d>0?'+':d<0?'-':'')+fmtMoney(Math.abs(d))+(y?' ('+(d>0?'+':'')+(d/y*100).toFixed(1).replace('.',',')+'%)':'');
+    return arrow+(d>0?'+':'')+d;};
+  const lA=rgLabel(lo,hi),lB=rgLabel(R.lo,R.hi);
+  const tbl='<div class="tablebox"><table class="timeline"><thead><tr><th style="text-align:left">Metrica</th><th>Actual<br><span class="note">'+lA+'</span></th><th>Comparacion<br><span class="note">'+lB+'</span></th><th>Variacion (actual &minus; comparacion)</th></tr></thead><tbody>'
+   +IN_MDEF.map(d=>'<tr><td style="text-align:left;font-weight:700">'+d[0]+'</td><td style="text-align:right">'+inFmtM(a[d[1]],d[2])+'</td><td style="text-align:right">'+inFmtM(b[d[1]],d[2])+'</td><td style="text-align:right">'+delta(a[d[1]],b[d[1]],d[2])+'</td></tr>').join('')+'</tbody></table></div>';
+  const off=(d0)=>d=>{const n=Math.round((dayMs(d)-dayMs(d0))/864e5);return{t:n*864e5,lbl:'Dia '+(n+1)};};
+  const one=(obs,d0,label,color)=>{const s=inAccum(obs,()=>label,()=>label,off(d0))[0];return s?{...s,color}:null;};
+  IN_CMPS=[one(A,lo,'Actual: '+lA.replace(/&ndash;/g,'-'),PALETTE[0]),one(B,R.lo,'Comparacion: '+lB.replace(/&ndash;/g,'-'),PALETTE[1])].filter(Boolean);
+  box.innerHTML='<div class="panel"><div class="chartHead"><div><h3>Comparacion de periodos</h3><div class="sub">Filtros de fabricante, SKU, marca y segmento aplicados a ambos periodos. El dia 1 es el primer dia calendario de cada periodo.</div></div></div>'+(R.lo<inAvail().list[0]?'<div class="note" style="margin-bottom:8px">&#9888; El historico empieza el '+fmtDMY(inAvail().list[0])+': el periodo de comparacion esta incompleto y no es equivalente al actual.</div>':'')+tbl
+   +'<div class="chartBox" id="inChartC" style="margin-top:14px"></div><div class="chartLegend">'+IN_CMPS.map(s=>'<span><span class="legdot" style="background:'+s.color+'"></span>'+esc(s.label)+'</span>').join('')+'</div></div>';
+  inDrawCmpChart();
+}
+function inDrawCmpChart(){if(el('inChartC'))inLines('inChartC',IN_CMPS,IN_CMPS.length);}
 
 /* ---- Tabla de detalle: orden, busqueda, paginado y export ---- */
 function inTableRows(){
