@@ -403,6 +403,12 @@
           "ptc": 2023.33,
           "dinamica": 0.3333,
           "promo_nominal": "3 x 2"
+        },
+        "2026-09-21": {
+          "fleje": 3035.0,
+          "ptc": 2023.33,
+          "dinamica": 0.3333,
+          "promo_nominal": "3x2"
         }
       },
       "volumen_l": 0.473
@@ -21149,8 +21155,8 @@
       "dias": 37,
       "dias_dinamica": 37,
       "max_dinamica": 0.35,
-      "avg_dinamica": 0.1999990099009901,
-      "avg_ptc": 2319.4627722772275
+      "avg_dinamica": 0.2013058823529412,
+      "avg_ptc": 2316.5595098039216
     },
     {
       "marca": "Budweiser",
@@ -21763,9 +21769,9 @@
     }
   ],
   "meta": {
-    "generado": "2026-09-21 12:12:28",
+    "generado": "2026-09-21 12:29:34",
     "sku_rows": 142,
-    "registros_validos": 3660,
+    "registros_validos": 3661,
     "dias": 37,
     "plataforma": "PedidosYa",
     "tienda": "Nunez"

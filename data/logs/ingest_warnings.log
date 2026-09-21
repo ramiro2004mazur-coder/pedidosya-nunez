@@ -55,3 +55,4 @@
 2026-09-21.csv: SKU nuevo sin catalogo -> 'Bitburger | Cerveza Bitburger Premium Beer 500 Ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-09-21.csv: SKU nuevo sin catalogo -> 'Bitburger | Cerveza Bitburger 330 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-09-21.csv: SKU nuevo sin catalogo -> 'Kostritzer | Cerveza Kostritzer Schwarzbier 500 Ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-09-21.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 473 ml' 2050.95 -> 3729.0 (2026-09-21), se guarda igual marcado como sospechoso

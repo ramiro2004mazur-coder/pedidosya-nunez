@@ -3,7 +3,7 @@
     "tienda": "Nunez",
     "plataforma": "PedidosYa Market",
     "sku_count": 142,
-    "ultima_corrida": "2026-09-21T15:12:28.219215+00:00"
+    "ultima_corrida": "2026-09-21T15:29:34.496666+00:00"
   },
   "dates": [
     "2026-08-10",
@@ -447,6 +447,12 @@
           "ptc": 2023.33,
           "dinamica": 0.3333,
           "promo_nominal": "3 x 2"
+        },
+        "2026-09-21": {
+          "fleje": 3035.0,
+          "ptc": 2023.33,
+          "dinamica": 0.3333,
+          "promo_nominal": "3x2"
         }
       }
     },
