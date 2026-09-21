@@ -51,3 +51,7 @@
 2026-09-17.csv: PRECIO SOSPECHOSO -> 'Beepure | Cerveza Artesanal Beepure Scottish 500 ml' 2998.4 -> 4685.0 (2026-09-17), se guarda igual marcado como sospechoso
 2026-09-18.csv: PRECIO SOSPECHOSO -> 'Schneider | Cerveza Schneider Rubia 710 ml' 2479.75 -> 3815.0 (2026-09-18), se guarda igual marcado como sospechoso
 2026-09-18.csv: PRECIO SOSPECHOSO -> 'Salta | Cerveza Salta Cautiva Fresh Lager 473 ml' 2061.5 -> 3325.0 (2026-09-18), se guarda igual marcado como sospechoso
+2026-09-21.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 473 ml' 2050.95 -> 3729.0 (2026-09-21), se guarda igual marcado como sospechoso
+2026-09-21.csv: SKU nuevo sin catalogo -> 'Bitburger | Cerveza Bitburger Premium Beer 500 Ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-09-21.csv: SKU nuevo sin catalogo -> 'Bitburger | Cerveza Bitburger 330 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-09-21.csv: SKU nuevo sin catalogo -> 'Kostritzer | Cerveza Kostritzer Schwarzbier 500 Ml' (agregado como 'Sin clasificar', revisar data/catalog.json)

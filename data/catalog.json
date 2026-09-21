@@ -1110,5 +1110,29 @@
     "calibre": "600",
     "grupo": "Sin clasificar",
     "segmento": "Sin clasificar"
+  },
+  {
+    "id": "bitburger-cerveza-bitburger-premium-beer-500-ml",
+    "marca": "Bitburger",
+    "sku": "Cerveza Bitburger Premium Beer 500 Ml",
+    "calibre": "600",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "bitburger-cerveza-bitburger-330-ml",
+    "marca": "Bitburger",
+    "sku": "Cerveza Bitburger 330 ml",
+    "calibre": "330/355",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "kostritzer-cerveza-kostritzer-schwarzbier-500-ml",
+    "marca": "Kostritzer",
+    "sku": "Cerveza Kostritzer Schwarzbier 500 Ml",
+    "calibre": "600",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
   }
 ]
