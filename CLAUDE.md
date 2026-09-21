@@ -98,6 +98,15 @@ formato y sus formulas.
 migró a una sola lectura diaria porque se confirmó que la dinámica no
 cambia según la hora — ver regla más abajo).
 
+### Pestaña Insights: fabricante
+
+`history.json` no tiene columna de fabricante. `docs/index.html` lo deriva de
+la **marca** con `FAB_BRANDS` (bloque "Insights", constante editable: CMQ / CCU;
+todo lo demás = "Otros fabricantes"). No se modifican los nombres originales.
+Si aparece una marca nueva, agregarla ahi. Miller se dejó en "Otros" a proposito
+(no se pudo confirmar su fabricante). Precio final = `ptc`; precio tachado =
+`fleje` (solo si `fleje > ptc`).
+
 ## Cómo corre automáticamente — OJO, no es GitHub Actions
 
 El scrapeo diario **no corre en la nube**. Corre localmente en esta Mac,

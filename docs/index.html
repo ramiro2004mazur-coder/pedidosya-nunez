@@ -95,6 +95,45 @@ body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(
 .cprice{margin-top:10px;font-size:17px;font-weight:900;color:var(--ink)}
 .cprice .dyn{font-size:11px;margin-left:4px}
 .spark{width:100%;height:34px;margin-top:10px;display:block}
+.inpanel{margin-top:0}
+.inrow{display:flex;gap:22px;flex-wrap:wrap;align-items:flex-start;margin-bottom:12px}
+.inblock{min-width:0}
+.inlab{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;font-weight:800}
+.inperiodbtn{padding:9px 13px;font-size:13px}
+.calpop{position:absolute;z-index:30;top:100%;left:0;margin-top:6px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:var(--shadow);width:300px}
+.calhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;font-weight:800;font-size:13px}
+.calhead button{background:var(--panel2);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:4px 10px;cursor:pointer;font-weight:800}
+.calhead button:disabled{opacity:.3;cursor:default}
+.calgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;text-align:center}
+.calgrid .wd{font-size:10.5px;color:var(--muted);padding:3px 0}
+.cday{border:0;background:transparent;color:var(--muted);border-radius:8px;padding:7px 0;font-size:12px}
+.cday.av{color:var(--ink);cursor:pointer;background:var(--panel2);font-weight:700}
+.cday.av:hover{outline:1px solid var(--accent)}
+.cday.inr{background:rgba(250,0,80,.18)}
+.cday.ine{background:var(--accent);color:#fff}
+.cday:disabled{opacity:.35;cursor:default}
+.calfoot{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.calfoot .btnp{background:var(--accent);color:#fff;border:0;border-radius:9px;padding:8px 14px;font-weight:800;cursor:pointer}
+.calfoot .btns{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:9px;padding:8px 12px;font-weight:700;cursor:pointer}
+.sklist{position:absolute;z-index:25;left:0;right:0;top:100%;margin-top:4px;background:var(--panel);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);max-height:260px;overflow:auto}
+.skitem{padding:8px 12px;font-size:12.5px;cursor:pointer;border-bottom:1px solid var(--line)}
+.skitem:hover{background:var(--panel2)}
+.skitem.on{color:var(--accent);font-weight:800}
+.skinput{width:100%;background:var(--panel2);border:1px solid var(--line);border-radius:10px;color:var(--ink);padding:9px 12px;font-size:13px;outline:none}
+.cchip.miss{opacity:.55;border-style:dashed}
+.chartBox{position:relative;width:100%;height:330px;max-height:330px;overflow:hidden}
+.chartBox svg{display:block}
+.intip{position:absolute;display:none;pointer-events:none;background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:12px;box-shadow:var(--shadow);z-index:5;max-width:300px;line-height:1.5}
+.inleg{max-height:92px;overflow:auto}
+.legbtn{background:transparent;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:4px 10px;font-size:11.5px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;max-width:100%}
+.legbtn.off{opacity:.4;text-decoration:line-through}
+.intable{max-height:520px}
+.intable td.skucell{white-space:normal;min-width:260px;max-width:420px}
+.inhead{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:10px}
+.pgbtn{background:var(--panel2);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:6px 12px;cursor:pointer;font-weight:700}
+.pgbtn:disabled{opacity:.35;cursor:default}
+.timeline th.sortable{cursor:pointer}
+.innotes{font-size:12px;color:var(--muted);line-height:1.6;margin:8px 0 0}
 @media(max-width:1000px){.filterbar{flex-direction:column;align-items:stretch}.grid2{grid-template-columns:1fr}.wrap{padding:14px}}
 </style>
 </head>
@@ -164,7 +203,7 @@ function heatmap(){let rs=rows();metrics(rs);current=rs.map(flat);const D=dates(
 function changes(){const D=dates();if(D.length<2){metrics(rows());return '<div class="panel note">Necesitas al menos 2 dias para ver cambios.</div>';}const last=D[D.length-1],prev=D[D.length-2];let rs=rows().filter(r=>r.dates[prev]&&r.dates[last]).map(r=>{const a=r.dates[prev],b=r.dates[last];return{Marca:r.marca,SKU:r.sku,Calibre:r.calibre,Grupo:r.grupo,PTC_prev:a.ptc,PTC_last:b.ptc,Var_PTC:b.ptc-a.ptc,Dyn_prev:a.dinamica,Dyn_last:b.dinamica,Var_Dyn:b.dinamica-a.dinamica};}).sort((a,b)=>Math.abs(b.Var_PTC)-Math.abs(a.Var_PTC));current=rs;metrics(rows());return '<div class="panel"><h3>Cambios '+fmtDate(prev)+' vs '+fmtDate(last)+'</h3>'+simple(rs,[['Marca'],['SKU'],['Calibre'],['Grupo'],['PTC_prev','PTC anterior','money'],['PTC_last','PTC ultimo','money'],['Var_PTC','&Delta; PTC','money'],['Dyn_prev','Din anterior','pct'],['Dyn_last','Din ultimo','pct'],['Var_Dyn','&Delta; Din','pp']])+'</div>';}
 const inc=(n,list)=>list.some(x=>String(n||'').toLowerCase().includes(String(x).toLowerCase())||String(x).toLowerCase().includes(String(n||'').toLowerCase()));
 function best(list,d){const a=list.filter(r=>r.dates[d]&&r.dates[d].ptc!=null);return a.length?a.sort((x,y)=>x.dates[d].ptc-y.dates[d].ptc)[0]:null;}
-function insights(){let arr=(DATA.stats||[]).filter(x=>(!el('brand').value||x.marca===el('brand').value)&&(!el('seg').value||x.segmento===el('seg').value)).sort((a,b)=>b.dias_dinamica-a.dias_dinamica||b.max_dinamica-a.max_dinamica);current=arr;metrics(rows());return '<div class="grid2"><div class="panel"><h3>Continuidad de dinamica</h3>'+simple(arr,[['marca','Marca'],['grupo','Grupo'],['segmento','Segmento'],['dias','Dias'],['dias_dinamica','Dias con din.'],['max_dinamica','Max','pct'],['avg_dinamica','Prom.','pct'],['avg_ptc','PTC prom.','money']])+'</div><div class="panel"><h3>Como leerlo</h3><p class="note">Cuantos dias estuvo prendida la dinamica de cada marca y con que intensidad. Usa <b>Comparar</b> para el mano a mano libre entre cualquier SKU (con accesos rapidos CMQ vs competencia) y su grafico de evolucion superpuesta.</p></div></div>';}
+function insightsLegacy(){let arr=(DATA.stats||[]).filter(x=>(!el('brand').value||x.marca===el('brand').value)&&(!el('seg').value||x.segmento===el('seg').value)).sort((a,b)=>b.dias_dinamica-a.dias_dinamica||b.max_dinamica-a.max_dinamica);current=arr;metrics(rows());return '<div class="grid2"><div class="panel"><h3>Continuidad de dinamica <span class="note">(historico completo)</span></h3>'+simple(arr,[['marca','Marca'],['grupo','Grupo'],['segmento','Segmento'],['dias','Dias'],['dias_dinamica','Dias con din.'],['max_dinamica','Max','pct'],['avg_dinamica','Prom.','pct'],['avg_ptc','PTC prom.','money']])+'</div><div class="panel"><h3>Como leerlo</h3><p class="note">Cuantos dias estuvo prendida la dinamica de cada marca y con que intensidad. Usa <b>Comparar</b> para el mano a mano libre entre cualquier SKU (con accesos rapidos CMQ vs competencia) y su grafico de evolucion superpuesta.</p></div></div>';}
 function simple(rs,cols){if(!rs.length)return '<div class="panel note">Sin datos.</div>';return '<div class="tablebox"><table class="timeline"><thead><tr>'+cols.map(c=>'<th>'+(c[1]||c[0])+'</th>').join('')+'</tr></thead><tbody>'+rs.map(r=>'<tr>'+cols.map(c=>'<td>'+cell(r[c[0]],c[2])+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';}
 function cell(v,type){if(type==='money')return fmtMoney(v);if(type==='pct')return fmtPct(v);if(type==='pp')return v==null?'&mdash;':(v>0?'+':'')+Math.round(v*100)+' pp';return v??'&mdash;';}
 
@@ -182,7 +221,272 @@ function multiLineChart(ids){const D=dates();const rowsSel=ids.map(id=>DATA.pivo
 function compareTable(ids){const D=dates();const rowsSel=ids.map(id=>DATA.pivot.find(r=>r.id===id)).filter(Boolean);current=rowsSel.map(flat);let h='<div class="tablebox"><table class="timeline"><thead><tr><th class="product">Producto</th>'+D.map(d=>'<th>'+fmtDate(d)+'</th>').join('')+'</tr></thead><tbody>';rowsSel.forEach(r=>{h+='<tr><td class="product">'+r.marca+' '+r.calibre+'<span class="subsku">'+r.sku+'</span></td>'+D.map(d=>'<td>'+priceHtml(r.dates[d])+'</td>').join('')+'</tr>';});return h+'</tbody></table></div>';}
 function comparar(){metrics(rows());const ids=[...compareIds];let h='<div class="panel" style="padding:12px 14px"><span class="note">Elegi cualquier SKU (de cualquier marca) para comparar su evolucion de precio. Los accesos rapidos cargan un enfrentamiento CMQ vs competencia ya armado.</span></div>';h+='<div class="chips">'+(DATA.fights||[]).map((f,i)=>'<span class="chip" onclick="loadFight('+i+')">&#9876; '+f.name+'</span>').join('')+'</div>';h+='<div class="filterbar" style="margin-top:10px"><div class="search"><span class="ic">&#128269;</span><input id="cq" placeholder="Agregar SKU al comparador..." oninput="compareSearchResults()"/></div></div>';h+='<div id="compareResults" class="compareResults"></div>';h+='<div class="cchips">'+ids.map(id=>{const r=DATA.pivot.find(x=>x.id===id);return r?'<span class="cchip">'+r.marca+' '+r.calibre+'<button onclick="removeCompare(\''+id+'\')">&times;</button></span>':'';}).join('')+'</div>';if(!ids.length){current=[];return h+'<div class="panel note" style="margin-top:4px">Todavia no elegiste ningun SKU. Busca arriba o toca un acceso rapido.</div>';}h+=compareCards(ids);h+='<div class="panel" style="margin-top:14px"><h3>Evolucion superpuesta</h3>'+multiLineChart(ids)+'</div>';h+='<div style="margin-top:14px">'+compareTable(ids)+'</div>';return h;}
 
-function render(){el('content').innerHTML=tab==='timeline'?timeline():tab==='preciolitro'?precioLitro():tab==='comparar'?comparar():tab==='heatmap'?heatmap():tab==='changes'?changes():insights();}
+/* ---- Insights: periodo + fabricante + SKU (se combinan con los filtros globales de arriba) ---- */
+// Clasificacion de fabricante (EDITABLE). El dataset no trae fabricante: se deriva de la MARCA,
+// sin tocar los nombres originales. Se compara contra la marca normalizada (minusculas, sin tildes,
+// palabras completas). Lo que no matchee CMQ ni CCU cae en "Otros fabricantes".
+const FAB_ORDER=['CMQ','CCU','Otros fabricantes'];
+const FAB_BRANDS={
+  'CMQ':['quilmes','brahma','stella artois','budweiser','corona','patagonia','andes','andes origen','michelob','michelob ultra','1890'],
+  'CCU':['imperial','schneider','heineken','amstel','salta','sol','palermo','bieckert']
+};
+const FAB_CACHE=new Map();
+const normTxt=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
+function fabOf(r){
+  if(FAB_CACHE.has(r.id))return FAB_CACHE.get(r.id);
+  const b=' '+normTxt(r.marca)+' ';let f='Otros fabricantes';
+  for(const k of ['CMQ','CCU']){if(FAB_BRANDS[k].some(x=>b.includes(' '+x+' '))){f=k;break;}}
+  if(f==='Otros fabricantes'&&r.grupo==='CMQ')f='CMQ';
+  FAB_CACHE.set(r.id,f);return f;
+}
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmtDMY=d=>d.slice(8,10)+'/'+d.slice(5,7)+'/'+d.slice(0,4);
+const fmtPct1=v=>(v==null||isNaN(v))?'-':(Number(v)*100).toFixed(1).replace('.',',')+'%';
+const avg=a=>a.length?a.reduce((s,x)=>s+x,0)/a.length:null;
+const dayMs=d=>Date.parse(d+'T00:00:00Z');
+const IN_PAGE=25;
+const IN={from:null,to:null,dFrom:null,dTo:null,calOpen:false,calMonth:null,fabs:new Set(),skus:new Set(),skuOpen:false,group:'fab',mode:'all',hidden:new Set(),tq:'',sortKey:'fecha',sortDir:'desc',page:1};
+let IN_AV=null,IN_OBS=[],IN_V={},IN_MISS=new Set(),IN_SERIES=[],IN_PTS=[],IN_RAF=0;
+
+function inAvail(){
+  if(IN_AV)return IN_AV;
+  const set=new Set();let bad=0;
+  DATA.pivot.forEach(r=>Object.keys(r.dates).forEach(d=>{
+    const ok=/^\d{4}-\d{2}-\d{2}$/.test(d)&&!isNaN(dayMs(d))&&new Date(dayMs(d)).toISOString().slice(0,10)===d;
+    if(ok)set.add(d);else bad++;
+  }));
+  IN_AV={set,list:[...set].sort(),bad};return IN_AV;
+}
+function inRange(){const av=inAvail();return{lo:IN.from||av.list[0],hi:IN.to||av.list[av.list.length-1]};}
+
+/* Observaciones reales (fecha x SKU) que cumplen todos los filtros. Nada se completa ni se inventa. */
+function inBase(){return rows().filter(r=>IN.fabs.size===0||IN.fabs.has(fabOf(r)));}
+function inObs(){
+  const av=inAvail(),{lo,hi}=inRange(),seen=new Set(),out=[];
+  const v={sinDin:0,fuera:0,dup:0,sosp:0,sinTach:0,badDates:av.bad};
+  inBase().forEach(r=>{
+    if(IN.skus.size&&!IN.skus.has(r.id))return;
+    Object.keys(r.dates).forEach(d=>{
+      if(!av.set.has(d)||d<lo||d>hi)return;
+      const k=d+'|'+r.id;if(seen.has(k)){v.dup++;return;}seen.add(k);
+      const x=r.dates[d]||{};
+      let din=(x.dinamica==null||x.dinamica==='')?NaN:Number(x.dinamica);
+      if(isNaN(din)){v.sinDin++;din=null;}else if(din<0||din>1){v.fuera++;din=null;}
+      const ptc=(x.ptc==null||isNaN(Number(x.ptc)))?null:Number(x.ptc);
+      const fl=(x.fleje==null||isNaN(Number(x.fleje)))?null:Number(x.fleje);
+      const tach=(fl!=null&&ptc!=null&&fl>ptc)?fl:null;
+      if(tach==null)v.sinTach++;
+      if(x.sospechoso)v.sosp++;
+      out.push({d,id:r.id,sku:r.sku,marca:r.marca,seg:r.segmento,fab:fabOf(r),ptc,tach,din,sosp:!!x.sospechoso});
+    });
+  });
+  IN_V=v;return out;
+}
+function inMetricsHtml(o){
+  const withD=o.filter(x=>x.din!=null),pos=withD.filter(x=>x.din>0);
+  const days=new Set(o.map(x=>x.d)),dd=new Set(pos.map(x=>x.d));
+  const ptcs=o.filter(x=>x.ptc!=null).map(x=>x.ptc),tach=o.filter(x=>x.tach!=null).map(x=>x.tach);
+  return card('Dias con datos',days.size)+card('Dias con dinamica',dd.size)+card('% dias con dinamica',days.size?fmtPct1(dd.size/days.size):'-')
+    +card('Din. prom. (solo obs. con dinamica)',pos.length?fmtPct1(avg(pos.map(x=>x.din))):'-')
+    +card('Din. prom. (todas las obs., 0 sin dto.)',withD.length?fmtPct1(avg(withD.map(x=>x.din))):'-')
+    +card('Dinamica maxima',withD.length?fmtPct1(Math.max(...withD.map(x=>x.din))):'-')
+    +card('PTC / precio final prom.',ptcs.length?fmtMoney(avg(ptcs)):'-')+card('PTC maximo',ptcs.length?fmtMoney(Math.max(...ptcs)):'-')
+    +card('Precio tachado prom.',tach.length?fmtMoney(avg(tach)):'-')+card('Observaciones',o.length);
+}
+
+/* ---- Estructura (se arma una vez por render; los controles se redibujan por partes sin perder foco) ---- */
+function insights(){
+  IN.calOpen=false;IN.skuOpen=false;
+  const legacy=insightsLegacy();
+  return '<div class="panel inpanel">'
+   +'<div class="inrow">'
+   +'<div class="inblock" id="inCalWrap" style="position:relative"><div class="inlab">Periodo</div><div id="inPeriod"></div><div id="inCal"></div></div>'
+   +'<div class="inblock"><div class="inlab">Fabricante</div><div id="inFabs" class="chips" style="margin:0"></div></div>'
+   +'<div class="inblock"><div class="inlab">Grafico sin SKU: agrupar por</div><select id="inGroup" class="selminimal" onchange="inSetGroup(this.value)"><option value="fab">Fabricante</option><option value="marca">Marca</option><option value="seg">Segmento</option></select></div>'
+   +'<div class="inblock"><div class="inlab">Dinamica promedio del grafico</div><select id="inMode" class="selminimal" onchange="inSetMode(this.value)"><option value="all">Todas las obs. (0 sin dto.)</option><option value="pos">Solo obs. con dinamica</option></select></div>'
+   +'<div class="inblock" style="margin-left:auto"><div class="inlab">&nbsp;</div><button type="button" class="iconbtn" onclick="inClearAll()">Limpiar filtros</button></div>'
+   +'</div>'
+   +'<div class="inblock" id="inSkuWrap" style="position:relative"><div class="inlab">SKU</div><div id="inSkSel" class="cchips" style="margin:0 0 8px"></div>'
+   +'<input id="inSk" class="skinput" autocomplete="off" placeholder="Buscar SKU por nombre y seleccionar uno o varios..." onfocus="inSkuOpen()" oninput="inSkuOpen()"/><div id="inSkList"></div></div>'
+   +'<div class="innotes" id="inNotes"></div></div>'
+   +'<div id="inEmpty" class="panel note" style="display:none"></div>'
+   +'<div id="inData"><div class="metrics" id="inMetrics"></div>'
+   +'<div class="panel"><div class="chartHead"><div><h3>Evolucion temporal de la dinamica</h3><div class="sub" id="inChartSub"></div></div></div><div class="chartBox" id="inChart"></div><div class="chartLegend inleg" id="inLegend"></div></div>'
+   +'<div class="panel"><div class="inhead"><h3 style="margin:0">Detalle de observaciones</h3><div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><input id="inTq" class="skinput" style="width:240px" placeholder="Buscar en la tabla..." oninput="inTq(this.value)" value="'+esc(IN.tq)+'"/><button type="button" class="iconbtn" onclick="inExport()">&#8595; Exportar CSV</button></div></div>'
+   +'<div class="tablebox intable" id="inTable"></div><div class="inhead" style="margin:10px 0 0" id="inPager"></div></div></div>'
+   +legacy;
+}
+function inUpdate(){
+  const y=window.scrollY;
+  if(!el('inFabs'))return;
+  el('inGroup').value=IN.group;el('inMode').value=IN.mode;
+  IN_OBS=inObs();
+  const sel=new Set(IN_OBS.map(o=>o.id));IN_MISS=new Set([...IN.skus].filter(id=>!sel.has(id)));
+  inDrawPeriod();inDrawFabs();inDrawSku();inDrawNotes();
+  const empty=!IN_OBS.length;
+  el('inEmpty').style.display=empty?'':'none';el('inData').style.display=empty?'none':'';
+  if(empty){el('inEmpty').textContent='No hay datos disponibles para los filtros y el periodo seleccionados';current=[];}
+  else{el('inMetrics').innerHTML=inMetricsHtml(IN_OBS);inBuildSeries();inDrawChart();inDrawTable();}
+  window.scrollTo(0,y);
+}
+function inDrawPeriod(){
+  const av=inAvail(),box=el('inPeriod');
+  if(!av.list.length){box.innerHTML='<span class="note">Sin fechas disponibles</span>';el('inCal').innerHTML='';return;}
+  const{lo,hi}=inRange(),days=av.list.filter(d=>d>=lo&&d<=hi).length,cal=Math.round((dayMs(hi)-dayMs(lo))/864e5)+1;
+  const label=IN.from?(lo===hi?fmtDMY(lo):fmtDMY(lo)+' &ndash; '+fmtDMY(hi)):'Todo el historico';
+  box.innerHTML='<button type="button" class="iconbtn inperiodbtn" onclick="inToggleCal()">&#128197; '+label+' &#9662;</button><div class="note" style="margin-top:4px">'+(IN.from?'':fmtDMY(lo)+' &ndash; '+fmtDMY(hi)+' &middot; ')+days+' dias con datos'+(cal>days?' de '+cal+' dias calendario (los dias sin datos no se completan)':'')+'</div>';
+  inDrawCal();
+}
+function inToggleCal(){IN.calOpen=!IN.calOpen;if(IN.calOpen){const av=inAvail();IN.dFrom=IN.from;IN.dTo=IN.to;IN.calMonth=(IN.to||IN.from||av.list[av.list.length-1]).slice(0,7);}inDrawCal();}
+function inDrawCal(){
+  const box=el('inCal');if(!IN.calOpen){box.innerHTML='';return;}
+  const av=inAvail(),first=av.list[0].slice(0,7),last=av.list[av.list.length-1].slice(0,7);
+  const[y,m]=IN.calMonth.split('-').map(Number),start=(new Date(Date.UTC(y,m-1,1)).getUTCDay()+6)%7,n=new Date(Date.UTC(y,m,0)).getUTCDate();
+  const a=IN.dFrom,b=IN.dTo||IN.dFrom;
+  const meses=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+  let g=['Lu','Ma','Mi','Ju','Vi','Sa','Do'].map(w=>'<div class="wd">'+w+'</div>').join('')+'<div></div>'.repeat(start);
+  for(let i=1;i<=n;i++){
+    const d=IN.calMonth+'-'+String(i).padStart(2,'0'),ok=av.set.has(d);
+    const cls='cday'+(ok?' av':'')+(a&&d>=a&&d<=b?' inr':'')+(a&&(d===a||d===b)?' ine':'');
+    g+='<button type="button" class="'+cls+'"'+(ok?' onclick="inPickDay(\''+d+'\')"':' disabled title="Sin datos"')+'>'+i+'</button>';
+  }
+  const days=a?av.list.filter(d=>d>=a&&d<=b).length:0;
+  box.innerHTML='<div class="calpop"><div class="calhead"><button type="button" onclick="inCalNav(-1)"'+(IN.calMonth<=first?' disabled':'')+'>&lsaquo;</button><span>'+meses[m-1]+' '+y+'</span><button type="button" onclick="inCalNav(1)"'+(IN.calMonth>=last?' disabled':'')+'>&rsaquo;</button></div>'
+   +'<div class="calgrid">'+g+'</div>'
+   +'<div class="note" style="margin-top:8px">'+(a?(a===b?fmtDMY(a):fmtDMY(a)+' &ndash; '+fmtDMY(b))+' &middot; '+days+' dias con datos':'Hace clic en un dia y luego en otro para elegir un rango (o dos veces el mismo dia para uno solo). Solo se habilitan dias con datos.')+'</div>'
+   +'<div class="calfoot"><button type="button" class="btnp" onclick="inApplyCal()">Aplicar</button><button type="button" class="btns" onclick="inAllHistory()">Ver todo el historico</button></div></div>';
+}
+function inCalNav(k){let[y,m]=IN.calMonth.split('-').map(Number);m+=k;if(m<1){m=12;y--;}if(m>12){m=1;y++;}IN.calMonth=y+'-'+String(m).padStart(2,'0');inDrawCal();}
+function inPickDay(d){
+  if(!IN.dFrom||IN.dTo){IN.dFrom=d;IN.dTo=null;}
+  else if(d<IN.dFrom){IN.dTo=IN.dFrom;IN.dFrom=d;}else IN.dTo=d;
+  inDrawCal();
+}
+function inApplyCal(){if(IN.dFrom){IN.from=IN.dFrom;IN.to=IN.dTo||IN.dFrom;}else{IN.from=null;IN.to=null;}IN.calOpen=false;IN.page=1;inUpdate();}
+function inAllHistory(){IN.from=IN.to=null;IN.dFrom=IN.dTo=null;IN.calOpen=false;IN.page=1;inUpdate();}
+function inDrawFabs(){
+  el('inFabs').innerHTML='<span class="chip'+(IN.fabs.size?'':' active')+'" onclick="inFabAll()">Todos</span>'+FAB_ORDER.map(f=>'<span class="chip'+(IN.fabs.has(f)?' active':'')+'" onclick="inFab(\''+f+'\')">'+f+'</span>').join('');
+}
+function inFab(f){IN.fabs.has(f)?IN.fabs.delete(f):IN.fabs.add(f);IN.page=1;inUpdate();}
+function inFabAll(){IN.fabs.clear();IN.page=1;inUpdate();}
+function inSetGroup(v){IN.group=v;IN.hidden.clear();inUpdate();}
+function inSetMode(v){IN.mode=v;inUpdate();}
+function inDrawSku(){
+  const sel=[...IN.skus].map(id=>DATA.pivot.find(r=>r.id===id)).filter(Boolean);
+  el('inSkSel').innerHTML='<span class="chip'+(IN.skus.size?'':' active')+'" onclick="inSkuAll()">Todos los SKU</span>'+sel.map(r=>'<span class="cchip'+(IN_MISS.has(r.id)?' miss':'')+'" title="'+esc(r.sku)+(IN_MISS.has(r.id)?' (sin observaciones con los filtros y periodo actuales)':'')+'">'+esc(r.sku)+'<button type="button" onclick="inToggleSku(\''+esc(r.id)+'\')">&times;</button></span>').join('');
+  inDrawSkuList();
+}
+function inSkuOpen(){IN.skuOpen=true;inDrawSkuList();}
+function inDrawSkuList(){
+  const box=el('inSkList');if(!IN.skuOpen){box.innerHTML='';return;}
+  const q=normTxt(el('inSk').value),all=inBase().filter(r=>!q||normTxt(r.sku+' '+r.marca).includes(q)).sort((a,b)=>a.sku.localeCompare(b.sku));
+  const shown=all.slice(0,80);
+  box.innerHTML='<div class="sklist">'+(shown.length?shown.map(r=>'<div class="skitem'+(IN.skus.has(r.id)?' on':'')+'" onclick="inToggleSku(\''+esc(r.id)+'\')">'+(IN.skus.has(r.id)?'&#9745; ':'&#9744; ')+esc(r.sku)+' <span class="note">&middot; '+esc(fabOf(r))+' &middot; '+esc(r.segmento)+'</span></div>').join('')+(all.length>shown.length?'<div class="skitem note">Mostrando '+shown.length+' de '+all.length+'. Segui escribiendo para acotar.</div>':''):'<div class="skitem note">Sin SKU para esa busqueda y los filtros actuales</div>')+'</div>';
+}
+function inToggleSku(id){IN.skus.has(id)?IN.skus.delete(id):IN.skus.add(id);IN.page=1;inUpdate();}
+function inSkuAll(){IN.skus.clear();IN.page=1;inUpdate();}
+function inClearAll(){
+  IN.from=IN.to=IN.dFrom=IN.dTo=null;IN.fabs.clear();IN.skus.clear();IN.hidden.clear();IN.tq='';IN.page=1;IN.group='fab';IN.mode='all';
+  ['q','brand','size','seg'].forEach(i=>el(i).value='');['onlyBoth','onlyOffer','groupBrand'].forEach(i=>el(i).checked=false);
+  document.querySelectorAll('#brandChips .chip').forEach(c=>c.classList.remove('active'));
+  render();
+}
+function inDrawNotes(){
+  const v=IN_V,m=[];
+  if(v.badDates)m.push(v.badDates+' registros con fecha invalida ignorados.');
+  if(v.sinDin)m.push(v.sinDin+' observaciones sin dinamica: excluidas de los promedios de dinamica.');
+  if(v.fuera)m.push(v.fuera+' observaciones con dinamica fuera de 0&ndash;100%: excluidas de los promedios de dinamica.');
+  if(v.dup)m.push(v.dup+' observaciones duplicadas (mismo SKU y fecha) descartadas.');
+  if(v.sosp)m.push(v.sosp+' observaciones marcadas como sospechosas por el scraper (PTC &plusmn;50%): incluidas.');
+  if(v.sinTach&&IN_OBS.length)m.push(v.sinTach+' observaciones sin precio tachado (sin descuento): no cuentan en el promedio de precio tachado.');
+  if(IN_MISS.size)m.push('SKU sin observaciones con los filtros y periodo actuales: '+[...IN_MISS].map(id=>{const r=DATA.pivot.find(x=>x.id===id);return esc(r?r.sku:id);}).join(', ')+'.');
+  el('inNotes').innerHTML=m.join('<br>');
+}
+
+/* ---- Grafico de evolucion (SVG propio, responsive, alto fijo) ---- */
+const inColor=i=>i<PALETTE.length?PALETTE[i]:'hsl('+Math.round((i*137.5)%360)+',62%,58%)';
+function inBuildSeries(){
+  const useSku=IN.skus.size>0,m=new Map();
+  IN_OBS.forEach(o=>{
+    if(o.din==null||(IN.mode==='pos'&&!(o.din>0)))return;
+    const k=useSku?o.id:IN.group==='marca'?o.marca:IN.group==='seg'?o.seg:o.fab;
+    let s=m.get(k);if(!s){s={key:k,label:useSku?o.sku:k,by:new Map()};m.set(k,s);}
+    let a=s.by.get(o.d);if(!a){a={d:o.d,sd:0,sp:0,np:0,n:0};s.by.set(o.d,a);}
+    a.sd+=o.din;a.n++;if(o.ptc!=null){a.sp+=o.ptc;a.np++;}
+  });
+  IN_SERIES=[...m.values()].sort((a,b)=>a.label.localeCompare(b.label)).map((s,i)=>({key:s.key,label:s.label,color:inColor(i),pts:[...s.by.values()].sort((a,b)=>a.d<b.d?-1:1).map(a=>({d:a.d,din:a.sd/a.n,ptc:a.np?a.sp/a.np:null,n:a.n}))}));
+}
+function inToggleSeries(i){const k=IN_SERIES[i].key;IN.hidden.has(k)?IN.hidden.delete(k):IN.hidden.add(k);inDrawChart();}
+function inDrawChart(){
+  const box=el('inChart'),leg=el('inLegend');if(!box)return;
+  const S=IN_SERIES,by=IN.skus.size?'SKU':IN.group==='marca'?'marca':IN.group==='seg'?'segmento':'fabricante';
+  el('inChartSub').textContent='Una linea por '+by+' · '+(IN.mode==='pos'?'solo observaciones con dinamica':'todas las observaciones, 0 = sin descuento')+' · los dias sin datos no se unen';
+  leg.innerHTML=S.map((s,i)=>'<button type="button" class="legbtn'+(IN.hidden.has(s.key)?' off':'')+'" onclick="inToggleSeries('+i+')" title="Clic para mostrar u ocultar"><span class="legdot" style="background:'+s.color+'"></span>'+esc(s.label)+'</button>').join('');
+  const vis=S.filter(s=>!IN.hidden.has(s.key));IN_PTS=[];
+  if(!vis.length){box.innerHTML='<div class="note" style="padding:60px 0;text-align:center">'+(S.length?'Todas las series estan ocultas. Activalas desde la leyenda.':'No hay observaciones con dinamica valida para graficar.')+'</div>';return;}
+  const W=box.clientWidth||800,H=box.clientHeight||330,pL=46,pR=16,pT=20,pB=30,iw=W-pL-pR,ih=H-pT-pB;
+  const all=vis.flatMap(s=>s.pts),ts=all.map(p=>dayMs(p.d)),t0=Math.min(...ts),t1=Math.max(...ts),vmax=Math.max(...all.map(p=>p.din));
+  const step=vmax>.5?.1:vmax>.2?.05:.02,ymax=Math.max(step,Math.ceil(vmax/step-1e-9)*step);
+  const X=d=>t0===t1?pL+iw/2:pL+(dayMs(d)-t0)/(t1-t0)*iw,Y=v=>pT+ih*(1-v/ymax);
+  let svg='<svg width="'+W+'" height="'+H+'" viewBox="0 0 '+W+' '+H+'" onmousemove="inHover(event)" onmouseleave="inHoverEnd()">';
+  svg+='<text x="'+pL+'" y="11" font-size="10" font-weight="800" fill="var(--muted)">Dinamica promedio (%)</text>';
+  for(let i=0;i<=4;i++){const v=ymax*i/4,gy=Y(v);svg+='<line x1="'+pL+'" y1="'+gy.toFixed(1)+'" x2="'+(W-pR)+'" y2="'+gy.toFixed(1)+'" stroke="var(--line)"/><text x="'+(pL-6)+'" y="'+(gy+3.5).toFixed(1)+'" font-size="10" fill="var(--muted)" text-anchor="end">'+(v*100).toFixed(step<.05?1:0)+'%</text>';}
+  const dl=[...new Set(all.map(p=>p.d))].sort(),every=Math.max(1,Math.ceil(dl.length/Math.max(2,Math.floor(iw/62))));
+  dl.forEach((d,i)=>{if(i%every===0)svg+='<text x="'+X(d).toFixed(1)+'" y="'+(H-pB+16)+'" font-size="10" fill="var(--muted)" text-anchor="middle">'+fmtDate(d)+'</text>';});
+  vis.forEach(s=>{
+    let seg=[];const flush=()=>{if(seg.length>1)svg+='<path d="'+seg.map((p,k)=>(k?'L':'M')+X(p.d).toFixed(1)+','+Y(p.din).toFixed(1)).join(' ')+'" fill="none" stroke="'+s.color+'" stroke-width="2"/>';seg=[];};
+    s.pts.forEach(p=>{if(seg.length&&(dayMs(p.d)-dayMs(seg[seg.length-1].d))/864e5>1)flush();seg.push(p);IN_PTS.push({x:X(p.d),y:Y(p.din),s,p});});flush();
+    s.pts.forEach(p=>svg+='<circle cx="'+X(p.d).toFixed(1)+'" cy="'+Y(p.din).toFixed(1)+'" r="3" fill="'+s.color+'"/>');
+  });
+  svg+='<circle id="inHi" r="6" fill="none" stroke="var(--ink)" stroke-width="1.5" style="display:none"/></svg><div class="intip" id="inTip"></div>';
+  box.innerHTML=svg;
+}
+function inHover(e){
+  const box=el('inChart'),r=e.currentTarget.getBoundingClientRect(),mx=e.clientX-r.left,my=e.clientY-r.top;
+  let best=null,bd=1600;IN_PTS.forEach(q=>{const dd=(q.x-mx)**2+(q.y-my)**2;if(dd<bd){bd=dd;best=q;}});
+  const tip=el('inTip'),hi=el('inHi');if(!best){inHoverEnd();return;}
+  hi.setAttribute('cx',best.x);hi.setAttribute('cy',best.y);hi.style.display='';
+  tip.innerHTML='<b>'+fmtDMY(best.p.d)+'</b><br><span class="legdot" style="background:'+best.s.color+'"></span> '+esc(best.s.label)+'<br>Dinamica prom.: <b>'+fmtPct1(best.p.din)+'</b><br>Precio final prom.: <b>'+fmtMoney(best.p.ptc)+'</b><br>Observaciones: <b>'+best.p.n+'</b>';
+  tip.style.display='block';const tw=tip.offsetWidth,th=tip.offsetHeight;
+  tip.style.left=Math.max(4,Math.min(box.clientWidth-tw-4,best.x+12))+'px';tip.style.top=Math.max(4,Math.min(box.clientHeight-th-4,best.y-th-10))+'px';
+}
+function inHoverEnd(){const t=el('inTip'),h=el('inHi');if(t)t.style.display='none';if(h)h.style.display='none';}
+window.addEventListener('resize',()=>{if(tab==='insights'&&IN_OBS.length){cancelAnimationFrame(IN_RAF);IN_RAF=requestAnimationFrame(inDrawChart);}});
+document.addEventListener('click',e=>{
+  if(tab!=='insights')return;const p=e.composedPath().map(n=>n.id);
+  if(IN.calOpen&&!p.includes('inCalWrap')){IN.calOpen=false;el('inCal').innerHTML='';}
+  if(IN.skuOpen&&!p.includes('inSkuWrap')){IN.skuOpen=false;el('inSkList').innerHTML='';}
+});
+
+/* ---- Tabla de detalle: orden, busqueda, paginado y export ---- */
+function inTableRows(){
+  const q=normTxt(IN.tq),dir=IN.sortDir==='asc'?1:-1,k=IN.sortKey;
+  const r=IN_OBS.filter(o=>!q||normTxt(o.sku+' '+o.marca+' '+o.fab+' '+o.seg).includes(q));
+  const cmpD=(a,b)=>a.d<b.d?-1:a.d>b.d?1:0,cmpS=(a,b)=>a.sku.localeCompare(b.sku);
+  r.sort((a,b)=>dir*(k==='fecha'?(cmpD(a,b)||cmpS(a,b)):k==='sku'?(cmpS(a,b)||cmpD(a,b)):(((a.din??-1)-(b.din??-1))||cmpD(a,b))));
+  return r;
+}
+function inTq(v){IN.tq=v;IN.page=1;inDrawTable();}
+function inSort(k){if(IN.sortKey===k)IN.sortDir=IN.sortDir==='asc'?'desc':'asc';else{IN.sortKey=k;IN.sortDir=k==='sku'?'asc':'desc';}IN.page=1;inDrawTable();}
+function inPage(n){IN.page=n;inDrawTable();}
+function inDrawTable(){
+  const y=window.scrollY,rs=inTableRows(),pages=Math.max(1,Math.ceil(rs.length/IN_PAGE));IN.page=Math.min(Math.max(1,IN.page),pages);
+  const from=(IN.page-1)*IN_PAGE,slice=rs.slice(from,from+IN_PAGE);
+  const th=(k,t)=>'<th class="sortable" onclick="inSort(\''+k+'\')">'+t+(IN.sortKey===k?(IN.sortDir==='asc'?' &#9650;':' &#9660;'):'')+'</th>';
+  el('inTable').innerHTML='<table class="timeline"><thead><tr>'+th('fecha','Fecha')+'<th>Fabricante</th><th>Marca</th><th>Segmento</th>'+th('sku','SKU')+'<th>Precio final (PTC)</th><th>Precio tachado</th>'+th('din','Dinamica')+'</tr></thead><tbody>'
+   +(slice.length?slice.map(o=>'<tr><td>'+fmtDMY(o.d)+'</td><td>'+esc(o.fab)+'</td><td>'+esc(o.marca)+'</td><td>'+esc(o.seg)+'</td><td class="skucell">'+esc(o.sku)+'</td><td style="text-align:right">'+fmtMoney(o.ptc)+(o.sosp?' <span title="Marcado como sospechoso por el scraper">&#9888;</span>':'')+'</td><td style="text-align:right">'+(o.tach==null?'&mdash;':fmtMoney(o.tach))+'</td><td style="text-align:right">'+(o.din==null?'&mdash;':fmtPct1(o.din))+'</td></tr>').join(''):'<tr><td colspan="8" class="note" style="text-align:center;padding:24px">Sin resultados para la busqueda</td></tr>')+'</tbody></table>';
+  el('inPager').innerHTML='<span class="note">'+(rs.length?'Mostrando '+(from+1)+'&ndash;'+(from+slice.length)+' de '+rs.length:'0 resultados')+'</span><span style="display:flex;gap:8px;align-items:center"><button type="button" class="pgbtn" onclick="inPage('+(IN.page-1)+')"'+(IN.page<=1?' disabled':'')+'>&lsaquo; Anterior</button><span class="note">Pagina '+IN.page+' de '+pages+'</span><button type="button" class="pgbtn" onclick="inPage('+(IN.page+1)+')"'+(IN.page>=pages?' disabled':'')+'>Siguiente &rsaquo;</button></span>';
+  current=rs.map(inCsvRow);window.scrollTo(0,y);
+}
+const inCsvRow=o=>({Fecha:o.d,Fabricante:o.fab,Marca:o.marca,Segmento:o.seg,SKU:o.sku,'Precio final (PTC)':o.ptc??'','Precio tachado':o.tach??'','Dinamica %':o.din==null?'':Number((o.din*100).toFixed(2))});
+function inExport(){
+  const rs=inTableRows().map(inCsvRow);if(!rs.length)return;
+  const k=Object.keys(rs[0]),q=v=>{v=String(v??'');return /[;"\n]/.test(v)?'"'+v.replaceAll('"','""')+'"':v;};
+  const csv='﻿'+[k.join(';')].concat(rs.map(r=>k.map(x=>q(r[x])).join(';'))).join('\n');
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8;'}));a.download='pedidosya_insights.csv';a.click();
+}
+
+function render(){el('content').innerHTML=tab==='timeline'?timeline():tab==='preciolitro'?precioLitro():tab==='comparar'?comparar():tab==='heatmap'?heatmap():tab==='changes'?changes():insights();if(tab==='insights')inUpdate();}
 function downloadCSV(){if(!current.length)return;const k=Object.keys(current[0]);const csv=[k.join(';')].concat(current.map(r=>k.map(x=>String(r[x]??'').replaceAll(';',',')).join(';'))).join('\n');const blob=new Blob([csv],{type:'text/csv;charset=utf-8;'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='pedidosya_vista.csv';a.click();}
 
 /* ---- Grafico de evolucion de 1 SKU (click en un producto en Evolucion/Heatmap) ---- */
