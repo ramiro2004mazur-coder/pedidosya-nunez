@@ -56,3 +56,9 @@
 2026-09-21.csv: SKU nuevo sin catalogo -> 'Bitburger | Cerveza Bitburger 330 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-09-21.csv: SKU nuevo sin catalogo -> 'Kostritzer | Cerveza Kostritzer Schwarzbier 500 Ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-09-21.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 473 ml' 2050.95 -> 3729.0 (2026-09-21), se guarda igual marcado como sospechoso
+2026-09-22.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 600 ml' 3365.45 -> 6119.0 (2026-09-22), se guarda igual marcado como sospechoso
+2026-09-22.csv: PRECIO SOSPECHOSO -> 'Salta | Cerveza Salta Cautiva Fresh Lager 473 ml' 2061.5 -> 3325.0 (2026-09-22), se guarda igual marcado como sospechoso
+2026-09-22.csv: PRECIO SOSPECHOSO -> 'Estrella De Galicia | Cerveza Estrella De Galicia 0.0 Lata 330 ml' 1697.5 -> 3395.0 (2026-09-22), se guarda igual marcado como sospechoso
+2026-09-22.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 600 ml' 3365.45 -> 6119.0 (2026-09-22), se guarda igual marcado como sospechoso
+2026-09-22.csv: PRECIO SOSPECHOSO -> 'Salta | Cerveza Salta Cautiva Fresh Lager 473 ml' 2061.5 -> 3325.0 (2026-09-22), se guarda igual marcado como sospechoso
+2026-09-22.csv: PRECIO SOSPECHOSO -> 'Estrella De Galicia | Cerveza Estrella De Galicia 0.0 Lata 330 ml' 1697.5 -> 3395.0 (2026-09-22), se guarda igual marcado como sospechoso
