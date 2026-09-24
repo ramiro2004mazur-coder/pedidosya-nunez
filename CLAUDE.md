@@ -94,9 +94,26 @@ el scraper las leia como precio de fleje sin descuento. Ver el
 docstring de `to_row()` en `scraper/common.py` para el detalle de cada
 formato y sus formulas.
 
+`pos` (opcional, desde 2026-09-24) es la posicion del SKU en la lectura:
+orden de la fila valida en el CSV crudo (1 = primera). `ingest_run.py` lo
+guarda solo para fechas nuevas; el historico previo no tiene posicion (los
+graficos/insights de posicion dicen "sin datos" hasta que se acumulen dias).
+Si un SKU viene repetido en el mismo CSV, se conserva la primera posicion.
+
 **1 fecha = 1 lectura.** No es AM/PM (eso se usó hasta el 18/08/2026, se
 migró a una sola lectura diaria porque se confirmó que la dinámica no
 cambia según la hora — ver regla más abajo).
+
+### Dashboard: Evolucion por SKU y Frecuencia promocional
+
+- **Evolucion por SKU** (`evUpdate()` en `docs/index.html`): periodo por
+  presets ("Hoy" = ultima lectura) o calendario, seleccion de SKU/marca
+  completa (default = SKU foco CMQ, `EV_FOCO`, por id), KPIs, 6 graficos y
+  comparacion (semana/mes/periodo anterior). Disponibilidad = dias presente /
+  dias con lectura en el periodo.
+- **Frecuencia promocional** (Insights, `inDrawFreq()`): dias con dinamica / dias
+  presente, por SKU, con semaforo (>80 verde, 50-80 amarillo, <50 rojo),
+  insights automaticos y scatter dinamica vs frecuencia.
 
 ### Pestaña Insights: fabricante
 

@@ -134,6 +134,8 @@ body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(
 .pgbtn:disabled{opacity:.35;cursor:default}
 .timeline th.sortable{cursor:pointer}
 .innotes{font-size:12px;color:var(--muted);line-height:1.6;margin:8px 0 0}
+body.dark input[type=date]{color-scheme:dark}body.light input[type=date]{color-scheme:light}
+.frins{margin:0;padding-left:0;list-style:none;font-size:13px;line-height:1.55}.frins li{padding:7px 0;border-bottom:1px solid var(--line)}
 @media(max-width:1000px){.filterbar{flex-direction:column;align-items:stretch}.grid2{grid-template-columns:1fr}.wrap{padding:14px}}
 </style>
 </head>
@@ -198,7 +200,7 @@ const cls=v=>v==null?'':v>0?'up':v<0?'down':'flat';
 function flat(r){const o={Marca:r.marca,SKU:r.sku,Calibre:r.calibre,Grupo:r.grupo,Segmento:r.segmento};dates().forEach(d=>{const x=r.dates[d]||{};o[fmtDate(d)+' Fleje']=x.fleje??'';o[fmtDate(d)+' PTC']=x.ptc??'';o[fmtDate(d)+' Dinamica']=x.dinamica??'';});return o;}
 function flatLitro(r){const o={Marca:r.marca,SKU:r.sku,Calibre:r.calibre,Grupo:r.grupo,Segmento:r.segmento,'Volumen (L)':r.volumen_l??'N/D'};dates().forEach(d=>{const l=litros(r.dates[d],r.volumen_l);o[fmtDate(d)+' Fleje/L']=l?Number(l.fleje.toFixed(3)):'';o[fmtDate(d)+' PTC/L']=l?Number(l.ptc.toFixed(3)):'';});return o;}
 function precioLitro(){let rs=rows();metrics(rs);if(el('groupBrand').checked)rs.sort((a,b)=>(a.marca+a.sku).localeCompare(b.marca+b.sku));current=rs.map(flatLitro);const D=dates();let h='<div class="panel" style="padding:12px 14px;margin-bottom:10px"><span class="note">Precio por litro (fleje y PTC) para comparar formatos distintos de forma justa. SKUs sin volumen cargado en <code>data/volume_reference.json</code> muestran <b>N/D</b>.</span></div>';h+='<div class="tablebox"><table class="timeline"><thead><tr><th class="product">Producto</th>'+D.map(d=>'<th>'+fmtDate(d)+'</th>').join('')+'<th>&Delta; Precio/L</th></tr></thead><tbody>';rs.forEach(r=>{const volL=r.volumen_l;const f=litros(r.dates[D[0]],volL),l=litros(r.dates[D[D.length-1]],volL);const vp=(f&&l)?l.ptc-f.ptc:null;h+='<tr><td class="product" onclick="openChart(\''+r.id+'\')">'+r.marca+' '+r.calibre+'<span class="subsku">'+r.sku+'</span></td>'+D.map(d=>'<td>'+priceLitroHtml(r.dates[d],volL)+'</td>').join('')+'<td class="diff '+cls(vp)+'">'+(vp==null?'&mdash;':(vp>0?'+':'')+fmtMoneyL(Math.round(vp)))+'</td></tr>';});return h+'</tbody></table></div>';}
-function timeline(){let rs=rows();metrics(rs);if(el('groupBrand').checked)rs.sort((a,b)=>(a.marca+a.sku).localeCompare(b.marca+b.sku));current=rs.map(flat);const D=dates();let h='<div class="tablebox"><table class="timeline"><thead><tr><th class="product">Producto</th>'+D.map(d=>'<th>'+fmtDate(d)+'</th>').join('')+'<th>&Delta; PTC</th><th>&Delta; Din.</th></tr></thead><tbody>';rs.forEach(r=>{const f=r.dates[D[0]],l=r.dates[D[D.length-1]],vp=(f&&l)?l.ptc-f.ptc:null,vd=(f&&l)?l.dinamica-f.dinamica:null;h+='<tr><td class="product" onclick="openChart(\''+r.id+'\')">'+r.marca+' '+r.calibre+'<span class="subsku">'+r.sku+'</span></td>'+D.map(d=>'<td>'+priceHtml(r.dates[d])+'</td>').join('')+'<td class="diff '+cls(vp)+'">'+(vp==null?'&mdash;':(vp>0?'+':'')+fmtMoney(vp))+'</td><td class="diff '+cls(vd)+'">'+(vd==null?'&mdash;':(vd>0?'+':'')+Math.round(vd*100)+' pp')+'</td></tr>';});return h+'</tbody></table></div>';}
+function timeline(){let rs=rows();metrics(rs);if(el('groupBrand').checked)rs.sort((a,b)=>(a.marca+a.sku).localeCompare(b.marca+b.sku));current=rs.map(flat);const D=evDates();let h=evSkeleton()+'<div class="panel" style="padding:12px 14px;margin:14px 0 10px"><h3 style="margin:0 0 4px">Tabla por dia</h3><span class="note">Usa los filtros de arriba (busqueda, marca, tamano...) y el periodo elegido.</span></div><div class="tablebox"><table class="timeline"><thead><tr><th class="product">Producto</th>'+D.map(d=>'<th>'+fmtDate(d)+'</th>').join('')+'<th>&Delta; PTC</th><th>&Delta; Din.</th></tr></thead><tbody>';rs.forEach(r=>{const f=r.dates[D[0]],l=r.dates[D[D.length-1]],vp=(f&&l)?l.ptc-f.ptc:null,vd=(f&&l)?l.dinamica-f.dinamica:null;h+='<tr><td class="product" onclick="openChart(\''+r.id+'\')">'+r.marca+' '+r.calibre+'<span class="subsku">'+r.sku+'</span></td>'+D.map(d=>'<td>'+priceHtml(r.dates[d])+'</td>').join('')+'<td class="diff '+cls(vp)+'">'+(vp==null?'&mdash;':(vp>0?'+':'')+fmtMoney(vp))+'</td><td class="diff '+cls(vd)+'">'+(vd==null?'&mdash;':(vd>0?'+':'')+Math.round(vd*100)+' pp')+'</td></tr>';});return h+'</tbody></table></div>';}
 function heatmap(){let rs=rows();metrics(rs);current=rs.map(flat);const D=dates();let h='<div class="tablebox"><table class="timeline"><thead><tr><th class="product">Producto</th>'+D.map(d=>'<th>'+fmtDate(d)+'</th>').join('')+'</tr></thead><tbody>';rs.forEach(r=>{h+='<tr><td class="product" onclick="openChart(\''+r.id+'\')">'+r.marca+' '+r.calibre+'<span class="subsku">'+r.sku+'</span></td>'+D.map(d=>{const x=r.dates[d],dy=x?x.dinamica:null,bg=dy==null?'transparent':dy>=.4?'rgba(31,207,138,.35)':dy>=.25?'rgba(31,207,138,.22)':dy>0?'rgba(255,207,92,.20)':'transparent';return '<td style="background:'+bg+';text-align:center;font-weight:900">'+(dy==null?'&mdash;':fmtPct(dy))+'</td>';}).join('')+'</tr>';});return h+'</tbody></table></div>';}
 function changes(){const D=dates();if(D.length<2){metrics(rows());return '<div class="panel note">Necesitas al menos 2 dias para ver cambios.</div>';}const last=D[D.length-1],prev=D[D.length-2];let rs=rows().filter(r=>r.dates[prev]&&r.dates[last]).map(r=>{const a=r.dates[prev],b=r.dates[last];return{Marca:r.marca,SKU:r.sku,Calibre:r.calibre,Grupo:r.grupo,PTC_prev:a.ptc,PTC_last:b.ptc,Var_PTC:b.ptc-a.ptc,Dyn_prev:a.dinamica,Dyn_last:b.dinamica,Var_Dyn:b.dinamica-a.dinamica};}).sort((a,b)=>Math.abs(b.Var_PTC)-Math.abs(a.Var_PTC));current=rs;metrics(rows());return '<div class="panel"><h3>Cambios '+fmtDate(prev)+' vs '+fmtDate(last)+'</h3>'+simple(rs,[['Marca'],['SKU'],['Calibre'],['Grupo'],['PTC_prev','PTC anterior','money'],['PTC_last','PTC ultimo','money'],['Var_PTC','&Delta; PTC','money'],['Dyn_prev','Din anterior','pct'],['Dyn_last','Din ultimo','pct'],['Var_Dyn','&Delta; Din','pp']])+'</div>';}
 const inc=(n,list)=>list.some(x=>String(n||'').toLowerCase().includes(String(x).toLowerCase())||String(x).toLowerCase().includes(String(n||'').toLowerCase()));
@@ -277,7 +279,7 @@ function inObs(lo0,hi0,sec){
       const tach=(fl!=null&&ptc!=null&&fl>ptc)?fl:null;
       if(tach==null)v.sinTach++;
       if(x.sospechoso)v.sosp++;
-      out.push({d,id:r.id,sku:r.sku,marca:r.marca,seg:r.segmento,fab:fabOf(r),ptc,tach,din,sosp:!!x.sospechoso});
+      out.push({d,id:r.id,sku:r.sku,marca:r.marca,seg:r.segmento,fab:fabOf(r),ptc,tach,din,pos:(x.pos==null||isNaN(Number(x.pos)))?null:Number(x.pos),sosp:!!x.sospechoso});
     });
   });
   if(!sec)IN_V=v;return out;
@@ -309,7 +311,7 @@ function insights(){
    +'<input id="inSk" class="skinput" autocomplete="off" placeholder="Buscar SKU por nombre y seleccionar uno o varios..." onfocus="inSkuOpen()" oninput="inSkuOpen()"/><div id="inSkList"></div></div>'
    +'<div class="innotes" id="inNotes"></div></div>'
    +'<div id="inEmpty" class="panel note" style="display:none"></div>'
-   +'<div id="inData"><div class="metrics" id="inMetrics"></div><div id="inCmpPanel"></div>'
+   +'<div id="inData"><div class="metrics" id="inMetrics"></div><div id="inCmpPanel"></div><div id="inFreq"></div>'
    +'<div class="panel"><div class="chartHead"><div><h3>Evolucion temporal de la dinamica</h3><div class="sub" id="inChartSub"></div></div></div><div class="chartBox" id="inChart"></div><div class="chartLegend inleg" id="inLegend"></div></div>'
    +'<div class="panel"><div class="inhead"><h3 style="margin:0">Detalle de observaciones</h3><div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><input id="inTq" class="skinput" style="width:240px" placeholder="Buscar en la tabla..." oninput="inTq(this.value)" value="'+esc(IN.tq)+'"/><button type="button" class="iconbtn" onclick="inExport()">&#8595; Exportar CSV</button></div></div>'
    +'<div class="tablebox intable" id="inTable"></div><div class="inhead" style="margin:10px 0 0" id="inPager"></div></div></div>'
@@ -325,7 +327,7 @@ function inUpdate(){
   const empty=!IN_OBS.length;
   el('inEmpty').style.display=empty?'':'none';el('inData').style.display=empty?'none':'';
   if(empty){el('inEmpty').textContent='No hay datos disponibles para los filtros y el periodo seleccionados';current=[];}
-  else{el('inMetrics').innerHTML=inMetricsHtml(IN_OBS);inBuildSeries();inDrawChart();inDrawCmp();inDrawTable();}
+  else{el('inMetrics').innerHTML=inMetricsHtml(IN_OBS);inBuildSeries();inDrawChart();inDrawCmp();inDrawFreq();inDrawTable();}
   window.scrollTo(0,y);
 }
 function inDrawPeriod(){
@@ -490,7 +492,8 @@ function inHover(e,id){
   tip.style.left=Math.max(4,Math.min(box.clientWidth-tw-4,best.x+12))+'px';tip.style.top=Math.max(4,Math.min(box.clientHeight-th-4,best.y-th-10))+'px';
 }
 function inHoverEnd(id){const t=el(id+'Tip'),h=el(id+'Hi');if(t)t.style.display='none';if(h)h.style.display='none';}
-window.addEventListener('resize',()=>{if(tab==='insights'&&IN_OBS.length){cancelAnimationFrame(IN_RAF);IN_RAF=requestAnimationFrame(()=>{inDrawChart();inDrawCmpChart();});}});
+window.addEventListener('resize',()=>{if(tab==='insights'&&IN_OBS.length){cancelAnimationFrame(IN_RAF);IN_RAF=requestAnimationFrame(()=>{inDrawChart();inDrawCmpChart();inDrawScatter();});}
+  if(tab==='timeline'&&el('evPanel')){cancelAnimationFrame(IN_RAF);IN_RAF=requestAnimationFrame(evDrawCharts);}});
 document.addEventListener('click',e=>{
   if(tab!=='insights')return;const p=e.composedPath().map(n=>n.id);
   if(IN.calOpen==='A'&&!p.includes('inCalWrap')){IN.calOpen=false;el('inCal').innerHTML='';}
@@ -550,7 +553,244 @@ function inExport(){
   const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8;'}));a.download='pedidosya_insights.csv';a.click();
 }
 
-function render(){el('content').innerHTML=tab==='timeline'?timeline():tab==='preciolitro'?precioLitro():tab==='comparar'?comparar():tab==='heatmap'?heatmap():tab==='changes'?changes():insights();if(tab==='insights')inUpdate();}
+/* ---- Evolucion por SKU: periodo libre, seleccion multiple, KPIs, 6 graficos y comparacion de periodos ---- */
+// SKU foco CMQ (default). Se resuelven por id; si alguno deja de existir simplemente no aparece.
+const EV_FOCO=['brahma-cerveza-brahma-chopp-473-ml','quilmes-cerveza-quilmes-clasica-473ml','quilmes-cerveza-quilmes-clasica-710ml','michelob-ultra-cerveza-michelob-ultra-sin-gluten-473-ml','michelob-cerveza-michelob-ultra-porron-275-ml','stella-artois-cerveza-stella-artois-473-ml','stella-artois-cerveza-stella-artois-lager-710-ml','andes-origen-cerveza-andes-origen-rubia-710-ml','budweiser-cerveza-budweiser-lata-473-ml','1890-cerveza-1890-quilmes-473-ml'];
+const EV_PRESETS=[['hoy','Hoy'],['7','Ultimos 7 dias'],['30','Ultimos 30 dias'],['sem','Semana actual'],['semant','Semana anterior'],['mtd','Mes actual (MTD)'],['mesant','Mes anterior completo'],['trim','Trimestre actual'],['anio','Año actual'],['all','Todo el historico']];
+const EV={from:null,to:null,preset:'all',skus:new Set(),brands:new Set(),foco:true,cmp:'off',open:false,hidden:new Set()};
+let EV_PTS={},EV_FMT={},EV_SER=[],EV_ROWS=[];
+const evShort=r=>r.sku.replace(/^Cerv[a-z]*\s+/i,'');
+function evRange(){const D=dates();return{lo:EV.from||D[0],hi:EV.to||D[D.length-1]};}
+function evDates(lo,hi){const r=evRange();lo=lo||r.lo;hi=hi||r.hi;return dates().filter(d=>d>=lo&&d<=hi);}
+function evRows(){
+  if(EV.foco&&!EV.skus.size&&!EV.brands.size)return EV_FOCO.map(id=>DATA.pivot.find(r=>r.id===id)).filter(Boolean);
+  return DATA.pivot.filter(r=>EV.skus.has(r.id)||EV.brands.has(r.marca)).sort((a,b)=>a.sku.localeCompare(b.sku));
+}
+function evPresetRange(k){
+  const D=dates(),a=D[D.length-1];if(!a)return[null,null];
+  const dow=(new Date(dayMs(a)).getUTCDay()+6)%7,mon=addDays(a,-dow),m1=a.slice(0,8)+'01',[y,m]=a.split('-').map(Number);
+  if(k==='hoy')return[a,a];if(k==='7')return[addDays(a,-6),a];if(k==='30')return[addDays(a,-29),a];
+  if(k==='sem')return[mon,a];if(k==='semant')return[addDays(mon,-7),addDays(mon,-1)];
+  if(k==='mtd')return[m1,a];if(k==='mesant')return[shiftMonth(m1,-1),addDays(m1,-1)];
+  if(k==='trim')return[y+'-'+String(Math.floor((m-1)/3)*3+1).padStart(2,'0')+'-01',a];
+  if(k==='anio')return[y+'-01-01',a];
+  return[null,null];
+}
+function evSetPreset(k){const[f,t]=evPresetRange(k);EV.preset=k;EV.from=f;EV.to=t;evUpdate();}
+function evDate(){const f=el('evFrom').value,t=el('evTo').value;EV.preset='custom';EV.from=f||null;EV.to=t||null;if(EV.from&&EV.to&&EV.from>EV.to){const x=EV.from;EV.from=EV.to;EV.to=x;}evUpdate();}
+function evSetCmp(v){EV.cmp=v;evUpdate();}
+function evAddSku(id){EV.foco=false;EV.skus.add(id);el('evSk').value='';EV.open=false;evUpdate();}
+function evAddBrand(b){if(!b)return;EV.foco=false;EV.brands.add(b);evUpdate();}
+function evRm(kind,v){(kind==='s'?EV.skus:EV.brands).delete(v);if(!EV.skus.size&&!EV.brands.size)EV.foco=true;evUpdate();}
+function evFoco(){EV.foco=true;EV.skus.clear();EV.brands.clear();EV.hidden.clear();evUpdate();}
+function evSkuOpen(){EV.open=true;evDrawList();}
+function evDrawList(){
+  const box=el('evSkList');if(!EV.open){box.innerHTML='';return;}
+  const q=normTxt(el('evSk').value),all=DATA.pivot.filter(r=>!q||normTxt(r.sku+' '+r.marca).includes(q)).sort((a,b)=>a.sku.localeCompare(b.sku)).slice(0,80);
+  box.innerHTML='<div class="sklist">'+(all.length?all.map(r=>'<div class="skitem'+((EV.skus.has(r.id)||EV.brands.has(r.marca))?' on':'')+'" onclick="evAddSku(\''+esc(r.id)+'\')">'+esc(r.sku)+' <span class="note">&middot; '+esc(r.marca)+'</span></div>').join(''):'<div class="skitem note">Sin resultados</div>')+'</div>';
+}
+function evSkeleton(){
+  const brands=uniq(DATA.pivot.map(r=>r.marca));
+  return '<div class="panel inpanel" id="evPanel"><div class="inlab">Periodo</div><div id="evPresets" class="chips" style="margin-top:0"></div>'
+   +'<div class="inrow"><div class="inblock"><div class="inlab">Fecha desde</div><input type="date" id="evFrom" class="skinput" style="width:160px" onchange="evDate()"></div>'
+   +'<div class="inblock"><div class="inlab">Fecha hasta</div><input type="date" id="evTo" class="skinput" style="width:160px" onchange="evDate()"></div>'
+   +'<div class="inblock"><div class="inlab">Comparar con</div><select id="evCmp" class="selminimal" onchange="evSetCmp(this.value)"><option value="off">Sin comparacion</option><option value="week">Semana anterior (&minus;7 dias)</option><option value="month">Mes anterior (mismas fechas)</option><option value="prev">Mismo periodo anterior (igual duracion)</option></select></div>'
+   +'<div class="inblock"><div class="inlab">Agregar marca completa</div><select id="evBrand" class="selminimal" onchange="evAddBrand(this.value);this.value=\'\'"><option value="">Elegir marca...</option>'+brands.map(b=>'<option>'+esc(b)+'</option>').join('')+'</select></div>'
+   +'<div class="inblock" style="margin-left:auto"><div class="inlab">&nbsp;</div><button type="button" class="iconbtn" onclick="evFoco()">SKU foco CMQ</button></div></div>'
+   +'<div class="inblock" id="evSkuWrap" style="position:relative"><div class="inlab">SKU (uno o varios) &middot; marca completa</div><div id="evSel" class="cchips" style="margin:0 0 8px"></div>'
+   +'<input id="evSk" class="skinput" autocomplete="off" placeholder="Buscar SKU por nombre y seleccionar uno o varios..." onfocus="evSkuOpen()" oninput="evSkuOpen()"/><div id="evSkList"></div></div>'
+   +'<div class="innotes" id="evNotes"></div></div>'
+   +'<div id="evEmpty" class="panel note" style="display:none"></div>'
+   +'<div id="evData"><div class="metrics" id="evMetrics"></div><div id="evCmpPanel"></div>'
+   +'<div class="panel"><div class="chartHead"><div><h3>Series</h3><div class="sub">Clic en una serie para mostrarla u ocultarla en los graficos por SKU</div></div></div><div class="chartLegend inleg" id="evLegend"></div></div>'
+   +'<div class="grid2" id="evCharts">'+[['evC1','Evolucion de dinamica %'],['evC2','Evolucion de precio final'],['evC3','Evolucion de precio fleje'],['evC4','Evolucion de posicion (1 = mejor)'],['evC5','Evolucion de frecuencia promocional'],['evC6','Evolucion de disponibilidad']].map(c=>'<div class="panel"><div class="chartHead"><div><h3>'+c[1]+'</h3><div class="sub" id="'+c[0]+'s"></div></div></div><div class="chartBox" id="'+c[0]+'" style="height:250px"></div></div>').join('')+'</div></div>';
+}
+/* KPIs del periodo sobre los SKU seleccionados. Solo datos reales: los dias sin lectura no se completan. */
+function evMV(rows,lo,hi){
+  const D=evDates(lo,hi),nD=D.length;
+  let obs=0,promo=0,sd=0,dn=0,sp=0,np=0,best=null,pf=0,pfn=0,ff=0,ffn=0;const freqs=[],dispo=[];
+  rows.forEach(r=>{
+    let pres=0,pr=0,vd=0;
+    D.forEach(d=>{const x=r.dates[d];if(!x)return;pres++;obs++;
+      const din=Number(x.dinamica);if(!isNaN(din)){vd++;sd+=din;dn++;if(din>0)pr++;}
+      if(x.pos!=null){sp+=Number(x.pos);np++;best=best==null?Number(x.pos):Math.min(best,Number(x.pos));}
+      if(x.ptc!=null){pf+=Number(x.ptc);pfn++;}if(x.fleje!=null){ff+=Number(x.fleje);ffn++;}});
+    promo+=pr;if(vd)freqs.push(pr/vd);if(nD)dispo.push(pres/nD);
+  });
+  return{freq:freqs.length?avg(freqs):null,din:dn?sd/dn:null,pos:np?sp/np:null,best,ptc:pfn?pf/pfn:null,fleje:ffn?ff/ffn:null,dispo:dispo.length?avg(dispo):null,dias:nD,obs};
+}
+const EV_MDEF=[['Frecuencia promocional prom.','freq','p'],['Dinamica promedio','din','p'],['Posicion promedio','pos','n1'],['Mejor posicion','best','n0'],['Precio final prom.','ptc','$'],['Precio fleje prom.','fleje','$'],['Disponibilidad prom.','dispo','p']];
+const evFmt=(v,t)=>v==null?'-':t==='p'?fmtPct1(v):t==='$'?fmtMoney(v):t==='n1'?v.toFixed(1).replace('.',','):v;
+function evCmpRange(){
+  if(EV.cmp==='off')return null;const{lo,hi}=evRange();
+  if(EV.cmp==='month')return{lo:shiftMonth(lo,-1),hi:shiftMonth(hi,-1)};
+  if(EV.cmp==='week')return{lo:addDays(lo,-7),hi:addDays(hi,-7)};
+  const len=Math.round((dayMs(hi)-dayMs(lo))/864e5)+1;return{lo:addDays(lo,-len),hi:addDays(hi,-len)};
+}
+function evUpdate(){
+  if(!el('evPanel'))return;
+  const D=dates();if(!D.length)return;
+  const{lo,hi}=evRange(),rows=evRows();EV_ROWS=rows;
+  el('evPresets').innerHTML=EV_PRESETS.map(p=>'<span class="chip'+(EV.preset===p[0]?' active':'')+'" onclick="evSetPreset(\''+p[0]+'\')">'+p[1]+'</span>').join('');
+  el('evFrom').min=el('evTo').min=D[0];el('evFrom').max=el('evTo').max=D[D.length-1];el('evFrom').value=lo;el('evTo').value=hi;el('evCmp').value=EV.cmp;
+  const sel=[...EV.brands].map(b=>'<span class="cchip">Marca: '+esc(b)+'<button type="button" onclick="evRm(\'b\',\''+esc(b).replace(/'/g,'')+'\')">&times;</button></span>').join('')+[...EV.skus].map(id=>DATA.pivot.find(r=>r.id===id)).filter(Boolean).map(r=>'<span class="cchip" title="'+esc(r.sku)+'">'+esc(evShort(r))+'<button type="button" onclick="evRm(\'s\',\''+esc(r.id)+'\')">&times;</button></span>').join('');
+  el('evSel').innerHTML=(EV.foco&&!EV.skus.size&&!EV.brands.size)?'<span class="chip active">SKU foco CMQ ('+rows.length+')</span>':sel;
+  evDrawList();
+  const days=evDates(),n=days.length,anchor=D[D.length-1];
+  el('evNotes').innerHTML='Periodo: '+rgLabel(lo,hi)+' &middot; '+n+' dias con lectura. "Hoy" = ultima lectura ('+fmtDMY(anchor)+'). Disponibilidad = % de dias del periodo con lectura en que el SKU estuvo publicado. Frecuencia promocional = dias con dinamica / dias presente.';
+  const has=n&&rows.length&&rows.some(r=>days.some(d=>r.dates[d]));
+  el('evEmpty').style.display=has?'none':'';el('evData').style.display=has?'':'none';
+  if(!has){el('evEmpty').textContent=!rows.length?'Elegi al menos un SKU o una marca.':'No hay datos disponibles para la seleccion y el periodo elegidos.';return;}
+  const a=evMV(rows,lo,hi);el('evMetrics').innerHTML=EV_MDEF.map(d=>card(d[0],evFmt(a[d[1]],d[2]))).join('')+card('Dias con lectura',a.dias)+card('SKUs',rows.length);
+  evDrawCmp(a,rows,lo,hi);evDrawCharts();
+}
+function evDrawCmp(a,rows,lo,hi){
+  const box=el('evCmpPanel'),R=evCmpRange();if(!R){box.innerHTML='';return;}
+  const b=evMV(rows,R.lo,R.hi);
+  if(!b.obs){box.innerHTML='<div class="panel note">No hay datos disponibles en el periodo de comparacion ('+rgLabel(R.lo,R.hi)+') para la seleccion.</div>';return;}
+  const delta=(x,y,t)=>{if(x==null||y==null)return'&mdash;';const d=x-y;if(!d)return'=';const ar=d>0?'&#9650; ':'&#9660; ',sg=d>0?'+':'-';
+    if(t==='p')return ar+sg+Math.abs(d*100).toFixed(1).replace('.',',')+' pp';
+    if(t==='$')return ar+sg+fmtMoney(Math.abs(d))+(y?' ('+sg+Math.abs(d/y*100).toFixed(1).replace('.',',')+'%)':'');
+    return ar+sg+Math.abs(d).toFixed(1).replace('.',',');};
+  const rowsH=EV_MDEF.map(d=>{const dv=(a[d[1]]!=null&&b[d[1]]!=null)?a[d[1]]-b[d[1]]:0,pos=d[1]==='pos'||d[1]==='best';
+    const c=pos&&dv?(dv<0?'var(--green)':'var(--red)'):'inherit';
+    return '<tr><td style="text-align:left;font-weight:700">'+d[0]+'</td><td style="text-align:right">'+evFmt(a[d[1]],d[2])+'</td><td style="text-align:right">'+evFmt(b[d[1]],d[2])+'</td><td style="text-align:right;color:'+c+'">'+delta(a[d[1]],b[d[1]],d[2])+'</td></tr>';}).join('');
+  box.innerHTML='<div class="panel"><div class="chartHead"><div><h3>Comparacion de periodos</h3><div class="sub">Misma seleccion de SKU en ambos periodos. En posicion, menor es mejor (&#9660; en verde = mejora).</div></div></div><div class="tablebox"><table class="timeline"><thead><tr><th style="text-align:left">Metrica</th><th>Actual<br><span class="note">'+rgLabel(lo,hi)+'</span></th><th>Comparacion<br><span class="note">'+rgLabel(R.lo,R.hi)+'</span></th><th>Variacion (actual &minus; comparacion)</th></tr></thead><tbody>'+rowsH+'</tbody></table></div></div>';
+}
+function evPerSku(rows,D,fn){
+  return rows.map((r,i)=>{const pts=[];
+    D.forEach(d=>{const x=r.dates[d];if(!x){pts.push({gap:1});return;}const v=fn(x);if(v!=null&&!isNaN(v))pts.push({t:dayMs(d),d,lbl:fmtDate(d),v});});
+    return{key:r.id,label:evShort(r),color:inColor(i),pts};});
+}
+function evAgg(rows,D,label,fn){
+  const pts=[];D.forEach(d=>{const v=fn(d);if(v!=null)pts.push({t:dayMs(d),d,lbl:fmtDate(d),v});});
+  return[{key:'agg',label,color:PALETTE[0],pts}];
+}
+function evDrawCharts(){
+  const rows=EV_ROWS,D=evDates();if(!rows.length||!D.length)return;
+  const vis=s=>s.filter(x=>!EV.hidden.has(x.key));
+  const S=evPerSku(rows,D,x=>Number(x.dinamica));EV_SER=S;
+  el('evLegend').innerHTML=S.map((s,i)=>'<button type="button" class="legbtn'+(EV.hidden.has(s.key)?' off':'')+'" onclick="evToggle(\''+esc(s.key)+'\')"><span class="legdot" style="background:'+s.color+'"></span>'+esc(s.label)+'</button>').join('');
+  const pick=fn=>{const o=evPerSku(rows,D,fn);o.forEach((s,i)=>s.color=S[i].color);return vis(o);};
+  const T=[dayMs(D[0]),dayMs(D[D.length-1])];
+  const freq=d=>{let p=0,n=0;rows.forEach(r=>{const x=r.dates[d];if(!x||x.dinamica==null)return;n++;if(Number(x.dinamica)>0)p++;});return n?p/n:null;};
+  const disp=d=>rows.filter(r=>r.dates[d]).length/rows.length;
+  const nm='Seleccion ('+rows.length+' SKU)';
+  const hasPos=rows.some(r=>D.some(d=>r.dates[d]&&r.dates[d].pos!=null));
+  evLines('evC1',pick(x=>Number(x.dinamica)),{fmt:fmtPct1,T,sub:'Un SKU por linea'});
+  evLines('evC2',pick(x=>x.ptc),{fmt:fmtMoney,T,sub:'Un SKU por linea'});
+  evLines('evC3',pick(x=>x.fleje),{fmt:fmtMoney,T,sub:'Un SKU por linea'});
+  evLines('evC4',hasPos?pick(x=>x.pos):[],{fmt:v=>'#'+Math.round(v),T,inv:true,int:true,sub:'Orden de aparicion en el listado (menor = mas arriba)',empty:'Sin datos de posicion en este periodo. Se guarda desde la corrida en que se agrego esta metrica.'});
+  evLines('evC5',evAgg(rows,D,nm,freq),{fmt:fmtPct1,T,range:[0,1],sub:'% de los SKU presentes ese dia con dinamica'});
+  evLines('evC6',evAgg(rows,D,nm,disp),{fmt:fmtPct1,T,range:[0,1],sub:'% de los SKU seleccionados publicados ese dia'});
+}
+function evToggle(k){EV.hidden.has(k)?EV.hidden.delete(k):EV.hidden.add(k);evDrawCharts();}
+function evLines(id,series,o){
+  const box=el(id);if(!box)return;EV_PTS[id]=[];EV_FMT[id]=o.fmt;const sub=el(id+'s');if(sub)sub.textContent=o.sub||'';
+  const all=series.flatMap(s=>s.pts.filter(p=>p.v!=null&&!p.gap));
+  if(!all.length){box.innerHTML='<div class="note" style="padding:60px 12px;text-align:center">'+(o.empty||(series.length?'Sin datos en el periodo':'Todas las series estan ocultas'))+'</div>';return;}
+  const W=box.clientWidth||600,H=box.clientHeight||250,pL=58,pR=14,pT=16,pB=28,iw=W-pL-pR,ih=H-pT-pB;
+  let vmin,vmax;
+  if(o.range){[vmin,vmax]=o.range;}else{vmin=Math.min(...all.map(p=>p.v));vmax=Math.max(...all.map(p=>p.v));if(o.int){vmin=Math.max(1,vmin-1);vmax=vmax+1;}else{const pad=(vmax-vmin)*.08||Math.abs(vmax)*.05||.01;vmin=Math.max(0,vmin-pad);vmax+=pad;}}
+  const span=(vmax-vmin)||1,t0=o.T[0],t1=o.T[1];
+  const X=t=>t0===t1?pL+iw/2:pL+(t-t0)/(t1-t0)*iw,Y=v=>o.inv?pT+ih*(v-vmin)/span:pT+ih*(1-(v-vmin)/span);
+  let svg='<svg width="'+W+'" height="'+H+'" viewBox="0 0 '+W+' '+H+'" onmousemove="evHover(event,\''+id+'\')" onmouseleave="evHoverEnd(\''+id+'\')">';
+  for(let i=0;i<=4;i++){const v=o.inv?vmin+span*i/4:vmin+span*(4-i)/4,gy=pT+ih*i/4;svg+='<line x1="'+pL+'" y1="'+gy.toFixed(1)+'" x2="'+(W-pR)+'" y2="'+gy.toFixed(1)+'" stroke="var(--line)"/><text x="'+(pL-6)+'" y="'+(gy+3.5).toFixed(1)+'" font-size="10" fill="var(--muted)" text-anchor="end">'+o.fmt(o.int?Math.round(v):v)+'</text>';}
+  const lab=new Map();all.forEach(p=>lab.set(p.t,p.lbl));const tl=[...lab.keys()].sort((a,b)=>a-b),every=Math.max(1,Math.ceil(tl.length/Math.max(2,Math.floor(iw/58))));
+  tl.forEach((t,i)=>{if(i%every===0)svg+='<text x="'+X(t).toFixed(1)+'" y="'+(H-pB+16)+'" font-size="10" fill="var(--muted)" text-anchor="middle">'+lab.get(t)+'</text>';});
+  const dots=all.length<=300;
+  series.forEach(s=>{
+    let seg=[];const flush=()=>{if(seg.length>1)svg+='<path d="'+seg.map((p,k)=>(k?'L':'M')+X(p.t).toFixed(1)+','+Y(p.v).toFixed(1)).join(' ')+'" fill="none" stroke="'+s.color+'" stroke-width="2"/>';seg=[];};
+    s.pts.forEach(p=>{if(p.gap){flush();return;}seg.push(p);EV_PTS[id].push({x:X(p.t),y:Y(p.v),s,p});if(dots)svg+='<circle cx="'+X(p.t).toFixed(1)+'" cy="'+Y(p.v).toFixed(1)+'" r="3" fill="'+s.color+'"/>';});flush();
+  });
+  svg+='<circle id="'+id+'Hi" r="6" fill="none" stroke="var(--ink)" stroke-width="1.5" style="display:none"/></svg><div class="intip" id="'+id+'Tip"></div>';
+  box.innerHTML=svg;
+}
+function evHover(e,id){
+  const box=el(id),r=e.currentTarget.getBoundingClientRect(),mx=e.clientX-r.left,my=e.clientY-r.top;
+  let best=null,bd=1600;(EV_PTS[id]||[]).forEach(q=>{const dd=(q.x-mx)**2+(q.y-my)**2;if(dd<bd){bd=dd;best=q;}});
+  const tip=el(id+'Tip'),hi=el(id+'Hi');if(!best){evHoverEnd(id);return;}
+  hi.setAttribute('cx',best.x);hi.setAttribute('cy',best.y);hi.style.display='';
+  tip.innerHTML='<b>'+fmtDMY(best.p.d)+'</b><br><span class="legdot" style="background:'+best.s.color+'"></span> '+esc(best.s.label)+'<br><b>'+EV_FMT[id](best.p.v)+'</b>';
+  tip.style.display='block';const tw=tip.offsetWidth,th=tip.offsetHeight;
+  tip.style.left=Math.max(4,Math.min(box.clientWidth-tw-4,best.x+12))+'px';tip.style.top=Math.max(4,Math.min(box.clientHeight-th-4,best.y-th-10))+'px';
+}
+function evHoverEnd(id){const t=el(id+'Tip'),h=el(id+'Hi');if(t)t.style.display='none';if(h)h.style.display='none';}
+document.addEventListener('click',e=>{if(tab!=='timeline'||!EV.open)return;if(!e.composedPath().some(n=>n.id==='evSkuWrap')){EV.open=false;const b=el('evSkList');if(b)b.innerHTML='';}});
+
+/* ---- Insights: frecuencia promocional = dias con dinamica / dias presente (por SKU, sobre el periodo y filtros activos) ---- */
+const frColor=f=>f>.8?'var(--green)':f>=.5?'var(--yellow)':'var(--red)',frDot=f=>f>.8?'&#128994;':f>=.5?'&#128993;':'&#128308;';
+let IN_FR=[],IN_SC=[];
+function inFreqRows(){
+  const m=new Map();
+  IN_OBS.forEach(o=>{
+    if(o.din==null)return;
+    let s=m.get(o.id);if(!s){s={id:o.id,sku:o.sku,marca:o.marca,fab:o.fab,n:0,p:0,sd:0,sdp:0,sp:0,np:0,ld:'',last:null};m.set(o.id,s);}
+    s.n++;s.sd+=o.din;if(o.din>0){s.p++;s.sdp+=o.din;}
+    if(o.pos!=null){s.sp+=o.pos;s.np++;}
+    if(o.d>s.ld){s.ld=o.d;s.last=o.din;}
+  });
+  return[...m.values()].map(s=>({...s,freq:s.p/s.n,pos:s.np?s.sp/s.np:null,dinAll:s.sd/s.n,dinPos:s.p?s.sdp/s.p:null,din:IN.mode==='pos'?(s.p?s.sdp/s.p:0):s.sd/s.n}))
+    .sort((a,b)=>b.freq-a.freq||b.n-a.n||a.sku.localeCompare(b.sku));
+}
+const frName=r=>esc(r.marca)+' &middot; '+esc(r.sku.replace(/^Cerv[a-z]*\s+/i,''));
+function inFreqInsights(rs){
+  const maxN=Math.max(...rs.map(r=>r.n)),minN=Math.min(3,maxN),el_=rs.filter(r=>r.n>=minN),L=[];
+  const list=a=>a.slice(0,3).map(r=>'<b>'+frName(r)+'</b> ('+Math.round(r.freq*100)+'%, pos. '+(r.pos==null?'s/d':r.pos.toFixed(1).replace('.',','))+')').join('; ');
+  if(!el_.length)return['No hay SKU con suficientes dias para sacar conclusiones.'];
+  const top=el_[0],bot=el_[el_.length-1],tiesT=el_.filter(r=>r.freq===top.freq).length,tiesB=el_.filter(r=>r.freq===bot.freq).length;
+  L.push('&#9650; <b>Mayor frecuencia promocional:</b> '+frName(top)+' &mdash; '+Math.round(top.freq*100)+'% ('+top.p+' de '+top.n+' dias)'+(tiesT>1?' y '+(tiesT-1)+' SKU mas con el mismo valor':'')+'.');
+  L.push('&#9660; <b>Menor frecuencia promocional:</b> '+frName(bot)+' &mdash; '+Math.round(bot.freq*100)+'% ('+bot.p+' de '+bot.n+' dias)'+(tiesB>1?' y '+(tiesB-1)+' SKU mas con el mismo valor':'')+'.');
+  const dep=[...el_].sort((a,b)=>b.dinAll-a.dinAll)[0];
+  L.push('&#128176; <b>SKU mas dependiente de promociones:</b> '+frName(dep)+' &mdash; promociona '+Math.round(dep.freq*100)+'% de los dias'+(dep.dinPos!=null?' con '+fmtPct1(dep.dinPos)+' de dinamica promedio':'')+' (mayor frecuencia &times; intensidad).');
+  const wp=el_.filter(r=>r.pos!=null).sort((a,b)=>a.pos-b.pos);
+  if(wp.length<2){L.push('&#128065; <b>Frecuencia vs visibilidad:</b> sin datos de posicion suficientes todavia (se acumulan desde la corrida en que se empezo a guardar).');}
+  else{
+    const med=wp[Math.floor((wp.length-1)/2)].pos;
+    const a=wp.filter(r=>r.freq>.8&&r.pos>med).sort((x,y)=>y.pos-x.pos),b=wp.filter(r=>r.freq<.5&&r.pos<=med);
+    L.push('&#128065; <b>Alta frecuencia promocional pero baja visibilidad</b> (&gt;80% y posicion peor que la mediana, '+med.toFixed(1).replace('.',',')+'): '+(a.length?list(a):'ninguno.'));
+    L.push('&#11088; <b>Baja frecuencia promocional y alta visibilidad</b> (&lt;50% y posicion igual o mejor que la mediana): '+(b.length?list(b):'ninguno.'));
+  }
+  if(minN<3||el_.length<rs.length)L.push('<span class="note">Los insights consideran SKU con al menos '+minN+' dias presentes ('+el_.length+' de '+rs.length+').</span>');
+  return L;
+}
+function inDrawFreq(){
+  const box=el('inFreq');if(!box)return;
+  const rs=inFreqRows();IN_FR=rs;
+  if(!rs.length){box.innerHTML='';return;}
+  const ins=inFreqInsights(rs);
+  const tbl='<div class="tablebox intable"><table class="timeline"><thead><tr><th>SKU</th><th>Marca</th><th>Frecuencia promocional</th><th>Posicion promedio</th><th>Dinamica promedio</th><th>Ultima dinamica</th></tr></thead><tbody>'
+   +rs.map(r=>'<tr><td class="skucell">'+esc(r.sku)+'</td><td>'+esc(r.marca)+'</td><td style="text-align:right;white-space:nowrap">'+frDot(r.freq)+' <b style="color:'+frColor(r.freq)+'">'+Math.round(r.freq*100)+'%</b> <span class="note">('+r.p+'/'+r.n+')</span></td><td style="text-align:right">'+(r.pos==null?'<span class="missing">s/d</span>':r.pos.toFixed(1).replace('.',','))+'</td><td style="text-align:right">'+fmtPct1(r.din)+'</td><td style="text-align:right">'+fmtPct1(r.last)+' <span class="note">'+fmtDate(r.ld)+'</span></td></tr>').join('')+'</tbody></table></div>';
+  box.innerHTML='<div class="panel"><div class="chartHead"><div><h3>Frecuencia promocional</h3><div class="sub">Dias con dinamica / dias en que el SKU estuvo presente. &laquo;Cuando el SKU estuvo disponible, cuantas veces estuvo promocionado.&raquo; &middot; Semaforo: &#128994; &gt;80% &middot; &#128993; 50&ndash;80% &middot; &#128308; &lt;50%. Dinamica promedio segun el modo elegido arriba.</div></div></div>'
+   +'<div class="grid2"><div><ul class="frins">'+ins.map(t=>'<li>'+t+'</li>').join('')+'</ul></div><div><div class="chartBox" id="inScatter" style="height:300px"></div><div class="note" style="margin-top:4px">Cada punto es un SKU: derecha = mas descuento promedio, arriba = promociona mas dias. Arriba a la derecha = visibilidad sostenida con descuentos.</div></div></div>'
+   +'<div style="margin-top:14px">'+tbl+'</div></div>';
+  inDrawScatter();
+}
+function inDrawScatter(){
+  const box=el('inScatter');if(!box||!IN_FR.length)return;IN_SC=[];
+  const W=box.clientWidth||500,H=box.clientHeight||300,pL=48,pR=14,pT=18,pB=34,iw=W-pL-pR,ih=H-pT-pB;
+  const mx=Math.max(...IN_FR.map(r=>r.din)),step=mx>.5?.1:mx>.2?.05:.02,xmax=Math.max(step,Math.ceil(mx/step-1e-9)*step);
+  const X=v=>pL+v/xmax*iw,Y=v=>pT+ih*(1-v);
+  let svg='<svg width="'+W+'" height="'+H+'" viewBox="0 0 '+W+' '+H+'" onmousemove="inScHover(event)" onmouseleave="inScEnd()">';
+  for(let i=0;i<=4;i++){const gy=pT+ih*i/4;svg+='<line x1="'+pL+'" y1="'+gy+'" x2="'+(W-pR)+'" y2="'+gy+'" stroke="var(--line)"/><text x="'+(pL-6)+'" y="'+(gy+3.5)+'" font-size="10" fill="var(--muted)" text-anchor="end">'+Math.round((1-i/4)*100)+'%</text>';}
+  for(let i=0;i<=4;i++){const v=xmax*i/4;svg+='<text x="'+X(v).toFixed(1)+'" y="'+(H-pB+15)+'" font-size="10" fill="var(--muted)" text-anchor="middle">'+Math.round(v*100)+'%</text>';}
+  svg+='<text x="'+pL+'" y="11" font-size="10" font-weight="800" fill="var(--muted)">Frecuencia promocional</text><text x="'+(W-pR)+'" y="'+(H-4)+'" font-size="10" font-weight="800" fill="var(--muted)" text-anchor="end">Dinamica promedio &#8594;</text>';
+  IN_FR.forEach(r=>{const x=X(r.din),y=Y(r.freq);IN_SC.push({x,y,r});svg+='<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="5" fill="'+frColor(r.freq)+'" fill-opacity=".8" stroke="var(--panel)" stroke-width="1"/>';});
+  svg+='<circle id="inScHi" r="8" fill="none" stroke="var(--ink)" stroke-width="1.5" style="display:none"/></svg><div class="intip" id="inScTip"></div>';
+  box.innerHTML=svg;
+}
+function inScHover(e){
+  const box=el('inScatter'),r=e.currentTarget.getBoundingClientRect(),mx=e.clientX-r.left,my=e.clientY-r.top;
+  let best=null,bd=900;IN_SC.forEach(q=>{const dd=(q.x-mx)**2+(q.y-my)**2;if(dd<bd){bd=dd;best=q;}});
+  if(!best){inScEnd();return;}
+  const tip=el('inScTip'),hi=el('inScHi');hi.setAttribute('cx',best.x);hi.setAttribute('cy',best.y);hi.style.display='';
+  tip.innerHTML='<b>'+esc(best.r.sku)+'</b><br>Frecuencia: <b>'+Math.round(best.r.freq*100)+'%</b> ('+best.r.p+'/'+best.r.n+' dias)<br>Dinamica prom.: <b>'+fmtPct1(best.r.din)+'</b><br>Posicion prom.: <b>'+(best.r.pos==null?'s/d':best.r.pos.toFixed(1).replace('.',','))+'</b>';
+  tip.style.display='block';const tw=tip.offsetWidth,th=tip.offsetHeight;
+  tip.style.left=Math.max(4,Math.min(box.clientWidth-tw-4,best.x+12))+'px';tip.style.top=Math.max(4,Math.min(box.clientHeight-th-4,best.y-th-10))+'px';
+}
+function inScEnd(){const t=el('inScTip'),h=el('inScHi');if(t)t.style.display='none';if(h)h.style.display='none';}
+
+function render(){el('content').innerHTML=tab==='timeline'?timeline():tab==='preciolitro'?precioLitro():tab==='comparar'?comparar():tab==='heatmap'?heatmap():tab==='changes'?changes():insights();if(tab==='insights')inUpdate();if(tab==='timeline')evUpdate();}
 function downloadCSV(){if(!current.length)return;const k=Object.keys(current[0]);const csv=[k.join(';')].concat(current.map(r=>k.map(x=>String(r[x]??'').replaceAll(';',',')).join(';'))).join('\n');const blob=new Blob([csv],{type:'text/csv;charset=utf-8;'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='pedidosya_vista.csv';a.click();}
 
 /* ---- Grafico de evolucion de 1 SKU (click en un producto en Evolucion/Heatmap) ---- */

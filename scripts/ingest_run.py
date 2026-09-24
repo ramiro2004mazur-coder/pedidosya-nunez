@@ -69,6 +69,9 @@ def main():
     errores = 0
     nuevos = 0
     ok = 0
+    # Posicion = orden de la fila valida en el CSV (1 = primera en la gondola/listado).
+    # Si un SKU viene repetido en el mismo CSV, se conserva la primera posicion.
+    pos_run = {}
     with csv_path.open(encoding="utf-8-sig") as f:
         reader = csvmod.DictReader(f, delimiter=";")
         for row in reader:
@@ -120,7 +123,8 @@ def main():
                 prev_ptc = entry["dates"][fechas_previas[-1]]["ptc"] if fechas_previas else None
                 sospechoso = es_sospechoso(prev_ptc, precio)
 
-                nuevo_valor = {"fleje": fleje, "ptc": precio, "dinamica": dinamica}
+                pos = pos_run.setdefault(key, len(pos_run) + 1)
+                nuevo_valor = {"fleje": fleje, "ptc": precio, "dinamica": dinamica, "pos": pos}
                 if promo_nominal:
                     nuevo_valor["promo_nominal"] = promo_nominal
                 if sospechoso:
