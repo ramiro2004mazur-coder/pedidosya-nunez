@@ -38,6 +38,9 @@ from common import (  # noqa: E402
 
 DESVIO_SOSPECHOSO = 0.5  # 50%
 
+# Marcas que el sitio a veces publica con otro nombre (evita SKUs duplicados en el historico).
+MARCA_ALIAS = {"cerveza imperial": "Imperial"}
+
 
 def es_sospechoso(prev_ptc, nuevo_ptc):
     if not prev_ptc:
@@ -77,6 +80,7 @@ def main():
         for row in reader:
             try:
                 marca = (row.get("marca") or "").strip()
+                marca = MARCA_ALIAS.get(marca.lower(), marca)
                 descripcion = (row.get("descripcion") or "").strip()
                 precio_raw = row.get("precio")
                 if not marca or not descripcion or not precio_raw:

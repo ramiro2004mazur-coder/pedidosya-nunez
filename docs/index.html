@@ -136,6 +136,7 @@ body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(
 .innotes{font-size:12px;color:var(--muted);line-height:1.6;margin:8px 0 0}
 body.dark input[type=date]{color-scheme:dark}body.light input[type=date]{color-scheme:light}
 .frins{margin:0;padding-left:0;list-style:none;font-size:13px;line-height:1.55}.frins li{padding:7px 0;border-bottom:1px solid var(--line)}
+.timeline th.mnew{border-left:2px solid var(--accent)}.timeline .mlab{display:block;font-size:9.5px;color:var(--accent);letter-spacing:.06em;font-weight:900}
 @media(max-width:1000px){.filterbar{flex-direction:column;align-items:stretch}.grid2{grid-template-columns:1fr}.wrap{padding:14px}}
 </style>
 </head>
@@ -194,14 +195,17 @@ const dates=()=>DATA.dates||[];
 function rows(){const q=el('q').value.toLowerCase(),b=el('brand').value,s=el('size').value,g=el('seg').value,both=el('onlyBoth').checked,offer=el('onlyOffer').checked,D=dates();return DATA.pivot.filter(r=>(!b||r.marca===b)&&(!s||r.calibre===s)&&(!g||r.segmento===g)&&(!q||(r.sku+' '+r.marca+' '+r.grupo).toLowerCase().includes(q))&&(!both||D.every(d=>r.dates[d]))&&(!offer||D.some(d=>r.dates[d]&&Number(r.dates[d].dinamica)>0)));}
 function metrics(rs){const D=dates(),both=rs.filter(r=>D.every(d=>r.dates[d])).length,offer=rs.filter(r=>D.some(d=>r.dates[d]&&r.dates[d].dinamica>0)).length;el('metrics').innerHTML=card('SKUs totales',DATA.pivot.length)+card('Dias',D.length)+card('Mostrando',rs.length)+card('En oferta',offer)+card('Comparables',both)+(DATA.meta&&DATA.meta.generado?card('Actualizado',DATA.meta.generado.slice(5,16)):'');}
 function card(k,v){return '<div class="metric"><div class="k">'+k+'</div><div class="v">'+v+'</div></div>';}
+function dateTh(D){return D.map((d,i)=>{const nw=i===0||d.slice(0,7)!==D[i-1].slice(0,7);return '<th'+(nw?' class="mnew"':'')+'>'+(nw?'<span class="mlab">'+MESES[+d.slice(5,7)-1]+' '+d.slice(2,4)+'</span>':'')+fmtDate(d)+'</th>';}).join('');}
+const MESES=['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'];
 function priceHtml(x){if(!x)return '<span class="missing">&mdash;</span>';const c=Number(x.dinamica)>0?'':'nodyn';return '<div class="pricecell '+c+'"><div class="fleje">'+fmtMoney(x.fleje)+'</div><span class="ptc">'+fmtMoney(x.ptc)+'</span> <span class="dyn">&minus;'+fmtPct(x.dinamica)+'</span></div>';}
 function priceLitroHtml(x,volL){if(!x)return '<span class="missing">&mdash;</span>';if(volL==null)return '<span class="missing" title="Sin volumen cargado en data/volume_reference.json">N/D</span>';const l=litros(x,volL);return '<div class="pricecell"><div class="fleje">'+fmtMoneyL(l.fleje)+'</div><span class="ptc">'+fmtMoneyL(l.ptc)+'</span></div>';}
 const cls=v=>v==null?'':v>0?'up':v<0?'down':'flat';
 function flat(r){const o={Marca:r.marca,SKU:r.sku,Calibre:r.calibre,Grupo:r.grupo,Segmento:r.segmento};dates().forEach(d=>{const x=r.dates[d]||{};o[fmtDate(d)+' Fleje']=x.fleje??'';o[fmtDate(d)+' PTC']=x.ptc??'';o[fmtDate(d)+' Dinamica']=x.dinamica??'';});return o;}
 function flatLitro(r){const o={Marca:r.marca,SKU:r.sku,Calibre:r.calibre,Grupo:r.grupo,Segmento:r.segmento,'Volumen (L)':r.volumen_l??'N/D'};dates().forEach(d=>{const l=litros(r.dates[d],r.volumen_l);o[fmtDate(d)+' Fleje/L']=l?Number(l.fleje.toFixed(3)):'';o[fmtDate(d)+' PTC/L']=l?Number(l.ptc.toFixed(3)):'';});return o;}
-function precioLitro(){let rs=rows();metrics(rs);if(el('groupBrand').checked)rs.sort((a,b)=>(a.marca+a.sku).localeCompare(b.marca+b.sku));current=rs.map(flatLitro);const D=dates();let h='<div class="panel" style="padding:12px 14px;margin-bottom:10px"><span class="note">Precio por litro (fleje y PTC) para comparar formatos distintos de forma justa. SKUs sin volumen cargado en <code>data/volume_reference.json</code> muestran <b>N/D</b>.</span></div>';h+='<div class="tablebox"><table class="timeline"><thead><tr><th class="product">Producto</th>'+D.map(d=>'<th>'+fmtDate(d)+'</th>').join('')+'<th>&Delta; Precio/L</th></tr></thead><tbody>';rs.forEach(r=>{const volL=r.volumen_l;const f=litros(r.dates[D[0]],volL),l=litros(r.dates[D[D.length-1]],volL);const vp=(f&&l)?l.ptc-f.ptc:null;h+='<tr><td class="product" onclick="openChart(\''+r.id+'\')">'+r.marca+' '+r.calibre+'<span class="subsku">'+r.sku+'</span></td>'+D.map(d=>'<td>'+priceLitroHtml(r.dates[d],volL)+'</td>').join('')+'<td class="diff '+cls(vp)+'">'+(vp==null?'&mdash;':(vp>0?'+':'')+fmtMoneyL(Math.round(vp)))+'</td></tr>';});return h+'</tbody></table></div>';}
-function timeline(){let rs=rows();metrics(rs);if(el('groupBrand').checked)rs.sort((a,b)=>(a.marca+a.sku).localeCompare(b.marca+b.sku));current=rs.map(flat);const D=evDates();let h=evSkeleton()+'<div class="panel" style="padding:12px 14px;margin:14px 0 10px"><h3 style="margin:0 0 4px">Tabla por dia</h3><span class="note">Usa los filtros de arriba (busqueda, marca, tamano...) y el periodo elegido.</span></div><div class="tablebox"><table class="timeline"><thead><tr><th class="product">Producto</th>'+D.map(d=>'<th>'+fmtDate(d)+'</th>').join('')+'<th>&Delta; PTC</th><th>&Delta; Din.</th></tr></thead><tbody>';rs.forEach(r=>{const f=r.dates[D[0]],l=r.dates[D[D.length-1]],vp=(f&&l)?l.ptc-f.ptc:null,vd=(f&&l)?l.dinamica-f.dinamica:null;h+='<tr><td class="product" onclick="openChart(\''+r.id+'\')">'+r.marca+' '+r.calibre+'<span class="subsku">'+r.sku+'</span></td>'+D.map(d=>'<td>'+priceHtml(r.dates[d])+'</td>').join('')+'<td class="diff '+cls(vp)+'">'+(vp==null?'&mdash;':(vp>0?'+':'')+fmtMoney(vp))+'</td><td class="diff '+cls(vd)+'">'+(vd==null?'&mdash;':(vd>0?'+':'')+Math.round(vd*100)+' pp')+'</td></tr>';});return h+'</tbody></table></div>';}
-function heatmap(){let rs=rows();metrics(rs);current=rs.map(flat);const D=dates();let h='<div class="tablebox"><table class="timeline"><thead><tr><th class="product">Producto</th>'+D.map(d=>'<th>'+fmtDate(d)+'</th>').join('')+'</tr></thead><tbody>';rs.forEach(r=>{h+='<tr><td class="product" onclick="openChart(\''+r.id+'\')">'+r.marca+' '+r.calibre+'<span class="subsku">'+r.sku+'</span></td>'+D.map(d=>{const x=r.dates[d],dy=x?x.dinamica:null,bg=dy==null?'transparent':dy>=.4?'rgba(31,207,138,.35)':dy>=.25?'rgba(31,207,138,.22)':dy>0?'rgba(255,207,92,.20)':'transparent';return '<td style="background:'+bg+';text-align:center;font-weight:900">'+(dy==null?'&mdash;':fmtPct(dy))+'</td>';}).join('')+'</tr>';});return h+'</tbody></table></div>';}
+function precioLitro(){let rs=rows();metrics(rs);if(el('groupBrand').checked)rs.sort((a,b)=>(a.marca+a.sku).localeCompare(b.marca+b.sku));current=rs.map(flatLitro);const D=dates();let h='<div class="panel" style="padding:12px 14px;margin-bottom:10px"><span class="note">Precio por litro (fleje y PTC) para comparar formatos distintos de forma justa. SKUs sin volumen cargado en <code>data/volume_reference.json</code> muestran <b>N/D</b>.</span></div>';h+='<div class="tablebox"><table class="timeline"><thead><tr><th class="product">Producto</th>'+dateTh(D)+'<th>&Delta; Precio/L</th></tr></thead><tbody>';rs.forEach(r=>{const volL=r.volumen_l;const f=litros(r.dates[D[0]],volL),l=litros(r.dates[D[D.length-1]],volL);const vp=(f&&l)?l.ptc-f.ptc:null;h+='<tr><td class="product" onclick="openChart(\''+r.id+'\')">'+r.marca+' '+r.calibre+'<span class="subsku">'+r.sku+'</span></td>'+D.map(d=>'<td>'+priceLitroHtml(r.dates[d],volL)+'</td>').join('')+'<td class="diff '+cls(vp)+'">'+(vp==null?'&mdash;':(vp>0?'+':'')+fmtMoneyL(Math.round(vp)))+'</td></tr>';});return h+'</tbody></table></div>';}
+function timeline(){return evSkeleton()+'<div id="evTable"></div>';}
+function evTableHtml(){let rs=rows();metrics(rs);if(el('groupBrand').checked)rs.sort((a,b)=>(a.marca+a.sku).localeCompare(b.marca+b.sku));current=rs.map(flat);const D=evDates();let h='<div class="panel" style="padding:12px 14px;margin:14px 0 10px"><h3 style="margin:0 0 4px">Tabla por dia</h3><span class="note">Usa los filtros de arriba (busqueda, marca, tamano...) y el periodo elegido.</span></div><div class="tablebox"><table class="timeline"><thead><tr><th class="product">Producto</th>'+dateTh(D)+'<th>&Delta; PTC</th><th>&Delta; Din.</th></tr></thead><tbody>';rs.forEach(r=>{const f=r.dates[D[0]],l=r.dates[D[D.length-1]],vp=(f&&l)?l.ptc-f.ptc:null,vd=(f&&l)?l.dinamica-f.dinamica:null;h+='<tr><td class="product" onclick="openChart(\''+r.id+'\')">'+r.marca+' '+r.calibre+'<span class="subsku">'+r.sku+'</span></td>'+D.map(d=>'<td>'+priceHtml(r.dates[d])+'</td>').join('')+'<td class="diff '+cls(vp)+'">'+(vp==null?'&mdash;':(vp>0?'+':'')+fmtMoney(vp))+'</td><td class="diff '+cls(vd)+'">'+(vd==null?'&mdash;':(vd>0?'+':'')+Math.round(vd*100)+' pp')+'</td></tr>';});return h+'</tbody></table></div>';}
+function heatmap(){let rs=rows();metrics(rs);current=rs.map(flat);const D=dates();let h='<div class="tablebox"><table class="timeline"><thead><tr><th class="product">Producto</th>'+dateTh(D)+'</tr></thead><tbody>';rs.forEach(r=>{h+='<tr><td class="product" onclick="openChart(\''+r.id+'\')">'+r.marca+' '+r.calibre+'<span class="subsku">'+r.sku+'</span></td>'+D.map(d=>{const x=r.dates[d],dy=x?x.dinamica:null,bg=dy==null?'transparent':dy>=.4?'rgba(31,207,138,.35)':dy>=.25?'rgba(31,207,138,.22)':dy>0?'rgba(255,207,92,.20)':'transparent';return '<td style="background:'+bg+';text-align:center;font-weight:900">'+(dy==null?'&mdash;':fmtPct(dy))+'</td>';}).join('')+'</tr>';});return h+'</tbody></table></div>';}
 function changes(){const D=dates();if(D.length<2){metrics(rows());return '<div class="panel note">Necesitas al menos 2 dias para ver cambios.</div>';}const last=D[D.length-1],prev=D[D.length-2];let rs=rows().filter(r=>r.dates[prev]&&r.dates[last]).map(r=>{const a=r.dates[prev],b=r.dates[last];return{Marca:r.marca,SKU:r.sku,Calibre:r.calibre,Grupo:r.grupo,PTC_prev:a.ptc,PTC_last:b.ptc,Var_PTC:b.ptc-a.ptc,Dyn_prev:a.dinamica,Dyn_last:b.dinamica,Var_Dyn:b.dinamica-a.dinamica};}).sort((a,b)=>Math.abs(b.Var_PTC)-Math.abs(a.Var_PTC));current=rs;metrics(rows());return '<div class="panel"><h3>Cambios '+fmtDate(prev)+' vs '+fmtDate(last)+'</h3>'+simple(rs,[['Marca'],['SKU'],['Calibre'],['Grupo'],['PTC_prev','PTC anterior','money'],['PTC_last','PTC ultimo','money'],['Var_PTC','&Delta; PTC','money'],['Dyn_prev','Din anterior','pct'],['Dyn_last','Din ultimo','pct'],['Var_Dyn','&Delta; Din','pp']])+'</div>';}
 const inc=(n,list)=>list.some(x=>String(n||'').toLowerCase().includes(String(x).toLowerCase())||String(x).toLowerCase().includes(String(n||'').toLowerCase()));
 function best(list,d){const a=list.filter(r=>r.dates[d]&&r.dates[d].ptc!=null);return a.length?a.sort((x,y)=>x.dates[d].ptc-y.dates[d].ptc)[0]:null;}
@@ -220,7 +224,7 @@ function compareCards(ids){const D=dates();if(!D.length)return '';const last=D[D
 function multiLineChart(ids){const D=dates();const rowsSel=ids.map(id=>DATA.pivot.find(r=>r.id===id)).filter(Boolean);const allVals=rowsSel.flatMap(r=>D.map(d=>r.dates[d]?r.dates[d].ptc:null)).filter(v=>v!=null);if(!allVals.length)return '<p class="note">Sin historico para graficar todavia.</p>';const W=Math.max(600,D.length*70),H=280,padL=70,padR=18,padT=22,padB=34;const min=Math.min(...allVals),max=Math.max(...allVals),span=(max-min)||1;
   // Eje X = fechas (horizontal, cronologico); eje Y = precio final en $ (vertical, mas arriba = mas caro).
   const x=i=>padL+(D.length===1?0:(i*(W-padL-padR)/(D.length-1)));const y=v=>padT+(H-padT-padB)*(1-(v-min)/span);const gridY=[0,.25,.5,.75,1].map(t=>({gy:padT+(H-padT-padB)*t,price:max-t*span}));let svg='<svg viewBox="0 0 '+W+' '+H+'" width="100%" height="300" preserveAspectRatio="xMinYMid meet" style="overflow:visible">';svg+='<text x="'+padL+'" y="12" font-size="10" font-weight="800" fill="var(--muted)" text-anchor="start">Precio final ($)</text>';gridY.forEach(g=>{svg+='<line x1="'+padL+'" y1="'+g.gy.toFixed(1)+'" x2="'+(W-padR)+'" y2="'+g.gy.toFixed(1)+'" stroke="var(--line)" stroke-width="1"/>';svg+='<text x="'+(padL-8)+'" y="'+(g.gy+3.5).toFixed(1)+'" font-size="10" fill="var(--muted)" text-anchor="end">'+fmtMoney(g.price)+'</text>';});D.forEach((d,i)=>svg+='<text x="'+x(i).toFixed(1)+'" y="'+(H-padB+16)+'" font-size="10" fill="var(--muted)" text-anchor="middle">'+fmtDate(d)+'</text>');svg+='<text x="'+(W-padR)+'" y="'+(H-6)+'" font-size="10" font-weight="800" fill="var(--muted)" text-anchor="end">Fecha &#8594;</text>';rowsSel.forEach((r,ri)=>{const color=PALETTE[ri%PALETTE.length];const pts=[];D.forEach((d,i)=>{const v=r.dates[d];if(v&&v.ptc!=null)pts.push({i,v:v.ptc});});if(pts.length){const path=pts.map((p,k)=>(k===0?'M':'L')+x(p.i).toFixed(1)+','+y(p.v).toFixed(1)).join(' ');svg+='<path d="'+path+'" fill="none" stroke="'+color+'" stroke-width="2.5"/>';pts.forEach(p=>svg+='<circle cx="'+x(p.i).toFixed(1)+'" cy="'+y(p.v).toFixed(1)+'" r="4" fill="'+color+'" stroke="var(--panel)" stroke-width="1.5"/>');}});svg+='</svg>';const legend=rowsSel.map((r,ri)=>'<span><span class="legdot" style="background:'+PALETTE[ri%PALETTE.length]+'"></span>'+r.marca+' '+r.calibre+'</span>').join('');return '<div style="overflow-x:auto">'+svg+'</div><div class="chartLegend">'+legend+'</div>';}
-function compareTable(ids){const D=dates();const rowsSel=ids.map(id=>DATA.pivot.find(r=>r.id===id)).filter(Boolean);current=rowsSel.map(flat);let h='<div class="tablebox"><table class="timeline"><thead><tr><th class="product">Producto</th>'+D.map(d=>'<th>'+fmtDate(d)+'</th>').join('')+'</tr></thead><tbody>';rowsSel.forEach(r=>{h+='<tr><td class="product">'+r.marca+' '+r.calibre+'<span class="subsku">'+r.sku+'</span></td>'+D.map(d=>'<td>'+priceHtml(r.dates[d])+'</td>').join('')+'</tr>';});return h+'</tbody></table></div>';}
+function compareTable(ids){const D=dates();const rowsSel=ids.map(id=>DATA.pivot.find(r=>r.id===id)).filter(Boolean);current=rowsSel.map(flat);let h='<div class="tablebox"><table class="timeline"><thead><tr><th class="product">Producto</th>'+dateTh(D)+'</tr></thead><tbody>';rowsSel.forEach(r=>{h+='<tr><td class="product">'+r.marca+' '+r.calibre+'<span class="subsku">'+r.sku+'</span></td>'+D.map(d=>'<td>'+priceHtml(r.dates[d])+'</td>').join('')+'</tr>';});return h+'</tbody></table></div>';}
 function comparar(){metrics(rows());const ids=[...compareIds];let h='<div class="panel" style="padding:12px 14px"><span class="note">Elegi cualquier SKU (de cualquier marca) para comparar su evolucion de precio. Los accesos rapidos cargan un enfrentamiento CMQ vs competencia ya armado.</span></div>';h+='<div class="chips">'+(DATA.fights||[]).map((f,i)=>'<span class="chip" onclick="loadFight('+i+')">&#9876; '+f.name+'</span>').join('')+'</div>';h+='<div class="filterbar" style="margin-top:10px"><div class="search"><span class="ic">&#128269;</span><input id="cq" placeholder="Agregar SKU al comparador..." oninput="compareSearchResults()"/></div></div>';h+='<div id="compareResults" class="compareResults"></div>';h+='<div class="cchips">'+ids.map(id=>{const r=DATA.pivot.find(x=>x.id===id);return r?'<span class="cchip">'+r.marca+' '+r.calibre+'<button onclick="removeCompare(\''+id+'\')">&times;</button></span>':'';}).join('')+'</div>';if(!ids.length){current=[];return h+'<div class="panel note" style="margin-top:4px">Todavia no elegiste ningun SKU. Busca arriba o toca un acceso rapido.</div>';}h+=compareCards(ids);h+='<div class="panel" style="margin-top:14px"><h3>Evolucion superpuesta</h3>'+multiLineChart(ids)+'</div>';h+='<div style="margin-top:14px">'+compareTable(ids)+'</div>';return h;}
 
 /* ---- Insights: periodo + fabricante + SKU (se combinan con los filtros globales de arriba) ---- */
@@ -492,8 +496,7 @@ function inHover(e,id){
   tip.style.left=Math.max(4,Math.min(box.clientWidth-tw-4,best.x+12))+'px';tip.style.top=Math.max(4,Math.min(box.clientHeight-th-4,best.y-th-10))+'px';
 }
 function inHoverEnd(id){const t=el(id+'Tip'),h=el(id+'Hi');if(t)t.style.display='none';if(h)h.style.display='none';}
-window.addEventListener('resize',()=>{if(tab==='insights'&&IN_OBS.length){cancelAnimationFrame(IN_RAF);IN_RAF=requestAnimationFrame(()=>{inDrawChart();inDrawCmpChart();inDrawScatter();});}
-  if(tab==='timeline'&&el('evPanel')){cancelAnimationFrame(IN_RAF);IN_RAF=requestAnimationFrame(evDrawCharts);}});
+window.addEventListener('resize',()=>{if(tab==='insights'&&IN_OBS.length){cancelAnimationFrame(IN_RAF);IN_RAF=requestAnimationFrame(()=>{inDrawChart();inDrawCmpChart();inDrawScatter();});}});
 document.addEventListener('click',e=>{
   if(tab!=='insights')return;const p=e.composedPath().map(n=>n.id);
   if(IN.calOpen==='A'&&!p.includes('inCalWrap')){IN.calOpen=false;el('inCal').innerHTML='';}
@@ -557,8 +560,8 @@ function inExport(){
 // SKU foco CMQ (default). Se resuelven por id; si alguno deja de existir simplemente no aparece.
 const EV_FOCO=['brahma-cerveza-brahma-chopp-473-ml','quilmes-cerveza-quilmes-clasica-473ml','quilmes-cerveza-quilmes-clasica-710ml','michelob-ultra-cerveza-michelob-ultra-sin-gluten-473-ml','michelob-cerveza-michelob-ultra-porron-275-ml','stella-artois-cerveza-stella-artois-473-ml','stella-artois-cerveza-stella-artois-lager-710-ml','andes-origen-cerveza-andes-origen-rubia-710-ml','budweiser-cerveza-budweiser-lata-473-ml','1890-cerveza-1890-quilmes-473-ml'];
 const EV_PRESETS=[['hoy','Hoy'],['7','Ultimos 7 dias'],['30','Ultimos 30 dias'],['sem','Semana actual'],['semant','Semana anterior'],['mtd','Mes actual (MTD)'],['mesant','Mes anterior completo'],['trim','Trimestre actual'],['anio','Año actual'],['all','Todo el historico']];
-const EV={from:null,to:null,preset:'all',skus:new Set(),brands:new Set(),foco:true,cmp:'off',open:false,hidden:new Set()};
-let EV_PTS={},EV_FMT={},EV_SER=[],EV_ROWS=[];
+const EV={from:null,to:null,preset:'all',skus:new Set(),brands:new Set(),foco:true,cmp:'off',open:false};
+let EV_ROWS=[];
 const evShort=r=>r.sku.replace(/^Cerv[a-z]*\s+/i,'');
 function evRange(){const D=dates();return{lo:EV.from||D[0],hi:EV.to||D[D.length-1]};}
 function evDates(lo,hi){const r=evRange();lo=lo||r.lo;hi=hi||r.hi;return dates().filter(d=>d>=lo&&d<=hi);}
@@ -582,7 +585,7 @@ function evSetCmp(v){EV.cmp=v;evUpdate();}
 function evAddSku(id){EV.foco=false;EV.skus.add(id);el('evSk').value='';EV.open=false;evUpdate();}
 function evAddBrand(b){if(!b)return;EV.foco=false;EV.brands.add(b);evUpdate();}
 function evRm(kind,v){(kind==='s'?EV.skus:EV.brands).delete(v);if(!EV.skus.size&&!EV.brands.size)EV.foco=true;evUpdate();}
-function evFoco(){EV.foco=true;EV.skus.clear();EV.brands.clear();EV.hidden.clear();evUpdate();}
+function evFoco(){EV.foco=true;EV.skus.clear();EV.brands.clear();evUpdate();}
 function evSkuOpen(){EV.open=true;evDrawList();}
 function evDrawList(){
   const box=el('evSkList');if(!EV.open){box.innerHTML='';return;}
@@ -602,8 +605,7 @@ function evSkeleton(){
    +'<div class="innotes" id="evNotes"></div></div>'
    +'<div id="evEmpty" class="panel note" style="display:none"></div>'
    +'<div id="evData"><div class="metrics" id="evMetrics"></div><div id="evCmpPanel"></div>'
-   +'<div class="panel"><div class="chartHead"><div><h3>Series</h3><div class="sub">Clic en una serie para mostrarla u ocultarla en los graficos por SKU</div></div></div><div class="chartLegend inleg" id="evLegend"></div></div>'
-   +'<div class="grid2" id="evCharts">'+[['evC1','Evolucion de dinamica %'],['evC2','Evolucion de precio final'],['evC3','Evolucion de precio fleje'],['evC4','Evolucion de posicion (1 = mejor)'],['evC5','Evolucion de frecuencia promocional'],['evC6','Evolucion de disponibilidad']].map(c=>'<div class="panel"><div class="chartHead"><div><h3>'+c[1]+'</h3><div class="sub" id="'+c[0]+'s"></div></div></div><div class="chartBox" id="'+c[0]+'" style="height:250px"></div></div>').join('')+'</div></div>';
+   +'</div>';
 }
 /* KPIs del periodo sobre los SKU seleccionados. Solo datos reales: los dias sin lectura no se completan. */
 function evMV(rows,lo,hi){
@@ -630,7 +632,7 @@ function evCmpRange(){
 function evUpdate(){
   if(!el('evPanel'))return;
   const D=dates();if(!D.length)return;
-  const{lo,hi}=evRange(),rows=evRows();EV_ROWS=rows;
+  const{lo,hi}=evRange(),rows=evRows();EV_ROWS=rows;el('evTable').innerHTML=evTableHtml();
   el('evPresets').innerHTML=EV_PRESETS.map(p=>'<span class="chip'+(EV.preset===p[0]?' active':'')+'" onclick="evSetPreset(\''+p[0]+'\')">'+p[1]+'</span>').join('');
   el('evFrom').min=el('evTo').min=D[0];el('evFrom').max=el('evTo').max=D[D.length-1];el('evFrom').value=lo;el('evTo').value=hi;el('evCmp').value=EV.cmp;
   const sel=[...EV.brands].map(b=>'<span class="cchip">Marca: '+esc(b)+'<button type="button" onclick="evRm(\'b\',\''+esc(b).replace(/'/g,'')+'\')">&times;</button></span>').join('')+[...EV.skus].map(id=>DATA.pivot.find(r=>r.id===id)).filter(Boolean).map(r=>'<span class="cchip" title="'+esc(r.sku)+'">'+esc(evShort(r))+'<button type="button" onclick="evRm(\'s\',\''+esc(r.id)+'\')">&times;</button></span>').join('');
@@ -642,7 +644,7 @@ function evUpdate(){
   el('evEmpty').style.display=has?'none':'';el('evData').style.display=has?'':'none';
   if(!has){el('evEmpty').textContent=!rows.length?'Elegi al menos un SKU o una marca.':'No hay datos disponibles para la seleccion y el periodo elegidos.';return;}
   const a=evMV(rows,lo,hi);el('evMetrics').innerHTML=EV_MDEF.map(d=>card(d[0],evFmt(a[d[1]],d[2]))).join('')+card('Dias con lectura',a.dias)+card('SKUs',rows.length);
-  evDrawCmp(a,rows,lo,hi);evDrawCharts();
+  evDrawCmp(a,rows,lo,hi);
 }
 function evDrawCmp(a,rows,lo,hi){
   const box=el('evCmpPanel'),R=evCmpRange();if(!R){box.innerHTML='';return;}
@@ -657,65 +659,6 @@ function evDrawCmp(a,rows,lo,hi){
     return '<tr><td style="text-align:left;font-weight:700">'+d[0]+'</td><td style="text-align:right">'+evFmt(a[d[1]],d[2])+'</td><td style="text-align:right">'+evFmt(b[d[1]],d[2])+'</td><td style="text-align:right;color:'+c+'">'+delta(a[d[1]],b[d[1]],d[2])+'</td></tr>';}).join('');
   box.innerHTML='<div class="panel"><div class="chartHead"><div><h3>Comparacion de periodos</h3><div class="sub">Misma seleccion de SKU en ambos periodos. En posicion, menor es mejor (&#9660; en verde = mejora).</div></div></div><div class="tablebox"><table class="timeline"><thead><tr><th style="text-align:left">Metrica</th><th>Actual<br><span class="note">'+rgLabel(lo,hi)+'</span></th><th>Comparacion<br><span class="note">'+rgLabel(R.lo,R.hi)+'</span></th><th>Variacion (actual &minus; comparacion)</th></tr></thead><tbody>'+rowsH+'</tbody></table></div></div>';
 }
-function evPerSku(rows,D,fn){
-  return rows.map((r,i)=>{const pts=[];
-    D.forEach(d=>{const x=r.dates[d];if(!x){pts.push({gap:1});return;}const v=fn(x);if(v!=null&&!isNaN(v))pts.push({t:dayMs(d),d,lbl:fmtDate(d),v});});
-    return{key:r.id,label:evShort(r),color:inColor(i),pts};});
-}
-function evAgg(rows,D,label,fn){
-  const pts=[];D.forEach(d=>{const v=fn(d);if(v!=null)pts.push({t:dayMs(d),d,lbl:fmtDate(d),v});});
-  return[{key:'agg',label,color:PALETTE[0],pts}];
-}
-function evDrawCharts(){
-  const rows=EV_ROWS,D=evDates();if(!rows.length||!D.length)return;
-  const vis=s=>s.filter(x=>!EV.hidden.has(x.key));
-  const S=evPerSku(rows,D,x=>Number(x.dinamica));EV_SER=S;
-  el('evLegend').innerHTML=S.map((s,i)=>'<button type="button" class="legbtn'+(EV.hidden.has(s.key)?' off':'')+'" onclick="evToggle(\''+esc(s.key)+'\')"><span class="legdot" style="background:'+s.color+'"></span>'+esc(s.label)+'</button>').join('');
-  const pick=fn=>{const o=evPerSku(rows,D,fn);o.forEach((s,i)=>s.color=S[i].color);return vis(o);};
-  const T=[dayMs(D[0]),dayMs(D[D.length-1])];
-  const freq=d=>{let p=0,n=0;rows.forEach(r=>{const x=r.dates[d];if(!x||x.dinamica==null)return;n++;if(Number(x.dinamica)>0)p++;});return n?p/n:null;};
-  const disp=d=>rows.filter(r=>r.dates[d]).length/rows.length;
-  const nm='Seleccion ('+rows.length+' SKU)';
-  const hasPos=rows.some(r=>D.some(d=>r.dates[d]&&r.dates[d].pos!=null));
-  evLines('evC1',pick(x=>Number(x.dinamica)),{fmt:fmtPct1,T,sub:'Un SKU por linea'});
-  evLines('evC2',pick(x=>x.ptc),{fmt:fmtMoney,T,sub:'Un SKU por linea'});
-  evLines('evC3',pick(x=>x.fleje),{fmt:fmtMoney,T,sub:'Un SKU por linea'});
-  evLines('evC4',hasPos?pick(x=>x.pos):[],{fmt:v=>'#'+Math.round(v),T,inv:true,int:true,sub:'Orden de aparicion en el listado (menor = mas arriba)',empty:'Sin datos de posicion en este periodo. Se guarda desde la corrida en que se agrego esta metrica.'});
-  evLines('evC5',evAgg(rows,D,nm,freq),{fmt:fmtPct1,T,range:[0,1],sub:'% de los SKU presentes ese dia con dinamica'});
-  evLines('evC6',evAgg(rows,D,nm,disp),{fmt:fmtPct1,T,range:[0,1],sub:'% de los SKU seleccionados publicados ese dia'});
-}
-function evToggle(k){EV.hidden.has(k)?EV.hidden.delete(k):EV.hidden.add(k);evDrawCharts();}
-function evLines(id,series,o){
-  const box=el(id);if(!box)return;EV_PTS[id]=[];EV_FMT[id]=o.fmt;const sub=el(id+'s');if(sub)sub.textContent=o.sub||'';
-  const all=series.flatMap(s=>s.pts.filter(p=>p.v!=null&&!p.gap));
-  if(!all.length){box.innerHTML='<div class="note" style="padding:60px 12px;text-align:center">'+(o.empty||(series.length?'Sin datos en el periodo':'Todas las series estan ocultas'))+'</div>';return;}
-  const W=box.clientWidth||600,H=box.clientHeight||250,pL=58,pR=14,pT=16,pB=28,iw=W-pL-pR,ih=H-pT-pB;
-  let vmin,vmax;
-  if(o.range){[vmin,vmax]=o.range;}else{vmin=Math.min(...all.map(p=>p.v));vmax=Math.max(...all.map(p=>p.v));if(o.int){vmin=Math.max(1,vmin-1);vmax=vmax+1;}else{const pad=(vmax-vmin)*.08||Math.abs(vmax)*.05||.01;vmin=Math.max(0,vmin-pad);vmax+=pad;}}
-  const span=(vmax-vmin)||1,t0=o.T[0],t1=o.T[1];
-  const X=t=>t0===t1?pL+iw/2:pL+(t-t0)/(t1-t0)*iw,Y=v=>o.inv?pT+ih*(v-vmin)/span:pT+ih*(1-(v-vmin)/span);
-  let svg='<svg width="'+W+'" height="'+H+'" viewBox="0 0 '+W+' '+H+'" onmousemove="evHover(event,\''+id+'\')" onmouseleave="evHoverEnd(\''+id+'\')">';
-  for(let i=0;i<=4;i++){const v=o.inv?vmin+span*i/4:vmin+span*(4-i)/4,gy=pT+ih*i/4;svg+='<line x1="'+pL+'" y1="'+gy.toFixed(1)+'" x2="'+(W-pR)+'" y2="'+gy.toFixed(1)+'" stroke="var(--line)"/><text x="'+(pL-6)+'" y="'+(gy+3.5).toFixed(1)+'" font-size="10" fill="var(--muted)" text-anchor="end">'+o.fmt(o.int?Math.round(v):v)+'</text>';}
-  const lab=new Map();all.forEach(p=>lab.set(p.t,p.lbl));const tl=[...lab.keys()].sort((a,b)=>a-b),every=Math.max(1,Math.ceil(tl.length/Math.max(2,Math.floor(iw/58))));
-  tl.forEach((t,i)=>{if(i%every===0)svg+='<text x="'+X(t).toFixed(1)+'" y="'+(H-pB+16)+'" font-size="10" fill="var(--muted)" text-anchor="middle">'+lab.get(t)+'</text>';});
-  const dots=all.length<=300;
-  series.forEach(s=>{
-    let seg=[];const flush=()=>{if(seg.length>1)svg+='<path d="'+seg.map((p,k)=>(k?'L':'M')+X(p.t).toFixed(1)+','+Y(p.v).toFixed(1)).join(' ')+'" fill="none" stroke="'+s.color+'" stroke-width="2"/>';seg=[];};
-    s.pts.forEach(p=>{if(p.gap){flush();return;}seg.push(p);EV_PTS[id].push({x:X(p.t),y:Y(p.v),s,p});if(dots)svg+='<circle cx="'+X(p.t).toFixed(1)+'" cy="'+Y(p.v).toFixed(1)+'" r="3" fill="'+s.color+'"/>';});flush();
-  });
-  svg+='<circle id="'+id+'Hi" r="6" fill="none" stroke="var(--ink)" stroke-width="1.5" style="display:none"/></svg><div class="intip" id="'+id+'Tip"></div>';
-  box.innerHTML=svg;
-}
-function evHover(e,id){
-  const box=el(id),r=e.currentTarget.getBoundingClientRect(),mx=e.clientX-r.left,my=e.clientY-r.top;
-  let best=null,bd=1600;(EV_PTS[id]||[]).forEach(q=>{const dd=(q.x-mx)**2+(q.y-my)**2;if(dd<bd){bd=dd;best=q;}});
-  const tip=el(id+'Tip'),hi=el(id+'Hi');if(!best){evHoverEnd(id);return;}
-  hi.setAttribute('cx',best.x);hi.setAttribute('cy',best.y);hi.style.display='';
-  tip.innerHTML='<b>'+fmtDMY(best.p.d)+'</b><br><span class="legdot" style="background:'+best.s.color+'"></span> '+esc(best.s.label)+'<br><b>'+EV_FMT[id](best.p.v)+'</b>';
-  tip.style.display='block';const tw=tip.offsetWidth,th=tip.offsetHeight;
-  tip.style.left=Math.max(4,Math.min(box.clientWidth-tw-4,best.x+12))+'px';tip.style.top=Math.max(4,Math.min(box.clientHeight-th-4,best.y-th-10))+'px';
-}
-function evHoverEnd(id){const t=el(id+'Tip'),h=el(id+'Hi');if(t)t.style.display='none';if(h)h.style.display='none';}
 document.addEventListener('click',e=>{if(tab!=='timeline'||!EV.open)return;if(!e.composedPath().some(n=>n.id==='evSkuWrap')){EV.open=false;const b=el('evSkList');if(b)b.innerHTML='';}});
 
 /* ---- Insights: frecuencia promocional = dias con dinamica / dias presente (por SKU, sobre el periodo y filtros activos) ---- */
@@ -795,7 +738,7 @@ function downloadCSV(){if(!current.length)return;const k=Object.keys(current[0])
 
 /* ---- Grafico de evolucion de 1 SKU (click en un producto en Evolucion/Heatmap) ---- */
 function closeChart(){const p=el('chartPanel');p.classList.remove('open');p.innerHTML='';}
-function openChart(id){const r=DATA.pivot.find(x=>x.id===id);if(!r)return;const D=dates();const pts=D.map(d=>({d,v:r.dates[d]})).filter(p=>p.v&&p.v.ptc!=null);const p=el('chartPanel');if(!pts.length){p.classList.add('open');p.innerHTML='<div class="chartHead"><div><h3>'+r.marca+' '+r.calibre+'</h3><div class="sub">'+r.sku+'</div></div><button class="chartClose" onclick="closeChart()">Cerrar &times;</button></div><p class="note">Sin historico suficiente todavia.</p>';p.scrollIntoView({behavior:'smooth',block:'nearest'});return;}
+function openChart(id){const r=DATA.pivot.find(x=>x.id===id);if(!r)return;const D=tab==='timeline'?evDates():dates();const pts=D.map(d=>({d,v:r.dates[d]})).filter(p=>p.v&&p.v.ptc!=null);const p=el('chartPanel');if(!pts.length){p.classList.add('open');p.innerHTML='<div class="chartHead"><div><h3>'+r.marca+' '+r.calibre+'</h3><div class="sub">'+r.sku+'</div></div><button class="chartClose" onclick="closeChart()">Cerrar &times;</button></div><p class="note">Sin historico suficiente todavia.</p>';p.scrollIntoView({behavior:'smooth',block:'nearest'});return;}
   const W=Math.max(560,pts.length*70),H=220,padL=54,padR=18,padT=18,padB=34;
   const vals=pts.map(p=>p.v.ptc);const min=Math.min(...vals),max=Math.max(...vals);const span=(max-min)||1;
   const x=i=>padL+(pts.length===1?0:(i*(W-padL-padR)/(pts.length-1)));
