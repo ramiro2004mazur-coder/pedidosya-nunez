@@ -67,3 +67,4 @@
 2026-09-27.csv: PRECIO SOSPECHOSO -> 'Grolsch | Cerveza Grolsch Ipa 473 ml' 2746.6 -> 4430.0 (2026-09-27), se guarda igual marcado como sospechoso
 2026-09-28.csv: PRECIO SOSPECHOSO -> 'Estrella Galicia | Cerveza Estrella Galicia 473 ml' 2355.0 -> 3925.0 (2026-09-28), se guarda igual marcado como sospechoso
 2026-09-28.csv: SKU nuevo sin catalogo -> 'Estrella Galicia | Cerveza Estrella Galicia Lager Porrón 355 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-09-29.csv: PRECIO SOSPECHOSO -> 'Salta | Cerveza Salta Cautiva Fresh Lager 473 ml' 1662.5 -> 3325.0 (2026-09-29), se guarda igual marcado como sospechoso
