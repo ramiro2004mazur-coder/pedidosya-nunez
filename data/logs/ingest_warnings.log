@@ -68,3 +68,9 @@
 2026-09-28.csv: PRECIO SOSPECHOSO -> 'Estrella Galicia | Cerveza Estrella Galicia 473 ml' 2355.0 -> 3925.0 (2026-09-28), se guarda igual marcado como sospechoso
 2026-09-28.csv: SKU nuevo sin catalogo -> 'Estrella Galicia | Cerveza Estrella Galicia Lager Porrón 355 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-09-29.csv: PRECIO SOSPECHOSO -> 'Salta | Cerveza Salta Cautiva Fresh Lager 473 ml' 1662.5 -> 3325.0 (2026-09-29), se guarda igual marcado como sospechoso
+2026-10-01.csv: PRECIO SOSPECHOSO -> 'Stones | Cerveza Stones Maracuyá 473 ml' 1.0 -> 1797.0 (2026-10-01), se guarda igual marcado como sospechoso
+2026-10-01.csv: PRECIO SOSPECHOSO -> 'Schneider | Cerveza Schneider Remix Límon 473 ml' 1877.85 -> 2889.0 (2026-10-01), se guarda igual marcado como sospechoso
+2026-10-01.csv: PRECIO SOSPECHOSO -> 'Heineken | Cerveza Heineken Porron 330 ml' 2891.85 -> 4449.0 (2026-10-01), se guarda igual marcado como sospechoso
+2026-10-01.csv: PRECIO SOSPECHOSO -> 'Heineken | Cerveza Heineken Cero Alcohol Lata 473 ml' 2137.85 -> 3289.0 (2026-10-01), se guarda igual marcado como sospechoso
+2026-10-01.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller Genuine Draft 710 ml' 3600.35 -> 5539.0 (2026-10-01), se guarda igual marcado como sospechoso
+2026-10-01.csv: PRECIO SOSPECHOSO -> 'Estrella Galicia | Cerveza Estrella Galicia Sin Gluten 330 ml' 1908.0 -> 3180.0 (2026-10-01), se guarda igual marcado como sospechoso
