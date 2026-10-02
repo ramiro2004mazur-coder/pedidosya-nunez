@@ -74,3 +74,9 @@
 2026-10-01.csv: PRECIO SOSPECHOSO -> 'Heineken | Cerveza Heineken Cero Alcohol Lata 473 ml' 2137.85 -> 3289.0 (2026-10-01), se guarda igual marcado como sospechoso
 2026-10-01.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller Genuine Draft 710 ml' 3600.35 -> 5539.0 (2026-10-01), se guarda igual marcado como sospechoso
 2026-10-01.csv: PRECIO SOSPECHOSO -> 'Estrella Galicia | Cerveza Estrella Galicia Sin Gluten 330 ml' 1908.0 -> 3180.0 (2026-10-01), se guarda igual marcado como sospechoso
+2026-10-02.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen IPA 473 ml' 1944.5 -> 3889.0 (2026-10-02), se guarda igual marcado como sospechoso
+2026-10-02.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen Rubia Lata 473 ml' 1829.5 -> 3659.0 (2026-10-02), se guarda igual marcado como sospechoso
+2026-10-02.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen Roja 473 ml' 1944.5 -> 3889.0 (2026-10-02), se guarda igual marcado como sospechoso
+2026-10-02.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen Negra 473ml' 1944.5 -> 3889.0 (2026-10-02), se guarda igual marcado como sospechoso
+2026-10-02.csv: PRECIO SOSPECHOSO -> 'Estrella Galicia | Cerveza Estrella Galicia 473 ml' 3925.0 -> 1900.0 (2026-10-02), se guarda igual marcado como sospechoso
+2026-10-02.csv: PRECIO SOSPECHOSO -> 'Grolsch | Cerveza Grolsch Ipa 473 ml' 2658.0 -> 4430.0 (2026-10-02), se guarda igual marcado como sospechoso
