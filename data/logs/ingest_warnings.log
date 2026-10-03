@@ -80,3 +80,5 @@
 2026-10-02.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen Negra 473ml' 1944.5 -> 3889.0 (2026-10-02), se guarda igual marcado como sospechoso
 2026-10-02.csv: PRECIO SOSPECHOSO -> 'Estrella Galicia | Cerveza Estrella Galicia 473 ml' 3925.0 -> 1900.0 (2026-10-02), se guarda igual marcado como sospechoso
 2026-10-02.csv: PRECIO SOSPECHOSO -> 'Grolsch | Cerveza Grolsch Ipa 473 ml' 2658.0 -> 4430.0 (2026-10-02), se guarda igual marcado como sospechoso
+2026-10-03.csv: PRECIO SOSPECHOSO -> 'Schneider | Cerveza Schneider Rubia 710 ml' 1869.5 -> 3739.0 (2026-10-03), se guarda igual marcado como sospechoso
+2026-10-03.csv: PRECIO SOSPECHOSO -> 'Salta | Cerveza Salta Cautiva Fresh Lager 473 ml' 1662.5 -> 3325.0 (2026-10-03), se guarda igual marcado como sospechoso
