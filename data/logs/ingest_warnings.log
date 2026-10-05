@@ -85,3 +85,8 @@
 2026-10-04.csv: PRECIO SOSPECHOSO -> 'Stones | Cerveza Stones Lemon 473 ml' 1.0 -> 1797.0 (2026-10-04), se guarda igual marcado como sospechoso
 2026-10-04.csv: PRECIO SOSPECHOSO -> 'Quilmes | Cerveza Quilmes Clásica 710ml' 2460.0 -> 4100.0 (2026-10-04), se guarda igual marcado como sospechoso
 2026-10-04.csv: PRECIO SOSPECHOSO -> 'Quilmes | Cerveza Quilmes Clásica 473ml' 1799.85 -> 2769.0 (2026-10-04), se guarda igual marcado como sospechoso
+2026-10-05.csv: PRECIO SOSPECHOSO -> 'Stones | Cerveza Stones Lemon 473 ml' 1797.0 -> 2995.0 (2026-10-05), se guarda igual marcado como sospechoso
+2026-10-05.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 473 ml' 2050.95 -> 3729.0 (2026-10-05), se guarda igual marcado como sospechoso
+2026-10-05.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 600 ml' 3365.45 -> 6119.0 (2026-10-05), se guarda igual marcado como sospechoso
+2026-10-05.csv: PRECIO SOSPECHOSO -> 'Amstel | Cerveza Amstel Lager 710 ml' 2520.0 -> 4200.0 (2026-10-05), se guarda igual marcado como sospechoso
+2026-10-05.csv: PRECIO SOSPECHOSO -> 'Amstel | Cerveza Amstel Lager 473 ml' 1877.85 -> 2889.0 (2026-10-05), se guarda igual marcado como sospechoso
