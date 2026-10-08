@@ -1078,5 +1078,21 @@
     "calibre": "S/C",
     "grupo": "Sin clasificar",
     "segmento": "Sin clasificar"
+  },
+  {
+    "id": "brahma-brahma-ft-limon-lata-473-cm3",
+    "marca": "Brahma",
+    "sku": "Brahma FT Limon Lata 473 cm3",
+    "calibre": "S/C",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "bierhaus-cerveza-bierhaus-oktoberfest-473ml",
+    "marca": "Bierhaus",
+    "sku": "Cerveza Bierhaus Oktoberfest 473ml",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
   }
 ]

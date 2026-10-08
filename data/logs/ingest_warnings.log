@@ -92,3 +92,8 @@
 2026-10-05.csv: PRECIO SOSPECHOSO -> 'Amstel | Cerveza Amstel Lager 473 ml' 1877.85 -> 2889.0 (2026-10-05), se guarda igual marcado como sospechoso
 2026-10-06.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen Rubia 710 ml' 3075.0 -> 5125.0 (2026-10-06), se guarda igual marcado como sospechoso
 2026-10-07.csv: SKU nuevo sin catalogo -> 'Brahma | Brahma FT Pomelo Lata 473 cm3' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-10-08.csv: PRECIO SOSPECHOSO -> 'Estrella Galicia | Cerveza Estrella Galicia 473 ml' 1900.0 -> 3223.2 (2026-10-08), se guarda igual marcado como sospechoso
+2026-10-08.csv: PRECIO SOSPECHOSO -> 'Estrella Galicia | Cerveza Estrella Galicia Sin Gluten 330 ml' 1700.0 -> 2884.0 (2026-10-08), se guarda igual marcado como sospechoso
+2026-10-08.csv: PRECIO SOSPECHOSO -> 'Salta | Cerveza Salta Cautiva Fresh Lager 473 ml' 1662.5 -> 3325.0 (2026-10-08), se guarda igual marcado como sospechoso
+2026-10-08.csv: SKU nuevo sin catalogo -> 'Brahma | Brahma FT Limon Lata 473 cm3' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-10-08.csv: SKU nuevo sin catalogo -> 'Bierhaus | Cerveza Bierhaus Oktoberfest 473ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
