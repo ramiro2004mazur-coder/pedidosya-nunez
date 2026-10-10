@@ -102,3 +102,4 @@
 2026-10-09.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen Rubia Lata 473 ml' 1829.5 -> 3110.15 (2026-10-09), se guarda igual marcado como sospechoso
 2026-10-09.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen Roja 473 ml' 1944.5 -> 3305.65 (2026-10-09), se guarda igual marcado como sospechoso
 2026-10-09.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen Negra 473ml' 1944.5 -> 3305.65 (2026-10-09), se guarda igual marcado como sospechoso
+2026-10-10.csv: SKU nuevo sin catalogo -> 'Patagonia | Cerveza Patagonia Lager Del Sur Lata 473 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
