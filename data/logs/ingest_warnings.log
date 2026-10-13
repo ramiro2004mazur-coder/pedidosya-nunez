@@ -103,3 +103,12 @@
 2026-10-09.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen Roja 473 ml' 1944.5 -> 3305.65 (2026-10-09), se guarda igual marcado como sospechoso
 2026-10-09.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen Negra 473ml' 1944.5 -> 3305.65 (2026-10-09), se guarda igual marcado como sospechoso
 2026-10-10.csv: SKU nuevo sin catalogo -> 'Patagonia | Cerveza Patagonia Lager Del Sur Lata 473 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-10-12.csv: PRECIO SOSPECHOSO -> 'Heineken | Cerveza Rubia Heineken 473 ml' 2778.75 -> 4275.0 (2026-10-12), se guarda igual marcado como sospechoso
+2026-10-12.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 600 ml' 3299.45 -> 5999.0 (2026-10-12), se guarda igual marcado como sospechoso
+2026-10-12.csv: PRECIO SOSPECHOSO -> 'Heineken | Cerveza Heineken Porron 330 ml' 2891.85 -> 4449.0 (2026-10-12), se guarda igual marcado como sospechoso
+2026-10-12.csv: PRECIO SOSPECHOSO -> 'Estrella Galicia | Cerveza Estrella Galicia Sin Gluten 330 ml' 1802.5 -> 2884.0 (2026-10-12), se guarda igual marcado como sospechoso
+2026-10-12.csv: PRECIO SOSPECHOSO -> 'Salta | Cerveza Salta Cautiva Fresh Lager 473 ml' 1662.5 -> 3325.0 (2026-10-12), se guarda igual marcado como sospechoso
+2026-10-12.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Blanca Miller Edición Limitada Porrón 330 ml' 2246.75 -> 4085.0 (2026-10-12), se guarda igual marcado como sospechoso
+2026-10-12.csv: PRECIO SOSPECHOSO -> 'Heineken | Cerveza Heineken Cero Alcohol Lata 473 ml' 2326.35 -> 3579.0 (2026-10-12), se guarda igual marcado como sospechoso
+2026-10-12.csv: PRECIO SOSPECHOSO -> 'Estrella De Galicia | Cerveza Estrella De Galicia 0.0 Lata 330 ml' 1802.5 -> 2884.0 (2026-10-12), se guarda igual marcado como sospechoso
+2026-10-12.csv: PRECIO SOSPECHOSO -> 'Heineken | Cerveza Sin Alcohol Heineken 330 ml' 2209.35 -> 3399.0 (2026-10-12), se guarda igual marcado como sospechoso
