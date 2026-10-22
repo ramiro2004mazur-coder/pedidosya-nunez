@@ -79,6 +79,9 @@ def main():
         "dates": dates,
         "stats": build_stats(pivot),
         "fights": fights,
+        # Valores supuestos (scripts/build_supuestos.py), aparte del pivot para que
+        # ningun KPI/stat los use: el dashboard solo los dibuja en gris/punteado.
+        "supuestos": load_json(HISTORY_PATH.parent / "supuestos.json", None),
         "meta": {
             "generado": datetime.now(timezone.utc).astimezone().strftime("%Y-%m-%d %H:%M:%S"),
             "sku_rows": len(pivot),

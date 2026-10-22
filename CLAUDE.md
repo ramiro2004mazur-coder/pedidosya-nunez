@@ -115,6 +115,17 @@ cambia según la hora — ver regla más abajo).
   presente, por SKU, con semaforo (>80 verde, 50-80 amarillo, <50 rojo),
   insights automaticos y scatter dinamica vs frecuencia.
 
+### Supuestos (dias sin lectura dibujados en gris)
+
+`data/supuestos.json` (generado por `scripts/build_supuestos.py`, se edita
+`HUECOS`/`NO_REALES` ahi) completa huecos sin lectura replicando la lectura
+REAL del mismo dia de la semana anterior (primer hueco: 13/10-21/10/2026).
+**No se escribe en `history.json`**: va aparte en `docs/data.json` como
+`supuestos`, y el dashboard solo lo dibuja (columnas con `*` y rayado,
+celdas en gris, linea punteada gris + franja "Supuesto" en los graficos).
+Ningun KPI, stat, insight ni export lo usa. Si aparece dato real para una
+fecha, el real gana.
+
 ### Pestaña Insights: fabricante
 
 `history.json` no tiene columna de fabricante. `docs/index.html` lo deriva de
