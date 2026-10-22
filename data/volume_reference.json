@@ -810,5 +810,19 @@
     "sku": "Cerveza Warsteiner 473 ml",
     "volumen_l": 0.473,
     "fuente": "auto"
+  },
+  {
+    "id": "andes-origen-cerveza-andes-origen-blanca-710-ml",
+    "marca": "Andes Origen",
+    "sku": "Cerveza Andes Origen Blanca 710 ml",
+    "volumen_l": 0.71,
+    "fuente": "auto"
+  },
+  {
+    "id": "unbranded-cerveza-otra-ronda-lager-473-ml",
+    "marca": "unbranded",
+    "sku": "Cerveza Otra Ronda Lager 473 ml",
+    "volumen_l": 0.473,
+    "fuente": "auto"
   }
 ]

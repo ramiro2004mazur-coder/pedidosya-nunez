@@ -34634,8 +34634,8 @@
       "marca": "Andes Origen",
       "sku": "Cerveza Andes Origen Blanca 710 ml",
       "calibre": "710/730",
-      "grupo": "Sin clasificar",
-      "segmento": "Sin clasificar",
+      "grupo": "CMQ",
+      "segmento": "Core+",
       "dates": {
         "2026-10-22": {
           "fleje": 3976.0,
@@ -34644,15 +34644,15 @@
           "pos": 108
         }
       },
-      "volumen_l": null
+      "volumen_l": 0.71
     },
     {
       "id": "unbranded-cerveza-otra-ronda-lager-473-ml",
       "marca": "unbranded",
       "sku": "Cerveza Otra Ronda Lager 473 ml",
       "calibre": "473",
-      "grupo": "Sin clasificar",
-      "segmento": "Sin clasificar",
+      "grupo": "Competencia",
+      "segmento": "Value",
       "dates": {
         "2026-10-22": {
           "fleje": 2500.0,
@@ -34662,7 +34662,7 @@
           "promo_nominal": "30%"
         }
       },
-      "volumen_l": null
+      "volumen_l": 0.473
     }
   ],
   "dates": [
@@ -34793,8 +34793,8 @@
       "dias": 58,
       "dias_dinamica": 58,
       "max_dinamica": 0.5,
-      "avg_dinamica": 0.28048076923076926,
-      "avg_ptc": 2766.5939102564103
+      "avg_dinamica": 0.27958466453674125,
+      "avg_ptc": 2770.4578274760383
     },
     {
       "marca": "Michelob Ultra",
@@ -35257,19 +35257,9 @@
       "avg_ptc": 3026.1111111111113
     },
     {
-      "marca": "Andes Origen",
-      "grupo": "Sin clasificar",
-      "segmento": "Sin clasificar",
-      "dias": 1,
-      "dias_dinamica": 0,
-      "max_dinamica": 0.0,
-      "avg_dinamica": 0.0,
-      "avg_ptc": 3976.0
-    },
-    {
       "marca": "unbranded",
-      "grupo": "Sin clasificar",
-      "segmento": "Sin clasificar",
+      "grupo": "Competencia",
+      "segmento": "Value",
       "dias": 1,
       "dias_dinamica": 1,
       "max_dinamica": 0.3,
@@ -35367,7 +35357,7 @@
     }
   ],
   "meta": {
-    "generado": "2026-10-22 14:25:25",
+    "generado": "2026-10-22 15:57:18",
     "sku_rows": 140,
     "registros_validos": 5701,
     "dias": 58,
