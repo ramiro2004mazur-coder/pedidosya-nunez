@@ -112,3 +112,9 @@
 2026-10-12.csv: PRECIO SOSPECHOSO -> 'Heineken | Cerveza Heineken Cero Alcohol Lata 473 ml' 2326.35 -> 3579.0 (2026-10-12), se guarda igual marcado como sospechoso
 2026-10-12.csv: PRECIO SOSPECHOSO -> 'Estrella De Galicia | Cerveza Estrella De Galicia 0.0 Lata 330 ml' 1802.5 -> 2884.0 (2026-10-12), se guarda igual marcado como sospechoso
 2026-10-12.csv: PRECIO SOSPECHOSO -> 'Heineken | Cerveza Sin Alcohol Heineken 330 ml' 2209.35 -> 3399.0 (2026-10-12), se guarda igual marcado como sospechoso
+2026-10-22.csv: PRECIO SOSPECHOSO -> 'Schneider | Cerveza Schneider Rubia 473 ml' 1699.75 -> 2615.0 (2026-10-22), se guarda igual marcado como sospechoso
+2026-10-22.csv: PRECIO SOSPECHOSO -> 'Schneider | Cerveza Schneider Remix Límon 473 ml' 1877.85 -> 2889.0 (2026-10-22), se guarda igual marcado como sospechoso
+2026-10-22.csv: PRECIO SOSPECHOSO -> 'Estrella Galicia | Cerveza Estrella Galicia 473 ml' 2014.5 -> 4029.0 (2026-10-22), se guarda igual marcado como sospechoso
+2026-10-22.csv: PRECIO SOSPECHOSO -> 'Estrella Galicia | Cerveza Estrella Galicia Lager Porrón 355 ml' 1850.0 -> 3925.0 (2026-10-22), se guarda igual marcado como sospechoso
+2026-10-22.csv: SKU nuevo sin catalogo -> 'Andes Origen | Cerveza Andes Origen Blanca 710 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-10-22.csv: SKU nuevo sin catalogo -> 'unbranded | Cerveza Otra Ronda Lager 473 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
