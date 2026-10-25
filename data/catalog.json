@@ -1118,5 +1118,37 @@
     "calibre": "473",
     "grupo": "Competencia",
     "segmento": "Value"
+  },
+  {
+    "id": "flying-fish-cerveza-flying-fish-limon-lata-473-ml",
+    "marca": "Flying Fish",
+    "sku": "Cerveza Flying Fish Limón Lata 473 ml",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "flying-fish-cerveza-flying-fish-limon-340-ml",
+    "marca": "Flying Fish",
+    "sku": "Cerveza Flying Fish Limón 340 ml",
+    "calibre": "330/355",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "konig-cerveza-konig-pilsener-500-ml",
+    "marca": "Konig",
+    "sku": "Cerveza Konig Pilsener 500 Ml",
+    "calibre": "600",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "michelob-ultra-cerveza-michelob-ultra-710-ml",
+    "marca": "Michelob Ultra",
+    "sku": "Cerveza Michelob Ultra 710 ml",
+    "calibre": "710/730",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
   }
 ]

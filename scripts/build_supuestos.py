@@ -9,6 +9,9 @@ dia de la semana de la ultima lectura REAL anterior al hueco (ej: martes
 13/10 <- martes 06/10). Las fechas que no son lectura real (ej: 11/10, que
 fue copia del 10/10) se excluyen como fuente via NO_REALES.
 
+Un hueco puede fijar "fuente" (fecha real a replicar en todos sus dias) en vez
+de la regla del mismo dia de la semana (ej: 23-24/10 <- 25/10, pedido del usuario).
+
 Uso:
     python3 scripts/build_supuestos.py
 """
@@ -26,6 +29,8 @@ SUPUESTOS_PATH = HISTORY_PATH.parent / "supuestos.json"
 HUECOS = [
     {"desde": "2026-10-13", "hasta": "2026-10-21",
      "motivo": "Scraper bloqueado (403 anti-bot PerimeterX) y Mac sin conexion/apagada"},
+    {"desde": "2026-10-23", "hasta": "2026-10-24", "fuente": "2026-10-25",
+     "motivo": "Scraper bloqueado (403 anti-bot PerimeterX); replica la lectura del 25/10"},
 ]
 
 # Fechas del historico que no son lectura real, no sirven como fuente.
@@ -51,7 +56,12 @@ def main():
             key = d.isoformat()
             if key in history["dates"]:
                 continue  # hay lectura real, no se pisa
-            fuente = d - timedelta(days=7)
+            if hueco.get("fuente"):
+                fuente = date.fromisoformat(hueco["fuente"])
+                if hueco["fuente"] not in reales:
+                    sys.exit(f"La fuente {hueco['fuente']} no es una lectura real")
+            else:
+                fuente = d - timedelta(days=7)
             while fuente.isoformat() not in reales:
                 fuente -= timedelta(days=7)
                 if fuente < d - timedelta(days=70):
@@ -67,6 +77,8 @@ def main():
                         "fleje": v["fleje"], "ptc": v["ptc"], "dinamica": v["dinamica"],
                         "fuente": fechas[key],
                     }
+                    if v.get("promo_nominal"):
+                        pivot[p["id"]][key]["promo_nominal"] = v["promo_nominal"]
 
     save_json(SUPUESTOS_PATH, {
         "nota": "SUPUESTO, no relevado: replica la lectura real del mismo dia de la semana anterior. "

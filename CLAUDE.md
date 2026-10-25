@@ -124,7 +124,14 @@ REAL del mismo dia de la semana anterior (primer hueco: 13/10-21/10/2026).
 `supuestos`, y el dashboard solo lo dibuja (columnas con `*` y rayado,
 celdas en gris, linea punteada gris + franja "Supuesto" en los graficos).
 Ningun KPI, stat, insight ni export lo usa. Si aparece dato real para una
-fecha, el real gana.
+fecha, el real gana. Un hueco puede fijar `"fuente"` (ej: 23-24/10 <- 25/10).
+
+**Precios Plus** (cargas manuales desde PDF, ej: 25/10/2026): el PDF trae el
+precio para suscriptores PedidosYa Plus, que el scraper NO guarda (guarda el
+precio para todos). Se cargaron igual por decision del usuario, con
+`promo_nominal: "Plus NN%"`; el dashboard les pone la etiqueta "Plus". Su
+dinamica no es comparable 1 a 1 con lecturas del scraper (suele ser ~10 pp
+mas alta).
 
 ### Pestaña Insights: fabricante
 

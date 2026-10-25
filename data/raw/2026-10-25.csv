@@ -1,0 +1,115 @@
+﻿zona;marca;descripcion;calibre;fleje;precio;descuento;promo_nominal
+Nunez;Quilmes;Cerveza Quilmes Clásica 473ml;473 ml;2692.0;2019.0;25;
+Nunez;Quilmes;Cerveza Quilmes Clásica 710ml;710 ml;3832.0;3257.2;15;
+Nunez;Quilmes;Cerveza Quilmes Stout 473 ml;473 ml;2692.0;2019.0;25;
+Nunez;Quilmes;Cerveza Quilmes Ipa 473 ml;473 ml;2692.0;2019.0;25;
+Nunez;Quilmes;Cerveza Quilmes Bajo Cero 473 ml;473 ml;1790.0;1790.0;0;
+Nunez;Schneider;Cerveza Schneider Rubia 710 ml;710 ml;3815.0;3815.0;0;
+Nunez;Schneider;Cerveza Schneider Rubia 473 ml;473 ml;2615.0;2615.0;0;
+Nunez;Schneider;Cerveza Schneider Remix Límon 473 ml;473 ml;2889.0;2889.0;0;
+Nunez;Brahma;Cerveza Brahma Chopp 473 ml;473 ml;2833.0;2124.75;25;
+Nunez;Brahma;Cerveza Brahma Chopp Rubia 710 ml;710 ml;4057.0;3042.75;25;
+Nunez;Brahma;Cerveza Brahma Chopp Lata 354 ml;354 ml;1919.0;1439.25;25;
+Nunez;Brahma;Brahma FT Pomelo Lata 473 cm3;473 ml;2833.0;1983.1;30;
+Nunez;Brahma;Brahma FT Limon Lata 473 cm3;473 ml;2833.0;1983.1;30;
+Nunez;Pampa;Cerveza Pampa Brewing Lager 473 ml;473 ml;3000.0;1500.0;50;Plus 50%
+Nunez;Pampa;Cerveza Pampa Brewing Co Ipa 473 ml;473 ml;3300.0;1980.0;40;Plus 40%
+Nunez;Pampa;Cerveza Pampa Brewing Amber Ale 473 ml;473 ml;3000.0;1950.0;35;Plus 35%
+Nunez;Pampa;Cerveza Pampa Brewing Nitro Cream Stout 473 ml;473 ml;3300.0;2145.0;35;Plus 35%
+Nunez;Imperial;Cerveza Imperial Golden 710 mL;710 ml;4785.0;2392.5;50;
+Nunez;Imperial;Cerveza Imperial Golden Lata 473 mL;473 ml;3325.0;2826.25;15;
+Nunez;Imperial;Cerveza Imperial Ipa 473 ml;473 ml;3495.0;2970.75;15;
+Nunez;Imperial;Cerveza Imperial Cream Stout 473 ml;473 ml;3669.0;3118.65;15;
+Nunez;Imperial;Cerveza Imperial Lager 473 ml;473 ml;3325.0;2826.25;15;
+Nunez;Imperial;Cerveza Imperial Lager 710 ml;710 ml;4785.0;3588.75;25;Plus 25%
+Nunez;Ortuzar;Cerveza Ortuzar Premium Lager 473 ml;473 ml;2399.0;1559.35;35;Plus 35%
+Nunez;Ortuzar;Cerveza Ortuzar Premium Lager 710 ml;710 ml;3779.0;2456.35;35;Plus 35%
+Nunez;Ortuzar;Cerveza Ortuzar Porter 473 ml;473 ml;3555.0;2310.75;35;Plus 35%
+Nunez;Ortuzar;Cerveza Ortuzar Honey 473 ml;473 ml;3445.0;2239.25;35;Plus 35%
+Nunez;Ortuzar;Cerveza Ortuzar Scottish 473 ml;473 ml;3445.0;2239.25;35;Plus 35%
+Nunez;Ortuzar;Cerveza Ortuzar Session Ipa 473 ml;473 ml;3965.0;2577.25;35;Plus 35%
+Nunez;Ortuzar;Cerveza Ortuzar Poker Bourbon 473 ml;473 ml;3965.0;2577.25;35;Plus 35%
+Nunez;Ortuzar;Cerveza Ortuzar Golden Ale 473 ml;473 ml;3445.0;2239.25;35;Plus 35%
+Nunez;Michelob Ultra;Cerveza Michelob Ultra Sin Gluten 473 ml;473 ml;3325.0;2327.5;30;Plus 30%
+Nunez;Michelob;Cerveza Michelob Ultra Porron 275 ml;275 ml;3199.0;2239.3;30;
+Nunez;Stella Artois;Cerveza Stella Artois Lager 710 ml;710 ml;6605.0;3632.75;45;Plus 45%
+Nunez;Stella Artois;Cervez Stella Artois 710 ml;710 ml;6709.0;4025.4;40;
+Nunez;Stella Artois;Cerveza Stella Artois 473 ml;473 ml;4415.0;3311.25;25;Plus 25%
+Nunez;Stella Artois;Cerveza Stella Artois Botella 330 ml;330 ml;4219.0;2742.35;35;
+Nunez;Stella Artois;Cerveza Stella Artois Noire Pura Malta 473 ml;473 ml;4455.0;3341.25;25;
+Nunez;Stella Artois;Cerveza Stella Artois Pure Gold Lata 473 ml;473 ml;4539.0;2950.35;35;Plus 35%
+Nunez;Patagonia;Cerveza Patagonia 24.7 Session Ipa 730 mL;730 ml;7809.0;5075.85;35;Plus 35%
+Nunez;Patagonia;Cerveza Patagonia 24.7 Session Ipa 473 ml;473 ml;5489.0;3567.85;35;Plus 35%
+Nunez;Patagonia;Cerveza Patagonia Roja Amber Lager 730 ml;730 ml;7809.0;5075.85;35;Plus 35%
+Nunez;Patagonia;Cerveza Patagonia Amber Lager Lata 473 ml;473 ml;5489.0;3567.85;35;Plus 35%
+Nunez;Patagonia;Cerveza Patagonia Vera Ipa 730 ml;730 ml;7809.0;5075.85;35;Plus 35%
+Nunez;Patagonia;Cerveza Patagonia Vera Ipa 473 ml;473 ml;5379.0;3496.35;35;Plus 35%
+Nunez;Patagonia;Cerveza Patagonia Lager Del Sur Lata 473 ml;473 ml;5489.0;3567.85;35;Plus 35%
+Nunez;Andes Origen;Cerveza Andes Origen Rubia 710 ml;710 ml;5125.0;3587.5;30;Plus 30%
+Nunez;Andes Origen;Cerveza Andes Origen Rubia Lata 473 ml;473 ml;3659.0;2561.3;30;Plus 30%
+Nunez;Andes Origen;Cerveza Andes Origen Rubia Oro 473 ml;473 ml;3625.0;2428.75;33;
+Nunez;Andes Origen;Cerveza Andes Origen IPA 473 ml;473 ml;3889.0;2722.3;30;Plus 30%
+Nunez;Andes Origen;Cerveza Andes Origen Roja 473 ml;473 ml;3889.0;2722.3;30;Plus 30%
+Nunez;Andes Origen;Cerveza Andes Origen Negra 473ml;473 ml;3889.0;2722.3;30;Plus 30%
+Nunez;Guiness;Cerveza Guinness Extra Stout 473 ml;473 ml;4300.0;2795.0;35;Plus 35%
+Nunez;Guiness;Cerveza Guinness Hop House 13 Lager 473 ml;473 ml;3900.0;2145.0;45;Plus 45%
+Nunez;Amstel;Cerveza Amstel Lager 473 ml;473 ml;2889.0;1877.85;35;
+Nunez;Heineken;Cerveza Heineken Lata 710 ml;710 ml;6355.0;5401.75;15;
+Nunez;Heineken;Cerveza Rubia Heineken 473 ml;473 ml;4275.0;4275.0;0;
+Nunez;Miller;Cerveza Miller 473 ml;473 ml;3729.0;2050.95;45;
+Nunez;Miller;Cerveza Miller 600 ml;600 ml;6209.0;3414.95;45;
+Nunez;Miller;Cerveza Blanca Miller Edición Limitada Porrón 330 ml;330 ml;4085.0;2246.75;45;
+Nunez;Corona;Cerveza Corona Rubia 710 ml;710 ml;7290.0;5832.0;20;
+Nunez;Corona;Cerveza Corona Rubia 330 ml;330 ml;4705.0;3764.0;20;
+Nunez;Corona;Cerveza Rubia Corona 473 ml;473 ml;5099.0;3314.35;35;
+Nunez;Corona;Cerveza Rubia Sin Alcohol 0.0% Corona 330 ml;330 ml;3855.0;2505.75;35;Plus 35%
+Nunez;Corona;Cerveza Sin Alcohol Corona En Lata 473 ml;473 ml;3855.0;2505.75;35;Plus 35%
+Nunez;Budweiser;Cerveza Budweiser Lata 473 ml;473 ml;2974.0;2081.8;30;Plus 30%
+Nunez;Budweiser;Cerveza Budweiser Lata 710 ml;710 ml;4283.0;3640.55;15;
+Nunez;Temple;Cerveza Temple Wolf Ipa 473 ml;473 ml;5379.0;2689.5;50;Plus 50%
+Nunez;Temple;Cerveza Temple Scottish 473 ml;473 ml;4500.0;2475.0;45;Plus 45%
+Nunez;Temple;Cerveza Temple Indie Golden 473 ml;473 ml;4500.0;2475.0;45;Plus 45%
+Nunez;Rabieta;Cerveza Rabieta Red Honey 473 ml;473 ml;3900.0;1950.0;50;
+Nunez;Rabieta;Cerveza Rabieta American Ipa 473 ml;473 ml;4300.0;2150.0;50;
+Nunez;Rabieta;Cerveza Rabieta Helles Munich 473 ml;473 ml;3900.0;1950.0;50;
+Nunez;Kunstmann;Cerveza Artesanal Kunstmann IPA 470 ml;470 ml;4989.0;4989.0;0;
+Nunez;Grolsch;Cerveza Grolsch Lager Lata 473 ml;473 ml;4200.0;2940.0;30;
+Nunez;Bierhaus;Cerveza Bierhaus Honey Lazybee 473 ml;473 ml;3585.0;2688.75;25;Plus 25%
+Nunez;Bierhaus;Cerveza Bierhaus Golden State Lager 473 ml;473 ml;3560.0;2670.0;25;Plus 25%
+Nunez;Antares;Cerveza Antares Kolsch 473 ml;473 ml;4739.0;3317.3;30;
+Nunez;Heineken;Cerveza Heineken Cero Alcohol Lata 473 ml;473 ml;3579.0;3579.0;0;
+Nunez;Bierhaus;Cerveza Bierhaus Scotch Momentum 473 ml;473 ml;3560.0;2670.0;25;Plus 25%
+Nunez;Imperial;Cerveza Imperial Apa 473 ml;473 ml;3529.0;2999.65;15;
+Nunez;Flying Fish;Cerveza Flying Fish Limón Lata 473 ml;473 ml;3189.0;2232.3;30;
+Nunez;Flying Fish;Cerveza Flying Fish Limón 340 ml;340 ml;3189.0;2232.3;30;
+Nunez;La Trappe;Cerveza Artesanal La Trappe Blond 330 ml;330 ml;8490.0;5518.5;35;Plus 35%
+Nunez;La Trappe;Cerveza Artesanal La Trappe Dubbel 330 ml;330 ml;8990.0;5843.5;35;Plus 35%
+Nunez;Imperial;Cerveza Imperial Golden 300 ml;300 ml;3729.0;3169.65;15;
+Nunez;Imperial;Cerveza Imperial Golden Cero Alcohol 473 cm3;473 ml;2425.0;2061.25;15;
+Nunez;Quilmes;Cerveza Sin Alcohol 0.0% Quilmes 473 ml;473 ml;2150.0;1397.5;35;Plus 35%
+Nunez;Stella Artois;Cerveza Stella Artois Sin Alcohol 473 ml;473 ml;3639.0;2365.35;35;Plus 35%
+Nunez;Stella Artois;Cerveza Stella Artois Sin Alcohol 330 ml;330 ml;3535.0;2297.75;35;Plus 35%
+Nunez;Heineken;Cerveza Sin Alcohol Heineken 330 ml;330 ml;3625.0;3625.0;0;
+Nunez;Estrella De Galicia;Cerveza Estrella De Galicia 0.0 Lata 330 ml;330 ml;3400.0;3400.0;0;
+Nunez;Konig;Cerveza Konig Pilsener 500 Ml;500 ml;6430.0;4822.5;25;Plus 25%
+Nunez;Bavaria;Cerveza Bavaria Holland 500ml;500 ml;4459.0;3344.25;25;Plus 25%
+Nunez;Bavaria;Cerveza Bavaria IPA 8.6 Lata 500ml;500 ml;6990.0;5242.5;25;Plus 25%
+Nunez;8.6;Cerveza 8.6 Original 500 ml;500 ml;6529.0;4896.75;25;Plus 25%
+Nunez;Fuerte;Cerveza Fuerte 8.6 Oscura Red 500ml;500 ml;7885.0;5913.75;25;Plus 25%
+Nunez;Bitburger;Cerveza Bitburger 330 ml;330 ml;5185.0;3888.75;25;Plus 25%
+Nunez;Bitburger;Cerveza Bitburger Premium Beer 500 Ml;500 ml;6015.0;4511.25;25;Plus 25%
+Nunez;Kostritzer;Cerveza Kostritzer Schwarzbier 500 Ml;500 ml;7469.0;5601.75;25;Plus 25%
+Nunez;Warsteiner;Cerveza Warsteiner 473 ml;473 ml;3729.0;3729.0;0;
+Nunez;Starberg;Cerveza Starberg Lager 500 ml;500 ml;2689.0;2689.0;0;
+Nunez;Peroni;Cerveza Peroni Botella 330 mL;330 ml;5919.0;5919.0;0;
+Nunez;Asahi;Cerveza Asahi Super Dry 330 ml;330 ml;5919.0;5919.0;0;
+Nunez;Heineken;Cerveza Heineken Porron 330 ml;330 ml;4449.0;4449.0;0;
+Nunez;Michelob Ultra;Cerveza Michelob Ultra 710 ml;710 ml;16995.0;16995.0;0;
+Nunez;Andes Origen;Cerveza Andes Origen Blanca 710 ml;710 ml;3976.0;3976.0;0;
+Nunez;Grolsch;Cerveza Grolsch Ipa 473 ml;473 ml;4430.0;2215.0;50;
+Nunez;Bierhaus;Cerveza Bierhaus Apa Boss Town 473 ml;473 ml;4555.0;3416.25;25;Plus 25%
+Nunez;Bierhaus;Cerveza Bierhaus Red IPA Timeless Lata 473 ml;473 ml;4555.0;3416.25;25;Plus 25%
+Nunez;Bierhaus;Cerveza Bierhaus Chala Ipa 473 ml;473 ml;5525.0;3867.5;30;Plus 30%
+Nunez;Bierhaus;Cerveza Bierhaus Ipa Superstar Lata 473 ml;473 ml;4555.0;4555.0;0;
+Nunez;Bierhaus;Cerveza Bierhaus Oktoberfest 473ml;473 ml;4509.0;4509.0;0;
+Nunez;Bierhaus;Cerveza Argentipa Bierhaus 473 ml;473 ml;4210.0;4210.0;0;

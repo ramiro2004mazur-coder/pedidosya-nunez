@@ -5,6 +5,12 @@
       "desde": "2026-10-13",
       "hasta": "2026-10-21",
       "motivo": "Scraper bloqueado (403 anti-bot PerimeterX) y Mac sin conexion/apagada"
+    },
+    {
+      "desde": "2026-10-23",
+      "hasta": "2026-10-24",
+      "fuente": "2026-10-25",
+      "motivo": "Scraper bloqueado (403 anti-bot PerimeterX); replica la lectura del 25/10"
     }
   ],
   "fechas": {
@@ -16,7 +22,9 @@
     "2026-10-18": "2026-10-04",
     "2026-10-19": "2026-10-12",
     "2026-10-20": "2026-10-06",
-    "2026-10-21": "2026-10-07"
+    "2026-10-21": "2026-10-07",
+    "2026-10-23": "2026-10-25",
+    "2026-10-24": "2026-10-25"
   },
   "pivot": {
     "brahma-cerveza-brahma-chopp-lata-354-ml": {
@@ -24,37 +32,43 @@
         "fleje": 2035.0,
         "ptc": 1526.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-14": {
         "fleje": 2035.0,
         "ptc": 1526.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
       },
       "2026-10-15": {
         "fleje": 2035.0,
         "ptc": 1526.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "25%"
       },
       "2026-10-16": {
         "fleje": 2035.0,
         "ptc": 1526.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "25%"
       },
       "2026-10-17": {
         "fleje": 2035.0,
         "ptc": 1526.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "25%"
       },
       "2026-10-18": {
         "fleje": 2035.0,
         "ptc": 1526.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "25%"
       },
       "2026-10-19": {
         "fleje": 2035.0,
@@ -66,13 +80,27 @@
         "fleje": 2035.0,
         "ptc": 1526.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-21": {
         "fleje": 2035.0,
         "ptc": 1526.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
+      },
+      "2026-10-23": {
+        "fleje": 1919.0,
+        "ptc": 1439.25,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 1919.0,
+        "ptc": 1439.25,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25"
       }
     },
     "brahma-cerveza-brahma-chopp-473-ml": {
@@ -80,55 +108,76 @@
         "fleje": 3035.0,
         "ptc": 2124.5,
         "dinamica": 0.3,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "30%"
       },
       "2026-10-14": {
         "fleje": 3035.0,
         "ptc": 2124.5,
         "dinamica": 0.3,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "30%"
       },
       "2026-10-15": {
         "fleje": 3035.0,
         "ptc": 2124.5,
         "dinamica": 0.3,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "30%"
       },
       "2026-10-16": {
         "fleje": 3035.0,
         "ptc": 2124.5,
         "dinamica": 0.3,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "30%"
       },
       "2026-10-17": {
         "fleje": 3035.0,
         "ptc": 2124.5,
         "dinamica": 0.3,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "30%"
       },
       "2026-10-18": {
         "fleje": 3035.0,
         "ptc": 2023.33,
         "dinamica": 0.3333,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "3 x 2"
       },
       "2026-10-19": {
         "fleje": 3035.0,
         "ptc": 2023.33,
         "dinamica": 0.3333,
-        "fuente": "2026-10-12"
+        "fuente": "2026-10-12",
+        "promo_nominal": "3 x 2"
       },
       "2026-10-20": {
         "fleje": 3035.0,
         "ptc": 2124.5,
         "dinamica": 0.3,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "30%"
       },
       "2026-10-21": {
         "fleje": 3035.0,
         "ptc": 2124.5,
         "dinamica": 0.3,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "30%"
+      },
+      "2026-10-23": {
+        "fleje": 2833.0,
+        "ptc": 2124.75,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 2833.0,
+        "ptc": 2124.75,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25"
       }
     },
     "brahma-cerveza-brahma-chopp-rubia-710-ml": {
@@ -148,19 +197,22 @@
         "fleje": 4345.0,
         "ptc": 3258.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "25%"
       },
       "2026-10-16": {
         "fleje": 4345.0,
         "ptc": 3258.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "25%"
       },
       "2026-10-17": {
         "fleje": 4345.0,
         "ptc": 3258.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "25%"
       },
       "2026-10-19": {
         "fleje": 4345.0,
@@ -179,6 +231,18 @@
         "ptc": 4345.0,
         "dinamica": 0.0,
         "fuente": "2026-10-07"
+      },
+      "2026-10-23": {
+        "fleje": 4057.0,
+        "ptc": 3042.75,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 4057.0,
+        "ptc": 3042.75,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25"
       }
     },
     "budweiser-cerveza-budweiser-lata-473-ml": {
@@ -186,37 +250,43 @@
         "fleje": 3185.0,
         "ptc": 2388.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-14": {
         "fleje": 3185.0,
         "ptc": 2388.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
       },
       "2026-10-15": {
         "fleje": 3185.0,
         "ptc": 2388.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "25%"
       },
       "2026-10-16": {
         "fleje": 3185.0,
         "ptc": 2388.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "25%"
       },
       "2026-10-17": {
         "fleje": 3185.0,
         "ptc": 2388.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "25%"
       },
       "2026-10-18": {
         "fleje": 3185.0,
         "ptc": 2133.95,
         "dinamica": 0.33,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "33%"
       },
       "2026-10-19": {
         "fleje": 3185.0,
@@ -228,13 +298,29 @@
         "fleje": 3185.0,
         "ptc": 2388.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-21": {
         "fleje": 3185.0,
         "ptc": 2388.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
+      },
+      "2026-10-23": {
+        "fleje": 2974.0,
+        "ptc": 2081.8,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 30%"
+      },
+      "2026-10-24": {
+        "fleje": 2974.0,
+        "ptc": 2081.8,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 30%"
       }
     },
     "quilmes-cerveza-quilmes-clasica-473ml": {
@@ -248,25 +334,29 @@
         "fleje": 2769.0,
         "ptc": 1799.85,
         "dinamica": 0.35,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "35%"
       },
       "2026-10-15": {
         "fleje": 2880.0,
         "ptc": 1872.0,
         "dinamica": 0.35,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "35%"
       },
       "2026-10-16": {
         "fleje": 2880.0,
         "ptc": 1872.0,
         "dinamica": 0.35,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "35%"
       },
       "2026-10-17": {
         "fleje": 2880.0,
         "ptc": 1872.0,
         "dinamica": 0.35,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "35%"
       },
       "2026-10-18": {
         "fleje": 2769.0,
@@ -284,7 +374,20 @@
         "fleje": 2769.0,
         "ptc": 1799.85,
         "dinamica": 0.35,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "35%"
+      },
+      "2026-10-23": {
+        "fleje": 2692.0,
+        "ptc": 2019.0,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 2692.0,
+        "ptc": 2019.0,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25"
       }
     },
     "quilmes-cerveza-quilmes-ipa-473-ml": {
@@ -292,37 +395,43 @@
         "fleje": 2855.0,
         "ptc": 2141.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-14": {
         "fleje": 2855.0,
         "ptc": 2141.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
       },
       "2026-10-15": {
         "fleje": 2855.0,
         "ptc": 2141.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "25%"
       },
       "2026-10-16": {
         "fleje": 2855.0,
         "ptc": 2141.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "25%"
       },
       "2026-10-17": {
         "fleje": 2855.0,
         "ptc": 2141.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "25%"
       },
       "2026-10-18": {
         "fleje": 2855.0,
         "ptc": 2141.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "25%"
       },
       "2026-10-19": {
         "fleje": 2855.0,
@@ -334,13 +443,27 @@
         "fleje": 2855.0,
         "ptc": 2141.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-21": {
         "fleje": 2855.0,
         "ptc": 2141.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
+      },
+      "2026-10-23": {
+        "fleje": 2692.0,
+        "ptc": 2019.0,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 2692.0,
+        "ptc": 2019.0,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25"
       }
     },
     "quilmes-cerveza-quilmes-stout-473-ml": {
@@ -348,37 +471,43 @@
         "fleje": 2855.0,
         "ptc": 2141.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-14": {
         "fleje": 2855.0,
         "ptc": 2141.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
       },
       "2026-10-15": {
         "fleje": 2855.0,
         "ptc": 2141.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "25%"
       },
       "2026-10-16": {
         "fleje": 2855.0,
         "ptc": 2141.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "25%"
       },
       "2026-10-17": {
         "fleje": 2855.0,
         "ptc": 2141.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "25%"
       },
       "2026-10-18": {
         "fleje": 2855.0,
         "ptc": 2141.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "25%"
       },
       "2026-10-19": {
         "fleje": 2855.0,
@@ -390,13 +519,27 @@
         "fleje": 2855.0,
         "ptc": 2141.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-21": {
         "fleje": 2855.0,
         "ptc": 2141.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
+      },
+      "2026-10-23": {
+        "fleje": 2692.0,
+        "ptc": 2019.0,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 2692.0,
+        "ptc": 2019.0,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25"
       }
     },
     "quilmes-cerveza-sin-alcohol-0-0-quilmes-473-ml": {
@@ -404,43 +547,64 @@
         "fleje": 2305.0,
         "ptc": 1728.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-14": {
         "fleje": 2305.0,
         "ptc": 1728.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
       },
       "2026-10-15": {
         "fleje": 2299.0,
         "ptc": 1724.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "25%"
       },
       "2026-10-16": {
         "fleje": 2299.0,
         "ptc": 1724.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "25%"
       },
       "2026-10-17": {
         "fleje": 2299.0,
         "ptc": 1724.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "25%"
       },
       "2026-10-20": {
         "fleje": 2305.0,
         "ptc": 1728.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-21": {
         "fleje": 2305.0,
         "ptc": 1728.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
+      },
+      "2026-10-23": {
+        "fleje": 2150.0,
+        "ptc": 1397.5,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 2150.0,
+        "ptc": 1397.5,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "quilmes-cerveza-quilmes-clasica-710ml": {
@@ -454,25 +618,29 @@
         "fleje": 4100.0,
         "ptc": 2460.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "40%"
       },
       "2026-10-15": {
         "fleje": 4100.0,
         "ptc": 2460.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "40%"
       },
       "2026-10-16": {
         "fleje": 4100.0,
         "ptc": 2460.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "40%"
       },
       "2026-10-17": {
         "fleje": 4100.0,
         "ptc": 2460.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "40%"
       },
       "2026-10-18": {
         "fleje": 4100.0,
@@ -496,7 +664,20 @@
         "fleje": 4100.0,
         "ptc": 2460.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "40%"
+      },
+      "2026-10-23": {
+        "fleje": 3832.0,
+        "ptc": 3257.2,
+        "dinamica": 0.15,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 3832.0,
+        "ptc": 3257.2,
+        "dinamica": 0.15,
+        "fuente": "2026-10-25"
       }
     },
     "amstel-cerveza-amstel-lager-473-ml": {
@@ -534,7 +715,8 @@
         "fleje": 2889.0,
         "ptc": 1877.85,
         "dinamica": 0.35,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "35%"
       },
       "2026-10-19": {
         "fleje": 2889.0,
@@ -553,6 +735,18 @@
         "ptc": 2889.0,
         "dinamica": 0.0,
         "fuente": "2026-10-07"
+      },
+      "2026-10-23": {
+        "fleje": 2889.0,
+        "ptc": 1877.85,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 2889.0,
+        "ptc": 1877.85,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25"
       }
     },
     "amstel-cerveza-amstel-lager-710-ml": {
@@ -590,7 +784,8 @@
         "fleje": 4200.0,
         "ptc": 2520.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "40%"
       },
       "2026-10-19": {
         "fleje": 4200.0,
@@ -665,6 +860,18 @@
         "ptc": 2889.0,
         "dinamica": 0.0,
         "fuente": "2026-10-07"
+      },
+      "2026-10-23": {
+        "fleje": 2889.0,
+        "ptc": 2889.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 2889.0,
+        "ptc": 2889.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
       }
     },
     "schneider-cerveza-schneider-rubia-710-ml": {
@@ -709,6 +916,18 @@
         "ptc": 3739.0,
         "dinamica": 0.0,
         "fuente": "2026-10-07"
+      },
+      "2026-10-23": {
+        "fleje": 3815.0,
+        "ptc": 3815.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 3815.0,
+        "ptc": 3815.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
       }
     },
     "andes-origen-cerveza-andes-origen-negra-473ml": {
@@ -722,25 +941,29 @@
         "fleje": 3889.0,
         "ptc": 1944.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-15": {
         "fleje": 3889.0,
         "ptc": 1944.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-16": {
         "fleje": 3889.0,
         "ptc": 3305.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "15%"
       },
       "2026-10-17": {
         "fleje": 3889.0,
         "ptc": 3305.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "15%"
       },
       "2026-10-18": {
         "fleje": 3889.0,
@@ -764,7 +987,22 @@
         "fleje": 3889.0,
         "ptc": 1944.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
+      },
+      "2026-10-23": {
+        "fleje": 3889.0,
+        "ptc": 2722.3,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 30%"
+      },
+      "2026-10-24": {
+        "fleje": 3889.0,
+        "ptc": 2722.3,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 30%"
       }
     },
     "andes-origen-cerveza-andes-origen-roja-473-ml": {
@@ -778,25 +1016,29 @@
         "fleje": 3889.0,
         "ptc": 1944.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-15": {
         "fleje": 3889.0,
         "ptc": 1944.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-16": {
         "fleje": 3889.0,
         "ptc": 3305.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "15%"
       },
       "2026-10-17": {
         "fleje": 3889.0,
         "ptc": 3305.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "15%"
       },
       "2026-10-18": {
         "fleje": 3889.0,
@@ -820,7 +1062,22 @@
         "fleje": 3889.0,
         "ptc": 1944.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
+      },
+      "2026-10-23": {
+        "fleje": 3889.0,
+        "ptc": 2722.3,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 30%"
+      },
+      "2026-10-24": {
+        "fleje": 3889.0,
+        "ptc": 2722.3,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 30%"
       }
     },
     "andes-origen-cerveza-andes-origen-rubia-lata-473-ml": {
@@ -834,25 +1091,29 @@
         "fleje": 3659.0,
         "ptc": 1829.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-15": {
         "fleje": 3659.0,
         "ptc": 1829.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-16": {
         "fleje": 3659.0,
         "ptc": 3110.15,
         "dinamica": 0.15,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "15%"
       },
       "2026-10-17": {
         "fleje": 3659.0,
         "ptc": 3110.15,
         "dinamica": 0.15,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "15%"
       },
       "2026-10-18": {
         "fleje": 3659.0,
@@ -870,7 +1131,22 @@
         "fleje": 3659.0,
         "ptc": 1829.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
+      },
+      "2026-10-23": {
+        "fleje": 3659.0,
+        "ptc": 2561.3,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 30%"
+      },
+      "2026-10-24": {
+        "fleje": 3659.0,
+        "ptc": 2561.3,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 30%"
       }
     },
     "andes-origen-cerveza-andes-origen-rubia-oro-473-ml": {
@@ -878,37 +1154,43 @@
         "fleje": 3625.0,
         "ptc": 2428.75,
         "dinamica": 0.33,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "33%"
       },
       "2026-10-14": {
         "fleje": 3625.0,
         "ptc": 2428.75,
         "dinamica": 0.33,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "33%"
       },
       "2026-10-15": {
         "fleje": 3625.0,
         "ptc": 2428.75,
         "dinamica": 0.33,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "33%"
       },
       "2026-10-16": {
         "fleje": 3625.0,
         "ptc": 2428.75,
         "dinamica": 0.33,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "33%"
       },
       "2026-10-17": {
         "fleje": 3625.0,
         "ptc": 2428.75,
         "dinamica": 0.33,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "33%"
       },
       "2026-10-18": {
         "fleje": 3625.0,
         "ptc": 2428.75,
         "dinamica": 0.33,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "33%"
       },
       "2026-10-19": {
         "fleje": 3625.0,
@@ -920,13 +1202,27 @@
         "fleje": 3625.0,
         "ptc": 2428.75,
         "dinamica": 0.33,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "33%"
       },
       "2026-10-21": {
         "fleje": 3625.0,
         "ptc": 2428.75,
         "dinamica": 0.33,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "33%"
+      },
+      "2026-10-23": {
+        "fleje": 3625.0,
+        "ptc": 2428.75,
+        "dinamica": 0.33,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 3625.0,
+        "ptc": 2428.75,
+        "dinamica": 0.33,
+        "fuente": "2026-10-25"
       }
     },
     "andes-origen-cerveza-andes-origen-rubia-710-ml": {
@@ -940,31 +1236,42 @@
         "fleje": 5125.0,
         "ptc": 2562.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-15": {
         "fleje": 5125.0,
         "ptc": 2562.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-16": {
         "fleje": 5125.0,
         "ptc": 4356.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "15%"
       },
       "2026-10-17": {
         "fleje": 5125.0,
         "ptc": 4356.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "15%"
       },
       "2026-10-18": {
         "fleje": 5125.0,
         "ptc": 3075.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "40%"
+      },
+      "2026-10-19": {
+        "fleje": 5125.0,
+        "ptc": 3843.75,
+        "dinamica": 0.25,
+        "fuente": "2026-10-12"
       },
       "2026-10-20": {
         "fleje": 5125.0,
@@ -976,7 +1283,22 @@
         "fleje": 5125.0,
         "ptc": 2562.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
+      },
+      "2026-10-23": {
+        "fleje": 5125.0,
+        "ptc": 3587.5,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 30%"
+      },
+      "2026-10-24": {
+        "fleje": 5125.0,
+        "ptc": 3587.5,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 30%"
       }
     },
     "michelob-ultra-cerveza-michelob-ultra-sin-gluten-473-ml": {
@@ -984,37 +1306,43 @@
         "fleje": 3325.0,
         "ptc": 1995.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "40%"
       },
       "2026-10-14": {
         "fleje": 3325.0,
         "ptc": 2327.5,
         "dinamica": 0.3,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "30%"
       },
       "2026-10-15": {
         "fleje": 3325.0,
         "ptc": 2327.5,
         "dinamica": 0.3,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "30%"
       },
       "2026-10-16": {
         "fleje": 3325.0,
         "ptc": 2327.5,
         "dinamica": 0.3,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "30%"
       },
       "2026-10-17": {
         "fleje": 3325.0,
         "ptc": 2327.5,
         "dinamica": 0.3,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "30%"
       },
       "2026-10-18": {
         "fleje": 3325.0,
         "ptc": 1995.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "40%"
       },
       "2026-10-19": {
         "fleje": 3325.0,
@@ -1026,13 +1354,29 @@
         "fleje": 3325.0,
         "ptc": 1995.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "40%"
       },
       "2026-10-21": {
         "fleje": 3325.0,
         "ptc": 2327.5,
         "dinamica": 0.3,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "30%"
+      },
+      "2026-10-23": {
+        "fleje": 3325.0,
+        "ptc": 2327.5,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 30%"
+      },
+      "2026-10-24": {
+        "fleje": 3325.0,
+        "ptc": 2327.5,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 30%"
       }
     },
     "imperial-cerveza-imperial-golden-300-ml": {
@@ -1040,37 +1384,43 @@
         "fleje": 3729.0,
         "ptc": 3169.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-14": {
         "fleje": 3729.0,
         "ptc": 3169.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
       },
       "2026-10-15": {
         "fleje": 3729.0,
         "ptc": 3169.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "15%"
       },
       "2026-10-16": {
         "fleje": 3729.0,
         "ptc": 3169.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "15%"
       },
       "2026-10-17": {
         "fleje": 3729.0,
         "ptc": 3169.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "15%"
       },
       "2026-10-18": {
         "fleje": 3729.0,
         "ptc": 3169.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "15%"
       },
       "2026-10-19": {
         "fleje": 3729.0,
@@ -1082,13 +1432,27 @@
         "fleje": 3729.0,
         "ptc": 3169.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-21": {
         "fleje": 3729.0,
         "ptc": 3169.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
+      },
+      "2026-10-23": {
+        "fleje": 3729.0,
+        "ptc": 3169.65,
+        "dinamica": 0.15,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 3729.0,
+        "ptc": 3169.65,
+        "dinamica": 0.15,
+        "fuente": "2026-10-25"
       }
     },
     "imperial-cerveza-imperial-apa-473-ml": {
@@ -1096,49 +1460,69 @@
         "fleje": 3529.0,
         "ptc": 2999.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-14": {
         "fleje": 3529.0,
         "ptc": 2999.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
       },
       "2026-10-15": {
         "fleje": 3529.0,
         "ptc": 2999.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "15%"
       },
       "2026-10-16": {
         "fleje": 3529.0,
         "ptc": 2999.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "15%"
       },
       "2026-10-17": {
         "fleje": 3529.0,
         "ptc": 2999.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "15%"
       },
       "2026-10-18": {
         "fleje": 3529.0,
         "ptc": 2999.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "15%"
       },
       "2026-10-20": {
         "fleje": 3529.0,
         "ptc": 2999.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-21": {
         "fleje": 3529.0,
         "ptc": 2999.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
+      },
+      "2026-10-23": {
+        "fleje": 3529.0,
+        "ptc": 2999.65,
+        "dinamica": 0.15,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 3529.0,
+        "ptc": 2999.65,
+        "dinamica": 0.15,
+        "fuente": "2026-10-25"
       }
     },
     "imperial-cerveza-imperial-cream-stout-473-ml": {
@@ -1146,37 +1530,43 @@
         "fleje": 3529.0,
         "ptc": 2999.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-14": {
         "fleje": 3529.0,
         "ptc": 2999.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
       },
       "2026-10-15": {
         "fleje": 3529.0,
         "ptc": 2999.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "15%"
       },
       "2026-10-16": {
         "fleje": 3529.0,
         "ptc": 2999.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "15%"
       },
       "2026-10-17": {
         "fleje": 3529.0,
         "ptc": 2999.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "15%"
       },
       "2026-10-18": {
         "fleje": 3529.0,
         "ptc": 2999.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "15%"
       },
       "2026-10-19": {
         "fleje": 3529.0,
@@ -1188,13 +1578,27 @@
         "fleje": 3529.0,
         "ptc": 2999.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-21": {
         "fleje": 3529.0,
         "ptc": 2999.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
+      },
+      "2026-10-23": {
+        "fleje": 3669.0,
+        "ptc": 3118.65,
+        "dinamica": 0.15,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 3669.0,
+        "ptc": 3118.65,
+        "dinamica": 0.15,
+        "fuente": "2026-10-25"
       }
     },
     "imperial-cerveza-imperial-golden-cero-alcohol-473-cm3": {
@@ -1202,37 +1606,43 @@
         "fleje": 2229.0,
         "ptc": 1894.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-14": {
         "fleje": 2229.0,
         "ptc": 1894.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
       },
       "2026-10-15": {
         "fleje": 2425.0,
         "ptc": 2061.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "15%"
       },
       "2026-10-16": {
         "fleje": 2425.0,
         "ptc": 2061.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "15%"
       },
       "2026-10-17": {
         "fleje": 2425.0,
         "ptc": 2061.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "15%"
       },
       "2026-10-18": {
         "fleje": 2229.0,
         "ptc": 1894.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "15%"
       },
       "2026-10-19": {
         "fleje": 2425.0,
@@ -1244,13 +1654,27 @@
         "fleje": 2229.0,
         "ptc": 1894.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-21": {
         "fleje": 2229.0,
         "ptc": 1894.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
+      },
+      "2026-10-23": {
+        "fleje": 2425.0,
+        "ptc": 2061.25,
+        "dinamica": 0.15,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 2425.0,
+        "ptc": 2061.25,
+        "dinamica": 0.15,
+        "fuente": "2026-10-25"
       }
     },
     "imperial-cerveza-imperial-golden-lata-473-ml": {
@@ -1258,37 +1682,43 @@
         "fleje": 3325.0,
         "ptc": 2826.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-14": {
         "fleje": 3325.0,
         "ptc": 2826.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
       },
       "2026-10-15": {
         "fleje": 3325.0,
         "ptc": 2826.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "15%"
       },
       "2026-10-16": {
         "fleje": 3325.0,
         "ptc": 2826.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "15%"
       },
       "2026-10-17": {
         "fleje": 3325.0,
         "ptc": 2826.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "15%"
       },
       "2026-10-18": {
         "fleje": 3325.0,
         "ptc": 2826.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "15%"
       },
       "2026-10-19": {
         "fleje": 3325.0,
@@ -1300,13 +1730,27 @@
         "fleje": 3325.0,
         "ptc": 2826.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-21": {
         "fleje": 3325.0,
         "ptc": 2826.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
+      },
+      "2026-10-23": {
+        "fleje": 3325.0,
+        "ptc": 2826.25,
+        "dinamica": 0.15,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 3325.0,
+        "ptc": 2826.25,
+        "dinamica": 0.15,
+        "fuente": "2026-10-25"
       }
     },
     "imperial-cerveza-imperial-ipa-473-ml": {
@@ -1320,25 +1764,29 @@
         "fleje": 3495.0,
         "ptc": 2970.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
       },
       "2026-10-15": {
         "fleje": 3495.0,
         "ptc": 2970.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "15%"
       },
       "2026-10-16": {
         "fleje": 3495.0,
         "ptc": 2970.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "15%"
       },
       "2026-10-17": {
         "fleje": 3495.0,
         "ptc": 2970.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "15%"
       },
       "2026-10-18": {
         "fleje": 3495.0,
@@ -1362,7 +1810,20 @@
         "fleje": 3495.0,
         "ptc": 2970.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
+      },
+      "2026-10-23": {
+        "fleje": 3495.0,
+        "ptc": 2970.75,
+        "dinamica": 0.15,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 3495.0,
+        "ptc": 2970.75,
+        "dinamica": 0.15,
+        "fuente": "2026-10-25"
       }
     },
     "imperial-cerveza-imperial-lager-473-ml": {
@@ -1370,37 +1831,43 @@
         "fleje": 3325.0,
         "ptc": 2826.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-14": {
         "fleje": 3325.0,
         "ptc": 2826.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
       },
       "2026-10-15": {
         "fleje": 3325.0,
         "ptc": 2826.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "15%"
       },
       "2026-10-16": {
         "fleje": 3325.0,
         "ptc": 2826.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "15%"
       },
       "2026-10-17": {
         "fleje": 3325.0,
         "ptc": 2826.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "15%"
       },
       "2026-10-18": {
         "fleje": 3325.0,
         "ptc": 2826.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "15%"
       },
       "2026-10-19": {
         "fleje": 3325.0,
@@ -1412,13 +1879,27 @@
         "fleje": 3325.0,
         "ptc": 2826.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-21": {
         "fleje": 3325.0,
         "ptc": 2826.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
+      },
+      "2026-10-23": {
+        "fleje": 3325.0,
+        "ptc": 2826.25,
+        "dinamica": 0.15,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 3325.0,
+        "ptc": 2826.25,
+        "dinamica": 0.15,
+        "fuente": "2026-10-25"
       }
     },
     "imperial-cerveza-imperial-golden-710-ml": {
@@ -1426,37 +1907,43 @@
         "fleje": 4785.0,
         "ptc": 4067.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-14": {
         "fleje": 4785.0,
         "ptc": 4067.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
       },
       "2026-10-15": {
         "fleje": 4785.0,
         "ptc": 4067.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "15%"
       },
       "2026-10-16": {
         "fleje": 4785.0,
         "ptc": 4067.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "15%"
       },
       "2026-10-17": {
         "fleje": 4785.0,
         "ptc": 4067.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "15%"
       },
       "2026-10-18": {
         "fleje": 4785.0,
         "ptc": 2871.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "40%"
       },
       "2026-10-19": {
         "fleje": 4785.0,
@@ -1468,13 +1955,27 @@
         "fleje": 4785.0,
         "ptc": 4067.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-21": {
         "fleje": 4785.0,
         "ptc": 4067.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
+      },
+      "2026-10-23": {
+        "fleje": 4785.0,
+        "ptc": 2392.5,
+        "dinamica": 0.5,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 4785.0,
+        "ptc": 2392.5,
+        "dinamica": 0.5,
+        "fuente": "2026-10-25"
       }
     },
     "imperial-cerveza-imperial-lager-710-ml": {
@@ -1482,37 +1983,43 @@
         "fleje": 4785.0,
         "ptc": 4067.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-14": {
         "fleje": 4785.0,
         "ptc": 4067.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
       },
       "2026-10-15": {
         "fleje": 4785.0,
         "ptc": 4067.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "15%"
       },
       "2026-10-16": {
         "fleje": 4785.0,
         "ptc": 4067.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "15%"
       },
       "2026-10-17": {
         "fleje": 4785.0,
         "ptc": 4067.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "15%"
       },
       "2026-10-18": {
         "fleje": 4785.0,
         "ptc": 2871.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "40%"
       },
       "2026-10-19": {
         "fleje": 4785.0,
@@ -1524,13 +2031,29 @@
         "fleje": 4785.0,
         "ptc": 4067.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-21": {
         "fleje": 4785.0,
         "ptc": 4067.25,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
+      },
+      "2026-10-23": {
+        "fleje": 4785.0,
+        "ptc": 3588.75,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
+      },
+      "2026-10-24": {
+        "fleje": 4785.0,
+        "ptc": 3588.75,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
       }
     },
     "miller-cerveza-miller-473-ml": {
@@ -1550,25 +2073,29 @@
         "fleje": 3729.0,
         "ptc": 2050.95,
         "dinamica": 0.45,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "45%"
       },
       "2026-10-16": {
         "fleje": 3729.0,
         "ptc": 2050.95,
         "dinamica": 0.45,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "45%"
       },
       "2026-10-17": {
         "fleje": 3729.0,
         "ptc": 2050.95,
         "dinamica": 0.45,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "45%"
       },
       "2026-10-18": {
         "fleje": 3729.0,
         "ptc": 2050.95,
         "dinamica": 0.45,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "45%"
       },
       "2026-10-20": {
         "fleje": 3729.0,
@@ -1581,6 +2108,18 @@
         "ptc": 3729.0,
         "dinamica": 0.0,
         "fuente": "2026-10-07"
+      },
+      "2026-10-23": {
+        "fleje": 3729.0,
+        "ptc": 2050.95,
+        "dinamica": 0.45,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 3729.0,
+        "ptc": 2050.95,
+        "dinamica": 0.45,
+        "fuente": "2026-10-25"
       }
     },
     "miller-cerveza-miller-600-ml": {
@@ -1600,25 +2139,29 @@
         "fleje": 5999.0,
         "ptc": 3299.45,
         "dinamica": 0.45,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "45%"
       },
       "2026-10-16": {
         "fleje": 5999.0,
         "ptc": 3299.45,
         "dinamica": 0.45,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "45%"
       },
       "2026-10-17": {
         "fleje": 5999.0,
         "ptc": 3299.45,
         "dinamica": 0.45,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "45%"
       },
       "2026-10-18": {
         "fleje": 6119.0,
         "ptc": 3365.45,
         "dinamica": 0.45,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "45%"
       },
       "2026-10-19": {
         "fleje": 5999.0,
@@ -1637,6 +2180,18 @@
         "ptc": 6119.0,
         "dinamica": 0.0,
         "fuente": "2026-10-07"
+      },
+      "2026-10-23": {
+        "fleje": 6209.0,
+        "ptc": 3414.95,
+        "dinamica": 0.45,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 6209.0,
+        "ptc": 3414.95,
+        "dinamica": 0.45,
+        "fuente": "2026-10-25"
       }
     },
     "miller-cerveza-miller-genuine-draft-710-ml": {
@@ -1662,13 +2217,15 @@
         "fleje": 5539.0,
         "ptc": 4431.2,
         "dinamica": 0.2,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "20%"
       },
       "2026-10-17": {
         "fleje": 5539.0,
         "ptc": 4431.2,
         "dinamica": 0.2,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "20%"
       },
       "2026-10-18": {
         "fleje": 5539.0,
@@ -1694,37 +2251,43 @@
         "fleje": 4219.0,
         "ptc": 2742.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "35%"
       },
       "2026-10-14": {
         "fleje": 4219.0,
         "ptc": 2742.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "35%"
       },
       "2026-10-15": {
         "fleje": 4219.0,
         "ptc": 2742.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "35%"
       },
       "2026-10-16": {
         "fleje": 4219.0,
         "ptc": 2742.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "35%"
       },
       "2026-10-17": {
         "fleje": 4219.0,
         "ptc": 2742.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "35%"
       },
       "2026-10-18": {
         "fleje": 4219.0,
         "ptc": 2742.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "35%"
       },
       "2026-10-19": {
         "fleje": 4219.0,
@@ -1736,13 +2299,27 @@
         "fleje": 4219.0,
         "ptc": 2742.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "35%"
       },
       "2026-10-21": {
         "fleje": 4219.0,
         "ptc": 2742.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "35%"
+      },
+      "2026-10-23": {
+        "fleje": 4219.0,
+        "ptc": 2742.35,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 4219.0,
+        "ptc": 2742.35,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25"
       }
     },
     "stella-artois-cerveza-stella-artois-sin-alcohol-330-ml": {
@@ -1750,37 +2327,43 @@
         "fleje": 3535.0,
         "ptc": 2651.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-14": {
         "fleje": 3535.0,
         "ptc": 2651.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
       },
       "2026-10-15": {
         "fleje": 3535.0,
         "ptc": 2651.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "25%"
       },
       "2026-10-16": {
         "fleje": 3535.0,
         "ptc": 2651.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "25%"
       },
       "2026-10-17": {
         "fleje": 3535.0,
         "ptc": 2651.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "25%"
       },
       "2026-10-18": {
         "fleje": 3535.0,
         "ptc": 2651.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "25%"
       },
       "2026-10-19": {
         "fleje": 3535.0,
@@ -1792,13 +2375,29 @@
         "fleje": 3535.0,
         "ptc": 2651.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-21": {
         "fleje": 3535.0,
         "ptc": 2651.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
+      },
+      "2026-10-23": {
+        "fleje": 3535.0,
+        "ptc": 2297.75,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 3535.0,
+        "ptc": 2297.75,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "stella-artois-cerveza-stella-artois-473-ml": {
@@ -1806,31 +2405,36 @@
         "fleje": 4415.0,
         "ptc": 3311.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-14": {
         "fleje": 4415.0,
         "ptc": 3311.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
       },
       "2026-10-15": {
         "fleje": 4415.0,
         "ptc": 3311.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "25%"
       },
       "2026-10-16": {
         "fleje": 4415.0,
         "ptc": 3311.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "25%"
       },
       "2026-10-17": {
         "fleje": 4415.0,
         "ptc": 3311.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "25%"
       },
       "2026-10-19": {
         "fleje": 4415.0,
@@ -1842,13 +2446,29 @@
         "fleje": 4415.0,
         "ptc": 3311.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-21": {
         "fleje": 4415.0,
         "ptc": 3311.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
+      },
+      "2026-10-23": {
+        "fleje": 4415.0,
+        "ptc": 3311.25,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
+      },
+      "2026-10-24": {
+        "fleje": 4415.0,
+        "ptc": 3311.25,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
       }
     },
     "stella-artois-cerveza-stella-artois-noire-pura-malta-473-ml": {
@@ -1856,37 +2476,43 @@
         "fleje": 4455.0,
         "ptc": 3341.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-14": {
         "fleje": 4455.0,
         "ptc": 3341.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
       },
       "2026-10-15": {
         "fleje": 4455.0,
         "ptc": 3341.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "25%"
       },
       "2026-10-16": {
         "fleje": 4455.0,
         "ptc": 3341.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "25%"
       },
       "2026-10-17": {
         "fleje": 4455.0,
         "ptc": 3341.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "25%"
       },
       "2026-10-18": {
         "fleje": 4455.0,
         "ptc": 3341.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "25%"
       },
       "2026-10-19": {
         "fleje": 4455.0,
@@ -1898,13 +2524,27 @@
         "fleje": 4455.0,
         "ptc": 3341.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-21": {
         "fleje": 4455.0,
         "ptc": 3341.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
+      },
+      "2026-10-23": {
+        "fleje": 4455.0,
+        "ptc": 3341.25,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 4455.0,
+        "ptc": 3341.25,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25"
       }
     },
     "stella-artois-cerveza-stella-artois-pure-gold-lata-473-ml": {
@@ -1961,6 +2601,20 @@
         "ptc": 4539.0,
         "dinamica": 0.0,
         "fuente": "2026-10-07"
+      },
+      "2026-10-23": {
+        "fleje": 4539.0,
+        "ptc": 2950.35,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 4539.0,
+        "ptc": 2950.35,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "stella-artois-cerveza-stella-artois-sin-alcohol-473-ml": {
@@ -1968,37 +2622,43 @@
         "fleje": 3639.0,
         "ptc": 2729.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-14": {
         "fleje": 3639.0,
         "ptc": 2729.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
       },
       "2026-10-15": {
         "fleje": 3639.0,
         "ptc": 2729.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "25%"
       },
       "2026-10-16": {
         "fleje": 3639.0,
         "ptc": 2729.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "25%"
       },
       "2026-10-17": {
         "fleje": 3639.0,
         "ptc": 2729.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "25%"
       },
       "2026-10-18": {
         "fleje": 3639.0,
         "ptc": 2729.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "25%"
       },
       "2026-10-19": {
         "fleje": 3639.0,
@@ -2010,13 +2670,29 @@
         "fleje": 3639.0,
         "ptc": 2729.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-21": {
         "fleje": 3639.0,
         "ptc": 2729.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
+      },
+      "2026-10-23": {
+        "fleje": 3639.0,
+        "ptc": 2365.35,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 3639.0,
+        "ptc": 2365.35,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "stella-artois-cervez-stella-artois-710-ml": {
@@ -2024,37 +2700,43 @@
         "fleje": 6709.0,
         "ptc": 4360.85,
         "dinamica": 0.35,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "35%"
       },
       "2026-10-14": {
         "fleje": 6709.0,
         "ptc": 4360.85,
         "dinamica": 0.35,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "35%"
       },
       "2026-10-15": {
         "fleje": 6709.0,
         "ptc": 4360.85,
         "dinamica": 0.35,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "35%"
       },
       "2026-10-16": {
         "fleje": 6709.0,
         "ptc": 4360.85,
         "dinamica": 0.35,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "35%"
       },
       "2026-10-17": {
         "fleje": 6709.0,
         "ptc": 4360.85,
         "dinamica": 0.35,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "35%"
       },
       "2026-10-18": {
         "fleje": 6709.0,
         "ptc": 4360.85,
         "dinamica": 0.35,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "35%"
       },
       "2026-10-19": {
         "fleje": 6709.0,
@@ -2066,13 +2748,27 @@
         "fleje": 6709.0,
         "ptc": 4360.85,
         "dinamica": 0.35,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "35%"
       },
       "2026-10-21": {
         "fleje": 6709.0,
         "ptc": 4360.85,
         "dinamica": 0.35,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "35%"
+      },
+      "2026-10-23": {
+        "fleje": 6709.0,
+        "ptc": 4025.4,
+        "dinamica": 0.4,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 6709.0,
+        "ptc": 4025.4,
+        "dinamica": 0.4,
+        "fuente": "2026-10-25"
       }
     },
     "stella-artois-cerveza-stella-artois-lager-710-ml": {
@@ -2080,31 +2776,36 @@
         "fleje": 6605.0,
         "ptc": 3963.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "40%"
       },
       "2026-10-14": {
         "fleje": 6605.0,
         "ptc": 3963.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "40%"
       },
       "2026-10-15": {
         "fleje": 6605.0,
         "ptc": 3963.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "40%"
       },
       "2026-10-16": {
         "fleje": 6605.0,
         "ptc": 3963.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "40%"
       },
       "2026-10-17": {
         "fleje": 6605.0,
         "ptc": 3963.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "40%"
       },
       "2026-10-18": {
         "fleje": 6605.0,
@@ -2116,13 +2817,29 @@
         "fleje": 6605.0,
         "ptc": 3963.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "40%"
       },
       "2026-10-21": {
         "fleje": 6605.0,
         "ptc": 3963.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "40%"
+      },
+      "2026-10-23": {
+        "fleje": 6605.0,
+        "ptc": 3632.75,
+        "dinamica": 0.45,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 45%"
+      },
+      "2026-10-24": {
+        "fleje": 6605.0,
+        "ptc": 3632.75,
+        "dinamica": 0.45,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 45%"
       }
     },
     "heineken-cerveza-heineken-porron-330-ml": {
@@ -2130,31 +2847,36 @@
         "fleje": 4449.0,
         "ptc": 2891.85,
         "dinamica": 0.35,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "35%"
       },
       "2026-10-14": {
         "fleje": 4449.0,
         "ptc": 2891.85,
         "dinamica": 0.35,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "35%"
       },
       "2026-10-15": {
         "fleje": 4449.0,
         "ptc": 2891.85,
         "dinamica": 0.35,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "35%"
       },
       "2026-10-16": {
         "fleje": 4449.0,
         "ptc": 2891.85,
         "dinamica": 0.35,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "35%"
       },
       "2026-10-17": {
         "fleje": 4449.0,
         "ptc": 2891.85,
         "dinamica": 0.35,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "35%"
       },
       "2026-10-18": {
         "fleje": 4449.0,
@@ -2172,13 +2894,27 @@
         "fleje": 4449.0,
         "ptc": 2891.85,
         "dinamica": 0.35,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "35%"
       },
       "2026-10-21": {
         "fleje": 4449.0,
         "ptc": 2891.85,
         "dinamica": 0.35,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "35%"
+      },
+      "2026-10-23": {
+        "fleje": 4449.0,
+        "ptc": 4449.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 4449.0,
+        "ptc": 4449.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
       }
     },
     "heineken-cerveza-rubia-heineken-473-ml": {
@@ -2186,25 +2922,29 @@
         "fleje": 4275.0,
         "ptc": 2778.75,
         "dinamica": 0.35,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "35%"
       },
       "2026-10-14": {
         "fleje": 4275.0,
         "ptc": 2778.75,
         "dinamica": 0.35,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "35%"
       },
       "2026-10-15": {
         "fleje": 4275.0,
         "ptc": 2778.75,
         "dinamica": 0.35,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "35%"
       },
       "2026-10-16": {
         "fleje": 4275.0,
         "ptc": 2778.75,
         "dinamica": 0.35,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "35%"
       },
       "2026-10-18": {
         "fleje": 4275.0,
@@ -2222,13 +2962,27 @@
         "fleje": 4275.0,
         "ptc": 2778.75,
         "dinamica": 0.35,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "35%"
       },
       "2026-10-21": {
         "fleje": 4275.0,
         "ptc": 2778.75,
         "dinamica": 0.35,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "35%"
+      },
+      "2026-10-23": {
+        "fleje": 4275.0,
+        "ptc": 4275.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 4275.0,
+        "ptc": 4275.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
       }
     },
     "heineken-cerveza-heineken-lata-710-ml": {
@@ -2236,37 +2990,43 @@
         "fleje": 6355.0,
         "ptc": 4130.75,
         "dinamica": 0.35,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "35%"
       },
       "2026-10-14": {
         "fleje": 6355.0,
         "ptc": 4130.75,
         "dinamica": 0.35,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "35%"
       },
       "2026-10-15": {
         "fleje": 6355.0,
         "ptc": 4130.75,
         "dinamica": 0.35,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "35%"
       },
       "2026-10-16": {
         "fleje": 6355.0,
         "ptc": 4130.75,
         "dinamica": 0.35,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "35%"
       },
       "2026-10-17": {
         "fleje": 6355.0,
         "ptc": 4130.75,
         "dinamica": 0.35,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "35%"
       },
       "2026-10-18": {
         "fleje": 6355.0,
         "ptc": 5401.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "15%"
       },
       "2026-10-19": {
         "fleje": 6355.0,
@@ -2278,13 +3038,27 @@
         "fleje": 6355.0,
         "ptc": 4130.75,
         "dinamica": 0.35,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "35%"
       },
       "2026-10-21": {
         "fleje": 6355.0,
         "ptc": 4130.75,
         "dinamica": 0.35,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "35%"
+      },
+      "2026-10-23": {
+        "fleje": 6355.0,
+        "ptc": 5401.75,
+        "dinamica": 0.15,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 6355.0,
+        "ptc": 5401.75,
+        "dinamica": 0.15,
+        "fuente": "2026-10-25"
       }
     },
     "pampa-cerveza-pampa-dorada-pampeana-473-ml": {
@@ -2292,37 +3066,43 @@
         "fleje": 3049.0,
         "ptc": 1829.4,
         "dinamica": 0.4,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "40%"
       },
       "2026-10-15": {
         "fleje": 3210.0,
         "ptc": 1926.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "40%"
       },
       "2026-10-16": {
         "fleje": 3210.0,
         "ptc": 1926.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "40%"
       },
       "2026-10-17": {
         "fleje": 3210.0,
         "ptc": 1926.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "40%"
       },
       "2026-10-18": {
         "fleje": 3049.0,
         "ptc": 2134.3,
         "dinamica": 0.3,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "30%"
       },
       "2026-10-20": {
         "fleje": 3049.0,
         "ptc": 1829.4,
         "dinamica": 0.4,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "40%"
       }
     },
     "peroni-cerveza-peroni-botella-330-ml": {
@@ -2360,7 +3140,8 @@
         "fleje": 5609.0,
         "ptc": 4206.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "25%"
       },
       "2026-10-19": {
         "fleje": 5609.0,
@@ -2379,6 +3160,18 @@
         "ptc": 5609.0,
         "dinamica": 0.0,
         "fuente": "2026-10-07"
+      },
+      "2026-10-23": {
+        "fleje": 5919.0,
+        "ptc": 5919.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 5919.0,
+        "ptc": 5919.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
       }
     },
     "bierhaus-cerveza-bierhaus-apa-boss-town-473-ml": {
@@ -2386,49 +3179,71 @@
         "fleje": 4210.0,
         "ptc": 3578.5,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-14": {
         "fleje": 4210.0,
         "ptc": 3578.5,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
       },
       "2026-10-15": {
         "fleje": 4555.0,
         "ptc": 3871.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "15%"
       },
       "2026-10-16": {
         "fleje": 4555.0,
         "ptc": 3871.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "15%"
       },
       "2026-10-17": {
         "fleje": 4555.0,
         "ptc": 3871.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "15%"
       },
       "2026-10-18": {
         "fleje": 4210.0,
         "ptc": 3578.5,
         "dinamica": 0.15,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "15%"
       },
       "2026-10-20": {
         "fleje": 4210.0,
         "ptc": 3578.5,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-21": {
         "fleje": 4210.0,
         "ptc": 3578.5,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
+      },
+      "2026-10-23": {
+        "fleje": 4555.0,
+        "ptc": 3416.25,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
+      },
+      "2026-10-24": {
+        "fleje": 4555.0,
+        "ptc": 3416.25,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
       }
     },
     "bierhaus-cerveza-bierhaus-chala-lager-473-ml": {
@@ -2436,37 +3251,43 @@
         "fleje": 4210.0,
         "ptc": 3157.5,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "4 x 3"
       },
       "2026-10-14": {
         "fleje": 4210.0,
         "ptc": 3157.5,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "4 x 3"
       },
       "2026-10-15": {
         "fleje": 4555.0,
         "ptc": 3416.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "4 x 3"
       },
       "2026-10-16": {
         "fleje": 4555.0,
         "ptc": 3416.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "4 x 3"
       },
       "2026-10-17": {
         "fleje": 4555.0,
         "ptc": 3416.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "4 x 3"
       },
       "2026-10-18": {
         "fleje": 4210.0,
         "ptc": 3157.5,
         "dinamica": 0.25,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "4 x 3"
       },
       "2026-10-19": {
         "fleje": 4555.0,
@@ -2478,13 +3299,15 @@
         "fleje": 4210.0,
         "ptc": 3157.5,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "4 x 3"
       },
       "2026-10-21": {
         "fleje": 4210.0,
         "ptc": 3157.5,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "4 x 3"
       }
     },
     "bierhaus-cerveza-bierhaus-golden-state-lager-473-ml": {
@@ -2492,37 +3315,43 @@
         "fleje": 3295.0,
         "ptc": 2800.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-14": {
         "fleje": 3295.0,
         "ptc": 2800.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
       },
       "2026-10-15": {
         "fleje": 3560.0,
         "ptc": 3026.0,
         "dinamica": 0.15,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "15%"
       },
       "2026-10-16": {
         "fleje": 3560.0,
         "ptc": 3026.0,
         "dinamica": 0.15,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "15%"
       },
       "2026-10-17": {
         "fleje": 3560.0,
         "ptc": 3026.0,
         "dinamica": 0.15,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "15%"
       },
       "2026-10-18": {
         "fleje": 3295.0,
         "ptc": 2800.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "15%"
       },
       "2026-10-19": {
         "fleje": 3560.0,
@@ -2534,13 +3363,29 @@
         "fleje": 3295.0,
         "ptc": 2800.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-21": {
         "fleje": 3295.0,
         "ptc": 2800.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
+      },
+      "2026-10-23": {
+        "fleje": 3560.0,
+        "ptc": 2670.0,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
+      },
+      "2026-10-24": {
+        "fleje": 3560.0,
+        "ptc": 2670.0,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
       }
     },
     "bierhaus-cerveza-bierhaus-red-ipa-timeless-lata-473-ml": {
@@ -2548,37 +3393,43 @@
         "fleje": 4210.0,
         "ptc": 3578.5,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-14": {
         "fleje": 4210.0,
         "ptc": 3578.5,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
       },
       "2026-10-15": {
         "fleje": 4555.0,
         "ptc": 3871.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "15%"
       },
       "2026-10-16": {
         "fleje": 4555.0,
         "ptc": 3871.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "15%"
       },
       "2026-10-17": {
         "fleje": 4555.0,
         "ptc": 3871.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "15%"
       },
       "2026-10-18": {
         "fleje": 4210.0,
         "ptc": 3578.5,
         "dinamica": 0.15,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "15%"
       },
       "2026-10-19": {
         "fleje": 4555.0,
@@ -2590,13 +3441,29 @@
         "fleje": 4210.0,
         "ptc": 3578.5,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-21": {
         "fleje": 4210.0,
         "ptc": 3578.5,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
+      },
+      "2026-10-23": {
+        "fleje": 4555.0,
+        "ptc": 3416.25,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
+      },
+      "2026-10-24": {
+        "fleje": 4555.0,
+        "ptc": 3416.25,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
       }
     },
     "bierhaus-cerveza-bierhaus-scotch-momentum-473-ml": {
@@ -2604,37 +3471,43 @@
         "fleje": 3295.0,
         "ptc": 2800.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-14": {
         "fleje": 3295.0,
         "ptc": 2800.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
       },
       "2026-10-15": {
         "fleje": 3560.0,
         "ptc": 3026.0,
         "dinamica": 0.15,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "15%"
       },
       "2026-10-16": {
         "fleje": 3560.0,
         "ptc": 3026.0,
         "dinamica": 0.15,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "15%"
       },
       "2026-10-17": {
         "fleje": 3560.0,
         "ptc": 3026.0,
         "dinamica": 0.15,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "15%"
       },
       "2026-10-18": {
         "fleje": 3295.0,
         "ptc": 2800.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "15%"
       },
       "2026-10-19": {
         "fleje": 3560.0,
@@ -2646,13 +3519,29 @@
         "fleje": 3295.0,
         "ptc": 2800.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "15%"
       },
       "2026-10-21": {
         "fleje": 3295.0,
         "ptc": 2800.75,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
+      },
+      "2026-10-23": {
+        "fleje": 3560.0,
+        "ptc": 2670.0,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
+      },
+      "2026-10-24": {
+        "fleje": 3560.0,
+        "ptc": 2670.0,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
       }
     },
     "michelob-cerveza-michelob-ultra-porron-275-ml": {
@@ -2660,37 +3549,43 @@
         "fleje": 3199.0,
         "ptc": 2239.3,
         "dinamica": 0.3,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "30%"
       },
       "2026-10-14": {
         "fleje": 3199.0,
         "ptc": 2239.3,
         "dinamica": 0.3,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "30%"
       },
       "2026-10-15": {
         "fleje": 3199.0,
         "ptc": 2239.3,
         "dinamica": 0.3,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "30%"
       },
       "2026-10-16": {
         "fleje": 3199.0,
         "ptc": 2239.3,
         "dinamica": 0.3,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "30%"
       },
       "2026-10-17": {
         "fleje": 3199.0,
         "ptc": 2239.3,
         "dinamica": 0.3,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "30%"
       },
       "2026-10-18": {
         "fleje": 3199.0,
         "ptc": 2239.3,
         "dinamica": 0.3,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "30%"
       },
       "2026-10-19": {
         "fleje": 3199.0,
@@ -2702,13 +3597,27 @@
         "fleje": 3199.0,
         "ptc": 2239.3,
         "dinamica": 0.3,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "30%"
       },
       "2026-10-21": {
         "fleje": 3199.0,
         "ptc": 2239.3,
         "dinamica": 0.3,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "30%"
+      },
+      "2026-10-23": {
+        "fleje": 3199.0,
+        "ptc": 2239.3,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 3199.0,
+        "ptc": 2239.3,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25"
       }
     },
     "starberg-cerveza-starberg-lager-500-ml": {
@@ -2746,7 +3655,8 @@
         "fleje": 2559.0,
         "ptc": 1919.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "25%"
       },
       "2026-10-19": {
         "fleje": 2559.0,
@@ -2765,6 +3675,18 @@
         "ptc": 2559.0,
         "dinamica": 0.0,
         "fuente": "2026-10-07"
+      },
+      "2026-10-23": {
+        "fleje": 2689.0,
+        "ptc": 2689.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 2689.0,
+        "ptc": 2689.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
       }
     },
     "corona-cerveza-corona-rubia-330-ml": {
@@ -2778,25 +3700,29 @@
         "fleje": 4705.0,
         "ptc": 3293.5,
         "dinamica": 0.3,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "30%"
       },
       "2026-10-15": {
         "fleje": 4700.0,
         "ptc": 3055.0,
         "dinamica": 0.35,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "35%"
       },
       "2026-10-16": {
         "fleje": 4700.0,
         "ptc": 3055.0,
         "dinamica": 0.35,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "35%"
       },
       "2026-10-17": {
         "fleje": 4700.0,
         "ptc": 3055.0,
         "dinamica": 0.35,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "35%"
       },
       "2026-10-18": {
         "fleje": 4705.0,
@@ -2820,7 +3746,20 @@
         "fleje": 4705.0,
         "ptc": 3293.5,
         "dinamica": 0.3,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "30%"
+      },
+      "2026-10-23": {
+        "fleje": 4705.0,
+        "ptc": 3764.0,
+        "dinamica": 0.2,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 4705.0,
+        "ptc": 3764.0,
+        "dinamica": 0.2,
+        "fuente": "2026-10-25"
       }
     },
     "corona-cerveza-rubia-sin-alcohol-0-0-corona-330-ml": {
@@ -2828,37 +3767,43 @@
         "fleje": 3855.0,
         "ptc": 2891.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-14": {
         "fleje": 3855.0,
         "ptc": 2891.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
       },
       "2026-10-15": {
         "fleje": 3855.0,
         "ptc": 2891.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "25%"
       },
       "2026-10-16": {
         "fleje": 3855.0,
         "ptc": 2891.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "25%"
       },
       "2026-10-17": {
         "fleje": 3855.0,
         "ptc": 2891.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "25%"
       },
       "2026-10-18": {
         "fleje": 3855.0,
         "ptc": 2891.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "25%"
       },
       "2026-10-19": {
         "fleje": 3855.0,
@@ -2870,13 +3815,29 @@
         "fleje": 3855.0,
         "ptc": 2891.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-21": {
         "fleje": 3855.0,
         "ptc": 2891.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
+      },
+      "2026-10-23": {
+        "fleje": 3855.0,
+        "ptc": 2505.75,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 3855.0,
+        "ptc": 2505.75,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "corona-cerveza-rubia-corona-473-ml": {
@@ -2884,49 +3845,69 @@
         "fleje": 5099.0,
         "ptc": 3314.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "35%"
       },
       "2026-10-14": {
         "fleje": 5099.0,
         "ptc": 3314.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "35%"
       },
       "2026-10-15": {
         "fleje": 5099.0,
         "ptc": 3314.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "35%"
       },
       "2026-10-16": {
         "fleje": 5099.0,
         "ptc": 3314.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "35%"
       },
       "2026-10-17": {
         "fleje": 5099.0,
         "ptc": 3314.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "35%"
       },
       "2026-10-18": {
         "fleje": 5099.0,
         "ptc": 3314.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "35%"
       },
       "2026-10-20": {
         "fleje": 5099.0,
         "ptc": 3314.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "35%"
       },
       "2026-10-21": {
         "fleje": 5099.0,
         "ptc": 3314.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "35%"
+      },
+      "2026-10-23": {
+        "fleje": 5099.0,
+        "ptc": 3314.35,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 5099.0,
+        "ptc": 3314.35,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25"
       }
     },
     "corona-cerveza-sin-alcohol-corona-en-lata-473-ml": {
@@ -2934,37 +3915,43 @@
         "fleje": 3855.0,
         "ptc": 2891.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-14": {
         "fleje": 3855.0,
         "ptc": 2891.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
       },
       "2026-10-15": {
         "fleje": 3855.0,
         "ptc": 2891.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "25%"
       },
       "2026-10-16": {
         "fleje": 3855.0,
         "ptc": 2891.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "25%"
       },
       "2026-10-17": {
         "fleje": 3855.0,
         "ptc": 2891.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "25%"
       },
       "2026-10-18": {
         "fleje": 3855.0,
         "ptc": 2891.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "25%"
       },
       "2026-10-19": {
         "fleje": 3855.0,
@@ -2976,13 +3963,29 @@
         "fleje": 3855.0,
         "ptc": 2891.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "25%"
       },
       "2026-10-21": {
         "fleje": 3855.0,
         "ptc": 2891.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
+      },
+      "2026-10-23": {
+        "fleje": 3855.0,
+        "ptc": 2505.75,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 3855.0,
+        "ptc": 2505.75,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "corona-cerveza-corona-rubia-710-ml": {
@@ -2990,37 +3993,43 @@
         "fleje": 7290.0,
         "ptc": 5832.0,
         "dinamica": 0.2,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "20%"
       },
       "2026-10-14": {
         "fleje": 7290.0,
         "ptc": 5467.5,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
       },
       "2026-10-15": {
         "fleje": 7290.0,
         "ptc": 5467.5,
         "dinamica": 0.25,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "25%"
       },
       "2026-10-16": {
         "fleje": 7290.0,
         "ptc": 5467.5,
         "dinamica": 0.25,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "25%"
       },
       "2026-10-17": {
         "fleje": 7290.0,
         "ptc": 5467.5,
         "dinamica": 0.25,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "25%"
       },
       "2026-10-18": {
         "fleje": 7290.0,
         "ptc": 5832.0,
         "dinamica": 0.2,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "20%"
       },
       "2026-10-19": {
         "fleje": 7290.0,
@@ -3032,13 +4041,27 @@
         "fleje": 7290.0,
         "ptc": 5832.0,
         "dinamica": 0.2,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "20%"
       },
       "2026-10-21": {
         "fleje": 7290.0,
         "ptc": 5467.5,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
+      },
+      "2026-10-23": {
+        "fleje": 7290.0,
+        "ptc": 5832.0,
+        "dinamica": 0.2,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 7290.0,
+        "ptc": 5832.0,
+        "dinamica": 0.2,
+        "fuente": "2026-10-25"
       }
     },
     "patagonia-cerveza-patagonia-24-7-session-ipa-473-ml": {
@@ -3046,31 +4069,36 @@
         "fleje": 5489.0,
         "ptc": 2744.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-14": {
         "fleje": 5489.0,
         "ptc": 2744.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-15": {
         "fleje": 5489.0,
         "ptc": 2744.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-16": {
         "fleje": 5489.0,
         "ptc": 2744.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-17": {
         "fleje": 5489.0,
         "ptc": 2744.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-18": {
         "fleje": 5489.0,
@@ -3082,13 +4110,29 @@
         "fleje": 5489.0,
         "ptc": 2744.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-21": {
         "fleje": 5489.0,
         "ptc": 2744.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
+      },
+      "2026-10-23": {
+        "fleje": 5489.0,
+        "ptc": 3567.85,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 5489.0,
+        "ptc": 3567.85,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "patagonia-cerveza-patagonia-amber-lager-lata-473-ml": {
@@ -3096,37 +4140,43 @@
         "fleje": 5489.0,
         "ptc": 2744.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-14": {
         "fleje": 5489.0,
         "ptc": 2744.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-15": {
         "fleje": 5489.0,
         "ptc": 2744.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-16": {
         "fleje": 5489.0,
         "ptc": 2744.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-17": {
         "fleje": 5489.0,
         "ptc": 2744.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-18": {
         "fleje": 5489.0,
         "ptc": 3842.3,
         "dinamica": 0.3,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "30%"
       },
       "2026-10-19": {
         "fleje": 5489.0,
@@ -3138,13 +4188,29 @@
         "fleje": 5489.0,
         "ptc": 2744.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-21": {
         "fleje": 5489.0,
         "ptc": 2744.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
+      },
+      "2026-10-23": {
+        "fleje": 5489.0,
+        "ptc": 3567.85,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 5489.0,
+        "ptc": 3567.85,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "patagonia-cerveza-patagonia-24-7-session-ipa-730-ml": {
@@ -3152,31 +4218,36 @@
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-14": {
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-15": {
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-16": {
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-17": {
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-18": {
         "fleje": 7809.0,
@@ -3188,13 +4259,29 @@
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-21": {
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
+      },
+      "2026-10-23": {
+        "fleje": 7809.0,
+        "ptc": 5075.85,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 7809.0,
+        "ptc": 5075.85,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "patagonia-cerveza-patagonia-roja-amber-lager-730-ml": {
@@ -3202,31 +4289,36 @@
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-14": {
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-15": {
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-16": {
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-17": {
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-18": {
         "fleje": 7809.0,
@@ -3238,13 +4330,29 @@
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-21": {
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
+      },
+      "2026-10-23": {
+        "fleje": 7809.0,
+        "ptc": 5075.85,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 7809.0,
+        "ptc": 5075.85,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "antares-cerveza-antares-scotch-473-ml": {
@@ -3252,37 +4360,43 @@
         "fleje": 4509.0,
         "ptc": 3156.3,
         "dinamica": 0.3,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "30%"
       },
       "2026-10-14": {
         "fleje": 4509.0,
         "ptc": 3156.3,
         "dinamica": 0.3,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "30%"
       },
       "2026-10-15": {
         "fleje": 4509.0,
         "ptc": 3156.3,
         "dinamica": 0.3,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "30%"
       },
       "2026-10-16": {
         "fleje": 4509.0,
         "ptc": 3156.3,
         "dinamica": 0.3,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "30%"
       },
       "2026-10-17": {
         "fleje": 4740.0,
         "ptc": 3318.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "30%"
       },
       "2026-10-18": {
         "fleje": 4509.0,
         "ptc": 3156.3,
         "dinamica": 0.3,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "30%"
       },
       "2026-10-19": {
         "fleje": 4740.0,
@@ -3294,13 +4408,15 @@
         "fleje": 4509.0,
         "ptc": 3156.3,
         "dinamica": 0.3,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "30%"
       },
       "2026-10-21": {
         "fleje": 4509.0,
         "ptc": 3156.3,
         "dinamica": 0.3,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "30%"
       }
     },
     "1890-cerveza-1890-quilmes-473-ml": {
@@ -3308,49 +4424,57 @@
         "fleje": 2300.0,
         "ptc": 1610.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "30%"
       },
       "2026-10-14": {
         "fleje": 2300.0,
         "ptc": 1610.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "30%"
       },
       "2026-10-15": {
         "fleje": 2300.0,
         "ptc": 1380.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "40%"
       },
       "2026-10-16": {
         "fleje": 2300.0,
         "ptc": 1380.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "40%"
       },
       "2026-10-17": {
         "fleje": 2300.0,
         "ptc": 1380.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "40%"
       },
       "2026-10-18": {
         "fleje": 2300.0,
         "ptc": 1610.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "30%"
       },
       "2026-10-20": {
         "fleje": 2300.0,
         "ptc": 1610.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "30%"
       },
       "2026-10-21": {
         "fleje": 2300.0,
         "ptc": 1610.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "30%"
       }
     },
     "ortuzar-cerveza-ortuzar-golden-ale-473-ml": {
@@ -3358,31 +4482,36 @@
         "fleje": 3225.0,
         "ptc": 1935.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "40%"
       },
       "2026-10-15": {
         "fleje": 3445.0,
         "ptc": 2067.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "40%"
       },
       "2026-10-16": {
         "fleje": 3445.0,
         "ptc": 2067.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "40%"
       },
       "2026-10-17": {
         "fleje": 3445.0,
         "ptc": 2067.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "40%"
       },
       "2026-10-18": {
         "fleje": 3225.0,
         "ptc": 2096.25,
         "dinamica": 0.35,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "35%"
       },
       "2026-10-19": {
         "fleje": 3445.0,
@@ -3394,7 +4523,22 @@
         "fleje": 3225.0,
         "ptc": 1935.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "40%"
+      },
+      "2026-10-23": {
+        "fleje": 3445.0,
+        "ptc": 2239.25,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 3445.0,
+        "ptc": 2239.25,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "ortuzar-cerveza-ortuzar-honey-473-ml": {
@@ -3402,31 +4546,36 @@
         "fleje": 3225.0,
         "ptc": 1935.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "40%"
       },
       "2026-10-15": {
         "fleje": 3445.0,
         "ptc": 2067.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "40%"
       },
       "2026-10-16": {
         "fleje": 3445.0,
         "ptc": 2067.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "40%"
       },
       "2026-10-17": {
         "fleje": 3445.0,
         "ptc": 2067.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "40%"
       },
       "2026-10-18": {
         "fleje": 3225.0,
         "ptc": 2096.25,
         "dinamica": 0.35,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "35%"
       },
       "2026-10-19": {
         "fleje": 3445.0,
@@ -3438,7 +4587,22 @@
         "fleje": 3225.0,
         "ptc": 1935.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "40%"
+      },
+      "2026-10-23": {
+        "fleje": 3445.0,
+        "ptc": 2239.25,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 3445.0,
+        "ptc": 2239.25,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "ortuzar-cerveza-ortuzar-premium-lager-473-ml": {
@@ -3446,25 +4610,29 @@
         "fleje": 2245.0,
         "ptc": 1347.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "40%"
       },
       "2026-10-15": {
         "fleje": 2399.0,
         "ptc": 1439.4,
         "dinamica": 0.4,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "40%"
       },
       "2026-10-17": {
         "fleje": 2399.0,
         "ptc": 1439.4,
         "dinamica": 0.4,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "40%"
       },
       "2026-10-18": {
         "fleje": 2245.0,
         "ptc": 1459.25,
         "dinamica": 0.35,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "35%"
       },
       "2026-10-19": {
         "fleje": 2399.0,
@@ -3476,7 +4644,22 @@
         "fleje": 2245.0,
         "ptc": 1347.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "40%"
+      },
+      "2026-10-23": {
+        "fleje": 2399.0,
+        "ptc": 1559.35,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 2399.0,
+        "ptc": 1559.35,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "warsteiner-cerveza-warsteiner-473-ml": {
@@ -3533,6 +4716,18 @@
         "ptc": 3729.0,
         "dinamica": 0.0,
         "fuente": "2026-10-07"
+      },
+      "2026-10-23": {
+        "fleje": 3729.0,
+        "ptc": 3729.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 3729.0,
+        "ptc": 3729.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
       }
     },
     "budweiser-cerveza-budweiser-lata-710-ml": {
@@ -3552,13 +4747,15 @@
         "fleje": 4540.0,
         "ptc": 3859.0,
         "dinamica": 0.15,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "15%"
       },
       "2026-10-17": {
         "fleje": 4540.0,
         "ptc": 3859.0,
         "dinamica": 0.15,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "15%"
       },
       "2026-10-18": {
         "fleje": 4540.0,
@@ -3583,6 +4780,18 @@
         "ptc": 4540.0,
         "dinamica": 0.0,
         "fuente": "2026-10-07"
+      },
+      "2026-10-23": {
+        "fleje": 4283.0,
+        "ptc": 3640.55,
+        "dinamica": 0.15,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 4283.0,
+        "ptc": 3640.55,
+        "dinamica": 0.15,
+        "fuente": "2026-10-25"
       }
     },
     "andes-origen-cerveza-andes-origen-ipa-473-ml": {
@@ -3596,25 +4805,29 @@
         "fleje": 3889.0,
         "ptc": 1944.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-15": {
         "fleje": 3889.0,
         "ptc": 1944.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-16": {
         "fleje": 3889.0,
         "ptc": 3305.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "15%"
       },
       "2026-10-17": {
         "fleje": 3889.0,
         "ptc": 3305.65,
         "dinamica": 0.15,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "15%"
       },
       "2026-10-18": {
         "fleje": 3889.0,
@@ -3632,7 +4845,22 @@
         "fleje": 3889.0,
         "ptc": 1944.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
+      },
+      "2026-10-23": {
+        "fleje": 3889.0,
+        "ptc": 2722.3,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 30%"
+      },
+      "2026-10-24": {
+        "fleje": 3889.0,
+        "ptc": 2722.3,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 30%"
       }
     },
     "patagonia-cerveza-patagonia-vera-ipa-473-ml": {
@@ -3640,31 +4868,36 @@
         "fleje": 5379.0,
         "ptc": 2689.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-14": {
         "fleje": 5379.0,
         "ptc": 2689.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-15": {
         "fleje": 5379.0,
         "ptc": 2689.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-16": {
         "fleje": 5379.0,
         "ptc": 2689.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-17": {
         "fleje": 5379.0,
         "ptc": 2689.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-18": {
         "fleje": 5379.0,
@@ -3682,13 +4915,29 @@
         "fleje": 5379.0,
         "ptc": 2689.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-21": {
         "fleje": 5379.0,
         "ptc": 2689.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
+      },
+      "2026-10-23": {
+        "fleje": 5379.0,
+        "ptc": 3496.35,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 5379.0,
+        "ptc": 3496.35,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "patagonia-cerveza-patagonia-vera-ipa-730-ml": {
@@ -3696,31 +4945,36 @@
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-14": {
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-15": {
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-16": {
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-17": {
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-18": {
         "fleje": 7809.0,
@@ -3732,13 +4986,29 @@
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-21": {
         "fleje": 7809.0,
         "ptc": 3904.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "2 x 1"
+      },
+      "2026-10-23": {
+        "fleje": 7809.0,
+        "ptc": 5075.85,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 7809.0,
+        "ptc": 5075.85,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "ortuzar-cerveza-ortuzar-porter-473-ml": {
@@ -3746,25 +5016,29 @@
         "fleje": 3325.0,
         "ptc": 1995.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "40%"
       },
       "2026-10-14": {
         "fleje": 3325.0,
         "ptc": 1995.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "40%"
       },
       "2026-10-15": {
         "fleje": 3555.0,
         "ptc": 2133.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "40%"
       },
       "2026-10-16": {
         "fleje": 3555.0,
         "ptc": 2133.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "40%"
       },
       "2026-10-19": {
         "fleje": 3555.0,
@@ -3776,13 +5050,29 @@
         "fleje": 3325.0,
         "ptc": 1995.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "40%"
       },
       "2026-10-21": {
         "fleje": 3325.0,
         "ptc": 1995.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "40%"
+      },
+      "2026-10-23": {
+        "fleje": 3555.0,
+        "ptc": 2310.75,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 3555.0,
+        "ptc": 2310.75,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "quilmes-cerveza-quilmes-bajo-cero-473-ml": {
@@ -3839,6 +5129,18 @@
         "ptc": 1790.0,
         "dinamica": 0.0,
         "fuente": "2026-10-07"
+      },
+      "2026-10-23": {
+        "fleje": 1790.0,
+        "ptc": 1790.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 1790.0,
+        "ptc": 1790.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
       }
     },
     "bierhaus-cerveza-bierhaus-ipa-superstar-lata-473-ml": {
@@ -3876,7 +5178,8 @@
         "fleje": 4210.0,
         "ptc": 3578.5,
         "dinamica": 0.15,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "15%"
       },
       "2026-10-19": {
         "fleje": 4555.0,
@@ -3895,6 +5198,18 @@
         "ptc": 4210.0,
         "dinamica": 0.0,
         "fuente": "2026-10-07"
+      },
+      "2026-10-23": {
+        "fleje": 4555.0,
+        "ptc": 4555.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 4555.0,
+        "ptc": 4555.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
       }
     },
     "bierhaus-cerveza-bierhaus-chala-ipa-473-ml": {
@@ -3902,49 +5217,71 @@
         "fleje": 5109.0,
         "ptc": 3831.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "4 x 3"
       },
       "2026-10-14": {
         "fleje": 5109.0,
         "ptc": 3831.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "4 x 3"
       },
       "2026-10-15": {
         "fleje": 5525.0,
         "ptc": 4143.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "4 x 3"
       },
       "2026-10-16": {
         "fleje": 5525.0,
         "ptc": 4143.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "4 x 3"
       },
       "2026-10-17": {
         "fleje": 5525.0,
         "ptc": 4143.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "4 x 3"
       },
       "2026-10-18": {
         "fleje": 5109.0,
         "ptc": 3831.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "4 x 3"
       },
       "2026-10-20": {
         "fleje": 5109.0,
         "ptc": 3831.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "4 x 3"
       },
       "2026-10-21": {
         "fleje": 5109.0,
         "ptc": 3831.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "4 x 3"
+      },
+      "2026-10-23": {
+        "fleje": 5525.0,
+        "ptc": 3867.5,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 30%"
+      },
+      "2026-10-24": {
+        "fleje": 5525.0,
+        "ptc": 3867.5,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 30%"
       }
     },
     "bierhaus-cerveza-argentipa-bierhaus-473-ml": {
@@ -4001,6 +5338,18 @@
         "ptc": 4210.0,
         "dinamica": 0.0,
         "fuente": "2026-10-07"
+      },
+      "2026-10-23": {
+        "fleje": 4210.0,
+        "ptc": 4210.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 4210.0,
+        "ptc": 4210.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
       }
     },
     "ortuzar-cerveza-ortuzar-scottish-473-ml": {
@@ -4008,37 +5357,43 @@
         "fleje": 3225.0,
         "ptc": 1935.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "40%"
       },
       "2026-10-14": {
         "fleje": 3225.0,
         "ptc": 1935.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "40%"
       },
       "2026-10-15": {
         "fleje": 3445.0,
         "ptc": 2067.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "40%"
       },
       "2026-10-16": {
         "fleje": 3445.0,
         "ptc": 2067.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "40%"
       },
       "2026-10-17": {
         "fleje": 3445.0,
         "ptc": 2067.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "40%"
       },
       "2026-10-18": {
         "fleje": 3225.0,
         "ptc": 2096.25,
         "dinamica": 0.35,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "35%"
       },
       "2026-10-19": {
         "fleje": 3445.0,
@@ -4050,13 +5405,29 @@
         "fleje": 3225.0,
         "ptc": 1935.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-06"
+        "fuente": "2026-10-06",
+        "promo_nominal": "40%"
       },
       "2026-10-21": {
         "fleje": 3225.0,
         "ptc": 1935.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "40%"
+      },
+      "2026-10-23": {
+        "fleje": 3445.0,
+        "ptc": 2239.25,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 3445.0,
+        "ptc": 2239.25,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "beepure-cerveza-artesanal-beepure-blonde-ale-500-ml": {
@@ -4144,7 +5515,8 @@
         "fleje": 5609.0,
         "ptc": 4206.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "25%"
       },
       "2026-10-19": {
         "fleje": 5609.0,
@@ -4163,6 +5535,18 @@
         "ptc": 5609.0,
         "dinamica": 0.0,
         "fuente": "2026-10-07"
+      },
+      "2026-10-23": {
+        "fleje": 5919.0,
+        "ptc": 5919.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 5919.0,
+        "ptc": 5919.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
       }
     },
     "stones-cerveza-stones-lemon-473-ml": {
@@ -4194,13 +5578,15 @@
         "fleje": 2995.0,
         "ptc": 1797.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "40%"
       },
       "2026-10-18": {
         "fleje": 2995.0,
         "ptc": 1797.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "40%"
       },
       "2026-10-20": {
         "fleje": 2995.0,
@@ -4238,19 +5624,22 @@
         "fleje": 6529.0,
         "ptc": 4896.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "25%"
       },
       "2026-10-17": {
         "fleje": 6529.0,
         "ptc": 4896.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "25%"
       },
       "2026-10-18": {
         "fleje": 6529.0,
         "ptc": 5223.2,
         "dinamica": 0.2,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "20%"
       },
       "2026-10-20": {
         "fleje": 6529.0,
@@ -4263,6 +5652,20 @@
         "ptc": 6529.0,
         "dinamica": 0.0,
         "fuente": "2026-10-07"
+      },
+      "2026-10-23": {
+        "fleje": 6529.0,
+        "ptc": 4896.75,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
+      },
+      "2026-10-24": {
+        "fleje": 6529.0,
+        "ptc": 4896.75,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
       }
     },
     "salta-cerveza-salta-cautiva-fresh-lager-473-ml": {
@@ -4270,7 +5673,8 @@
         "fleje": 3325.0,
         "ptc": 1662.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "50%"
       },
       "2026-10-15": {
         "fleje": 3325.0,
@@ -4282,13 +5686,15 @@
         "fleje": 3325.0,
         "ptc": 1662.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "50%"
       },
       "2026-10-17": {
         "fleje": 3325.0,
         "ptc": 1662.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "50%"
       },
       "2026-10-18": {
         "fleje": 3325.0,
@@ -4306,7 +5712,8 @@
         "fleje": 3325.0,
         "ptc": 1662.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "50%"
       }
     },
     "grolsch-cerveza-grolsch-ipa-473-ml": {
@@ -4314,25 +5721,29 @@
         "fleje": 4430.0,
         "ptc": 3101.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "30%"
       },
       "2026-10-15": {
         "fleje": 4430.0,
         "ptc": 3101.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "30%"
       },
       "2026-10-16": {
         "fleje": 4430.0,
         "ptc": 3101.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "30%"
       },
       "2026-10-17": {
         "fleje": 4430.0,
         "ptc": 3101.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "30%"
       },
       "2026-10-18": {
         "fleje": 4430.0,
@@ -4350,7 +5761,20 @@
         "fleje": 4430.0,
         "ptc": 3101.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "30%"
+      },
+      "2026-10-23": {
+        "fleje": 4430.0,
+        "ptc": 2215.0,
+        "dinamica": 0.5,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 4430.0,
+        "ptc": 2215.0,
+        "dinamica": 0.5,
+        "fuente": "2026-10-25"
       }
     },
     "grolsch-cerveza-grolsch-lager-lata-473-ml": {
@@ -4358,25 +5782,29 @@
         "fleje": 4200.0,
         "ptc": 2940.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "30%"
       },
       "2026-10-15": {
         "fleje": 4200.0,
         "ptc": 2940.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "30%"
       },
       "2026-10-16": {
         "fleje": 4200.0,
         "ptc": 2940.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "30%"
       },
       "2026-10-17": {
         "fleje": 4200.0,
         "ptc": 2940.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "30%"
       },
       "2026-10-18": {
         "fleje": 4200.0,
@@ -4394,7 +5822,20 @@
         "fleje": 4200.0,
         "ptc": 2940.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "30%"
+      },
+      "2026-10-23": {
+        "fleje": 4200.0,
+        "ptc": 2940.0,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 4200.0,
+        "ptc": 2940.0,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25"
       }
     },
     "heineken-cerveza-sin-alcohol-heineken-330-ml": {
@@ -4402,25 +5843,29 @@
         "fleje": 3399.0,
         "ptc": 2209.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "35%"
       },
       "2026-10-15": {
         "fleje": 3399.0,
         "ptc": 2209.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "35%"
       },
       "2026-10-16": {
         "fleje": 3399.0,
         "ptc": 2209.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "35%"
       },
       "2026-10-17": {
         "fleje": 3399.0,
         "ptc": 2209.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "35%"
       },
       "2026-10-18": {
         "fleje": 3399.0,
@@ -4438,7 +5883,20 @@
         "fleje": 3399.0,
         "ptc": 2209.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "35%"
+      },
+      "2026-10-23": {
+        "fleje": 3625.0,
+        "ptc": 3625.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 3625.0,
+        "ptc": 3625.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
       }
     },
     "heineken-cerveza-heineken-cero-alcohol-lata-473-ml": {
@@ -4446,25 +5904,29 @@
         "fleje": 3289.0,
         "ptc": 2137.85,
         "dinamica": 0.35,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "35%"
       },
       "2026-10-15": {
         "fleje": 3579.0,
         "ptc": 2326.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "35%"
       },
       "2026-10-16": {
         "fleje": 3579.0,
         "ptc": 2326.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "35%"
       },
       "2026-10-17": {
         "fleje": 3579.0,
         "ptc": 2326.35,
         "dinamica": 0.35,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "35%"
       },
       "2026-10-18": {
         "fleje": 3289.0,
@@ -4482,7 +5944,20 @@
         "fleje": 3289.0,
         "ptc": 2137.85,
         "dinamica": 0.35,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "35%"
+      },
+      "2026-10-23": {
+        "fleje": 3579.0,
+        "ptc": 3579.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 3579.0,
+        "ptc": 3579.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
       }
     },
     "bierhaus-cerveza-bierhaus-honey-lazybee-473-ml": {
@@ -4490,31 +5965,36 @@
         "fleje": 3360.0,
         "ptc": 2856.0,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
       },
       "2026-10-15": {
         "fleje": 3360.0,
         "ptc": 2856.0,
         "dinamica": 0.15,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "15%"
       },
       "2026-10-16": {
         "fleje": 3360.0,
         "ptc": 2856.0,
         "dinamica": 0.15,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "15%"
       },
       "2026-10-17": {
         "fleje": 3360.0,
         "ptc": 2856.0,
         "dinamica": 0.15,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "15%"
       },
       "2026-10-18": {
         "fleje": 3360.0,
         "ptc": 2856.0,
         "dinamica": 0.15,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "15%"
       },
       "2026-10-19": {
         "fleje": 3360.0,
@@ -4526,7 +6006,22 @@
         "fleje": 3360.0,
         "ptc": 2856.0,
         "dinamica": 0.15,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "15%"
+      },
+      "2026-10-23": {
+        "fleje": 3585.0,
+        "ptc": 2688.75,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
+      },
+      "2026-10-24": {
+        "fleje": 3585.0,
+        "ptc": 2688.75,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
       }
     },
     "ortuzar-cerveza-ortuzar-session-ipa-473-ml": {
@@ -4534,31 +6029,36 @@
         "fleje": 3715.0,
         "ptc": 2229.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "40%"
       },
       "2026-10-15": {
         "fleje": 3965.0,
         "ptc": 2379.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "40%"
       },
       "2026-10-16": {
         "fleje": 3965.0,
         "ptc": 2379.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "40%"
       },
       "2026-10-17": {
         "fleje": 3965.0,
         "ptc": 2379.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "40%"
       },
       "2026-10-18": {
         "fleje": 3715.0,
         "ptc": 2414.75,
         "dinamica": 0.35,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "35%"
       },
       "2026-10-19": {
         "fleje": 3965.0,
@@ -4570,7 +6070,22 @@
         "fleje": 3715.0,
         "ptc": 2229.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "40%"
+      },
+      "2026-10-23": {
+        "fleje": 3965.0,
+        "ptc": 2577.25,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 3965.0,
+        "ptc": 2577.25,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "ortuzar-cerveza-ortuzar-premium-lager-710-ml": {
@@ -4578,31 +6093,36 @@
         "fleje": 3535.0,
         "ptc": 1767.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "50%"
       },
       "2026-10-15": {
         "fleje": 3779.0,
         "ptc": 1889.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "50%"
       },
       "2026-10-16": {
         "fleje": 3779.0,
         "ptc": 1889.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "50%"
       },
       "2026-10-17": {
         "fleje": 3779.0,
         "ptc": 1889.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "50%"
       },
       "2026-10-18": {
         "fleje": 3535.0,
         "ptc": 1767.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "50%"
       },
       "2026-10-19": {
         "fleje": 3779.0,
@@ -4614,7 +6134,22 @@
         "fleje": 3535.0,
         "ptc": 1767.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "50%"
+      },
+      "2026-10-23": {
+        "fleje": 3779.0,
+        "ptc": 2456.35,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 3779.0,
+        "ptc": 2456.35,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "schneider-cerveza-schneider-rubia-473-ml": {
@@ -4653,6 +6188,18 @@
         "ptc": 2615.0,
         "dinamica": 0.0,
         "fuente": "2026-10-07"
+      },
+      "2026-10-23": {
+        "fleje": 2615.0,
+        "ptc": 2615.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 2615.0,
+        "ptc": 2615.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
       }
     },
     "ortuzar-cerveza-ortuzar-dubbel-473-ml": {
@@ -4660,37 +6207,43 @@
         "fleje": 3325.0,
         "ptc": 1995.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "40%"
       },
       "2026-10-15": {
         "fleje": 3325.0,
         "ptc": 1995.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "40%"
       },
       "2026-10-16": {
         "fleje": 3325.0,
         "ptc": 1995.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "40%"
       },
       "2026-10-17": {
         "fleje": 3325.0,
         "ptc": 1995.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "40%"
       },
       "2026-10-18": {
         "fleje": 3325.0,
         "ptc": 2161.25,
         "dinamica": 0.35,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "35%"
       },
       "2026-10-21": {
         "fleje": 3325.0,
         "ptc": 1995.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "40%"
       }
     },
     "brahma-brahma-ft-pomelo-lata-473-cm3": {
@@ -4698,25 +6251,29 @@
         "fleje": 2725.0,
         "ptc": 2043.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
       },
       "2026-10-15": {
         "fleje": 2835.0,
         "ptc": 2126.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "25%"
       },
       "2026-10-16": {
         "fleje": 2835.0,
         "ptc": 2126.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "25%"
       },
       "2026-10-17": {
         "fleje": 2835.0,
         "ptc": 2126.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "25%"
       },
       "2026-10-19": {
         "fleje": 2835.0,
@@ -4728,7 +6285,20 @@
         "fleje": 2725.0,
         "ptc": 2043.75,
         "dinamica": 0.25,
-        "fuente": "2026-10-07"
+        "fuente": "2026-10-07",
+        "promo_nominal": "25%"
+      },
+      "2026-10-23": {
+        "fleje": 2833.0,
+        "ptc": 1983.1,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 2833.0,
+        "ptc": 1983.1,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25"
       }
     },
     "pampa-cerveza-pampa-brewing-amber-ale-473-ml": {
@@ -4736,25 +6306,42 @@
         "fleje": 3210.0,
         "ptc": 2247.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "30%"
       },
       "2026-10-16": {
         "fleje": 3210.0,
         "ptc": 2247.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "30%"
       },
       "2026-10-17": {
         "fleje": 3210.0,
         "ptc": 2247.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "30%"
       },
       "2026-10-19": {
         "fleje": 3210.0,
         "ptc": 1926.0,
         "dinamica": 0.4,
         "fuente": "2026-10-12"
+      },
+      "2026-10-23": {
+        "fleje": 3000.0,
+        "ptc": 1950.0,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 3000.0,
+        "ptc": 1950.0,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "pampa-cerveza-pampa-brewing-co-ipa-473-ml": {
@@ -4762,25 +6349,42 @@
         "fleje": 3210.0,
         "ptc": 2247.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "30%"
       },
       "2026-10-16": {
         "fleje": 3210.0,
         "ptc": 1605.0,
         "dinamica": 0.5,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "50%"
       },
       "2026-10-17": {
         "fleje": 3210.0,
         "ptc": 1605.0,
         "dinamica": 0.5,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "50%"
       },
       "2026-10-19": {
         "fleje": 3210.0,
         "ptc": 2086.5,
         "dinamica": 0.35,
         "fuente": "2026-10-12"
+      },
+      "2026-10-23": {
+        "fleje": 3300.0,
+        "ptc": 1980.0,
+        "dinamica": 0.4,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 40%"
+      },
+      "2026-10-24": {
+        "fleje": 3300.0,
+        "ptc": 1980.0,
+        "dinamica": 0.4,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 40%"
       }
     },
     "pampa-cerveza-pampa-brewing-honey-ale-lata-473-ml": {
@@ -4788,19 +6392,22 @@
         "fleje": 3210.0,
         "ptc": 2247.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "30%"
       },
       "2026-10-16": {
         "fleje": 3210.0,
         "ptc": 2247.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "30%"
       },
       "2026-10-17": {
         "fleje": 3210.0,
         "ptc": 2247.0,
         "dinamica": 0.3,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "30%"
       },
       "2026-10-19": {
         "fleje": 3210.0,
@@ -4814,25 +6421,42 @@
         "fleje": 3210.0,
         "ptc": 1926.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "40%"
       },
       "2026-10-16": {
         "fleje": 3210.0,
         "ptc": 1605.0,
         "dinamica": 0.5,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "50%"
       },
       "2026-10-17": {
         "fleje": 3210.0,
         "ptc": 1605.0,
         "dinamica": 0.5,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "50%"
       },
       "2026-10-19": {
         "fleje": 3210.0,
         "ptc": 1605.0,
         "dinamica": 0.5,
         "fuente": "2026-10-12"
+      },
+      "2026-10-23": {
+        "fleje": 3000.0,
+        "ptc": 1500.0,
+        "dinamica": 0.5,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 50%"
+      },
+      "2026-10-24": {
+        "fleje": 3000.0,
+        "ptc": 1500.0,
+        "dinamica": 0.5,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 50%"
       }
     },
     "pampa-cerveza-pampa-brewing-nitro-cream-stout-473-ml": {
@@ -4840,25 +6464,43 @@
         "fleje": 3210.0,
         "ptc": 2086.5,
         "dinamica": 0.35,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "35%"
       },
       "2026-10-16": {
         "fleje": 3210.0,
         "ptc": 2086.5,
         "dinamica": 0.35,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "35%"
       },
       "2026-10-17": {
         "fleje": 3210.0,
         "ptc": 2086.5,
         "dinamica": 0.35,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "35%"
       },
       "2026-10-18": {
         "fleje": 3050.0,
         "ptc": 2287.5,
         "dinamica": 0.25,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "25%"
+      },
+      "2026-10-23": {
+        "fleje": 3300.0,
+        "ptc": 2145.0,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 3300.0,
+        "ptc": 2145.0,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "estrella-de-galicia-cerveza-estrella-de-galicia-0-0-lata-330-ml": {
@@ -4866,25 +6508,40 @@
         "fleje": 3605.0,
         "ptc": 2884.0,
         "dinamica": 0.2,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "20%"
       },
       "2026-10-16": {
         "fleje": 3605.0,
         "ptc": 1802.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "50%"
       },
       "2026-10-17": {
         "fleje": 3605.0,
         "ptc": 1802.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "50%"
       },
       "2026-10-19": {
         "fleje": 3605.0,
         "ptc": 2884.0,
         "dinamica": 0.2,
         "fuente": "2026-10-12"
+      },
+      "2026-10-23": {
+        "fleje": 3400.0,
+        "ptc": 3400.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 3400.0,
+        "ptc": 3400.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
       }
     },
     "guiness-cerveza-guinness-extra-stout-473-ml": {
@@ -4892,25 +6549,42 @@
         "fleje": 4559.0,
         "ptc": 3419.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "25%"
       },
       "2026-10-16": {
         "fleje": 4559.0,
         "ptc": 2279.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-17": {
         "fleje": 4559.0,
         "ptc": 2279.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-19": {
         "fleje": 4559.0,
         "ptc": 3191.3,
         "dinamica": 0.3,
         "fuente": "2026-10-12"
+      },
+      "2026-10-23": {
+        "fleje": 4300.0,
+        "ptc": 2795.0,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 4300.0,
+        "ptc": 2795.0,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "guiness-cerveza-guinness-hop-house-13-lager-473-ml": {
@@ -4918,25 +6592,42 @@
         "fleje": 4559.0,
         "ptc": 3191.3,
         "dinamica": 0.3,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "30%"
       },
       "2026-10-16": {
         "fleje": 4559.0,
         "ptc": 3191.3,
         "dinamica": 0.3,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "30%"
       },
       "2026-10-17": {
         "fleje": 4559.0,
         "ptc": 3191.3,
         "dinamica": 0.3,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "30%"
       },
       "2026-10-19": {
         "fleje": 4559.0,
         "ptc": 2735.4,
         "dinamica": 0.4,
         "fuente": "2026-10-12"
+      },
+      "2026-10-23": {
+        "fleje": 3900.0,
+        "ptc": 2145.0,
+        "dinamica": 0.45,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 45%"
+      },
+      "2026-10-24": {
+        "fleje": 3900.0,
+        "ptc": 2145.0,
+        "dinamica": 0.45,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 45%"
       }
     },
     "estrella-galicia-cerveza-estrella-galicia-sin-gluten-330-ml": {
@@ -4944,19 +6635,22 @@
         "fleje": 3605.0,
         "ptc": 2884.0,
         "dinamica": 0.2,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "20%"
       },
       "2026-10-16": {
         "fleje": 3605.0,
         "ptc": 1802.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "50%"
       },
       "2026-10-17": {
         "fleje": 3605.0,
         "ptc": 1802.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "50%"
       },
       "2026-10-19": {
         "fleje": 3605.0,
@@ -4970,19 +6664,22 @@
         "fleje": 4029.0,
         "ptc": 3223.2,
         "dinamica": 0.2,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "20%"
       },
       "2026-10-16": {
         "fleje": 4029.0,
         "ptc": 2014.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "50%"
       },
       "2026-10-17": {
         "fleje": 4029.0,
         "ptc": 2014.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "50%"
       }
     },
     "rabieta-cerveza-rabieta-american-ipa-473-ml": {
@@ -4990,19 +6687,34 @@
         "fleje": 4175.0,
         "ptc": 2087.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "50%"
       },
       "2026-10-16": {
         "fleje": 4175.0,
         "ptc": 2087.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "50%"
       },
       "2026-10-17": {
         "fleje": 4175.0,
         "ptc": 2087.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "50%"
+      },
+      "2026-10-23": {
+        "fleje": 4300.0,
+        "ptc": 2150.0,
+        "dinamica": 0.5,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 4300.0,
+        "ptc": 2150.0,
+        "dinamica": 0.5,
+        "fuente": "2026-10-25"
       }
     },
     "rabieta-cerveza-rabieta-golden-473-ml": {
@@ -5010,19 +6722,22 @@
         "fleje": 4175.0,
         "ptc": 2087.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "50%"
       },
       "2026-10-16": {
         "fleje": 4175.0,
         "ptc": 2087.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "50%"
       },
       "2026-10-17": {
         "fleje": 4175.0,
         "ptc": 2087.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "50%"
       }
     },
     "rabieta-cerveza-rabieta-helles-munich-473-ml": {
@@ -5030,19 +6745,34 @@
         "fleje": 4175.0,
         "ptc": 2087.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "50%"
       },
       "2026-10-16": {
         "fleje": 4175.0,
         "ptc": 2087.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "50%"
       },
       "2026-10-17": {
         "fleje": 4175.0,
         "ptc": 2087.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "50%"
+      },
+      "2026-10-23": {
+        "fleje": 3900.0,
+        "ptc": 1950.0,
+        "dinamica": 0.5,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 3900.0,
+        "ptc": 1950.0,
+        "dinamica": 0.5,
+        "fuente": "2026-10-25"
       }
     },
     "ortuzar-cerveza-ortuzar-poker-bourbon-473-ml": {
@@ -5050,25 +6780,43 @@
         "fleje": 3965.0,
         "ptc": 2379.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "40%"
       },
       "2026-10-16": {
         "fleje": 3965.0,
         "ptc": 2379.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "40%"
       },
       "2026-10-17": {
         "fleje": 3965.0,
         "ptc": 2379.0,
         "dinamica": 0.4,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "40%"
       },
       "2026-10-18": {
         "fleje": 3715.0,
         "ptc": 2414.75,
         "dinamica": 0.35,
-        "fuente": "2026-10-04"
+        "fuente": "2026-10-04",
+        "promo_nominal": "35%"
+      },
+      "2026-10-23": {
+        "fleje": 3965.0,
+        "ptc": 2577.25,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 3965.0,
+        "ptc": 2577.25,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "estrella-galicia-cerveza-estrella-galicia-lager-porron-355-ml": {
@@ -5076,19 +6824,22 @@
         "fleje": 3700.0,
         "ptc": 2960.0,
         "dinamica": 0.2,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "20%"
       },
       "2026-10-16": {
         "fleje": 3700.0,
         "ptc": 1850.0,
         "dinamica": 0.5,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "50%"
       },
       "2026-10-17": {
         "fleje": 3700.0,
         "ptc": 1850.0,
         "dinamica": 0.5,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "50%"
       }
     },
     "brahma-brahma-ft-limon-lata-473-cm3": {
@@ -5096,25 +6847,40 @@
         "fleje": 2835.0,
         "ptc": 2126.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-08"
+        "fuente": "2026-10-08",
+        "promo_nominal": "25%"
       },
       "2026-10-16": {
         "fleje": 2835.0,
         "ptc": 2126.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "25%"
       },
       "2026-10-17": {
         "fleje": 2835.0,
         "ptc": 2126.25,
         "dinamica": 0.25,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "25%"
       },
       "2026-10-19": {
         "fleje": 2835.0,
         "ptc": 2126.25,
         "dinamica": 0.25,
         "fuente": "2026-10-12"
+      },
+      "2026-10-23": {
+        "fleje": 2833.0,
+        "ptc": 1983.1,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 2833.0,
+        "ptc": 1983.1,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25"
       }
     },
     "bierhaus-cerveza-bierhaus-oktoberfest-473ml": {
@@ -5141,6 +6907,18 @@
         "ptc": 4509.0,
         "dinamica": 0.0,
         "fuente": "2026-10-12"
+      },
+      "2026-10-23": {
+        "fleje": 4509.0,
+        "ptc": 4509.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 4509.0,
+        "ptc": 4509.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
       }
     },
     "rabieta-cerveza-rabieta-red-honey-473-ml": {
@@ -5148,13 +6926,27 @@
         "fleje": 4175.0,
         "ptc": 2087.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-09"
+        "fuente": "2026-10-09",
+        "promo_nominal": "50%"
       },
       "2026-10-17": {
         "fleje": 4175.0,
         "ptc": 2087.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "50%"
+      },
+      "2026-10-23": {
+        "fleje": 3900.0,
+        "ptc": 1950.0,
+        "dinamica": 0.5,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 3900.0,
+        "ptc": 1950.0,
+        "dinamica": 0.5,
+        "fuente": "2026-10-25"
       }
     },
     "patagonia-cerveza-patagonia-lager-del-sur-lata-473-ml": {
@@ -5162,13 +6954,28 @@
         "fleje": 5489.0,
         "ptc": 2744.5,
         "dinamica": 0.5,
-        "fuente": "2026-10-10"
+        "fuente": "2026-10-10",
+        "promo_nominal": "2 x 1"
       },
       "2026-10-19": {
         "fleje": 5489.0,
         "ptc": 3567.85,
         "dinamica": 0.35,
         "fuente": "2026-10-12"
+      },
+      "2026-10-23": {
+        "fleje": 5489.0,
+        "ptc": 3567.85,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 5489.0,
+        "ptc": 3567.85,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "stella-artois-cerveza-stella-artois-pure-gold-330-cm3": {
@@ -5185,6 +6992,20 @@
         "ptc": 2700.0,
         "dinamica": 0.4,
         "fuente": "2026-10-12"
+      },
+      "2026-10-23": {
+        "fleje": 4500.0,
+        "ptc": 2475.0,
+        "dinamica": 0.45,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 45%"
+      },
+      "2026-10-24": {
+        "fleje": 4500.0,
+        "ptc": 2475.0,
+        "dinamica": 0.45,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 45%"
       }
     },
     "temple-cerveza-temple-indie-golden-473-ml": {
@@ -5193,14 +7014,20 @@
         "ptc": 2700.0,
         "dinamica": 0.4,
         "fuente": "2026-10-12"
-      }
-    },
-    "andes-cerveza-andes-origen-rubia-710-ml": {
-      "2026-10-19": {
-        "fleje": 5125.0,
-        "ptc": 3843.75,
-        "dinamica": 0.25,
-        "fuente": "2026-10-12"
+      },
+      "2026-10-23": {
+        "fleje": 4500.0,
+        "ptc": 2475.0,
+        "dinamica": 0.45,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 45%"
+      },
+      "2026-10-24": {
+        "fleje": 4500.0,
+        "ptc": 2475.0,
+        "dinamica": 0.45,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 45%"
       }
     },
     "miller-cerveza-blanca-miller-edicion-limitada-porron-330-ml": {
@@ -5209,6 +7036,18 @@
         "ptc": 4085.0,
         "dinamica": 0.0,
         "fuente": "2026-10-12"
+      },
+      "2026-10-23": {
+        "fleje": 4085.0,
+        "ptc": 2246.75,
+        "dinamica": 0.45,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 4085.0,
+        "ptc": 2246.75,
+        "dinamica": 0.45,
+        "fuente": "2026-10-25"
       }
     },
     "temple-cerveza-temple-wolf-ipa-473-ml": {
@@ -5217,6 +7056,20 @@
         "ptc": 2689.5,
         "dinamica": 0.5,
         "fuente": "2026-10-12"
+      },
+      "2026-10-23": {
+        "fleje": 5379.0,
+        "ptc": 2689.5,
+        "dinamica": 0.5,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 50%"
+      },
+      "2026-10-24": {
+        "fleje": 5379.0,
+        "ptc": 2689.5,
+        "dinamica": 0.5,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 50%"
       }
     },
     "la-trappe-cerveza-artesanal-la-trappe-dubbel-330-ml": {
@@ -5225,6 +7078,20 @@
         "ptc": 8990.0,
         "dinamica": 0.0,
         "fuente": "2026-10-12"
+      },
+      "2026-10-23": {
+        "fleje": 8990.0,
+        "ptc": 5843.5,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 8990.0,
+        "ptc": 5843.5,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "la-trappe-cerveza-artesanal-la-trappe-blond-330-ml": {
@@ -5233,6 +7100,20 @@
         "ptc": 8490.0,
         "dinamica": 0.0,
         "fuente": "2026-10-12"
+      },
+      "2026-10-23": {
+        "fleje": 8490.0,
+        "ptc": 5518.5,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
+      },
+      "2026-10-24": {
+        "fleje": 8490.0,
+        "ptc": 5518.5,
+        "dinamica": 0.35,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 35%"
       }
     },
     "bavaria-cerveza-bavaria-holland-500ml": {
@@ -5241,6 +7122,20 @@
         "ptc": 4459.0,
         "dinamica": 0.0,
         "fuente": "2026-10-12"
+      },
+      "2026-10-23": {
+        "fleje": 4459.0,
+        "ptc": 3344.25,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
+      },
+      "2026-10-24": {
+        "fleje": 4459.0,
+        "ptc": 3344.25,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
       }
     },
     "bitburger-cerveza-bitburger-premium-beer-500-ml": {
@@ -5249,6 +7144,20 @@
         "ptc": 6015.0,
         "dinamica": 0.0,
         "fuente": "2026-10-12"
+      },
+      "2026-10-23": {
+        "fleje": 6015.0,
+        "ptc": 4511.25,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
+      },
+      "2026-10-24": {
+        "fleje": 6015.0,
+        "ptc": 4511.25,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
       }
     },
     "bitburger-cerveza-bitburger-330-ml": {
@@ -5257,6 +7166,20 @@
         "ptc": 5185.0,
         "dinamica": 0.0,
         "fuente": "2026-10-12"
+      },
+      "2026-10-23": {
+        "fleje": 5185.0,
+        "ptc": 3888.75,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
+      },
+      "2026-10-24": {
+        "fleje": 5185.0,
+        "ptc": 3888.75,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
       }
     },
     "kostritzer-cerveza-kostritzer-schwarzbier-500-ml": {
@@ -5265,6 +7188,152 @@
         "ptc": 7469.0,
         "dinamica": 0.0,
         "fuente": "2026-10-12"
+      },
+      "2026-10-23": {
+        "fleje": 7469.0,
+        "ptc": 5601.75,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
+      },
+      "2026-10-24": {
+        "fleje": 7469.0,
+        "ptc": 5601.75,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
+      }
+    },
+    "antares-cerveza-antares-kolsch-473-ml": {
+      "2026-10-23": {
+        "fleje": 4739.0,
+        "ptc": 3317.3,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 4739.0,
+        "ptc": 3317.3,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25"
+      }
+    },
+    "kunstmann-cerveza-artesanal-kunstmann-ipa-470-ml": {
+      "2026-10-23": {
+        "fleje": 4989.0,
+        "ptc": 4989.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 4989.0,
+        "ptc": 4989.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      }
+    },
+    "bavaria-cerveza-bavaria-ipa-8-6-lata-500ml": {
+      "2026-10-23": {
+        "fleje": 6990.0,
+        "ptc": 5242.5,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
+      },
+      "2026-10-24": {
+        "fleje": 6990.0,
+        "ptc": 5242.5,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
+      }
+    },
+    "fuerte-cerveza-fuerte-8-6-oscura-red-500ml": {
+      "2026-10-23": {
+        "fleje": 7885.0,
+        "ptc": 5913.75,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
+      },
+      "2026-10-24": {
+        "fleje": 7885.0,
+        "ptc": 5913.75,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
+      }
+    },
+    "andes-origen-cerveza-andes-origen-blanca-710-ml": {
+      "2026-10-23": {
+        "fleje": 3976.0,
+        "ptc": 3976.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 3976.0,
+        "ptc": 3976.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      }
+    },
+    "flying-fish-cerveza-flying-fish-limon-lata-473-ml": {
+      "2026-10-23": {
+        "fleje": 3189.0,
+        "ptc": 2232.3,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 3189.0,
+        "ptc": 2232.3,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25"
+      }
+    },
+    "flying-fish-cerveza-flying-fish-limon-340-ml": {
+      "2026-10-23": {
+        "fleje": 3189.0,
+        "ptc": 2232.3,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 3189.0,
+        "ptc": 2232.3,
+        "dinamica": 0.3,
+        "fuente": "2026-10-25"
+      }
+    },
+    "konig-cerveza-konig-pilsener-500-ml": {
+      "2026-10-23": {
+        "fleje": 6430.0,
+        "ptc": 4822.5,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
+      },
+      "2026-10-24": {
+        "fleje": 6430.0,
+        "ptc": 4822.5,
+        "dinamica": 0.25,
+        "fuente": "2026-10-25",
+        "promo_nominal": "Plus 25%"
+      }
+    },
+    "michelob-ultra-cerveza-michelob-ultra-710-ml": {
+      "2026-10-23": {
+        "fleje": 16995.0,
+        "ptc": 16995.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
+      },
+      "2026-10-24": {
+        "fleje": 16995.0,
+        "ptc": 16995.0,
+        "dinamica": 0.0,
+        "fuente": "2026-10-25"
       }
     }
   }

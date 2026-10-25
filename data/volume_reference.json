@@ -824,5 +824,33 @@
     "sku": "Cerveza Otra Ronda Lager 473 ml",
     "volumen_l": 0.473,
     "fuente": "auto"
+  },
+  {
+    "id": "flying-fish-cerveza-flying-fish-limon-lata-473-ml",
+    "marca": "Flying Fish",
+    "sku": "Cerveza Flying Fish Limón Lata 473 ml",
+    "volumen_l": 0.473,
+    "fuente": "auto"
+  },
+  {
+    "id": "flying-fish-cerveza-flying-fish-limon-340-ml",
+    "marca": "Flying Fish",
+    "sku": "Cerveza Flying Fish Limón 340 ml",
+    "volumen_l": 0.34,
+    "fuente": "auto"
+  },
+  {
+    "id": "konig-cerveza-konig-pilsener-500-ml",
+    "marca": "Konig",
+    "sku": "Cerveza Konig Pilsener 500 Ml",
+    "volumen_l": 0.5,
+    "fuente": "auto"
+  },
+  {
+    "id": "michelob-ultra-cerveza-michelob-ultra-710-ml",
+    "marca": "Michelob Ultra",
+    "sku": "Cerveza Michelob Ultra 710 ml",
+    "volumen_l": 0.71,
+    "fuente": "auto"
   }
 ]

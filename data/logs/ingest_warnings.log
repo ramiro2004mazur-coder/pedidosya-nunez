@@ -118,3 +118,7 @@
 2026-10-22.csv: PRECIO SOSPECHOSO -> 'Estrella Galicia | Cerveza Estrella Galicia Lager Porrón 355 ml' 1850.0 -> 3925.0 (2026-10-22), se guarda igual marcado como sospechoso
 2026-10-22.csv: SKU nuevo sin catalogo -> 'Andes Origen | Cerveza Andes Origen Blanca 710 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-10-22.csv: SKU nuevo sin catalogo -> 'unbranded | Cerveza Otra Ronda Lager 473 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-10-25.csv: SKU nuevo sin catalogo -> 'Flying Fish | Cerveza Flying Fish Limón Lata 473 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-10-25.csv: SKU nuevo sin catalogo -> 'Flying Fish | Cerveza Flying Fish Limón 340 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-10-25.csv: SKU nuevo sin catalogo -> 'Konig | Cerveza Konig Pilsener 500 Ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-10-25.csv: SKU nuevo sin catalogo -> 'Michelob Ultra | Cerveza Michelob Ultra 710 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
