@@ -12,6 +12,13 @@ PY=/Library/Frameworks/Python.framework/Versions/3.14/bin/python3
 export PATH="/Library/Frameworks/Python.framework/Versions/3.14/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 cd "$REPO" || exit 1
+
+# Aviso el mismo dia: notificacion de macOS + marca en scripts/ALERTA_SCRAPER.txt
+# (se borra cuando una corrida sale bien). Asi una falla no pasa 10 dias sin verse.
+alertar() {
+  echo "$(date '+%Y-%m-%d %H:%M') $1" >> "$REPO/scripts/ALERTA_SCRAPER.txt"
+  /usr/bin/osascript -e "display notification \"$1\" with title \"Scraper PedidosYa Nunez FALLO\" sound name \"Basso\"" 2>/dev/null || true
+}
 {
   echo "===== $(date '+%Y-%m-%d %H:%M:%S %z') ====="
 
@@ -30,6 +37,7 @@ cd "$REPO" || exit 1
 
   if [ $SCRAPE_STATUS -ne 0 ]; then
     echo "[ERROR] los dos motores fallaron (status $SCRAPE_STATUS), no ingesto ni commiteo."
+    alertar "Los dos motores fallaron (probable 403 anti-bot). Hoy sin datos."
     exit 1
   fi
 
@@ -38,6 +46,17 @@ cd "$REPO" || exit 1
 
   if [ ! -f "$CSV" ]; then
     echo "[ERROR] no encuentro $CSV despues de scrapear."
+    alertar "No se genero $CSV despues de scrapear."
+    exit 1
+  fi
+
+  # Sanity check: si trae 0 SKUs o <70% de la lectura anterior, no ingesto y aviso.
+  N_HOY=$(( $(wc -l < "$CSV") - 1 ))
+  PREV_CSV=$(ls data/raw/*.csv | grep -v "$CSV" | sort | tail -1)
+  N_PREV=$(( $(wc -l < "$PREV_CSV") - 1 ))
+  if [ "$N_HOY" -le 0 ] || [ "$N_HOY" -lt $(( N_PREV * 70 / 100 )) ]; then
+    echo "[ERROR] $CSV trae $N_HOY filas vs $N_PREV de $PREV_CSV, no ingesto."
+    alertar "Scrapeo trajo $N_HOY SKUs (antes $N_PREV). No se ingesto."
     exit 1
   fi
 
@@ -49,7 +68,12 @@ cd "$REPO" || exit 1
     echo "Sin cambios de datos, no se commitea."
   else
     git commit -q -m "data: corte $FECHA (corrida local)"
-    git push -q origin main && echo "[OK] pusheado" || echo "[ERROR] git push fallo"
+    if git push -q origin main; then
+      echo "[OK] pusheado"
+      rm -f "$REPO/scripts/ALERTA_SCRAPER.txt"
+    else
+      echo "[ERROR] git push fallo"; alertar "git push fallo"
+    fi
   fi
 
   echo "===== fin $(date '+%Y-%m-%d %H:%M:%S %z') ====="
