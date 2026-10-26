@@ -122,3 +122,12 @@
 2026-10-25.csv: SKU nuevo sin catalogo -> 'Flying Fish | Cerveza Flying Fish Limón 340 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-10-25.csv: SKU nuevo sin catalogo -> 'Konig | Cerveza Konig Pilsener 500 Ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-10-25.csv: SKU nuevo sin catalogo -> 'Michelob Ultra | Cerveza Michelob Ultra 710 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-10-26.csv: SKU nuevo sin catalogo -> 'Beepure | Cerveza Artesanal Ipa Beepure 500 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-10-26.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 473 ml' 2050.95 -> 3729.0 (2026-10-26), se guarda igual marcado como sospechoso
+2026-10-26.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 600 ml' 3414.95 -> 6209.0 (2026-10-26), se guarda igual marcado como sospechoso
+2026-10-26.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Blanca Miller Edición Limitada Porrón 330 ml' 2246.75 -> 4085.0 (2026-10-26), se guarda igual marcado como sospechoso
+2026-10-26.csv: PRECIO SOSPECHOSO -> 'Amstel | Cerveza Amstel Lager 473 ml' 1877.85 -> 2889.0 (2026-10-26), se guarda igual marcado como sospechoso
+2026-10-26.csv: PRECIO SOSPECHOSO -> 'Amstel | Cerveza Amstel Lager 710 ml' 2730.0 -> 4200.0 (2026-10-26), se guarda igual marcado como sospechoso
+2026-10-26.csv: PRECIO SOSPECHOSO -> 'La Trappe | Cerveza Artesanal La Trappe Dubbel 330 ml' 5843.5 -> 8990.0 (2026-10-26), se guarda igual marcado como sospechoso
+2026-10-26.csv: PRECIO SOSPECHOSO -> 'La Trappe | Cerveza Artesanal La Trappe Blond 330 ml' 5518.5 -> 8490.0 (2026-10-26), se guarda igual marcado como sospechoso
+2026-10-26.csv: SKU nuevo sin catalogo -> 'Rabieta | Cerveza Sin Alcohol Rabieta Zero 473 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
