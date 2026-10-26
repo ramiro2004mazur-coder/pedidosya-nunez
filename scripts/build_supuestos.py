@@ -10,7 +10,7 @@ dia de la semana de la ultima lectura REAL anterior al hueco (ej: martes
 fue copia del 10/10) se excluyen como fuente via NO_REALES.
 
 Un hueco puede fijar "fuente" (fecha real a replicar en todos sus dias) en vez
-de la regla del mismo dia de la semana (ej: 23-24/10 <- 25/10, pedido del usuario).
+de la regla del mismo dia de la semana: {"desde", "hasta", "fuente": "YYYY-MM-DD", "motivo"}.
 
 Uso:
     python3 scripts/build_supuestos.py
@@ -29,12 +29,10 @@ SUPUESTOS_PATH = HISTORY_PATH.parent / "supuestos.json"
 HUECOS = [
     {"desde": "2026-10-13", "hasta": "2026-10-21",
      "motivo": "Scraper bloqueado (403 anti-bot PerimeterX) y Mac sin conexion/apagada"},
-    {"desde": "2026-10-23", "hasta": "2026-10-24", "fuente": "2026-10-25",
-     "motivo": "Scraper bloqueado (403 anti-bot PerimeterX); replica la lectura del 25/10"},
 ]
 
 # Fechas del historico que no son lectura real, no sirven como fuente.
-NO_REALES = {"2026-10-11"}  # copia del 10/10 (carga manual)
+NO_REALES = {"2026-10-11", "2026-10-23", "2026-10-24"}  # copias (11 <- 10/10; 23 y 24 <- 25/10)
 
 
 def dias(desde, hasta):
