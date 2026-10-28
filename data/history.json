@@ -3,7 +3,7 @@
     "tienda": "Nunez",
     "plataforma": "PedidosYa Market",
     "sku_count": 146,
-    "ultima_corrida": "2026-10-26T17:19:53.831902+00:00"
+    "ultima_corrida": "2026-10-28T13:15:16.268360+00:00"
   },
   "dates": [
     "2026-08-10",
@@ -67,7 +67,8 @@
     "2026-10-23",
     "2026-10-24",
     "2026-10-25",
-    "2026-10-26"
+    "2026-10-26",
+    "2026-10-28"
   ],
   "pivot": [
     {
@@ -435,6 +436,13 @@
           "ptc": 1661.25,
           "dinamica": 0.25,
           "pos": 64,
+          "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 2215.0,
+          "ptc": 1661.25,
+          "dinamica": 0.25,
+          "pos": 65,
           "promo_nominal": "25%"
         }
       }
@@ -817,6 +825,13 @@
           "dinamica": 0.25,
           "pos": 58,
           "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 2833.0,
+          "ptc": 2124.75,
+          "dinamica": 0.25,
+          "pos": 61,
+          "promo_nominal": "25%"
         }
       }
     },
@@ -1142,6 +1157,13 @@
           "ptc": 3042.75,
           "dinamica": 0.25,
           "pos": 12,
+          "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 4057.0,
+          "ptc": 3042.75,
+          "dinamica": 0.25,
+          "pos": 51,
           "promo_nominal": "25%"
         }
       }
@@ -1493,6 +1515,13 @@
           "ptc": 2230.5,
           "dinamica": 0.25,
           "pos": 77,
+          "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 2974.0,
+          "ptc": 2230.5,
+          "dinamica": 0.25,
+          "pos": 78,
           "promo_nominal": "25%"
         }
       }
@@ -1861,6 +1890,13 @@
           "dinamica": 0.25,
           "pos": 30,
           "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 2692.0,
+          "ptc": 1749.8,
+          "dinamica": 0.35,
+          "pos": 33,
+          "promo_nominal": "35%"
         }
       }
     },
@@ -2212,6 +2248,13 @@
           "dinamica": 0.25,
           "pos": 24,
           "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 2692.0,
+          "ptc": 2019.0,
+          "dinamica": 0.25,
+          "pos": 26,
+          "promo_nominal": "25%"
         }
       }
     },
@@ -2557,6 +2600,13 @@
           "dinamica": 0.25,
           "pos": 34,
           "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 2692.0,
+          "ptc": 2019.0,
+          "dinamica": 0.25,
+          "pos": 29,
+          "promo_nominal": "25%"
         }
       }
     },
@@ -2899,6 +2949,13 @@
           "ptc": 1612.5,
           "dinamica": 0.25,
           "pos": 36,
+          "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 2150.0,
+          "ptc": 1612.5,
+          "dinamica": 0.25,
+          "pos": 4,
           "promo_nominal": "25%"
         }
       }
@@ -3278,6 +3335,13 @@
           "dinamica": 0.15,
           "pos": 7,
           "promo_nominal": "15%"
+        },
+        "2026-10-28": {
+          "fleje": 3832.0,
+          "ptc": 2299.2,
+          "dinamica": 0.4,
+          "pos": 8,
+          "promo_nominal": "40%"
         }
       }
     },
@@ -3579,6 +3643,12 @@
           "dinamica": 0.0,
           "pos": 74,
           "sospechoso": true
+        },
+        "2026-10-28": {
+          "fleje": 2889.0,
+          "ptc": 2889.0,
+          "dinamica": 0.0,
+          "pos": 75
         }
       }
     },
@@ -3880,6 +3950,12 @@
           "dinamica": 0.0,
           "pos": 75,
           "sospechoso": true
+        },
+        "2026-10-28": {
+          "fleje": 4200.0,
+          "ptc": 4200.0,
+          "dinamica": 0.0,
+          "pos": 76
         }
       }
     },
@@ -4565,6 +4641,12 @@
           "ptc": 2889.0,
           "dinamica": 0.0,
           "pos": 40
+        },
+        "2026-10-28": {
+          "fleje": 2889.0,
+          "ptc": 2889.0,
+          "dinamica": 0.0,
+          "pos": 42
         }
       }
     },
@@ -4886,6 +4968,12 @@
           "pos": 6
         },
         "2026-10-26": {
+          "fleje": 3815.0,
+          "ptc": 3815.0,
+          "dinamica": 0.0,
+          "pos": 20
+        },
+        "2026-10-28": {
           "fleje": 3815.0,
           "ptc": 3815.0,
           "dinamica": 0.0,
@@ -5251,6 +5339,13 @@
           "dinamica": 0.2,
           "pos": 48,
           "promo_nominal": "20%"
+        },
+        "2026-10-28": {
+          "fleje": 3889.0,
+          "ptc": 1944.5,
+          "dinamica": 0.5,
+          "pos": 34,
+          "promo_nominal": "2 x 1"
         }
       }
     },
@@ -5602,6 +5697,13 @@
           "dinamica": 0.2,
           "pos": 35,
           "promo_nominal": "20%"
+        },
+        "2026-10-28": {
+          "fleje": 3889.0,
+          "ptc": 1944.5,
+          "dinamica": 0.5,
+          "pos": 24,
+          "promo_nominal": "2 x 1"
         }
       }
     },
@@ -5936,6 +6038,13 @@
           "dinamica": 0.2,
           "pos": 26,
           "promo_nominal": "20%"
+        },
+        "2026-10-28": {
+          "fleje": 3659.0,
+          "ptc": 1829.5,
+          "dinamica": 0.5,
+          "pos": 14,
+          "promo_nominal": "2 x 1"
         }
       }
     },
@@ -6266,6 +6375,13 @@
           "ptc": 2428.75,
           "dinamica": 0.33,
           "pos": 38,
+          "promo_nominal": "33%"
+        },
+        "2026-10-28": {
+          "fleje": 3625.0,
+          "ptc": 2428.75,
+          "dinamica": 0.33,
+          "pos": 37,
           "promo_nominal": "33%"
         }
       }
@@ -6600,6 +6716,13 @@
           "dinamica": 0.2,
           "pos": 25,
           "promo_nominal": "20%"
+        },
+        "2026-10-28": {
+          "fleje": 5125.0,
+          "ptc": 2562.5,
+          "dinamica": 0.5,
+          "pos": 17,
+          "promo_nominal": "2 x 1"
         }
       }
     },
@@ -6962,6 +7085,13 @@
           "dinamica": 0.4,
           "pos": 15,
           "promo_nominal": "40%"
+        },
+        "2026-10-28": {
+          "fleje": 3375.0,
+          "ptc": 2025.0,
+          "dinamica": 0.4,
+          "pos": 7,
+          "promo_nominal": "40%"
         }
       }
     },
@@ -7318,6 +7448,13 @@
           "dinamica": 0.25,
           "pos": 63,
           "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 3729.0,
+          "ptc": 2796.75,
+          "dinamica": 0.25,
+          "pos": 62,
+          "promo_nominal": "25%"
         }
       }
     },
@@ -7667,6 +7804,13 @@
           "dinamica": 0.25,
           "pos": 61,
           "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 3529.0,
+          "ptc": 2646.75,
+          "dinamica": 0.25,
+          "pos": 60,
+          "promo_nominal": "25%"
         }
       }
     },
@@ -7983,6 +8127,13 @@
           "dinamica": 0.25,
           "pos": 55,
           "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 3669.0,
+          "ptc": 2751.75,
+          "dinamica": 0.25,
+          "pos": 54,
+          "promo_nominal": "25%"
         }
       }
     },
@@ -8287,6 +8438,13 @@
           "ptc": 1576.25,
           "dinamica": 0.35,
           "pos": 53,
+          "promo_nominal": "35%"
+        },
+        "2026-10-28": {
+          "fleje": 2425.0,
+          "ptc": 1576.25,
+          "dinamica": 0.35,
+          "pos": 46,
           "promo_nominal": "35%"
         }
       }
@@ -8625,6 +8783,13 @@
           "pos": 19
         },
         "2026-10-26": {
+          "fleje": 3325.0,
+          "ptc": 2493.75,
+          "dinamica": 0.25,
+          "pos": 59,
+          "promo_nominal": "25%"
+        },
+        "2026-10-28": {
           "fleje": 3325.0,
           "ptc": 2493.75,
           "dinamica": 0.25,
@@ -8977,6 +9142,13 @@
           "ptc": 2621.25,
           "dinamica": 0.25,
           "pos": 56,
+          "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 3495.0,
+          "ptc": 2621.25,
+          "dinamica": 0.25,
+          "pos": 57,
           "promo_nominal": "25%"
         }
       }
@@ -9341,6 +9513,13 @@
           "dinamica": 0.25,
           "pos": 57,
           "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 3325.0,
+          "ptc": 2493.75,
+          "dinamica": 0.25,
+          "pos": 58,
+          "promo_nominal": "25%"
         }
       }
     },
@@ -9663,6 +9842,13 @@
           "ptc": 3588.75,
           "dinamica": 0.25,
           "pos": 6,
+          "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 4785.0,
+          "ptc": 3588.75,
+          "dinamica": 0.25,
+          "pos": 2,
           "promo_nominal": "25%"
         }
       }
@@ -10018,6 +10204,13 @@
           "dinamica": 0.25,
           "pos": 54,
           "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 4785.0,
+          "ptc": 3588.75,
+          "dinamica": 0.25,
+          "pos": 56,
+          "promo_nominal": "25%"
         }
       }
     },
@@ -10371,6 +10564,12 @@
           "dinamica": 0.0,
           "pos": 69,
           "sospechoso": true
+        },
+        "2026-10-28": {
+          "fleje": 3729.0,
+          "ptc": 3729.0,
+          "dinamica": 0.0,
+          "pos": 70
         }
       }
     },
@@ -10704,6 +10903,12 @@
           "dinamica": 0.0,
           "pos": 72,
           "sospechoso": true
+        },
+        "2026-10-28": {
+          "fleje": 6209.0,
+          "ptc": 6209.0,
+          "dinamica": 0.0,
+          "pos": 73
         }
       }
     },
@@ -11347,6 +11552,13 @@
           "dinamica": 0.35,
           "pos": 13,
           "promo_nominal": "35%"
+        },
+        "2026-10-28": {
+          "fleje": 4219.0,
+          "ptc": 2742.35,
+          "dinamica": 0.35,
+          "pos": 11,
+          "promo_nominal": "35%"
         }
       }
     },
@@ -11859,6 +12071,13 @@
           "dinamica": 0.25,
           "pos": 47,
           "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 3535.0,
+          "ptc": 2651.25,
+          "dinamica": 0.25,
+          "pos": 39,
+          "promo_nominal": "25%"
         }
       }
     },
@@ -12210,6 +12429,13 @@
           "dinamica": 0.15,
           "pos": 14,
           "promo_nominal": "15%"
+        },
+        "2026-10-28": {
+          "fleje": 4415.0,
+          "ptc": 3752.75,
+          "dinamica": 0.15,
+          "pos": 13,
+          "promo_nominal": "15%"
         }
       }
     },
@@ -12556,6 +12782,13 @@
           "dinamica": 0.25,
           "pos": 44,
           "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 4455.0,
+          "ptc": 3341.25,
+          "dinamica": 0.25,
+          "pos": 48,
+          "promo_nominal": "25%"
         }
       }
     },
@@ -12874,6 +13107,13 @@
           "ptc": 2950.35,
           "dinamica": 0.35,
           "pos": 39
+        },
+        "2026-10-28": {
+          "fleje": 4539.0,
+          "ptc": 3404.25,
+          "dinamica": 0.25,
+          "pos": 32,
+          "promo_nominal": "25%"
         }
       }
     },
@@ -13198,6 +13438,13 @@
           "ptc": 2729.25,
           "dinamica": 0.25,
           "pos": 41,
+          "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 3639.0,
+          "ptc": 2729.25,
+          "dinamica": 0.25,
+          "pos": 35,
           "promo_nominal": "25%"
         }
       }
@@ -13531,6 +13778,13 @@
           "ptc": 3354.5,
           "dinamica": 0.5,
           "pos": 17,
+          "promo_nominal": "50%"
+        },
+        "2026-10-28": {
+          "fleje": 6709.0,
+          "ptc": 3354.5,
+          "dinamica": 0.5,
+          "pos": 16,
           "promo_nominal": "50%"
         }
       }
@@ -13889,6 +14143,13 @@
           "dinamica": 0.35,
           "pos": 8,
           "promo_nominal": "35%"
+        },
+        "2026-10-28": {
+          "fleje": 6605.0,
+          "ptc": 4293.25,
+          "dinamica": 0.35,
+          "pos": 10,
+          "promo_nominal": "35%"
         }
       }
     },
@@ -14219,6 +14480,13 @@
           "dinamica": 0.5,
           "pos": 102,
           "promo_nominal": "50%"
+        },
+        "2026-10-28": {
+          "fleje": 4430.0,
+          "ptc": 4430.0,
+          "dinamica": 0.0,
+          "pos": 102,
+          "sospechoso": true
         }
       }
     },
@@ -14533,6 +14801,12 @@
           "ptc": 4200.0,
           "dinamica": 0.0,
           "pos": 100
+        },
+        "2026-10-28": {
+          "fleje": 4200.0,
+          "ptc": 4200.0,
+          "dinamica": 0.0,
+          "pos": 100
         }
       }
     },
@@ -14808,6 +15082,12 @@
           "ptc": 4449.0,
           "dinamica": 0.0,
           "pos": 39
+        },
+        "2026-10-28": {
+          "fleje": 4449.0,
+          "ptc": 4449.0,
+          "dinamica": 0.0,
+          "pos": 44
         }
       }
     },
@@ -15117,6 +15397,12 @@
           "ptc": 3625.0,
           "dinamica": 0.0,
           "pos": 51
+        },
+        "2026-10-28": {
+          "fleje": 3625.0,
+          "ptc": 3625.0,
+          "dinamica": 0.0,
+          "pos": 55
         }
       }
     },
@@ -15448,6 +15734,12 @@
           "ptc": 3579.0,
           "dinamica": 0.0,
           "pos": 43
+        },
+        "2026-10-28": {
+          "fleje": 3579.0,
+          "ptc": 3579.0,
+          "dinamica": 0.0,
+          "pos": 38
         }
       }
     },
@@ -15759,6 +16051,12 @@
           "ptc": 4275.0,
           "dinamica": 0.0,
           "pos": 32
+        },
+        "2026-10-28": {
+          "fleje": 4275.0,
+          "ptc": 4275.0,
+          "dinamica": 0.0,
+          "pos": 27
         }
       }
     },
@@ -16098,6 +16396,13 @@
           "dinamica": 0.15,
           "pos": 18,
           "promo_nominal": "15%"
+        },
+        "2026-10-28": {
+          "fleje": 6355.0,
+          "ptc": 5401.75,
+          "dinamica": 0.15,
+          "pos": 18,
+          "promo_nominal": "15%"
         }
       }
     },
@@ -16362,6 +16667,13 @@
           "ptc": 2407.5,
           "dinamica": 0.25,
           "pos": 70,
+          "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 3210.0,
+          "ptc": 2407.5,
+          "dinamica": 0.25,
+          "pos": 71,
           "promo_nominal": "25%"
         }
       }
@@ -16648,6 +16960,13 @@
           "ptc": 2651.25,
           "dinamica": 0.25,
           "pos": 67,
+          "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 3535.0,
+          "ptc": 2651.25,
+          "dinamica": 0.25,
+          "pos": 69,
           "promo_nominal": "25%"
         }
       }
@@ -16954,6 +17273,13 @@
           "promo_nominal": "25%"
         },
         "2026-10-26": {
+          "fleje": 3180.0,
+          "ptc": 2385.0,
+          "dinamica": 0.25,
+          "pos": 66,
+          "promo_nominal": "25%"
+        },
+        "2026-10-28": {
           "fleje": 3180.0,
           "ptc": 2385.0,
           "dinamica": 0.25,
@@ -17286,6 +17612,13 @@
           "dinamica": 0.4,
           "pos": 62,
           "promo_nominal": "40%"
+        },
+        "2026-10-28": {
+          "fleje": 3210.0,
+          "ptc": 1926.0,
+          "dinamica": 0.4,
+          "pos": 64,
+          "promo_nominal": "40%"
         }
       }
     },
@@ -17582,6 +17915,13 @@
           "ptc": 2644.0,
           "dinamica": 0.2,
           "pos": 71,
+          "promo_nominal": "20%"
+        },
+        "2026-10-28": {
+          "fleje": 3305.0,
+          "ptc": 2644.0,
+          "dinamica": 0.2,
+          "pos": 72,
           "promo_nominal": "20%"
         }
       }
@@ -17885,6 +18225,13 @@
           "promo_nominal": "35%"
         },
         "2026-10-26": {
+          "fleje": 3210.0,
+          "ptc": 2086.5,
+          "dinamica": 0.35,
+          "pos": 68,
+          "promo_nominal": "35%"
+        },
+        "2026-10-28": {
           "fleje": 3210.0,
           "ptc": 2086.5,
           "dinamica": 0.35,
@@ -18240,6 +18587,13 @@
           "dinamica": 0.25,
           "pos": 103,
           "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 5919.0,
+          "ptc": 4439.25,
+          "dinamica": 0.25,
+          "pos": 104,
+          "promo_nominal": "25%"
         }
       }
     },
@@ -18582,6 +18936,13 @@
           "dinamica": 0.15,
           "pos": 91,
           "promo_nominal": "15%"
+        },
+        "2026-10-28": {
+          "fleje": 4555.0,
+          "ptc": 3871.75,
+          "dinamica": 0.15,
+          "pos": 90,
+          "promo_nominal": "15%"
         }
       }
     },
@@ -18912,6 +19273,13 @@
           "ptc": 3644.0,
           "dinamica": 0.2,
           "pos": 90,
+          "promo_nominal": "20%"
+        },
+        "2026-10-28": {
+          "fleje": 4555.0,
+          "ptc": 3644.0,
+          "dinamica": 0.2,
+          "pos": 89,
           "promo_nominal": "20%"
         }
       }
@@ -19288,6 +19656,13 @@
           "dinamica": 0.15,
           "pos": 93,
           "promo_nominal": "15%"
+        },
+        "2026-10-28": {
+          "fleje": 3560.0,
+          "ptc": 3026.0,
+          "dinamica": 0.15,
+          "pos": 93,
+          "promo_nominal": "15%"
         }
       }
     },
@@ -19648,6 +20023,13 @@
           "dinamica": 0.15,
           "pos": 86,
           "promo_nominal": "15%"
+        },
+        "2026-10-28": {
+          "fleje": 3585.0,
+          "ptc": 3047.25,
+          "dinamica": 0.15,
+          "pos": 86,
+          "promo_nominal": "15%"
         }
       }
     },
@@ -19978,6 +20360,13 @@
           "ptc": 3416.25,
           "dinamica": 0.25,
           "pos": 110
+        },
+        "2026-10-28": {
+          "fleje": 4555.0,
+          "ptc": 3871.75,
+          "dinamica": 0.15,
+          "pos": 91,
+          "promo_nominal": "15%"
         }
       }
     },
@@ -20332,6 +20721,13 @@
           "dinamica": 0.15,
           "pos": 92,
           "promo_nominal": "15%"
+        },
+        "2026-10-28": {
+          "fleje": 3560.0,
+          "ptc": 3026.0,
+          "dinamica": 0.15,
+          "pos": 92,
+          "promo_nominal": "15%"
         }
       }
     },
@@ -20616,6 +21012,13 @@
           "ptc": 1802.5,
           "dinamica": 0.5,
           "pos": 99,
+          "promo_nominal": "2 x 1"
+        },
+        "2026-10-28": {
+          "fleje": 3605.0,
+          "ptc": 1802.5,
+          "dinamica": 0.5,
+          "pos": 101,
           "promo_nominal": "2 x 1"
         }
       }
@@ -20910,6 +21313,13 @@
           "dinamica": 0.2,
           "pos": 97,
           "promo_nominal": "20%"
+        },
+        "2026-10-28": {
+          "fleje": 4399.0,
+          "ptc": 3519.2,
+          "dinamica": 0.2,
+          "pos": 98,
+          "promo_nominal": "20%"
         }
       }
     },
@@ -21196,6 +21606,13 @@
           "ptc": 2716.0,
           "dinamica": 0.3,
           "pos": 98,
+          "promo_nominal": "30%"
+        },
+        "2026-10-28": {
+          "fleje": 3880.0,
+          "ptc": 2716.0,
+          "dinamica": 0.3,
+          "pos": 99,
           "promo_nominal": "30%"
         }
       }
@@ -21536,6 +21953,13 @@
           "ptc": 2239.3,
           "dinamica": 0.3,
           "pos": 101,
+          "promo_nominal": "30%"
+        },
+        "2026-10-28": {
+          "fleje": 3199.0,
+          "ptc": 2239.3,
+          "dinamica": 0.3,
+          "pos": 103,
           "promo_nominal": "30%"
         }
       }
@@ -21882,6 +22306,13 @@
           "ptc": 2016.75,
           "dinamica": 0.25,
           "pos": 106,
+          "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 2689.0,
+          "ptc": 2016.75,
+          "dinamica": 0.25,
+          "pos": 107,
           "promo_nominal": "25%"
         }
       }
@@ -22242,6 +22673,13 @@
           "dinamica": 0.2,
           "pos": 11,
           "promo_nominal": "20%"
+        },
+        "2026-10-28": {
+          "fleje": 4705.0,
+          "ptc": 3058.25,
+          "dinamica": 0.35,
+          "pos": 9,
+          "promo_nominal": "35%"
         }
       }
     },
@@ -22578,6 +23016,13 @@
           "ptc": 2891.25,
           "dinamica": 0.25,
           "pos": 42,
+          "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 3855.0,
+          "ptc": 2891.25,
+          "dinamica": 0.25,
+          "pos": 41,
           "promo_nominal": "25%"
         }
       }
@@ -22934,6 +23379,13 @@
           "dinamica": 0.35,
           "pos": 9,
           "promo_nominal": "35%"
+        },
+        "2026-10-28": {
+          "fleje": 5099.0,
+          "ptc": 3314.35,
+          "dinamica": 0.35,
+          "pos": 12,
+          "promo_nominal": "35%"
         }
       }
     },
@@ -23261,6 +23713,13 @@
           "ptc": 2891.25,
           "dinamica": 0.25,
           "pos": 37,
+          "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 3855.0,
+          "ptc": 2891.25,
+          "dinamica": 0.25,
+          "pos": 40,
           "promo_nominal": "25%"
         }
       }
@@ -23624,6 +24083,13 @@
           "dinamica": 0.2,
           "pos": 22,
           "promo_nominal": "20%"
+        },
+        "2026-10-28": {
+          "fleje": 7290.0,
+          "ptc": 5467.5,
+          "dinamica": 0.25,
+          "pos": 22,
+          "promo_nominal": "25%"
         }
       }
     },
@@ -23989,6 +24455,13 @@
           "dinamica": 0.25,
           "pos": 19,
           "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 5489.0,
+          "ptc": 4116.75,
+          "dinamica": 0.25,
+          "pos": 23,
+          "promo_nominal": "25%"
         }
       }
     },
@@ -24340,6 +24813,13 @@
           "dinamica": 0.3,
           "pos": 29,
           "promo_nominal": "30%"
+        },
+        "2026-10-28": {
+          "fleje": 5489.0,
+          "ptc": 3842.3,
+          "dinamica": 0.3,
+          "pos": 52,
+          "promo_nominal": "30%"
         }
       }
     },
@@ -24655,6 +25135,13 @@
           "ptc": 5856.75,
           "dinamica": 0.25,
           "pos": 28,
+          "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 7809.0,
+          "ptc": 5856.75,
+          "dinamica": 0.25,
+          "pos": 36,
           "promo_nominal": "25%"
         }
       }
@@ -24993,6 +25480,13 @@
           "pos": 42
         },
         "2026-10-26": {
+          "fleje": 7809.0,
+          "ptc": 5856.75,
+          "dinamica": 0.25,
+          "pos": 31,
+          "promo_nominal": "25%"
+        },
+        "2026-10-28": {
           "fleje": 7809.0,
           "ptc": 5856.75,
           "dinamica": 0.25,
@@ -25478,6 +25972,12 @@
           "ptc": 4739.0,
           "dinamica": 0.0,
           "pos": 105
+        },
+        "2026-10-28": {
+          "fleje": 4739.0,
+          "ptc": 4739.0,
+          "dinamica": 0.0,
+          "pos": 106
         }
       }
     },
@@ -26292,6 +26792,13 @@
           "dinamica": 0.5,
           "pos": 81,
           "promo_nominal": "2 x 1"
+        },
+        "2026-10-28": {
+          "fleje": 4029.0,
+          "ptc": 2014.5,
+          "dinamica": 0.5,
+          "pos": 83,
+          "promo_nominal": "2 x 1"
         }
       }
     },
@@ -26555,6 +27062,13 @@
           "ptc": 2302.5,
           "dinamica": 0.5,
           "pos": 76,
+          "promo_nominal": "50%"
+        },
+        "2026-10-28": {
+          "fleje": 4605.0,
+          "ptc": 2302.5,
+          "dinamica": 0.5,
+          "pos": 77,
           "promo_nominal": "50%"
         }
       }
@@ -26829,6 +27343,13 @@
           "promo_nominal": "50%"
         },
         "2026-10-26": {
+          "fleje": 3880.0,
+          "ptc": 1940.0,
+          "dinamica": 0.5,
+          "pos": 79,
+          "promo_nominal": "50%"
+        },
+        "2026-10-28": {
           "fleje": 3880.0,
           "ptc": 1940.0,
           "dinamica": 0.5,
@@ -27136,6 +27657,13 @@
           "dinamica": 0.5,
           "pos": 78,
           "promo_nominal": "50%"
+        },
+        "2026-10-28": {
+          "fleje": 4175.0,
+          "ptc": 2087.5,
+          "dinamica": 0.5,
+          "pos": 81,
+          "promo_nominal": "50%"
         }
       }
     },
@@ -27312,6 +27840,13 @@
           "promo_nominal": "50%"
         },
         "2026-10-26": {
+          "fleje": 4175.0,
+          "ptc": 2087.5,
+          "dinamica": 0.5,
+          "pos": 82,
+          "promo_nominal": "50%"
+        },
+        "2026-10-28": {
           "fleje": 4175.0,
           "ptc": 2087.5,
           "dinamica": 0.5,
@@ -28077,6 +28612,13 @@
           "dinamica": 0.4,
           "pos": 46,
           "promo_nominal": "40%"
+        },
+        "2026-10-28": {
+          "fleje": 3445.0,
+          "ptc": 2067.0,
+          "dinamica": 0.4,
+          "pos": 45,
+          "promo_nominal": "40%"
         }
       }
     },
@@ -28397,6 +28939,13 @@
           "ptc": 2067.0,
           "dinamica": 0.4,
           "pos": 4,
+          "promo_nominal": "40%"
+        },
+        "2026-10-28": {
+          "fleje": 3445.0,
+          "ptc": 2067.0,
+          "dinamica": 0.4,
+          "pos": 43,
           "promo_nominal": "40%"
         }
       }
@@ -28736,6 +29285,13 @@
           "dinamica": 0.4,
           "pos": 45,
           "promo_nominal": "40%"
+        },
+        "2026-10-28": {
+          "fleje": 3965.0,
+          "ptc": 2379.0,
+          "dinamica": 0.4,
+          "pos": 47,
+          "promo_nominal": "40%"
         }
       }
     },
@@ -29074,6 +29630,13 @@
           "ptc": 1439.4,
           "dinamica": 0.4,
           "pos": 16,
+          "promo_nominal": "40%"
+        },
+        "2026-10-28": {
+          "fleje": 2399.0,
+          "ptc": 1439.4,
+          "dinamica": 0.4,
+          "pos": 21,
           "promo_nominal": "40%"
         }
       }
@@ -29430,6 +29993,13 @@
           "ptc": 2379.0,
           "dinamica": 0.4,
           "pos": 3,
+          "promo_nominal": "40%"
+        },
+        "2026-10-28": {
+          "fleje": 3965.0,
+          "ptc": 2379.0,
+          "dinamica": 0.4,
+          "pos": 1,
           "promo_nominal": "40%"
         }
       }
@@ -29799,6 +30369,13 @@
           "dinamica": 0.4,
           "pos": 1,
           "promo_nominal": "40%"
+        },
+        "2026-10-28": {
+          "fleje": 3779.0,
+          "ptc": 2267.4,
+          "dinamica": 0.4,
+          "pos": 6,
+          "promo_nominal": "40%"
         }
       }
     },
@@ -30146,6 +30723,12 @@
           "ptc": 3729.0,
           "dinamica": 0.0,
           "pos": 104
+        },
+        "2026-10-28": {
+          "fleje": 3729.0,
+          "ptc": 3729.0,
+          "dinamica": 0.0,
+          "pos": 105
         }
       }
     },
@@ -30260,6 +30843,13 @@
           "ptc": 3640.55,
           "dinamica": 0.15,
           "pos": 83,
+          "promo_nominal": "15%"
+        },
+        "2026-10-28": {
+          "fleje": 4283.0,
+          "ptc": 3640.55,
+          "dinamica": 0.15,
+          "pos": 84,
           "promo_nominal": "15%"
         }
       }
@@ -30627,6 +31217,13 @@
           "dinamica": 0.2,
           "pos": 27,
           "promo_nominal": "20%"
+        },
+        "2026-10-28": {
+          "fleje": 3889.0,
+          "ptc": 1944.5,
+          "dinamica": 0.5,
+          "pos": 19,
+          "promo_nominal": "2 x 1"
         }
       }
     },
@@ -31150,6 +31747,13 @@
           "dinamica": 0.25,
           "pos": 21,
           "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 5379.0,
+          "ptc": 4034.25,
+          "dinamica": 0.25,
+          "pos": 25,
+          "promo_nominal": "25%"
         }
       }
     },
@@ -31479,6 +32083,13 @@
           "dinamica": 0.25,
           "pos": 33,
           "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 7809.0,
+          "ptc": 5856.75,
+          "dinamica": 0.25,
+          "pos": 30,
+          "promo_nominal": "25%"
         }
       }
     },
@@ -31782,6 +32393,12 @@
           "ptc": 2615.0,
           "dinamica": 0.0,
           "pos": 23
+        },
+        "2026-10-28": {
+          "fleje": 2615.0,
+          "ptc": 2615.0,
+          "dinamica": 0.0,
+          "pos": 28
         }
       }
     },
@@ -32123,6 +32740,13 @@
           "ptc": 2133.0,
           "dinamica": 0.4,
           "pos": 5,
+          "promo_nominal": "40%"
+        },
+        "2026-10-28": {
+          "fleje": 3555.0,
+          "ptc": 2133.0,
+          "dinamica": 0.4,
+          "pos": 3,
           "promo_nominal": "40%"
         }
       }
@@ -32619,6 +33243,12 @@
           "ptc": 1790.0,
           "dinamica": 0.0,
           "pos": 49
+        },
+        "2026-10-28": {
+          "fleje": 1790.0,
+          "ptc": 1790.0,
+          "dinamica": 0.0,
+          "pos": 49
         }
       }
     },
@@ -32954,6 +33584,13 @@
           "ptc": 3871.75,
           "dinamica": 0.15,
           "pos": 87,
+          "promo_nominal": "15%"
+        },
+        "2026-10-28": {
+          "fleje": 4555.0,
+          "ptc": 3871.75,
+          "dinamica": 0.15,
+          "pos": 88,
           "promo_nominal": "15%"
         }
       }
@@ -33324,6 +33961,13 @@
           "dinamica": 0.2,
           "pos": 88,
           "promo_nominal": "20%"
+        },
+        "2026-10-28": {
+          "fleje": 5525.0,
+          "ptc": 4420.0,
+          "dinamica": 0.2,
+          "pos": 87,
+          "promo_nominal": "20%"
         }
       }
     },
@@ -33684,6 +34328,12 @@
           "ptc": 4210.0,
           "dinamica": 0.0,
           "pos": 94
+        },
+        "2026-10-28": {
+          "fleje": 4210.0,
+          "ptc": 4210.0,
+          "dinamica": 0.0,
+          "pos": 94
         }
       }
     },
@@ -33939,6 +34589,13 @@
           "pos": 71
         },
         "2026-10-26": {
+          "fleje": 4175.0,
+          "ptc": 2087.5,
+          "dinamica": 0.5,
+          "pos": 80,
+          "promo_nominal": "50%"
+        },
+        "2026-10-28": {
           "fleje": 4175.0,
           "ptc": 2087.5,
           "dinamica": 0.5,
@@ -34294,6 +34951,13 @@
           "ptc": 2067.0,
           "dinamica": 0.4,
           "pos": 2,
+          "promo_nominal": "40%"
+        },
+        "2026-10-28": {
+          "fleje": 3445.0,
+          "ptc": 2067.0,
+          "dinamica": 0.4,
+          "pos": 5,
           "promo_nominal": "40%"
         }
       }
@@ -35208,6 +35872,13 @@
           "dinamica": 0.25,
           "pos": 107,
           "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 5919.0,
+          "ptc": 4439.25,
+          "dinamica": 0.25,
+          "pos": 108,
+          "promo_nominal": "25%"
         }
       }
     },
@@ -35415,6 +36086,12 @@
           "dinamica": 0.0,
           "pos": 73,
           "sospechoso": true
+        },
+        "2026-10-28": {
+          "fleje": 4085.0,
+          "ptc": 4085.0,
+          "dinamica": 0.0,
+          "pos": 74
         }
       }
     },
@@ -35918,6 +36595,12 @@
           "dinamica": 0.0,
           "pos": 109,
           "sospechoso": true
+        },
+        "2026-10-28": {
+          "fleje": 8990.0,
+          "ptc": 8990.0,
+          "dinamica": 0.0,
+          "pos": 110
         }
       }
     },
@@ -36100,6 +36783,12 @@
           "dinamica": 0.0,
           "pos": 110,
           "sospechoso": true
+        },
+        "2026-10-28": {
+          "fleje": 8490.0,
+          "ptc": 8490.0,
+          "dinamica": 0.0,
+          "pos": 111
         }
       }
     },
@@ -36207,6 +36896,13 @@
           "ptc": 1839.0,
           "dinamica": 0.4,
           "pos": 89,
+          "promo_nominal": "40%"
+        },
+        "2026-10-28": {
+          "fleje": 3065.0,
+          "ptc": 1839.0,
+          "dinamica": 0.4,
+          "pos": 95,
           "promo_nominal": "40%"
         }
       }
@@ -36342,6 +37038,13 @@
           "ptc": 1839.0,
           "dinamica": 0.4,
           "pos": 96,
+          "promo_nominal": "40%"
+        },
+        "2026-10-28": {
+          "fleje": 3065.0,
+          "ptc": 1839.0,
+          "dinamica": 0.4,
+          "pos": 97,
           "promo_nominal": "40%"
         }
       }
@@ -36730,6 +37433,12 @@
           "ptc": 6529.0,
           "dinamica": 0.0,
           "pos": 108
+        },
+        "2026-10-28": {
+          "fleje": 6529.0,
+          "ptc": 6529.0,
+          "dinamica": 0.0,
+          "pos": 109
         }
       }
     },
@@ -36971,6 +37680,13 @@
           "dinamica": 0.5,
           "pos": 85,
           "promo_nominal": "2 x 1"
+        },
+        "2026-10-28": {
+          "fleje": 3925.0,
+          "ptc": 1962.5,
+          "dinamica": 0.5,
+          "pos": 85,
+          "promo_nominal": "2 x 1"
         }
       }
     },
@@ -37054,6 +37770,13 @@
           "dinamica": 0.3,
           "pos": 10,
           "promo_nominal": "30%"
+        },
+        "2026-10-28": {
+          "fleje": 2833.0,
+          "ptc": 1983.1,
+          "dinamica": 0.3,
+          "pos": 15,
+          "promo_nominal": "30%"
         }
       }
     },
@@ -37130,6 +37853,13 @@
           "dinamica": 0.3,
           "pos": 52,
           "promo_nominal": "30%"
+        },
+        "2026-10-28": {
+          "fleje": 2833.0,
+          "ptc": 1983.1,
+          "dinamica": 0.3,
+          "pos": 53,
+          "promo_nominal": "30%"
         }
       }
     },
@@ -37200,6 +37930,12 @@
           "ptc": 4509.0,
           "dinamica": 0.0,
           "pos": 95
+        },
+        "2026-10-28": {
+          "fleje": 4509.0,
+          "ptc": 4509.0,
+          "dinamica": 0.0,
+          "pos": 96
         }
       }
     },
@@ -37262,6 +37998,13 @@
           "dinamica": 0.25,
           "pos": 60,
           "promo_nominal": "25%"
+        },
+        "2026-10-28": {
+          "fleje": 5489.0,
+          "ptc": 4116.75,
+          "dinamica": 0.25,
+          "pos": 63,
+          "promo_nominal": "25%"
         }
       }
     },
@@ -37298,6 +38041,12 @@
           "pos": 107
         },
         "2026-10-26": {
+          "fleje": 3976.0,
+          "ptc": 3976.0,
+          "dinamica": 0.0,
+          "pos": 50
+        },
+        "2026-10-28": {
           "fleje": 3976.0,
           "ptc": 3976.0,
           "dinamica": 0.0,
@@ -37354,6 +38103,13 @@
           "dinamica": 0.3,
           "pos": 112,
           "promo_nominal": "30%"
+        },
+        "2026-10-28": {
+          "fleje": 3189.0,
+          "ptc": 2232.3,
+          "dinamica": 0.3,
+          "pos": 113,
+          "promo_nominal": "30%"
         }
       }
     },
@@ -37388,6 +38144,13 @@
           "ptc": 2232.3,
           "dinamica": 0.3,
           "pos": 111,
+          "promo_nominal": "30%"
+        },
+        "2026-10-28": {
+          "fleje": 3189.0,
+          "ptc": 2232.3,
+          "dinamica": 0.3,
+          "pos": 112,
           "promo_nominal": "30%"
         }
       }
@@ -37461,6 +38224,12 @@
           "ptc": 4400.0,
           "dinamica": 0.0,
           "pos": 65
+        },
+        "2026-10-28": {
+          "fleje": 4400.0,
+          "ptc": 4400.0,
+          "dinamica": 0.0,
+          "pos": 67
         }
       }
     },
@@ -37477,6 +38246,14 @@
           "ptc": 3900.0,
           "dinamica": 0.0,
           "pos": 113
+        },
+        "2026-10-28": {
+          "fleje": 3900.0,
+          "ptc": 1560.0,
+          "dinamica": 0.6,
+          "pos": 114,
+          "promo_nominal": "60%",
+          "sospechoso": true
         }
       }
     }

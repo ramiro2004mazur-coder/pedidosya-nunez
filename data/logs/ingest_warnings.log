@@ -131,3 +131,5 @@
 2026-10-26.csv: PRECIO SOSPECHOSO -> 'La Trappe | Cerveza Artesanal La Trappe Dubbel 330 ml' 5843.5 -> 8990.0 (2026-10-26), se guarda igual marcado como sospechoso
 2026-10-26.csv: PRECIO SOSPECHOSO -> 'La Trappe | Cerveza Artesanal La Trappe Blond 330 ml' 5518.5 -> 8490.0 (2026-10-26), se guarda igual marcado como sospechoso
 2026-10-26.csv: SKU nuevo sin catalogo -> 'Rabieta | Cerveza Sin Alcohol Rabieta Zero 473 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-10-28.csv: PRECIO SOSPECHOSO -> 'Grolsch | Cerveza Grolsch Ipa 473 ml' 2215.0 -> 4430.0 (2026-10-28), se guarda igual marcado como sospechoso
+2026-10-28.csv: PRECIO SOSPECHOSO -> 'Rabieta | Cerveza Sin Alcohol Rabieta Zero 473 ml' 3900.0 -> 1560.0 (2026-10-28), se guarda igual marcado como sospechoso
