@@ -128,7 +128,8 @@ fecha, el real gana. Un hueco puede fijar `"fuente"` (fecha a replicar).
 
 Copias cargadas como dato real por pedido del usuario (no son lectura de
 ese dia, estan en `NO_REALES` de `build_supuestos.py`): 11/10 <- 10/10, y
-23/10 y 24/10 <- 25/10. El 25/10 (PDF) trae para ~56 SKUs el precio para
+23/10 y 24/10 <- 25/10, y 30/10, 31/10 y 01/11 <- 23/10, 24/10 y 25/10
+(mismo dia de la semana anterior). El 02/11 se cargo desde PDF. El 25/10 (PDF) trae para ~56 SKUs el precio para
 suscriptores PedidosYa Plus (el scraper guarda el precio para todos): se
 cargo sin marcar por decision del usuario, su dinamica suele ser ~10 pp mas
 alta que la de una lectura del scraper.
