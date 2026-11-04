@@ -144,3 +144,7 @@
 2026-11-04.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 473 ml' 2050.95 -> 3729.0 (2026-11-04), se guarda igual marcado como sospechoso
 2026-11-04.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Blanca Miller Edición Limitada Porrón 330 ml' 2246.75 -> 4085.0 (2026-11-04), se guarda igual marcado como sospechoso
 2026-11-04.csv: PRECIO SOSPECHOSO -> 'Grolsch | Cerveza Grolsch Ipa 473 ml' 2215.0 -> 4605.0 (2026-11-04), se guarda igual marcado como sospechoso
+2026-11-03.csv: PRECIO SOSPECHOSO -> 'Imperial | Cerveza Imperial Lager 473 ml' 2826.25 -> 1330.0 (2026-11-03), se guarda igual marcado como sospechoso
+2026-11-03.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 473 ml' 2050.95 -> 3729.0 (2026-11-03), se guarda igual marcado como sospechoso
+2026-11-03.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Blanca Miller Edición Limitada Porrón 330 ml' 2246.75 -> 4085.0 (2026-11-03), se guarda igual marcado como sospechoso
+2026-11-03.csv: PRECIO SOSPECHOSO -> 'Grolsch | Cerveza Grolsch Ipa 473 ml' 2215.0 -> 4605.0 (2026-11-03), se guarda igual marcado como sospechoso
