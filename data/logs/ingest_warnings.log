@@ -148,3 +148,6 @@
 2026-11-03.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 473 ml' 2050.95 -> 3729.0 (2026-11-03), se guarda igual marcado como sospechoso
 2026-11-03.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Blanca Miller Edición Limitada Porrón 330 ml' 2246.75 -> 4085.0 (2026-11-03), se guarda igual marcado como sospechoso
 2026-11-03.csv: PRECIO SOSPECHOSO -> 'Grolsch | Cerveza Grolsch Ipa 473 ml' 2215.0 -> 4605.0 (2026-11-03), se guarda igual marcado como sospechoso
+2026-11-05.csv: PRECIO SOSPECHOSO -> 'Imperial | Cerveza Imperial Lager 473 ml' 1330.0 -> 2826.25 (2026-11-05), se guarda igual marcado como sospechoso
+2026-11-05.csv: PRECIO SOSPECHOSO -> 'Patagonia | Cerveza Patagonia Lager Del Sur Lata 473 ml' 2744.5 -> 5489.0 (2026-11-05), se guarda igual marcado como sospechoso
+2026-11-05.csv: PRECIO SOSPECHOSO -> 'Rabieta | Cerveza Sin Alcohol Rabieta Zero 473 ml' 1560.0 -> 3900.0 (2026-11-05), se guarda igual marcado como sospechoso
