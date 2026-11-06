@@ -151,3 +151,9 @@
 2026-11-05.csv: PRECIO SOSPECHOSO -> 'Imperial | Cerveza Imperial Lager 473 ml' 1330.0 -> 2826.25 (2026-11-05), se guarda igual marcado como sospechoso
 2026-11-05.csv: PRECIO SOSPECHOSO -> 'Patagonia | Cerveza Patagonia Lager Del Sur Lata 473 ml' 2744.5 -> 5489.0 (2026-11-05), se guarda igual marcado como sospechoso
 2026-11-05.csv: PRECIO SOSPECHOSO -> 'Rabieta | Cerveza Sin Alcohol Rabieta Zero 473 ml' 1560.0 -> 3900.0 (2026-11-05), se guarda igual marcado como sospechoso
+2026-11-06.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen IPA 473 ml' 1944.5 -> 3305.65 (2026-11-06), se guarda igual marcado como sospechoso
+2026-11-06.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen Roja 473 ml' 1944.5 -> 3305.65 (2026-11-06), se guarda igual marcado como sospechoso
+2026-11-06.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen Negra 473ml' 1944.5 -> 3305.65 (2026-11-06), se guarda igual marcado como sospechoso
+2026-11-06.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen Rubia Lata 473 ml' 1829.5 -> 3110.15 (2026-11-06), se guarda igual marcado como sospechoso
+2026-11-06.csv: SKU nuevo sin catalogo -> 'Andes Origen | Cerveza Andes Blanca 710 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-11-06.csv: PRECIO SOSPECHOSO -> 'Rabieta | Cerveza Sin Alcohol Rabieta Zero 473 ml' 3900.0 -> 1.0 (2026-11-06), se guarda igual marcado como sospechoso
