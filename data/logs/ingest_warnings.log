@@ -157,3 +157,5 @@
 2026-11-06.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen Rubia Lata 473 ml' 1829.5 -> 3110.15 (2026-11-06), se guarda igual marcado como sospechoso
 2026-11-06.csv: SKU nuevo sin catalogo -> 'Andes Origen | Cerveza Andes Blanca 710 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-11-06.csv: PRECIO SOSPECHOSO -> 'Rabieta | Cerveza Sin Alcohol Rabieta Zero 473 ml' 3900.0 -> 1.0 (2026-11-06), se guarda igual marcado como sospechoso
+2026-11-07.csv: PRECIO SOSPECHOSO -> 'Patagonia | Cerveza Patagonia Amber Lager Lata 473 ml' 2744.5 -> 5489.0 (2026-11-07), se guarda igual marcado como sospechoso
+2026-11-07.csv: PRECIO SOSPECHOSO -> 'Amstel | Cerveza Amstel Lager 710 ml' 2100.0 -> 4200.0 (2026-11-07), se guarda igual marcado como sospechoso
