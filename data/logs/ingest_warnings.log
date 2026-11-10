@@ -159,3 +159,12 @@
 2026-11-06.csv: PRECIO SOSPECHOSO -> 'Rabieta | Cerveza Sin Alcohol Rabieta Zero 473 ml' 3900.0 -> 1.0 (2026-11-06), se guarda igual marcado como sospechoso
 2026-11-07.csv: PRECIO SOSPECHOSO -> 'Patagonia | Cerveza Patagonia Amber Lager Lata 473 ml' 2744.5 -> 5489.0 (2026-11-07), se guarda igual marcado como sospechoso
 2026-11-07.csv: PRECIO SOSPECHOSO -> 'Amstel | Cerveza Amstel Lager 710 ml' 2100.0 -> 4200.0 (2026-11-07), se guarda igual marcado como sospechoso
+2026-11-10.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 600 ml' 3414.95 -> 6209.0 (2026-11-10), se guarda igual marcado como sospechoso
+2026-11-10.csv: PRECIO SOSPECHOSO -> 'Imperial | Cerveza Imperial Golden Cero Alcohol 473 cm3' 1715.35 -> 2639.0 (2026-11-10), se guarda igual marcado como sospechoso
+2026-11-10.csv: PRECIO SOSPECHOSO -> 'Imperial | Cerveza Imperial Cream Stout 473 ml' 1834.5 -> 3669.0 (2026-11-10), se guarda igual marcado como sospechoso
+2026-11-10.csv: PRECIO SOSPECHOSO -> 'Michelob Ultra | Cerveza Michelob Ultra Sin Gluten 473 ml' 2025.0 -> 3375.0 (2026-11-10), se guarda igual marcado como sospechoso
+2026-11-10.csv: PRECIO SOSPECHOSO -> 'Andes Origen | Cerveza Andes Origen Rubia 710 ml' 2562.5 -> 4356.25 (2026-11-10), se guarda igual marcado como sospechoso
+2026-11-10.csv: PRECIO SOSPECHOSO -> 'Stella Artois | Cerveza Stella Artois Botella 330 ml' 1687.6 -> 3164.25 (2026-11-10), se guarda igual marcado como sospechoso
+2026-11-10.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller 473 ml' 2050.95 -> 3729.0 (2026-11-10), se guarda igual marcado como sospechoso
+2026-11-10.csv: PRECIO SOSPECHOSO -> 'Imperial | Cerveza Imperial Golden Lata 473 mL' 2161.25 -> 3325.0 (2026-11-10), se guarda igual marcado como sospechoso
+2026-11-10.csv: PRECIO SOSPECHOSO -> 'Warsteiner | Cerveza Warsteiner 473 ml' 2237.4 -> 3729.0 (2026-11-10), se guarda igual marcado como sospechoso
