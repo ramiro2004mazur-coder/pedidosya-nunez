@@ -1,10 +1,10 @@
 ﻿zona;marca;descripcion;calibre;fleje;precio;descuento;promo_nominal
-Nunez;Miller;Cerveza Miller 600 ml;600 ml;6209;6209;0;
-Nunez;cerveza imperial;Cerveza Imperial Golden Cero Alcohol 473 cm3;-;2639;2639;0;
-Nunez;Patagonia;Cerveza Patagonia 24.7 Session Ipa 730 mL;730 ml;7809;5856.75;25;25%
-Nunez;Quilmes;Cerveza Quilmes Clásica 710ml;710 ml;3832;3257.2;15;15%
 Nunez;Patagonia;Cerveza Patagonia Roja Amber Lager 730 ml;730 ml;7809;5856.75;25;25%
-Nunez;cerveza imperial;Cerveza Imperial Cream Stout 473 ml;473 ml;3669;3669;0;
+Nunez;Miller;Cerveza Miller 600 ml;600 ml;6209;6209;0;
+Nunez;Patagonia;Cerveza Patagonia 24.7 Session Ipa 730 mL;730 ml;7809;5856.75;25;25%
+Nunez;cerveza imperial;Cerveza Imperial Golden Cero Alcohol 473 cm3;-;2639;2639;0;
+Nunez;Quilmes;Cerveza Quilmes Clásica 710ml;710 ml;3832;3257.2;15;15%
+Nunez;Budweiser;Cerveza Budweiser Lata 710 ml;710 ml;4283;3640.55;15;15%
 Nunez;Michelob Ultra;Cerveza Michelob Ultra Sin Gluten 473 ml;473 ml;3375;3375;0;
 Nunez;Corona;Cerveza Rubia Sin Alcohol 0.0% Corona 330 ml;330 ml;3855;2505.75;35;35%
 Nunez;Stella Artois;Cervez Stella Artois 710 ml;710 ml;6709;5031.75;25;25%
@@ -35,6 +35,7 @@ Nunez;Andes Origen;Cerveza Andes Origen Negra 473ml;473 ml;3889;3305.65;15;15%
 Nunez;Heineken;Cerveza Heineken Lata 710 ml;710 ml;6355;5084;20;20%
 Nunez;Schneider;Cerveza Schneider Remix Límon 473 ml;473 ml;2999;2999;0;
 Nunez;Corona;Cerveza Rubia Corona 473 ml;473 ml;5099;3314.35;35;35%
+Nunez;cerveza imperial;Cerveza Imperial Cream Stout 473 ml;473 ml;3669;3669;0;
 Nunez;Stella Artois;Cerveza Stella Artois Pure Gold Lata 473 ml;473 ml;4539;3404.25;25;25%
 Nunez;Ortuzar;Cerveza Ortuzar Golden Ale 473 ml;473 ml;3670;2202;40;40%
 Nunez;Ortuzar;Cerveza Ortuzar Poker Bourbon 473 ml;473 ml;4225;2535;40;40%
@@ -55,7 +56,6 @@ Nunez;Rabieta;Cerveza Rabieta Helles Munich 473 ml;473 ml;4175;2505;40;40%
 Nunez;Rabieta;Cerveza Rabieta Irish Red Ale 473 ml;473 ml;4175;2922.5;30;30%
 Nunez;Budweiser;Cerveza Budweiser Lata 473 ml;473 ml;2974;2230.5;25;25%
 Nunez;Estrella Galicia;Cerveza Estrella Galicia 473 ml;473 ml;4029;3223.2;20;20%
-Nunez;Budweiser;Cerveza Budweiser Lata 710 ml;710 ml;4283;3640.55;15;15%
 Nunez;Estrella Galicia;Cerveza Estrella Galicia Lager Porrón 355 ml;355 ml;4029;3223.2;20;20%
 Nunez;Estrella Galicia;Cerveza Estrella Galicia Sin Gluten 330 ml;330 ml;3605;2884;20;20%
 Nunez;Bierhaus;Cerveza Bierhaus Honey Lazybee 473 ml;473 ml;3585;3585;0;

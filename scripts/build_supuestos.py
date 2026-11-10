@@ -34,7 +34,8 @@ HUECOS = [
 # Fechas del historico que no son lectura real, no sirven como fuente.
 NO_REALES = {"2026-10-11", "2026-10-23", "2026-10-24",  # copias (11 <- 10/10; 23 y 24 <- 25/10)
              "2026-10-30", "2026-10-31", "2026-11-01",  # 30/10, 31/10, 01/11 <- 23/10, 24/10, 25/10
-             "2026-11-03"}  # combinacion de 7 lecturas reales + 04/11 + 02/11
+             "2026-11-03",  # combinacion de 7 lecturas reales + 04/11 + 02/11
+             "2026-11-07", "2026-11-08", "2026-11-09"}  # 07 y 08 <- 06/11; 09 <- 10/11
 
 
 def dias(desde, hasta):
