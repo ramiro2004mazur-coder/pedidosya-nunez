@@ -178,3 +178,4 @@
 2026-11-09.csv: PRECIO SOSPECHOSO -> 'Amstel | Cerveza Amstel Lager 710 ml' 2100.0 -> 4200.0 (2026-11-09), se guarda igual marcado como sospechoso
 2026-11-09.csv: PRECIO SOSPECHOSO -> 'Imperial | Cerveza Imperial Golden Lata 473 mL' 2161.25 -> 3325.0 (2026-11-09), se guarda igual marcado como sospechoso
 2026-11-09.csv: PRECIO SOSPECHOSO -> 'Warsteiner | Cerveza Warsteiner 473 ml' 2237.4 -> 3729.0 (2026-11-09), se guarda igual marcado como sospechoso
+2026-11-11.csv: SKU nuevo sin catalogo -> 'Peroni | Cerveza Peroni Nastro Azzurro 330 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
