@@ -188,3 +188,5 @@
 2026-11-20.csv: PRECIO SOSPECHOSO -> 'Miller | Cerveza Miller Genuine Draft 710 ml' 2769.5 -> 4912.15 (2026-11-20), se guarda igual marcado como sospechoso
 2026-11-20.csv: PRECIO SOSPECHOSO -> 'Rabieta | Cerveza Sin Alcohol Rabieta Zero 473 ml' 1.0 -> 2340.0 (2026-11-20), se guarda igual marcado como sospechoso
 2026-11-20.csv: PRECIO SOSPECHOSO -> 'Blue Moon | Cerveza Blanca Blue Moon 473 ml' 2758.25 -> 5245.0 (2026-11-20), se guarda igual marcado como sospechoso
+2026-11-26.csv: PRECIO SOSPECHOSO -> 'Imperial | Cerveza Imperial Golden 710 mL' 2392.5 -> 5029.0 (2026-11-26), se guarda igual marcado como sospechoso
+2026-11-26.csv: PRECIO SOSPECHOSO -> 'Patagonia | Cerveza Patagonia 24.7 Session Ipa 730 mL' 3904.5 -> 6090.0 (2026-11-26), se guarda igual marcado como sospechoso
